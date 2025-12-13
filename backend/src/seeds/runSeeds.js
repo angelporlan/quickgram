@@ -4,6 +4,7 @@ import "../models/index.js";
 import { seedLevels } from "./seedLevels.js";
 import { seedCategories } from "./seedCategories.js";
 import { seedSubcategories } from "./seedSubcategories.js";
+import { seedExercises } from "./seedExercises.js";
 
 const runSeeds = async () => {
     try {
@@ -13,6 +14,7 @@ const runSeeds = async () => {
         await seedLevels();
         await seedCategories();
         await seedSubcategories();
+        await seedExercises();
 
         console.log("All seeds executed");
         process.exit();
