@@ -1,0 +1,32 @@
+import { DataTypes } from "sequelize";
+import { sequelize } from "../config/db.js";
+
+export const UserExerciseAttempt = sequelize.define("UserExerciseAttempt", {
+    user_answer: {
+        type: DataTypes.JSON,
+        allowNull: false
+    },
+    total_gaps: {
+        type: DataTypes.INTEGER,
+        allowNull: false
+    },
+    correct_gaps: {
+        type: DataTypes.INTEGER,
+        allowNull: false
+    },
+    is_fully_correct: {
+        type: DataTypes.BOOLEAN,
+        allowNull: false
+    },
+    score: {
+        type: DataTypes.FLOAT,
+        allowNull: false
+    },
+    created_at: {
+        type: DataTypes.DATE,
+        defaultValue: DataTypes.NOW
+    }
+}, {
+    tableName: "user_exercise_attempts",
+    timestamps: false
+});
