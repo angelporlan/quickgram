@@ -5,6 +5,7 @@ import { seedLevels } from "./seedLevels.js";
 import { seedCategories } from "./seedCategories.js";
 import { seedSubcategories } from "./seedSubcategories.js";
 import { seedExercises } from "./seedExercises.js";
+import { seedUsers } from "./seedUsers.js";
 
 const runSeeds = async () => {
     try {
@@ -15,6 +16,7 @@ const runSeeds = async () => {
         await seedCategories();
         await seedSubcategories();
         await seedExercises();
+        await seedUsers();
 
         console.log("All seeds executed");
         process.exit();
