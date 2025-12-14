@@ -1,6 +1,7 @@
 import OpenAI from "openai";
 import { UserExerciseAttempt } from "../models/UserExerciseAttempt.js";
 import { Exercise } from "../models/Exercise.js";
+import { AttemptExplanation } from "../models/AttemptExplanation.js";
 
 const openai = new OpenAI({
     apiKey: process.env.OPENROUTER_API_KEY,
@@ -28,7 +29,19 @@ export const explainAttempt = async (req, res) => {
 
         if (attempt.is_fully_correct) {
             return res.json({
-                explanation: "Your answer is fully correct. No explanation needed 🎉"
+                explanation: "Your answer is fully correct. No explanation needed 🎉",
+                cached: true
+            });
+        }
+
+        const cachedExplanation = await AttemptExplanation.findOne({
+            where: { attempt_id: attempt.id }
+        });
+
+        if (cachedExplanation) {
+            return res.json({
+                explanation: cachedExplanation.explanation,
+                cached: true
             });
         }
 
@@ -54,14 +67,25 @@ Explain clearly:
         const completion = await openai.chat.completions.create({
             model: "tngtech/deepseek-r1t2-chimera:free",
             messages: [
-                { role: "system", content: "You are a helpful English teacher." },
-                { role: "user", content: prompt }
+                {
+                    role: "user",
+                    content: prompt
+                }
             ],
             temperature: 0.4
         });
 
-        res.json({
-            explanation: completion.choices[0].message.content
+        const explanationText = completion.choices[0].message.content;
+
+        await AttemptExplanation.create({
+            attempt_id: attempt.id,
+            explanation: explanationText,
+            model: "tngtech/deepseek-r1t2-chimera:free"
+        });
+
+        return res.json({
+            explanation: explanationText,
+            cached: false
         });
 
     } catch (error) {
