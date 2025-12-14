@@ -2,8 +2,11 @@ import express from "express";
 import cors from "cors";
 import { sequelize } from "./config/db.js";
 import "./models/index.js";
+import "dotenv/config";
 
 import exerciseAttemptRoutes from "./routes/exerciseAttempt.routes.js";
+import authRoutes from "./routes/auth.routes.js";
+
 import { seedLevels } from "./seeds/seedLevels.js";
 import { seedCategories } from "./seeds/seedCategories.js";
 import { seedSubcategories } from "./seeds/seedSubcategories.js";
@@ -20,6 +23,7 @@ app.get("/", (req, res) => {
 });
 
 app.use("/api", exerciseAttemptRoutes);
+app.use("/api", authRoutes);
 
 (async () => {
     try {
