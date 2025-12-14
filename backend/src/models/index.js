@@ -4,6 +4,7 @@ import { Exercise } from "./Exercise.js";
 import { Subcategory } from "./Subcategory.js";
 import { Level } from "./Level.js";
 import { Category } from "./Category.js";
+import { AttemptExplanation } from "./AttemptExplanation.js";
 
 // User ↔ UserExerciseAttempt
 User.hasMany(UserExerciseAttempt, {
@@ -48,6 +49,16 @@ Level.hasMany(Exercise, {
 });
 Exercise.belongsTo(Level, {
     foreignKey: "level_id"
+});
+
+// UserExerciseAttempt ↔ AttemptExplanation
+UserExerciseAttempt.hasOne(AttemptExplanation, {
+    foreignKey: "attempt_id",
+    onDelete: "CASCADE"
+});
+
+AttemptExplanation.belongsTo(UserExerciseAttempt, {
+    foreignKey: "attempt_id"
 });
 
 
