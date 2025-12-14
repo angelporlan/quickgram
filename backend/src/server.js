@@ -8,6 +8,7 @@ import exerciseAttemptRoutes from "./routes/exerciseAttempt.routes.js";
 import authRoutes from "./routes/auth.routes.js";
 import exerciseRoutes from "./routes/exercise.routes.js";
 import userRoutes from "./routes/user.routes.js";
+import explanationRoutes from "./routes/explanation.routes.js";
 
 import { seedLevels } from "./seeds/seedLevels.js";
 import { seedCategories } from "./seeds/seedCategories.js";
@@ -28,6 +29,7 @@ app.use("/api", exerciseAttemptRoutes);
 app.use("/api", authRoutes);
 app.use("/api", exerciseRoutes);
 app.use("/api", userRoutes);
+app.use("/api", explanationRoutes);
 
 (async () => {
     try {
