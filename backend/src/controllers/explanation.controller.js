@@ -1,0 +1,71 @@
+import OpenAI from "openai";
+import { UserExerciseAttempt } from "../models/UserExerciseAttempt.js";
+import { Exercise } from "../models/Exercise.js";
+
+const openai = new OpenAI({
+    apiKey: process.env.OPENROUTER_API_KEY,
+    baseURL: "https://openrouter.ai/api/v1",
+});
+
+export const explainAttempt = async (req, res) => {
+    try {
+        const userId = req.user.id;
+        const attemptId = req.params.id;
+
+        const attempt = await UserExerciseAttempt.findOne({
+            where: {
+                id: attemptId,
+                user_id: userId
+            },
+            include: {
+                model: Exercise
+            }
+        });
+
+        if (!attempt) {
+            return res.status(404).json({ message: "Attempt not found" });
+        }
+
+        if (attempt.is_fully_correct) {
+            return res.json({
+                explanation: "Your answer is fully correct. No explanation needed 🎉"
+            });
+        }
+
+        const prompt = `
+You are an English B2 exam teacher.
+
+Exercise:
+${attempt.Exercise.question_text}
+
+Correct answer:
+${attempt.Exercise.correct_answer}
+
+Student answer:
+${JSON.stringify(attempt.user_answer)}
+
+Explain clearly:
+- Why the student answer is wrong
+- What the correct option is
+- Give a short grammar or vocabulary explanation
+- Keep it concise and easy to understand
+        `;
+
+        const completion = await openai.chat.completions.create({
+            model: "tngtech/deepseek-r1t2-chimera:free",
+            messages: [
+                { role: "system", content: "You are a helpful English teacher." },
+                { role: "user", content: prompt }
+            ],
+            temperature: 0.4
+        });
+
+        res.json({
+            explanation: completion.choices[0].message.content
+        });
+
+    } catch (error) {
+        console.error(error);
+        res.status(500).json({ message: "Error generating explanation" });
+    }
+};
