@@ -24,7 +24,24 @@ export const User = sequelize.define("User", {
         type: DataTypes.ENUM("free", "pro", "premium"),
         allowNull: false,
         defaultValue: "free"
+    },
+    subscription_expires_at: {
+        type: DataTypes.DATE,
+        allowNull: true
     }
 }, {
-    tableName: "users"
+    tableName: "users",
+    hooks: {
+        beforeSave: (user) => {
+            if (user.changed("subscription_role")) {
+                if (user.subscription_role === "free") {
+                    user.subscription_expires_at = null;
+                } else {
+                    const nextMonth = new Date();
+                    nextMonth.setMonth(nextMonth.getMonth() + 1);
+                    user.subscription_expires_at = nextMonth;
+                }
+            }
+        }
+    }
 });
