@@ -2,6 +2,8 @@ import OpenAI from "openai";
 import { UserExerciseAttempt } from "../models/UserExerciseAttempt.js";
 import { Exercise } from "../models/Exercise.js";
 import { AttemptExplanation } from "../models/AttemptExplanation.js";
+import { checkAndConsumeAiUsage } from "../services/aiUsage.service.js";
+import { User } from "../models/user.js";
 
 const openai = new OpenAI({
     apiKey: process.env.OPENROUTER_API_KEY,
@@ -45,6 +47,17 @@ export const explainAttempt = async (req, res) => {
             });
         }
 
+        const user = await User.findByPk(userId);
+
+        const usageCheck = await checkAndConsumeAiUsage(user, { dryRun: true });
+
+        if (!usageCheck.allowed) {
+            return res.status(403).json({
+                message: "Daily AI explanation limit reached",
+                limit: usageCheck.limit
+            });
+        }
+
         const prompt = `
 You are an English B2 exam teacher.
 
@@ -77,6 +90,8 @@ Explain clearly:
 
         const explanationText = completion.choices[0].message.content;
 
+        const finalUsage = await checkAndConsumeAiUsage(user);
+
         await AttemptExplanation.create({
             attempt_id: attempt.id,
             explanation: explanationText,
@@ -85,7 +100,8 @@ Explain clearly:
 
         return res.json({
             explanation: explanationText,
-            cached: false
+            cached: false,
+            remaining: finalUsage.remaining
         });
 
     } catch (error) {
