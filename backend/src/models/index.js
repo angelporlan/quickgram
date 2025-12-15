@@ -5,6 +5,7 @@ import { Subcategory } from "./Subcategory.js";
 import { Level } from "./Level.js";
 import { Category } from "./Category.js";
 import { AttemptExplanation } from "./AttemptExplanation.js";
+import { AiUsageDaily } from "./AiUsageDaily.js";
 
 // User ↔ UserExerciseAttempt
 User.hasMany(UserExerciseAttempt, {
@@ -60,6 +61,11 @@ UserExerciseAttempt.hasOne(AttemptExplanation, {
 AttemptExplanation.belongsTo(UserExerciseAttempt, {
     foreignKey: "attempt_id"
 });
+
+// User ↔ AiUsageDaily
+User.hasMany(AiUsageDaily, { foreignKey: "user_id" });
+AiUsageDaily.belongsTo(User, { foreignKey: "user_id" });
+
 
 
 export {
