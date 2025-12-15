@@ -5,6 +5,9 @@ import { Category } from "../models/Category.js";
 import { Level } from "../models/Level.js";
 import { Sequelize } from "sequelize";
 
+import { AiUsageDaily } from "../models/AiUsageDaily.js";
+import { AI_LIMITS } from "../config/aiLimits.js";
+
 export const getUserProgress = async (req, res) => {
     try {
         const userId = req.user.id;
@@ -86,5 +89,34 @@ export const getUserProgress = async (req, res) => {
     } catch (error) {
         console.error(error);
         res.status(500).json({ message: "Error getting user progress" });
+    }
+};
+
+export const getMyAiUsage = async (req, res) => {
+    try {
+        const user = req.user;
+        const today = new Date().toISOString().split("T")[0];
+
+        const usage = await AiUsageDaily.findOne({
+            where: {
+                user_id: user.id,
+                date: today
+            }
+        });
+
+        const limit = AI_LIMITS[user.subscription_role] ?? 0;
+        const used = usage?.used ?? 0;
+
+        return res.json({
+            date: today,
+            subscription: user.subscription_role,
+            used,
+            remaining: Math.max(limit - used, 0),
+            limit
+        });
+
+    } catch (error) {
+        console.error(error);
+        res.status(500).json({ message: "Error fetching AI usage" });
     }
 };
