@@ -19,6 +19,11 @@ export const User = sequelize.define("User", {
     password_hash: {
         type: DataTypes.STRING,
         allowNull: false
+    },
+    subscription_role: {
+        type: DataTypes.ENUM("free", "pro", "premium"),
+        allowNull: false,
+        defaultValue: "free"
     }
 }, {
     tableName: "users"
