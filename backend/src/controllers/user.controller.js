@@ -104,12 +104,17 @@ export const getMyAiUsage = async (req, res) => {
             }
         });
 
-        const limit = AI_LIMITS[user.subscription_role] ?? 0;
+        const isExpired = user.subscription_expires_at && new Date() > new Date(user.subscription_expires_at);
+        const effectiveRole = (user.subscription_role !== "free" && isExpired) ? "free" : user.subscription_role;
+        const limit = AI_LIMITS[effectiveRole] ?? 0;
+
         const used = usage?.used ?? 0;
 
         return res.json({
             date: today,
             subscription: user.subscription_role,
+            is_expired: !!isExpired,
+            effective_role: effectiveRole,
             used,
             remaining: Math.max(limit - used, 0),
             limit
@@ -118,5 +123,24 @@ export const getMyAiUsage = async (req, res) => {
     } catch (error) {
         console.error(error);
         res.status(500).json({ message: "Error fetching AI usage" });
+    }
+};
+
+export const changeRole = async (req, res) => {
+    try {
+        const { role } = req.body;
+        const user = req.user;
+
+        if (!role || !Object.keys(AI_LIMITS).includes(role)) {
+            return res.status(400).json({ message: "Invalid role" });
+        }
+
+        user.subscription_role = role;
+        await user.save();
+
+        res.json({ message: "Role changed successfully" });
+    } catch (error) {
+        console.error(error);
+        res.status(500).json({ message: "Error changing role" });
     }
 };
