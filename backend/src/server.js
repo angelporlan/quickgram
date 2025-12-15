@@ -35,7 +35,7 @@ app.use("/api", explanationRoutes);
     try {
         // await AttemptExplanation.sync();
 
-        await sequelize.sync({ alter: true });
+        await sequelize.sync();
         console.log("Base de datos conectada y tablas sincronizadas");
 
         await seedLevels();
