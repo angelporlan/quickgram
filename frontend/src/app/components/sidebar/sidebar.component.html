@@ -1,0 +1,107 @@
+<aside class="sidebar">
+    <div class="brand">
+        <div class="brand-icon">B2</div>
+        <span class="brand-name">English Prep</span>
+    </div>
+
+    <nav class="nav-links">
+        <div class="nav-section">
+            <a href="#" routerLink="/" class="nav-item">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="3" y="3" width="7" height="7"></rect>
+                    <rect x="14" y="3" width="7" height="7"></rect>
+                    <rect x="14" y="14" width="7" height="7"></rect>
+                    <rect x="3" y="14" width="7" height="7"></rect>
+                </svg>
+                Dashboard
+            </a>
+        </div>
+
+        <div class="nav-section">
+            <span class="section-title">CATEGORÍAS</span>
+            <a routerLink="/category/grammar" routerLinkActive="active" class="nav-item">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                    <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                </svg>
+                Grammar
+            </a>
+            <a routerLink="/category/vocabulary" routerLinkActive="active" class="nav-item">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M2.5 7h19"></path>
+                    <path d="M9.5 22l-6-15h18l-6 15"></path>
+                </svg>
+                Vocabulary
+            </a>
+            <a routerLink="/category/reading" routerLinkActive="active" class="nav-item">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                    <circle cx="12" cy="12" r="3"></circle>
+                </svg>
+                Reading
+            </a>
+            <a routerLink="/category/listening" routerLinkActive="active" class="nav-item">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M3 18v-6a9 9 0 0 1 18 0v6"></path>
+                    <path
+                        d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z">
+                    </path>
+                </svg>
+                Listening
+            </a>
+            <a routerLink="/category/writing" routerLinkActive="active" class="nav-item">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path>
+                </svg>
+                Writing
+            </a>
+            <a routerLink="/category/use-of-english" routerLinkActive="active" class="nav-item">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path>
+                </svg>
+                Use of English
+            </a>
+        </div>
+
+        <div class="nav-section">
+            <span class="section-title">SIMULACROS</span>
+            <a href="#" class="nav-item">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+                Examen Completo
+            </a>
+        </div>
+
+        <div class="nav-section mt-auto">
+            <div class="daily-goal-box">
+                <div class="goal-header">
+                    <span>Meta Diaria</span>
+                    <span class="goal-percent">80%</span>
+                </div>
+                <div class="goal-bar-bg">
+                    <div class="goal-bar-fill" style="width: 80%"></div>
+                </div>
+                <p class="goal-text">¡Sigue así! Casi completas tu racha.</p>
+            </div>
+        </div>
+    </nav>
+
+    <div class="user-profile">
+        <div class="avatar">
+            <img [src]="'https://api.dicebear.com/7.x/avataaars/svg?seed=' + user.username" alt="Avatar">
+        </div>
+        <div class="user-info">
+            <div class="user-name">{{ user.name }}</div>
+            <div class="user-plan">{{ user.plan }}</div>
+        </div>
+        <button class="logout-mini" (click)="logout()">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
+                <polyline points="16 17 21 12 16 7"></polyline>
+                <line x1="21" y1="12" x2="9" y2="12"></line>
+            </svg>
+        </button>
+    </div>
+</aside>

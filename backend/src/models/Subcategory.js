@@ -5,6 +5,10 @@ export const Subcategory = sequelize.define("Subcategory", {
     name: {
         type: DataTypes.STRING,
         allowNull: false
+    },
+    description: {
+        type: DataTypes.STRING,
+        allowNull: false
     }
 }, {
     tableName: "subcategories"

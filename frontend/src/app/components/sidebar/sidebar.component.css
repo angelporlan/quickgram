@@ -1,0 +1,241 @@
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background-color: #0e1515;
+    padding: 2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid #1f2929;
+    height: 100%;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 3rem;
+}
+
+.brand-icon {
+    width: 32px;
+    height: 32px;
+    background-color: #2ecc71;
+    color: #0e1515;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.brand-name {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: white;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    flex: 1;
+}
+
+
+.nav-section {
+    margin-bottom: 2rem;
+}
+
+.section-title {
+    font-size: 0.7rem;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 0.75rem;
+    display: block;
+    letter-spacing: 0.5px;
+    padding-left: 1rem;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.6rem 1rem;
+    color: #8b9bb4;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: all 0.2s;
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+.nav-item:hover {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.nav-item.active {
+    background-color: #2ecc71;
+    color: #0e1515;
+    font-weight: 600;
+}
+
+.mt-auto {
+    margin-top: auto;
+}
+
+.daily-goal-box {
+    background-color: #15201f;
+    border: 1px solid #1f2929;
+    padding: 1rem;
+    border-radius: 12px;
+}
+
+.goal-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 0.5rem;
+}
+
+.goal-percent {
+    color: #2ecc71;
+}
+
+.goal-bar-bg {
+    height: 6px;
+    background-color: #1f2929;
+    border-radius: 3px;
+    overflow: hidden;
+    margin-bottom: 0.5rem;
+}
+
+.goal-bar-fill {
+    height: 100%;
+    background-color: #2ecc71;
+    border-radius: 3px;
+}
+
+.goal-text {
+    font-size: 0.7rem;
+    color: #8b9bb4;
+    margin: 0;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #1f2929;
+}
+
+.avatar img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #f1c40f;
+}
+
+.user-info {
+    flex: 1;
+    overflow: hidden;
+}
+
+.user-name {
+    font-weight: 600;
+    font-size: 0.9rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: white;
+}
+
+.user-plan {
+    font-size: 0.75rem;
+    color: #8b9bb4;
+}
+
+.logout-mini {
+    background: none;
+    border: none;
+    color: #8b9bb4;
+    cursor: pointer;
+    padding: 0.25rem;
+}
+
+.logout-mini svg {
+    width: 16px;
+    height: 16px;
+}
+
+.logout-mini:hover {
+    color: #e74c3c;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        border-right: none;
+        border-top: 1px solid #1f2929;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        z-index: 1000;
+        flex-direction: row;
+        padding: 0.5rem;
+        justify-content: space-between;
+    }
+
+    .brand,
+    .user-profile,
+    .section-title,
+    .daily-goal-box {
+        display: none;
+    }
+
+    .nav-links {
+        flex-direction: row;
+        overflow-x: auto;
+        gap: 0.5rem;
+        padding: 0;
+    }
+
+    .nav-section {
+        margin-bottom: 0;
+        display: flex;
+        flex-direction: row;
+        gap: 0.5rem;
+    }
+
+    .nav-item {
+        flex-direction: column;
+        padding: 0.5rem;
+        font-size: 0.7rem;
+        gap: 0.25rem;
+        min-width: 70px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .nav-item svg {
+        width: 24px;
+        height: 24px;
+    }
+
+    .mt-auto {
+        margin-top: 0;
+        display: none;
+        /* Hide daily goal section completely on mobile */
+    }
+}

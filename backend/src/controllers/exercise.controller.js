@@ -52,3 +52,36 @@ export const getExercises = async (req, res) => {
         res.status(500).json({ message: "Error fetching exercises" });
     }
 };
+
+export const getCategories = async (req, res) => {
+    try {
+        const categories = await Category.findAll();
+        res.json(categories);
+    } catch (error) {
+        console.error(error);
+        res.status(500).json({ message: "Error fetching categories" });
+    }
+};
+
+export const getSubcategories = async (req, res) => {
+    try {
+        const { category } = req.query;
+        let where = {};
+
+        if (category) {
+            const categoryData = await Category.findOne({ where: { name: category } });
+
+            if (!categoryData) {
+                return res.status(404).json({ message: "Category not found" });
+            }
+
+            where.category_id = categoryData.id;
+        }
+
+        const subcategories = await Subcategory.findAll({ where });
+        res.json(subcategories);
+    } catch (error) {
+        console.error(error);
+        res.status(500).json({ message: "Error fetching subcategories" });
+    }
+};
