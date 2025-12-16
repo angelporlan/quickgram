@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { Observable } from 'rxjs';
+import { Observable, of } from 'rxjs';
+import { tap } from 'rxjs/operators';
 import { AuthService } from './auth.service';
 
 @Injectable({
@@ -8,15 +9,22 @@ import { AuthService } from './auth.service';
 })
 export class ExerciseService {
     private apiUrl = 'http://localhost:4000/api';
+    private cache = new Map<string, any[]>();
 
     constructor(private http: HttpClient, private authService: AuthService) { }
 
     getSubcategories(category: string): Observable<any[]> {
+        if (this.cache.has(category)) {
+            return of(this.cache.get(category)!);
+        }
+
         const token = this.authService.getToken();
         const headers = new HttpHeaders({
             'Authorization': `Bearer ${token}`
         });
 
-        return this.http.get<any[]>(`${this.apiUrl}/subcategories?category=${category}`, { headers });
+        return this.http.get<any[]>(`${this.apiUrl}/subcategories?category=${category}`, { headers }).pipe(
+            tap(data => this.cache.set(category, data))
+        );
     }
 }

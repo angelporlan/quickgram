@@ -7,6 +7,7 @@ export const seedSubcategories = async () => {
     const reading = await Category.findOne({ where: { name: "Reading" } });
     const listening = await Category.findOne({ where: { name: "Listening" } });
     const useOfEnglish = await Category.findOne({ where: { name: "Use of English" } });
+    const writing = await Category.findOne({ where: { name: "Writing" } });
 
     const subcategories = [
         // Grammar
@@ -82,6 +83,18 @@ export const seedSubcategories = async () => {
             name: "Multiple Choice",
             category_id: useOfEnglish.id,
             description: "Selección de la palabra o frase correcta entre varias opciones para completar oraciones o textos."
+        },
+
+        // Writting, email, letter
+        {
+            name: "Email",
+            category_id: writing.id,
+            description: "Ejercicios de redacción de correos electrónicos."
+        },
+        {
+            name: "Letter",
+            category_id: writing.id,
+            description: "Ejercicios de redacción de cartas."
         }
     ];
 

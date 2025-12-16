@@ -6,7 +6,8 @@ export const seedCategories = async () => {
         "Vocabulary",
         "Reading",
         "Listening",
-        "Use of English"
+        "Use of English",
+        "Writing"
     ];
 
     for (const name of categories) {

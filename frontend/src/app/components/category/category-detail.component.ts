@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { ActivatedRoute } from '@angular/router';
 import { TopicCardComponent } from './topic-card/topic-card.component';
 import { ExerciseService } from '../../services/exercise.service';
+import { finalize } from 'rxjs/operators';
 
 @Component({
     selector: 'app-category-detail',
@@ -14,6 +15,7 @@ import { ExerciseService } from '../../services/exercise.service';
 export class CategoryDetailComponent implements OnInit {
     categoryTitle: string = 'Gramática';
     urlCategory: string = '';
+    isLoading: boolean = true;
 
     // Mock Data matching the image
     // topics = [
@@ -90,8 +92,30 @@ export class CategoryDetailComponent implements OnInit {
     }
 
     getTopics() {
-        this.exerciseService.getSubcategories(this.categoryTitle).subscribe((topics: any[]) => {
-            this.topics = topics;
-        });
+        this.isLoading = true;
+        this.topics = [];
+        this.exerciseService.getSubcategories(this.categoryTitle)
+            .pipe(finalize(() => this.isLoading = false))
+            .subscribe((topics: any[]) => {
+                this.topics = topics.map(topic => ({
+                    ...topic,
+                    title: topic.name,
+                    icon: this.getIconForTopic(topic.name),
+                    status: 'not-started',
+                    progress: 0,
+                }));
+            });
+    }
+
+    private getIconForTopic(name: string): string {
+        const lowerName = name.toLowerCase();
+        if (lowerName.includes('time') || lowerName.includes('tiempo') || lowerName.includes('verb')) return 'clock';
+        if (lowerName.includes('condition') || lowerName.includes('condicion')) return 'branch';
+        if (lowerName.includes('passive') || lowerName.includes('pasiva') || lowerName.includes('voice')) return 'arrows';
+        if (lowerName.includes('speech') || lowerName.includes('report') || lowerName.includes('indirect')) return 'speech';
+        if (lowerName.includes('modal') || lowerName.includes('think') || lowerName.includes('idea')) return 'brain';
+
+        const icons = ['clock', 'branch', 'arrows', 'speech', 'brain'];
+        return icons[Math.floor(Math.random() * icons.length)];
     }
 }
