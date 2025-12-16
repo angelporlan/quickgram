@@ -1,0 +1,75 @@
+<div class="exercise-overlay">
+    <header class="exercise-header">
+        <button class="back-btn" (click)="close.emit()">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M19 12H5M12 19l-7-7 7-7" />
+            </svg>
+            Salir
+        </button>
+        <div class="header-center">
+            <span class="logo-icon">🎓</span>
+            <span class="header-title">English B2 Prep</span>
+        </div>
+        <div class="progress-info">
+            Pregunta {{ answeredGaps }} de {{ totalGaps }}
+        </div>
+    </header>
+
+    <div class="progress-bar-container">
+        <div class="progress-bar" [style.width.%]="progressPercentage"></div>
+    </div>
+
+    <div class="exercise-body">
+        <div class="content-wrapper">
+            <h1>Use of English Part 1</h1>
+            <p class="subtitle">Multiple Choice Cloze</p>
+
+            <div class="split-view">
+                <div class="text-area card">
+                    <div class="text-content">
+                        <ng-container *ngFor="let part of textParts">
+                            <span *ngIf="part.type === 'text'" [innerHTML]="part.content"></span>
+                            <span *ngIf="part.type === 'gap'" class="gap-marker"
+                                [class.active]="currentGapId === part.id" [class.answered]="userAnswers.has(part.id)"
+                                (click)="selectGap(part.id)">
+                                <span class="gap-number">{{ part.id }}</span>
+                                <span class="gap-value" *ngIf="userAnswers.has(part.id)">{{ userAnswers.get(part.id)
+                                    }}</span>
+                                <span class="gap-placeholder" *ngIf="!userAnswers.has(part.id)">?</span>
+                            </span>
+                        </ng-container>
+                    </div>
+                </div>
+
+                <div class="options-area">
+                    <div class="question-card" *ngIf="currentGapId">
+                        <div class="enunciado">
+                            <div class="lamp-icon">💡</div>
+                            <div class="enunciado-text">
+                                <span class="label">ENUNCIADO</span>
+                                <p>Selecciona la mejor opción para completar el hueco {{ currentGapId }}.</p>
+                            </div>
+                            <div class="big-question-mark">?</div>
+                        </div>
+
+                        <div class="options-list">
+                            <button *ngFor="let opt of currentOptions; let i = index" class="option-btn"
+                                [class.selected]="userAnswers.get(currentGapId!) === opt" (click)="selectOption(opt)">
+                                <span class="option-circle"></span>
+                                <span class="option-text">{{ opt }}</span>
+                            </button>
+                        </div>
+
+                        <button class="submit-btn" (click)="submit()" [disabled]="!allQuestionsAnswered">
+                            Enviar Respuesta
+                        </button>
+                    </div>
+
+                    <div class="empty-state" *ngIf="!currentGapId">
+                        <p>Selecciona un hueco en el texto para ver las opciones.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

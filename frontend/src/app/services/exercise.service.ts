@@ -27,4 +27,21 @@ export class ExerciseService {
             tap(data => this.cache.set(category, data))
         );
     }
+    getRandomExercise(level: string, subcategory: string): Observable<any[]> {
+        const token = this.authService.getToken();
+        const headers = new HttpHeaders({
+            'Authorization': `Bearer ${token}`
+        });
+
+        return this.http.get<any[]>(`${this.apiUrl}/exercises?level=${level}&subcategory=${subcategory}&random=true`, { headers });
+    }
+
+    submitAttempt(exerciseId: number, attemptData: any): Observable<any> {
+        const token = this.authService.getToken();
+        const headers = new HttpHeaders({
+            'Authorization': `Bearer ${token}`
+        });
+
+        return this.http.post(`${this.apiUrl}/exercises/${exerciseId}/attempt`, attemptData, { headers });
+    }
 }

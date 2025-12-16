@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { TopicCardComponent } from './topic-card/topic-card.component';
 import { ExerciseService } from '../../services/exercise.service';
 import { finalize } from 'rxjs/operators';
@@ -64,7 +64,7 @@ export class CategoryDetailComponent implements OnInit {
     // ];
     topics: any[] = [];
 
-    constructor(private route: ActivatedRoute, private exerciseService: ExerciseService) { }
+    constructor(private route: ActivatedRoute, private exerciseService: ExerciseService, private router: Router) { }
 
     ngOnInit() {
         this.route.paramMap.subscribe(params => {
@@ -117,5 +117,9 @@ export class CategoryDetailComponent implements OnInit {
 
         const icons = ['clock', 'branch', 'arrows', 'speech', 'brain'];
         return icons[Math.floor(Math.random() * icons.length)];
+    }
+
+    handleStartTopic(topic: any) {
+        this.router.navigate(['/exercise', topic.title]);
     }
 }

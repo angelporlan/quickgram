@@ -1,10 +1,8 @@
 <div class="category-container">
-    <!-- Breadcrumb -->
     <div class="breadcrumb">
         <span>Inicio</span> / <span class="current">{{ categoryTitle }}</span>
     </div>
 
-    <!-- Header -->
     <header class="category-header">
         <div class="text-content">
             <h1>{{ categoryTitle }}</h1>
@@ -19,7 +17,6 @@
         </div>
     </header>
 
-    <!-- Topics Grid -->
     <div class="topics-grid skeleton-container" *ngIf="isLoading">
         <div class="skeleton-card" *ngFor="let i of [1,2,3,4]">
             <div class="skeleton-header">
@@ -36,6 +33,7 @@
     </div>
 
     <div class="topics-grid" *ngIf="!isLoading">
-        <app-topic-card *ngFor="let topic of topics" [topic]="topic"></app-topic-card>
+        <app-topic-card *ngFor="let topic of topics" [topic]="topic"
+            (startTopic)="handleStartTopic($event)"></app-topic-card>
     </div>
 </div>

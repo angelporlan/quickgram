@@ -14,6 +14,20 @@ export const routes: Routes = [
             { path: 'category/:slug', component: CategoryDetailComponent }
         ]
     },
+    {
+        path: 'exercise/:subcategory',
+        loadComponent: () => import('./components/exercises/exercise-page/exercise-page.component').then(m => m.ExercisePageComponent)
+    },
+    {
+        path: 'results',
+        loadComponent: () => import('./components/results/exercise-results/exercise-results.component').then(m => m.ExerciseResultsComponent),
+        children: [
+            {
+                path: 'multiple-choice',
+                loadComponent: () => import('./components/results/reviews/multiple-choice-review/multiple-choice-review.component').then(m => m.MultipleChoiceReviewComponent)
+            }
+        ]
+    },
     { path: 'login', component: LoginComponent },
     { path: 'register', component: RegisterComponent },
     { path: '**', redirectTo: '' }

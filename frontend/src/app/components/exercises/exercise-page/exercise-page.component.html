@@ -1,0 +1,6 @@
+<div *ngIf="isLoading" class="loading-container">
+    <p>Cargando ejercicio...</p>
+</div>
+
+<app-multiple-choice *ngIf="!isLoading && exercise" [exercise]="exercise" (close)="goBack()">
+</app-multiple-choice>

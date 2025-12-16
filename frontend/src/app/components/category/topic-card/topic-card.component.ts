@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -10,4 +10,11 @@ import { CommonModule } from '@angular/common';
 })
 export class TopicCardComponent {
     @Input() topic: any;
+    @Output() startTopic = new EventEmitter<any>();
+
+    onStart() {
+        if (this.topic.status !== 'locked') {
+            this.startTopic.emit(this.topic);
+        }
+    }
 }

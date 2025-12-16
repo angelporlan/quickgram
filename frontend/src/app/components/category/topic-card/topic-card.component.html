@@ -55,7 +55,7 @@
             </div>
         </div>
 
-        <button class="action-btn" [ngClass]="{
+        <button class="action-btn" (click)="onStart()" [ngClass]="{
         'btn-primary': topic.status === 'in-progress',
         'btn-outline': topic.status !== 'in-progress' && topic.status !== 'locked',
         'btn-locked': topic.status === 'locked'

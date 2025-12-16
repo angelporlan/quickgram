@@ -1,0 +1,82 @@
+<div class="results-layout" *ngIf="result">
+    <div class="main-content">
+        <header class="results-header">
+            <div class="breadcrumb">
+                <span>Inicio</span> <span class="separator">›</span>
+                <span>{{ exercise?.Subcategory?.name || 'Ejercicio' }}</span> <span class="separator">›</span>
+                <span class="current">Resultados</span>
+            </div>
+
+            <h1 class="page-title">Resultados: {{ exercise?.Subcategory?.name }}</h1>
+            <div class="meta-info">
+                <span class="icon">🕒</span> Completado el {{ result.timestamp | date:'d MMM, h:mm a' }}
+            </div>
+        </header>
+
+        <div class="stats-container">
+            <div class="stat-card score-card">
+                <div class="stat-content">
+                    <span class="label">PUNTUACIÓN</span>
+                    <div class="score-value">{{ scorePercentage }}%</div>
+                    <div class="badge" [class.pass]="scorePercentage >= 50" [class.fail]="scorePercentage < 50">
+                        {{ scorePercentage >= 50 ? '👍 Aprobado' : '👎 Suspenso' }}
+                    </div>
+                </div>
+                <div class="circle-progress" [style.--percent]="scorePercentage">
+                    <svg viewBox="0 0 36 36">
+                        <path class="circle-bg"
+                            d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                        <path class="circle" [attr.stroke-dasharray]="scorePercentage + ', 100'"
+                            d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                    </svg>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="icon-check">✓</div>
+                <div class="stat-text">
+                    <span class="label">Aciertos</span>
+                    <div class="value">{{ result.correct_gaps }}</div>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="icon-cross">✕</div>
+                <div class="stat-text">
+                    <span class="label">Errores</span>
+                    <div class="value">{{ result.total_gaps - result.correct_gaps }}</div>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="section-title">Revisión detallada</h2>
+
+        <router-outlet></router-outlet>
+
+    </div>
+
+    <aside class="sidebar">
+        <div class="ai-card">
+            <div class="ai-icon">✨</div>
+            <h3>¿Dudas con los errores?</h3>
+            <p>Obtén una explicación detallada y personalizada de tus fallos con nuestra IA.</p>
+            <button class="ai-btn">
+                <span class="btn-icon">💬</span> Explicar con IA
+            </button>
+        </div>
+
+        <div class="ai-analysis-card">
+            <div class="card-header">
+                <span class="icon">🤖</span> ANÁLISIS IA <span class="version">v2.4</span>
+            </div>
+            <div class="analysis-content">
+                <p class="placeholder-text">Selecciona una pregunta para ver el análisis...</p>
+            </div>
+        </div>
+
+        <button class="back-btn">
+            <span class="btn-icon">↩</span> Volver al inicio
+        </button>
+    </aside>
+
+</div>
