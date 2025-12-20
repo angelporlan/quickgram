@@ -252,6 +252,51 @@
     margin-top: 3rem;
 }
 
+.analysis-text {
+    color: #e2e8f0;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    white-space: pre-wrap;
+    /* Visualize newlines from backend */
+}
+
+/* Loading Animation */
+.ai-loading {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 2rem 0;
+}
+
+.typing-dot {
+    width: 8px;
+    height: 8px;
+    background-color: #2ecc71;
+    border-radius: 50%;
+    animation: typing 1.4s infinite ease-in-out both;
+}
+
+.typing-dot:nth-child(1) {
+    animation-delay: -0.32s;
+}
+
+.typing-dot:nth-child(2) {
+    animation-delay: -0.16s;
+}
+
+@keyframes typing {
+
+    0%,
+    80%,
+    100% {
+        transform: scale(0);
+    }
+
+    40% {
+        transform: scale(1);
+    }
+}
+
 .back-btn {
     width: 100%;
     background-color: #2ecc71;

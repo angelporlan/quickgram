@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { CommonModule, Location } from '@angular/common';
 import { ActivatedRoute, Router } from '@angular/router';
 import { ExerciseService } from '../../../services/exercise.service';
+import { ExerciseResultService } from '../../../services/exercise-result.service';
 import { MultipleChoiceComponent } from '../multiple-choice/multiple-choice.component';
 
 @Component({
@@ -33,7 +34,8 @@ export class ExercisePageComponent implements OnInit {
         private route: ActivatedRoute,
         private router: Router,
         private exerciseService: ExerciseService,
-        private location: Location
+        private location: Location,
+        private resultService: ExerciseResultService
     ) { }
 
     ngOnInit() {
@@ -63,5 +65,10 @@ export class ExercisePageComponent implements OnInit {
 
     goBack() {
         this.location.back();
+    }
+
+    handleAttemptSubmission(data: any) {
+        this.resultService.setResult(data.exercise, data.result, data.attemptId);
+        this.router.navigate(['/results/multiple-choice']);
     }
 }

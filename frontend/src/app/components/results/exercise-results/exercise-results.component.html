@@ -60,22 +60,38 @@
             <div class="ai-icon">✨</div>
             <h3>¿Dudas con los errores?</h3>
             <p>Obtén una explicación detallada y personalizada de tus fallos con nuestra IA.</p>
-            <button class="ai-btn">
-                <span class="btn-icon">💬</span> Explicar con IA
+            <button class="ai-btn" (click)="explainWithIA()" [disabled]="isAnalyzing">
+                <span class="btn-icon">💬</span> {{ isAnalyzing ? 'Analizando...' : 'Explicar con IA' }}
             </button>
         </div>
 
-        <div class="ai-analysis-card">
+        <div class="ai-analysis-card" *ngIf="isAnalyzing || analysisResult">
             <div class="card-header">
                 <span class="icon">🤖</span> ANÁLISIS IA <span class="version">v2.4</span>
             </div>
             <div class="analysis-content">
-                <p class="placeholder-text">Selecciona una pregunta para ver el análisis...</p>
+                <div *ngIf="isAnalyzing" class="ai-loading">
+                    <div class="typing-dot"></div>
+                    <div class="typing-dot"></div>
+                    <div class="typing-dot"></div>
+                </div>
+                <!-- Using innerHTML to render line breaks if backend returns \n. 
+                     Angular doesn't parse markdown by default, user might need a pipe or just pre-wrap CSS -->
+                <p *ngIf="analysisResult" class="analysis-text" [innerHTML]="analysisResult"></p>
+            </div>
+        </div>
+
+        <div class="ai-analysis-card" *ngIf="!isAnalyzing && !analysisResult">
+            <div class="card-header">
+                <span class="icon">🤖</span> ANÁLISIS IA <span class="version">v2.4</span>
+            </div>
+            <div class="analysis-content">
+                <p class="placeholder-text">Selecciona "Explicar con IA" para ver el análisis...</p>
             </div>
         </div>
 
         <button class="back-btn">
-            <span class="btn-icon">↩</span> Volver al inicio
+            <span class="btn-icon" (click)="goHome()">↩</span> Volver al inicio
         </button>
     </aside>
 

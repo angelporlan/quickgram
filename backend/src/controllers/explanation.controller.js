@@ -75,7 +75,21 @@ Explain clearly:
 - What the correct option is
 - Give a short grammar or vocabulary explanation
 - Keep it concise and easy to understand
-        `;
+
+Output requirements:
+- Return the explanation ONLY in HTML
+- Use semantic HTML tags (div, p, ul, li, strong)
+- Include inline CSS styles (do NOT use external styles or classes)
+- Structure the response with clear sections:
+  - Title
+  - Why it's incorrect
+  - Correct answer
+  - Explanation
+- Use simple, readable styling (fonts, spacing, colors)
+- Do NOT include markdown
+- Do NOT include explanations outside the HTML
+`;
+
 
         const completion = await openai.chat.completions.create({
             model: "tngtech/deepseek-r1t2-chimera:free",

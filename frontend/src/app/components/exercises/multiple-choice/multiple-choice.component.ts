@@ -1,7 +1,5 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { ExerciseService } from '../../../services/exercise.service';
-import { ExerciseResultService } from '../../../services/exercise-result.service';
-import { Router } from '@angular/router';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -14,6 +12,7 @@ import { CommonModule } from '@angular/common';
 export class MultipleChoiceComponent implements OnInit {
     @Input() exercise: any;
     @Output() close = new EventEmitter<void>();
+    @Output() attemptSubmitted = new EventEmitter<any>();
 
     parsedOptions: any = {};
     parsedAnswers: any = {};
@@ -26,9 +25,7 @@ export class MultipleChoiceComponent implements OnInit {
     answeredGaps = 0;
 
     constructor(
-        private exerciseService: ExerciseService,
-        private resultService: ExerciseResultService,
-        private router: Router
+        private exerciseService: ExerciseService
     ) { }
 
     ngOnInit() {
@@ -137,8 +134,14 @@ export class MultipleChoiceComponent implements OnInit {
         this.exerciseService.submitAttempt(this.exercise.id, payload).subscribe({
             next: (res) => {
                 console.log('Submission successful', res);
-                this.resultService.setResult(this.exercise, payload);
-                this.router.navigate(['/results/multiple-choice']);
+                const attemptId = res.attempt.id;
+                console.log('Attempt ID:', attemptId);
+
+                this.attemptSubmitted.emit({
+                    exercise: this.exercise,
+                    result: payload,
+                    attemptId: attemptId
+                });
             },
             error: (err) => {
                 console.error('Submission failed', err);
