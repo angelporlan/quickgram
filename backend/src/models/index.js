@@ -22,7 +22,8 @@ Exercise.hasMany(UserExerciseAttempt, {
     onDelete: "CASCADE"
 });
 UserExerciseAttempt.belongsTo(Exercise, {
-    foreignKey: "exercise_id"
+    foreignKey: "exercise_id",
+    as: "exercise"
 });
 
 // Category ↔ Subcategory

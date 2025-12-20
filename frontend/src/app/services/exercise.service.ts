@@ -53,4 +53,13 @@ export class ExerciseService {
 
         return this.http.post(`${this.apiUrl}/attempts/${attemptId}/explain`, {}, { headers });
     }
+
+    getAttempt(attemptId: number): Observable<any> {
+        const token = this.authService.getToken();
+        const headers = new HttpHeaders({
+            'Authorization': `Bearer ${token}`
+        });
+
+        return this.http.get(`${this.apiUrl}/attempts/${attemptId}`, { headers });
+    }
 }

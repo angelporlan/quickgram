@@ -21,7 +21,8 @@ export const explainAttempt = async (req, res) => {
                 user_id: userId
             },
             include: {
-                model: Exercise
+                model: Exercise,
+                as: 'exercise'
             }
         });
 
@@ -62,10 +63,10 @@ export const explainAttempt = async (req, res) => {
 You are an English B2 exam teacher.
 
 Exercise:
-${attempt.Exercise.question_text}
+${attempt.exercise.question_text}
 
 Correct answer:
-${attempt.Exercise.correct_answer}
+${attempt.exercise.correct_answer}
 
 Student answer:
 ${JSON.stringify(attempt.user_answer)}

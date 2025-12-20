@@ -19,6 +19,16 @@ export const routes: Routes = [
         loadComponent: () => import('./components/exercises/exercise-page/exercise-page.component').then(m => m.ExercisePageComponent)
     },
     {
+        path: 'results/:attemptId',
+        loadComponent: () => import('./components/results/exercise-results/exercise-results.component').then(m => m.ExerciseResultsComponent),
+        children: [
+            {
+                path: 'multiple-choice',
+                loadComponent: () => import('./components/results/reviews/multiple-choice-review/multiple-choice-review.component').then(m => m.MultipleChoiceReviewComponent)
+            }
+        ]
+    },
+    {
         path: 'results',
         loadComponent: () => import('./components/results/exercise-results/exercise-results.component').then(m => m.ExerciseResultsComponent),
         children: [

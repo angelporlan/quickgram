@@ -69,6 +69,6 @@ export class ExercisePageComponent implements OnInit {
 
     handleAttemptSubmission(data: any) {
         this.resultService.setResult(data.exercise, data.result, data.attemptId);
-        this.router.navigate(['/results/multiple-choice']);
+        this.router.navigate(['/results', data.attemptId, 'multiple-choice']);
     }
 }

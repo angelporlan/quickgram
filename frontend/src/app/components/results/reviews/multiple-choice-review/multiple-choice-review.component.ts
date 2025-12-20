@@ -17,27 +17,54 @@ export class MultipleChoiceReviewComponent implements OnInit {
     constructor(private resultService: ExerciseResultService) { }
 
     ngOnInit() {
-        this.result = this.resultService.getResult();
-        this.exercise = this.resultService.getExercise();
+        // Subscribe to changes in the service
+        this.resultService.exercise$.subscribe(exercise => {
+            this.exercise = exercise;
+            if (this.exercise && this.result) {
+                this.processReview();
+            }
+        });
 
-        if (this.exercise && this.result) {
-            this.processReview();
-        }
+        this.resultService.result$.subscribe(result => {
+            this.result = result;
+            if (this.exercise && this.result) {
+                this.processReview();
+            }
+        });
     }
 
     processReview() {
         const parsedQuestionText = this.exercise.question_text;
-        const parsedCorrectAnswers = JSON.parse(this.exercise.correct_answer);
+        let parsedCorrectAnswers = this.exercise.correct_answer;
+        let parsedUserAnswers = this.result.user_answer;
+
+        if (typeof parsedCorrectAnswers === 'string') {
+            try {
+                parsedCorrectAnswers = JSON.parse(parsedCorrectAnswers);
+            } catch (e) {
+                console.error("Error parsing correct_answer", e);
+                parsedCorrectAnswers = {};
+            }
+        }
+
+        if (typeof parsedUserAnswers === 'string') {
+            try {
+                parsedUserAnswers = JSON.parse(parsedUserAnswers);
+            } catch (e) {
+                console.error("Error parsing user_answer", e);
+                parsedUserAnswers = {};
+            }
+        }
 
         this.processedQuestions = [];
         const gapIds = Object.keys(parsedCorrectAnswers).map(k => parseInt(k)).sort((a, b) => a - b);
 
         for (const gapId of gapIds) {
-            const isCorrect = this.result.user_answer[gapId] === parsedCorrectAnswers[gapId];
+            const isCorrect = parsedUserAnswers[gapId] === parsedCorrectAnswers[gapId];
 
             this.processedQuestions.push({
                 id: gapId,
-                userAnswer: this.result.user_answer[gapId],
+                userAnswer: parsedUserAnswers[gapId],
                 correctAnswer: parsedCorrectAnswers[gapId],
                 isCorrect: isCorrect,
                 context: this.getContextForGap(parsedQuestionText, gapId)

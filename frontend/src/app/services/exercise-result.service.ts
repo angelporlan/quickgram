@@ -1,25 +1,29 @@
 import { Injectable } from '@angular/core';
+import { BehaviorSubject } from 'rxjs';
 
 @Injectable({
     providedIn: 'root'
 })
 export class ExerciseResultService {
-    private result: any = null;
-    private exercise: any = null;
+    private resultSubject = new BehaviorSubject<any>(null);
+    private exerciseSubject = new BehaviorSubject<any>(null);
+
+    result$ = this.resultSubject.asObservable();
+    exercise$ = this.exerciseSubject.asObservable();
 
     setResult(exercise: any, result: any, attemptId?: number) {
-        this.exercise = exercise;
-        this.result = result;
-        if (attemptId) {
-            this.result.attemptId = attemptId;
+        if (attemptId && result) {
+            result.attemptId = attemptId;
         }
+        this.exerciseSubject.next(exercise);
+        this.resultSubject.next(result);
     }
 
     getResult() {
-        return this.result;
+        return this.resultSubject.getValue();
     }
 
     getExercise() {
-        return this.exercise;
+        return this.exerciseSubject.getValue();
     }
 }
