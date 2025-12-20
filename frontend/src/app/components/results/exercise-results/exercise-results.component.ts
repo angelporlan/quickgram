@@ -18,6 +18,9 @@ export class ExerciseResultsComponent implements OnInit {
     analysisResult: string | null = null;
     attemptId: number | null = null;
 
+    structuredExplanation: any = null;
+    htmlExplanation: string | null = null;
+
     constructor(
         private resultService: ExerciseResultService,
         private router: Router,
@@ -67,7 +70,7 @@ export class ExerciseResultsComponent implements OnInit {
 
                 // Check for existing explanation
                 if (data.AttemptExplanation) {
-                    this.analysisResult = data.AttemptExplanation.explanation;
+                    this.processExplanation(data.AttemptExplanation.explanation);
                 }
 
 
@@ -94,11 +97,12 @@ export class ExerciseResultsComponent implements OnInit {
         }
 
         this.isAnalyzing = true;
-        this.analysisResult = null;
+        this.structuredExplanation = null;
+        this.htmlExplanation = null;
 
         this.exerciseService.explainAttempt(this.attemptId).subscribe({
             next: (res) => {
-                this.analysisResult = res.explanation;
+                this.processExplanation(res.explanation);
                 this.isAnalyzing = false;
             },
             error: (err) => {
@@ -107,6 +111,21 @@ export class ExerciseResultsComponent implements OnInit {
                 alert('Error fetching AI explanation.');
             }
         });
+    }
+
+    processExplanation(text: string) {
+        try {
+            // Try to find JSON content if mixed with text (though prompt says strict JSON)
+            const jsonMatch = text.match(/\{[\s\S]*\}/);
+            const jsonText = jsonMatch ? jsonMatch[0] : text;
+
+            this.structuredExplanation = JSON.parse(jsonText);
+            this.htmlExplanation = null;
+        } catch (e) {
+            // Fallback to HTML
+            this.structuredExplanation = null;
+            this.htmlExplanation = text;
+        }
     }
 
     goHome() {

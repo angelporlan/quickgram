@@ -59,8 +59,64 @@ export const explainAttempt = async (req, res) => {
             });
         }
 
-        const prompt = `
+        let prompt = '';
+        const systemPromptJson = `
 You are an English B2 exam teacher.
+
+Output requirements:
+- Return the explanation in strict JSON format.
+- Structure:
+{
+  "general_feedback": "string (motivational feedback + summary of performance)",
+  "corrections": [
+    {
+        "question_id": number (the gap id),
+        "status": "correct" | "incorrect",
+        "user_answer": "string",
+        "correct_answer": "string",
+        "explanation": "string (concise grammar/vocabulary rule)"
+    }
+  ]
+}
+`;
+
+        const systemPromptHtml = `
+You are an English B2 exam teacher.
+
+Output requirements:
+- Return the explanation ONLY in HTML
+- Use semantic HTML tags (div, p, ul, li, strong)
+- Include inline CSS styles (do NOT use external styles or classes)
+- Structure the response with clear sections:
+  - Title
+  - Why it's incorrect
+  - Correct answer
+  - Explanation
+- Use simple, readable styling (fonts, spacing, colors)
+- Do NOT include markdown
+- Do NOT include explanations outside the HTML
+`;
+
+        const isMultipleChoice = attempt.exercise.type === 'multiple_choice' || attempt.exercise.type === 'multiple-choice';
+
+        if (isMultipleChoice) {
+            prompt = `
+${systemPromptJson}
+
+Exercise:
+${attempt.exercise.question_text}
+
+Correct answer:
+${attempt.exercise.correct_answer}
+
+Student answer:
+${JSON.stringify(attempt.user_answer)}
+
+Explain clearly why the student answer is wrong and what the correct option is for each incorrect gap.
+`;
+        } else {
+            prompt = `
+${systemPromptHtml}
 
 Exercise:
 ${attempt.exercise.question_text}
@@ -76,20 +132,8 @@ Explain clearly:
 - What the correct option is
 - Give a short grammar or vocabulary explanation
 - Keep it concise and easy to understand
-
-Output requirements:
-- Return the explanation ONLY in HTML
-- Use semantic HTML tags (div, p, ul, li, strong)
-- Include inline CSS styles (do NOT use external styles or classes)
-- Structure the response with clear sections:
-  - Title
-  - Why it's incorrect
-  - Correct answer
-  - Explanation
-- Use simple, readable styling (fonts, spacing, colors)
-- Do NOT include markdown
-- Do NOT include explanations outside the HTML
 `;
+        }
 
 
         const completion = await openai.chat.completions.create({
