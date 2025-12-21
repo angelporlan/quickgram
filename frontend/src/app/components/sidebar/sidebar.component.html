@@ -94,7 +94,7 @@
         </div>
     </nav>
 
-    <div class="user-profile" routerLink="/user">
+    <div class="user-profile" routerLink="/user" routerLinkActive="active" *ngIf="user">
         <div class="avatar">
             <img [src]="'https://api.dicebear.com/7.x/avataaars/svg?seed=' + user.username" alt="Avatar">
         </div>
