@@ -25,11 +25,18 @@ export class AttemptsComponent implements OnInit {
         streak: 0
     };
 
-    categories = ['Todos', 'Gramática', 'Vocabulario', 'Lectura', 'Escucha'];
+    categories = ['Todos'];
 
     constructor(private exerciseService: ExerciseService) { }
 
     ngOnInit() {
+        this.exerciseService.getCategories().subscribe({
+            next: (cats) => {
+                this.categories = ['Todos', ...cats.map(c => c.name)];
+            },
+            error: (err) => console.error('Error fetching categories', err)
+        });
+
         this.exerciseService.getUserAttempts().subscribe({
             next: (data) => {
                 this.attempts = data;
@@ -126,12 +133,9 @@ export class AttemptsComponent implements OnInit {
 
         if (this.selectedCategory !== 'Todos') {
             temp = temp.filter(a => {
-                const sub = a.exercise.Subcategory?.name || '';
-                if (this.selectedCategory === 'Gramática') return sub.includes('Grammar') || sub.includes('Gramática');
-                if (this.selectedCategory === 'Vocabulario') return sub.includes('Vocabulary') || sub.includes('Vocabulario');
-                if (this.selectedCategory === 'Lectura') return sub.includes('Reading') || sub.includes('Lectura');
-                if (this.selectedCategory === 'Escucha') return sub.includes('Listening') || sub.includes('Escucha');
-                return true;
+                // Now we check the Category name directly from the nested include
+                const catName = a.exercise.Subcategory?.Category?.name || '';
+                return catName === this.selectedCategory;
             });
         }
 

@@ -10,8 +10,23 @@ import { AuthService } from './auth.service';
 export class ExerciseService {
     private apiUrl = 'http://localhost:4000/api';
     private cache = new Map<string, any[]>();
+    private cacheCategories = new Map<string, any[]>();
 
     constructor(private http: HttpClient, private authService: AuthService) { }
+
+    getCategories(): Observable<any[]> {
+        if (this.cacheCategories.has('categories')) {
+            return of(this.cacheCategories.get('categories')!);
+        }
+
+        const token = this.authService.getToken();
+        const headers = new HttpHeaders({
+            'Authorization': `Bearer ${token}`
+        });
+        return this.http.get<any[]>(`${this.apiUrl}/categories`, { headers }).pipe(
+            tap(data => this.cacheCategories.set('categories', data))
+        );
+    }
 
     getSubcategories(category: string): Observable<any[]> {
         if (this.cache.has(category)) {

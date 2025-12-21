@@ -3,6 +3,7 @@ import { Exercise } from "../models/Exercise.js";
 import { Subcategory } from "../models/Subcategory.js";
 import { AttemptExplanation } from "../models/AttemptExplanation.js";
 import { Level } from "../models/Level.js";
+import { Category } from "../models/Category.js";
 
 export const createExerciseAttempt = async (req, res) => {
     try {
@@ -94,7 +95,11 @@ export const getUserAttempts = async (req, res) => {
                     include: [
                         {
                             model: Subcategory,
-                            attributes: ['name']
+                            attributes: ['name'],
+                            include: [{
+                                model: Category,
+                                attributes: ['name']
+                            }]
                         },
                         {
                             model: Level,
