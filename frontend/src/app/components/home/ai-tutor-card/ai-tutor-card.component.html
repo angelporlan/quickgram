@@ -26,7 +26,7 @@
         <div class="progress-bar-bg">
             <div class="progress-bar-fill" [style.width.%]="usagePercent"></div>
         </div>
-        <p class="usage-note" *ngIf="stats.expiration_date">Próxima renovación el {{ stats.expiration_date |
+        <p class="usage-note" *ngIf="showRenewalInfo">Próxima renovación el {{ stats.expiration_date |
             date:'dd/MM/yyyy' }}.
         </p>
     </div>

@@ -12,19 +12,33 @@ import { UserService } from '../../../services/user.service';
 export class AiTutorCardComponent implements OnInit {
     stats: any = null;
     usagePercent: number = 0;
+    showRenewalInfo: boolean = false;
 
     constructor(private userService: UserService) { }
 
     ngOnInit() {
         this.userService.getAiUsage().subscribe({
             next: (data) => {
+                console.log(data.expiration_date);
                 this.stats = data;
                 this.calculateUsagePercent();
+                this.checkExpirationDate(data.expiration_date);
             },
             error: (err) => {
                 console.error('Error fetching AI usage stats', err);
             }
         });
+    }
+
+    checkExpirationDate(dateStr: string) {
+        if (!dateStr) {
+            this.showRenewalInfo = false;
+            return;
+        }
+        const today = new Date();
+        const expiration = new Date(dateStr);
+        // Show only if expiration is in the future
+        this.showRenewalInfo = expiration > today;
     }
 
     calculateUsagePercent() {
