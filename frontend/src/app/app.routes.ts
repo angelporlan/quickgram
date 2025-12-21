@@ -11,6 +11,7 @@ export const routes: Routes = [
         component: MainLayoutComponent,
         children: [
             { path: '', component: HomeComponent },
+            { path: 'attempts', loadComponent: () => import('./components/attempts/attempts.component').then(m => m.AttemptsComponent) },
             { path: 'category/:slug', component: CategoryDetailComponent }
         ]
     },

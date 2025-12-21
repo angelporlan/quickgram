@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { ProgressCardComponent } from './progress-card/progress-card.component';
 import { AiTutorCardComponent } from './ai-tutor-card/ai-tutor-card.component';
 import { QuickPracticeCardComponent } from './quick-practice-card/quick-practice-card.component';
+import { AttemptsCardComponent } from './attempts-card/attempts-card.component';
 
 @Component({
     selector: 'app-home',
@@ -11,7 +12,8 @@ import { QuickPracticeCardComponent } from './quick-practice-card/quick-practice
         CommonModule,
         ProgressCardComponent,
         AiTutorCardComponent,
-        QuickPracticeCardComponent
+        QuickPracticeCardComponent,
+        AttemptsCardComponent
     ],
     templateUrl: './home.component.html',
     styleUrl: './home.component.css'

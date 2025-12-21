@@ -1,0 +1,39 @@
+<div class="attempts-container">
+    <header class="page-header">
+        <h1>Mis Intentos</h1>
+        <p>Revisa tus ejercicios pasados y aprende de tus errores</p>
+    </header>
+
+    <div *ngIf="loading" class="loading">
+        Cargando intentos...
+    </div>
+
+    <div *ngIf="!loading && attempts.length === 0" class="empty-state">
+        <p>Aún no has realizado ningún ejercicio.</p>
+        <a routerLink="/" class="btn-primary">Ir al Dashboard</a>
+    </div>
+
+    <div *ngIf="!loading && attempts.length > 0" class="attempts-list">
+        <div *ngFor="let attempt of attempts" class="attempt-card">
+            <div class="attempt-info">
+                <h3>{{ attempt.exercise.question_text | slice:0:50 }}{{ attempt.exercise.question_text.length > 50 ?
+                    '...' : '' }}</h3>
+                <div class="meta-badges">
+                    <span class="subcategory">{{ attempt.exercise.Subcategory?.name || 'Practica' }}</span>
+                    <span *ngIf="attempt.exercise.Level" class="level-badge">{{ attempt.exercise.Level.name }}</span>
+                </div>
+                <span class="date">{{ attempt.created_at | date:'medium' }}</span>
+            </div>
+            <div class="attempt-stats">
+                <div class="score"
+                    [ngClass]="getScoreColor(calculatePercentage(attempt.correct_gaps, attempt.total_gaps))">
+                    <span class="score-value">{{ calculatePercentage(attempt.correct_gaps, attempt.total_gaps)
+                        }}%</span>
+                    <span class="score-label">Acierto</span>
+                </div>
+                <a [routerLink]="['/results', attempt.id, toSlug(attempt.exercise.Subcategory?.name || 'practica')]"
+                    class="btn-view">Ver Detalles</a>
+            </div>
+        </div>
+    </div>
+</div>

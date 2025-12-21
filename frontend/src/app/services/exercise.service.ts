@@ -62,4 +62,13 @@ export class ExerciseService {
 
         return this.http.get(`${this.apiUrl}/attempts/${attemptId}`, { headers });
     }
+
+    getUserAttempts(): Observable<any[]> {
+        const token = this.authService.getToken();
+        const headers = new HttpHeaders({
+            'Authorization': `Bearer ${token}`
+        });
+
+        return this.http.get<any[]>(`${this.apiUrl}/attempts`, { headers });
+    }
 }

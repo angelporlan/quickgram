@@ -2,6 +2,7 @@ import { UserExerciseAttempt } from "../models/UserExerciseAttempt.js";
 import { Exercise } from "../models/Exercise.js";
 import { Subcategory } from "../models/Subcategory.js";
 import { AttemptExplanation } from "../models/AttemptExplanation.js";
+import { Level } from "../models/Level.js";
 
 export const createExerciseAttempt = async (req, res) => {
     try {
@@ -74,5 +75,40 @@ export const getExerciseAttemptById = async (req, res) => {
     } catch (error) {
         console.error(error);
         res.status(500).json({ message: "Error fetching attempt" });
+    }
+};
+
+export const getUserAttempts = async (req, res) => {
+    try {
+        const userId = req.user.id;
+
+        const attempts = await UserExerciseAttempt.findAll({
+            where: {
+                user_id: userId
+            },
+            include: [
+                {
+                    model: Exercise,
+                    as: 'exercise',
+                    // Removed invalid attributes like title/difficulty
+                    include: [
+                        {
+                            model: Subcategory,
+                            attributes: ['name']
+                        },
+                        {
+                            model: Level,
+                            attributes: ['name']
+                        }
+                    ]
+                }
+            ],
+            order: [['created_at', 'DESC']]
+        });
+
+        res.json(attempts);
+    } catch (error) {
+        console.error(error);
+        res.status(500).json({ message: "Error fetching user attempts" });
     }
 };
