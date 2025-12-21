@@ -13,6 +13,8 @@ export class MultipleChoiceReviewComponent implements OnInit {
     result: any;
     exercise: any;
     processedQuestions: any[] = [];
+    fullTextWithSolutions: string = '';
+    showFullText: boolean = false;
 
     constructor(private resultService: ExerciseResultService) { }
 
@@ -59,6 +61,9 @@ export class MultipleChoiceReviewComponent implements OnInit {
         this.processedQuestions = [];
         const gapIds = Object.keys(parsedCorrectAnswers).map(k => parseInt(k)).sort((a, b) => a - b);
 
+        // Generate full text with solutions
+        this.fullTextWithSolutions = this.generateFullText(parsedQuestionText, parsedCorrectAnswers);
+
         for (const gapId of gapIds) {
             const isCorrect = parsedUserAnswers[gapId] === parsedCorrectAnswers[gapId];
 
@@ -70,6 +75,29 @@ export class MultipleChoiceReviewComponent implements OnInit {
                 context: this.getContextForGap(parsedQuestionText, gapId)
             });
         }
+    }
+
+    generateFullText(text: string, correctAnswers: any): string {
+        let fullText = text;
+        const gapIds = Object.keys(correctAnswers).map(k => parseInt(k)).sort((a, b) => b - a);
+
+        gapIds.forEach(id => {
+            const answer = correctAnswers[id];
+            // Regex to find the marker (N) and any surrounding dots/underscores that represent the gap
+            // Matches:
+            // 1. Optional dots/underscores before
+            // 2. The marker (N)
+            // 3. Optional dots/underscores after
+            const regex = new RegExp(`[._]*\\s*\\(${id}\\)\\s*[._]*`, 'g');
+
+            fullText = fullText.replace(regex, `<span class="filled-answer">${answer}</span>`);
+        });
+
+        return fullText;
+    }
+
+    toggleFullText() {
+        this.showFullText = !this.showFullText;
     }
 
     getContextForGap(text: string, gapId: number): string {
@@ -85,5 +113,10 @@ export class MultipleChoiceReviewComponent implements OnInit {
         if (end < text.length) sub = sub + '...';
 
         return sub.replace(marker, '');
+    }
+
+    removePointsFills(text: string): string {
+        return text.replace(/\s*\(\d+\)\s*/g, '')
+            .replace(/(\.{2,}|…+)/g, '');
     }
 }

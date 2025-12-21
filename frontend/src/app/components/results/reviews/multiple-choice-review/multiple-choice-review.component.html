@@ -1,3 +1,13 @@
+<div class="full-text-section" *ngIf="fullTextWithSolutions">
+    <button class="toggle-text-btn" (click)="toggleFullText()">
+        {{ showFullText ? 'Ocultar Texto Completo' : 'Ver Texto Completo con Soluciones' }}
+    </button>
+
+    <div class="full-text-container" *ngIf="showFullText">
+        <div class="text-content" [innerHTML]="removePointsFills(fullTextWithSolutions)"></div>
+    </div>
+</div>
+
 <div class="review-list">
     <div class="review-card" *ngFor="let q of processedQuestions" [class.correct]="q.isCorrect"
         [class.incorrect]="!q.isCorrect">
