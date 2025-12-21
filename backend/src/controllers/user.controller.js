@@ -114,6 +114,7 @@ export const getMyAiUsage = async (req, res) => {
             date: today,
             subscription: user.subscription_role,
             is_expired: !!isExpired,
+            expiration_date: user.subscription_expires_at,
             effective_role: effectiveRole,
             used,
             remaining: Math.max(limit - used, 0),
