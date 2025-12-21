@@ -150,6 +150,9 @@ export const userInformation = async (req, res) => {
     try {
         const user = req.user.toJSON();
         delete user.password_hash;
+        if (user.subscription_expires_at && new Date() > new Date(user.subscription_expires_at)) {
+            user.subscription_role = "free";
+        }
         res.json(user);
 
     } catch (error) {
