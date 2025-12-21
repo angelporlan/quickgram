@@ -16,6 +16,8 @@ export class AttemptsComponent implements OnInit {
     loading = true;
     searchTerm: string = '';
     selectedCategory: string = 'Todos';
+    selectedDateFilter: string = 'all'; // 'all', 'last30', 'last7', 'today'
+    showDateDropdown: boolean = false;
 
     stats = {
         total: 0,
@@ -85,8 +87,42 @@ export class AttemptsComponent implements OnInit {
         this.applyFilters();
     }
 
+    setDateFilter(filter: string) {
+        this.selectedDateFilter = filter;
+        this.showDateDropdown = false;
+        this.applyFilters();
+    }
+
     applyFilters() {
         let temp = this.attempts;
+
+        // Date Filter
+        if (this.selectedDateFilter !== 'all') {
+            const now = new Date();
+            const todayStart = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+
+            temp = temp.filter(a => {
+                const attemptDate = new Date(a.created_at);
+
+                if (this.selectedDateFilter === 'today') {
+                    return attemptDate >= todayStart;
+                }
+
+                if (this.selectedDateFilter === 'last7') {
+                    const sevenDaysAgo = new Date(now);
+                    sevenDaysAgo.setDate(now.getDate() - 7);
+                    return attemptDate >= sevenDaysAgo;
+                }
+
+                if (this.selectedDateFilter === 'last30') {
+                    const thirtyDaysAgo = new Date(now);
+                    thirtyDaysAgo.setDate(now.getDate() - 30);
+                    return attemptDate >= thirtyDaysAgo;
+                }
+
+                return true;
+            });
+        }
 
         if (this.selectedCategory !== 'Todos') {
             temp = temp.filter(a => {
