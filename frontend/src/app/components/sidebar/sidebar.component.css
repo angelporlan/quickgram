@@ -253,3 +253,145 @@
         /* Hide daily goal section completely on mobile */
     }
 }
+
+/* Definimos la animación de rotación */
+@keyframes spin-glow {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+/* Asegúrate de tener la animación definida (si no la tienes, agrégala) */
+@keyframes spin-glow {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+@keyframes spin-glow {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+@keyframes liquid-flow {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.premium {
+    position: relative;
+    padding: 1rem;
+    border-radius: 12px;
+    overflow: hidden;
+    z-index: 1;
+}
+
+@keyframes border-breathe {
+    0% {
+        opacity: 0.5;
+        filter: blur(0px);
+    }
+
+    50% {
+        opacity: 1;
+        filter: blur(2px);
+    }
+
+    100% {
+        opacity: 0.5;
+        filter: blur(0px);
+    }
+}
+
+@keyframes liquid-flow {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes border-breathe {
+    0% {
+        opacity: 0.5;
+        filter: blur(0px);
+    }
+
+    50% {
+        opacity: 1;
+        filter: blur(2px);
+    }
+
+    100% {
+        opacity: 0.5;
+        filter: blur(0px);
+    }
+}
+
+.premium {
+    position: relative;
+    padding: 1rem;
+    border-radius: 12px;
+    overflow: hidden;
+    z-index: 1;
+    border: 1px solid rgba(46, 204, 113, 0.3);
+}
+
+.premium::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+
+    background: conic-gradient(#2ecc71,
+            #9b59b6,
+            #2ecc71,
+            #9b59b6,
+            #2ecc71);
+
+    animation: border-breathe 3s ease-in-out infinite;
+    z-index: -2;
+}
+
+.premium::after {
+    content: '';
+    position: absolute;
+    inset: 2px;
+    border-radius: 10px;
+    background-color: #0e1515;
+    z-index: -1;
+}
+
+.premium.active::after {
+    background-color: #2ecc71;
+}

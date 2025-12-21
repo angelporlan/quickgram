@@ -13,6 +13,7 @@ export const routes: Routes = [
             { path: '', component: HomeComponent },
             { path: 'attempts', loadComponent: () => import('./components/attempts/attempts.component').then(m => m.AttemptsComponent) },
             { path: 'user', loadComponent: () => import('./components/user-profile/user-profile.component').then(m => m.UserProfileComponent) },
+            { path: 'roles', loadComponent: () => import('./components/roles/roles.component').then(m => m.RolesComponent) },
             { path: 'category/:slug', component: CategoryDetailComponent }
         ]
     },
