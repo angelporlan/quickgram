@@ -145,3 +145,15 @@ export const changeRole = async (req, res) => {
         res.status(500).json({ message: "Error changing role" });
     }
 };
+
+export const userInformation = async (req, res) => {
+    try {
+        const user = req.user.toJSON();
+        delete user.password_hash;
+        res.json(user);
+
+    } catch (error) {
+        console.error(error);
+        res.status(500).json({ message: "Error fetching user information" });
+    }
+};
