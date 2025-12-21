@@ -12,6 +12,7 @@ export const routes: Routes = [
         children: [
             { path: '', component: HomeComponent },
             { path: 'attempts', loadComponent: () => import('./components/attempts/attempts.component').then(m => m.AttemptsComponent) },
+            { path: 'user', loadComponent: () => import('./components/user-profile/user-profile.component').then(m => m.UserProfileComponent) },
             { path: 'category/:slug', component: CategoryDetailComponent }
         ]
     },

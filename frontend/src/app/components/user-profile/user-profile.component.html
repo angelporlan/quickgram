@@ -1,0 +1,121 @@
+<div class="profile-container">
+    <div class="profile-header">
+        <h1>Mi Perfil</h1>
+        <p>Gestiona tu información personal y configuración de cuenta</p>
+    </div>
+
+    <div *ngIf="loading" class="loading">Cargando...</div>
+
+    <div *ngIf="!loading && user" class="profile-content">
+        <!-- User Info Card -->
+        <div class="info-card">
+            <div class="card-header">
+                <h2>Información Personal</h2>
+            </div>
+
+            <!-- Name -->
+            <div class="info-row">
+                <div class="info-label">Nombre</div>
+                <div class="info-value" *ngIf="!editingName">
+                    <span>{{ user.name }}</span>
+                    <button class="btn-edit" (click)="editingName = true">Editar</button>
+                </div>
+                <div class="edit-form" *ngIf="editingName">
+                    <input type="text" [(ngModel)]="nameForm.name" placeholder="Nombre">
+                    <div class="form-actions">
+                        <button class="btn-save" (click)="updateName()">Guardar</button>
+                        <button class="btn-cancel" (click)="cancelEdit('name')">Cancelar</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Username -->
+            <div class="info-row">
+                <div class="info-label">Nombre de usuario</div>
+                <div class="info-value" *ngIf="!editingUsername">
+                    <span>{{ user.username }}</span>
+                    <button class="btn-edit" (click)="editingUsername = true">Editar</button>
+                </div>
+                <div class="edit-form" *ngIf="editingUsername">
+                    <input type="text" [(ngModel)]="usernameForm.username" placeholder="Nombre de usuario">
+                    <div class="form-actions">
+                        <button class="btn-save" (click)="updateUsername()">Guardar</button>
+                        <button class="btn-cancel" (click)="cancelEdit('username')">Cancelar</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Email (read-only) -->
+            <div class="info-row">
+                <div class="info-label">Email</div>
+                <div class="info-value">
+                    <span>{{ user.email }}</span>
+                    <span class="read-only-badge">Solo lectura</span>
+                </div>
+            </div>
+
+            <!-- Subscription -->
+            <div class="info-row">
+                <div class="info-label">Suscripción</div>
+                <div class="info-value">
+                    <span class="subscription-badge">{{ user.subscription_role | uppercase }}</span>
+                    <span class="expiry-date" *ngIf="user.subscription_expires_at">
+                        Expira: {{ user.subscription_expires_at | date:'dd/MM/yyyy' }}
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Password Card -->
+        <div class="info-card">
+            <div class="card-header">
+                <h2>Seguridad</h2>
+            </div>
+
+            <div class="info-row">
+                <div class="info-label">Contraseña</div>
+                <div class="info-value" *ngIf="!editingPassword">
+                    <span>••••••••</span>
+                    <button class="btn-edit" (click)="editingPassword = true">Cambiar</button>
+                </div>
+                <div class="edit-form password-form" *ngIf="editingPassword">
+                    <input type="password" [(ngModel)]="passwordForm.currentPassword" placeholder="Contraseña actual">
+                    <input type="password" [(ngModel)]="passwordForm.newPassword" placeholder="Nueva contraseña">
+                    <input type="password" [(ngModel)]="passwordForm.confirmPassword"
+                        placeholder="Confirmar contraseña">
+                    <div class="form-actions">
+                        <button class="btn-save" (click)="updatePassword()">Guardar</button>
+                        <button class="btn-cancel" (click)="cancelEdit('password')">Cancelar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Danger Zone -->
+        <div class="danger-card">
+            <div class="card-header">
+                <h2>Zona de Peligro</h2>
+            </div>
+
+            <div class="danger-content">
+                <div class="danger-info">
+                    <h3>Eliminar Cuenta</h3>
+                    <p>Una vez eliminada tu cuenta, no hay vuelta atrás. Por favor, asegúrate.</p>
+                </div>
+                <button class="btn-danger" (click)="showDeleteConfirm = true" *ngIf="!showDeleteConfirm">
+                    Eliminar Cuenta
+                </button>
+
+                <div class="delete-confirm" *ngIf="showDeleteConfirm">
+                    <p>Escribe <strong>{{ user.username }}</strong> para confirmar:</p>
+                    <input type="text" [(ngModel)]="deleteConfirmText" placeholder="Nombre de usuario">
+                    <div class="form-actions">
+                        <button class="btn-danger" (click)="deleteAccount()">Confirmar Eliminación</button>
+                        <button class="btn-cancel"
+                            (click)="showDeleteConfirm = false; deleteConfirmText = ''">Cancelar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

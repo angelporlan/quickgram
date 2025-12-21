@@ -136,6 +136,12 @@
     gap: 0.75rem;
     padding-top: 1.5rem;
     border-top: 1px solid #1f2929;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.user-profile:hover {
+    opacity: 0.8;
 }
 
 .avatar img {

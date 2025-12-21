@@ -157,3 +157,69 @@ export const userInformation = async (req, res) => {
         res.status(500).json({ message: "Error fetching user information" });
     }
 };
+
+export const updateUserInfo = async (req, res) => {
+    try {
+        const user = req.user;
+        const { name, username } = req.body;
+
+        if (name) user.name = name;
+        if (username) {
+            // Check if username already exists
+            const { User } = await import("../models/User.js");
+            const existingUser = await User.findOne({ where: { username } });
+            if (existingUser && existingUser.id !== user.id) {
+                return res.status(400).json({ message: "Username already taken" });
+            }
+            user.username = username;
+        }
+
+        await user.save();
+        const updatedUser = user.toJSON();
+        delete updatedUser.password_hash;
+
+        res.json(updatedUser);
+    } catch (error) {
+        console.error(error);
+        res.status(500).json({ message: "Error updating user information" });
+    }
+};
+
+export const updatePassword = async (req, res) => {
+    try {
+        const user = req.user;
+        const { currentPassword, newPassword } = req.body;
+
+        if (!currentPassword || !newPassword) {
+            return res.status(400).json({ message: "Current and new password are required" });
+        }
+
+        // Verify current password
+        const bcrypt = await import("bcrypt");
+        const isValid = await bcrypt.compare(currentPassword, user.password_hash);
+        if (!isValid) {
+            return res.status(401).json({ message: "Current password is incorrect" });
+        }
+
+        // Hash new password
+        const hashedPassword = await bcrypt.hash(newPassword, 10);
+        user.password_hash = hashedPassword;
+        await user.save();
+
+        res.json({ message: "Password updated successfully" });
+    } catch (error) {
+        console.error(error);
+        res.status(500).json({ message: "Error updating password" });
+    }
+};
+
+export const deleteUser = async (req, res) => {
+    try {
+        const user = req.user;
+        await user.destroy();
+        res.json({ message: "Account deleted successfully" });
+    } catch (error) {
+        console.error(error);
+        res.status(500).json({ message: "Error deleting account" });
+    }
+};

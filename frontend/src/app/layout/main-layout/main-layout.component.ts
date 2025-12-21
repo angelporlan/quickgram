@@ -1,8 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { SidebarComponent } from '../../components/sidebar/sidebar.component';
-import { AuthService } from '../../services/auth.service';
+import { UserService } from '../../services/user.service';
 
 @Component({
     selector: 'app-main-layout',
@@ -11,11 +11,17 @@ import { AuthService } from '../../services/auth.service';
     templateUrl: './main-layout.component.html',
     styleUrl: './main-layout.component.css'
 })
-export class MainLayoutComponent {
-    constructor(private authService: AuthService) { }
-    user = {
-        name: 'Alex Morgdan',
-        username: 'alexm',
-        plan: 'Premium'
-    };
+export class MainLayoutComponent implements OnInit {
+    user: any = null;
+
+    constructor(private userService: UserService) { }
+
+    ngOnInit() {
+        this.userService.getUserInfo().subscribe({
+            next: (data) => {
+                this.user = data;
+            },
+            error: (err) => console.error('Error fetching user info', err)
+        });
+    }
 }

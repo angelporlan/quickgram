@@ -32,4 +32,36 @@ export class UserService {
     clearCache() {
         this.aiUsageCache = null;
     }
+
+    getUserInfo(): Observable<any> {
+        const token = this.authService.getToken();
+        const headers = new HttpHeaders({
+            'Authorization': `Bearer ${token}`
+        });
+        return this.http.get(`${this.apiUrl}/users/me`, { headers });
+    }
+
+    updateUserInfo(data: any): Observable<any> {
+        const token = this.authService.getToken();
+        const headers = new HttpHeaders({
+            'Authorization': `Bearer ${token}`
+        });
+        return this.http.put(`${this.apiUrl}/users/me`, data, { headers });
+    }
+
+    updatePassword(data: any): Observable<any> {
+        const token = this.authService.getToken();
+        const headers = new HttpHeaders({
+            'Authorization': `Bearer ${token}`
+        });
+        return this.http.put(`${this.apiUrl}/users/me/password`, data, { headers });
+    }
+
+    deleteAccount(): Observable<any> {
+        const token = this.authService.getToken();
+        const headers = new HttpHeaders({
+            'Authorization': `Bearer ${token}`
+        });
+        return this.http.delete(`${this.apiUrl}/users/me`, { headers });
+    }
 }
