@@ -19,7 +19,6 @@ export class AiTutorCardComponent implements OnInit {
     ngOnInit() {
         this.userService.getAiUsage().subscribe({
             next: (data) => {
-                console.log(data.expiration_date);
                 this.stats = data;
                 this.calculateUsagePercent();
                 this.checkExpirationDate(data.expiration_date);
