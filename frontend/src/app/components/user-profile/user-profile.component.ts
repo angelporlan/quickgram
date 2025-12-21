@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { Router } from '@angular/router';
 import { UserService } from '../../services/user.service';
 import { AuthService } from '../../services/auth.service';
+import { NotificationService } from '../../services/notification.service';
 
 @Component({
   selector: 'app-user-profile',
@@ -33,7 +34,8 @@ export class UserProfileComponent implements OnInit {
   constructor(
     private userService: UserService,
     private authService: AuthService,
-    private router: Router
+    private router: Router,
+    private notificationService: NotificationService
   ) { }
 
   ngOnInit() {
@@ -60,8 +62,12 @@ export class UserProfileComponent implements OnInit {
       next: () => {
         this.user.name = this.nameForm.name;
         this.editingName = false;
+        this.notificationService.success('Nombre actualizado correctamente');
       },
-      error: (err) => console.error('Error updating name', err)
+      error: (err) => {
+        console.error('Error updating name', err);
+        this.notificationService.error('Error al actualizar el nombre');
+      }
     });
   }
 
@@ -70,14 +76,22 @@ export class UserProfileComponent implements OnInit {
       next: () => {
         this.user.username = this.usernameForm.username;
         this.editingUsername = false;
+        this.notificationService.success('Nombre de usuario actualizado correctamente');
       },
-      error: (err) => console.error('Error updating username', err)
+      error: (err) => {
+        console.error('Error updating username', err);
+        if (err.status === 400) {
+          this.notificationService.error('El nombre de usuario ya está en uso');
+        } else {
+          this.notificationService.error('Error al actualizar el nombre de usuario');
+        }
+      }
     });
   }
 
   updatePassword() {
     if (this.passwordForm.newPassword !== this.passwordForm.confirmPassword) {
-      alert('Las contraseñas no coinciden');
+      this.notificationService.error('Las contraseñas no coinciden');
       return;
     }
 
@@ -88,18 +102,18 @@ export class UserProfileComponent implements OnInit {
       next: () => {
         this.editingPassword = false;
         this.passwordForm = { currentPassword: '', newPassword: '', confirmPassword: '' };
-        alert('Contraseña actualizada correctamente');
+        this.notificationService.success('Contraseña actualizada correctamente');
       },
       error: (err) => {
         console.error('Error updating password', err);
-        alert('Error al actualizar la contraseña');
+        this.notificationService.error('Error al actualizar la contraseña');
       }
     });
   }
 
   deleteAccount() {
     if (this.deleteConfirmText !== this.user.username) {
-      alert('El nombre de usuario no coincide');
+      this.notificationService.error('El nombre de usuario no coincide');
       return;
     }
 
@@ -110,7 +124,7 @@ export class UserProfileComponent implements OnInit {
       },
       error: (err) => {
         console.error('Error deleting account', err);
-        alert('Error al eliminar la cuenta');
+        this.notificationService.error('Error al eliminar la cuenta');
       }
     });
   }

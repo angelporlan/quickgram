@@ -163,6 +163,10 @@ export const updateUserInfo = async (req, res) => {
         const user = req.user;
         const { name, username } = req.body;
 
+        if (!name && !username) {
+            return res.status(400).json({ message: "At least one field (name or username) is required" });
+        }
+
         if (name) user.name = name;
         if (username) {
             // Check if username already exists
