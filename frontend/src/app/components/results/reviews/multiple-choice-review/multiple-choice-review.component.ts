@@ -19,7 +19,6 @@ export class MultipleChoiceReviewComponent implements OnInit {
     constructor(private resultService: ExerciseResultService) { }
 
     ngOnInit() {
-        // Subscribe to changes in the service
         this.resultService.exercise$.subscribe(exercise => {
             this.exercise = exercise;
             if (this.exercise && this.result) {
@@ -61,7 +60,6 @@ export class MultipleChoiceReviewComponent implements OnInit {
         this.processedQuestions = [];
         const gapIds = Object.keys(parsedCorrectAnswers).map(k => parseInt(k)).sort((a, b) => a - b);
 
-        // Generate full text with solutions
         this.fullTextWithSolutions = this.generateFullText(parsedQuestionText, parsedCorrectAnswers);
 
         for (const gapId of gapIds) {
@@ -83,11 +81,6 @@ export class MultipleChoiceReviewComponent implements OnInit {
 
         gapIds.forEach(id => {
             const answer = correctAnswers[id];
-            // Regex to find the marker (N) and any surrounding dots/underscores that represent the gap
-            // Matches:
-            // 1. Optional dots/underscores before
-            // 2. The marker (N)
-            // 3. Optional dots/underscores after
             const regex = new RegExp(`[._]*\\s*\\(${id}\\)\\s*[._]*`, 'g');
 
             fullText = fullText.replace(regex, `<span class="filled-answer">${answer}</span>`);
@@ -102,17 +95,26 @@ export class MultipleChoiceReviewComponent implements OnInit {
 
     getContextForGap(text: string, gapId: number): string {
         const marker = `(${gapId})`;
-        const index = text.indexOf(marker);
-        if (index === -1) return '';
+        const markerIndex = text.indexOf(marker);
+        if (markerIndex === -1) return '';
 
-        const start = Math.max(0, index - 50);
-        const end = Math.min(text.length, index + 50);
+        let start = 0;
+        for (let i = markerIndex - 1; i >= 0; i--) {
+            if (['.', '!', '?', '\n'].includes(text[i])) {
+                start = i + 1;
+                break;
+            }
+        }
 
-        let sub = text.substring(start, end);
-        if (start > 0) sub = '...' + sub;
-        if (end < text.length) sub = sub + '...';
+        let end = text.length;
+        for (let i = markerIndex; i < text.length; i++) {
+            if (['.', '!', '?', '\n'].includes(text[i])) {
+                end = i + 1;
+                break;
+            }
+        }
 
-        return sub.replace(marker, '');
+        return text.substring(start, end).trim();
     }
 
     removePointsFills(text: string): string {
