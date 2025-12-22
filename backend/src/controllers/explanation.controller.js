@@ -3,7 +3,7 @@ import { UserExerciseAttempt } from "../models/UserExerciseAttempt.js";
 import { Exercise } from "../models/Exercise.js";
 import { AttemptExplanation } from "../models/AttemptExplanation.js";
 import { checkAndConsumeAiUsage } from "../services/aiUsage.service.js";
-import { User } from "../models/user.js";
+import { User } from "../models/User.js";
 
 const openai = new OpenAI({
     apiKey: process.env.OPENROUTER_API_KEY,
