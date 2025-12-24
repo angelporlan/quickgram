@@ -55,7 +55,8 @@
                 </li>
             </ul>
 
-            <button class="select-button" [disabled]="plan.current" (click)="selectPlan(plan.id)">
+            <button class="select-button" [disabled]="plan.current || !plan.current && plan.id === 'free'"
+                (click)="selectPlan(plan.id)">
                 <span *ngIf="plan.current">Plan Actual</span>
                 <span *ngIf="!plan.current && plan.id === 'free'">Cambiar a Free</span>
                 <span *ngIf="!plan.current && plan.id !== 'free'">Seleccionar Plan</span>

@@ -25,14 +25,11 @@ export const createSessionPremium = async (req, res) => {
                         description: "40 consultas IA diarias\nTodo lo de Pro\nContenido exclusivo\nAnálisis personalizado\nSesiones 1-on-1\nCertificados oficiales",
                     },
                     unit_amount: 1999,
-                    recurring: {
-                        interval: "month",
-                    },
                 },
                 quantity: 1,
             },
         ],
-        mode: "subscription",
+        mode: "payment",
         success_url: `${FRONT_URL}/success?session_id={CHECKOUT_SESSION_ID}`,
         cancel_url: `${FRONT_URL}/cancel`,
         metadata: {
@@ -55,14 +52,11 @@ export const createSessionPro = async (req, res) => {
                         description: "15 consultas IA diarias\nAcceso a todos los ejercicios\nEstadísticas avanzadas\nSimulacros de examen",
                     },
                     unit_amount: 999,
-                    recurring: {
-                        interval: "month",
-                    },
                 },
                 quantity: 1,
             },
         ],
-        mode: "subscription",
+        mode: "payment",
         success_url: `${FRONT_URL}/success?session_id={CHECKOUT_SESSION_ID}`,
         cancel_url: `${FRONT_URL}/cancel`,
         metadata: {
