@@ -24,6 +24,7 @@ interface PricingPlan {
 export class RolesComponent implements OnInit {
   currentRole: string = 'free';
   loading = true;
+  processingPlanId: string | null = null;
 
   plans: PricingPlan[] = [
     {
@@ -105,7 +106,7 @@ export class RolesComponent implements OnInit {
       return;
     }
 
-    // this.loading = true;
+    this.processingPlanId = planId;
     let paymentObservable;
 
     if (planId === 'pro') {
@@ -113,7 +114,7 @@ export class RolesComponent implements OnInit {
     } else if (planId === 'premium') {
       paymentObservable = this.paymentService.createCheckoutSessionPremium();
     } else {
-      this.loading = false;
+      this.processingPlanId = null;
       return;
     }
 
@@ -123,13 +124,13 @@ export class RolesComponent implements OnInit {
           window.location.href = response.url;
         } else {
           this.notificationService.error('Error al iniciar el pago');
-          this.loading = false;
+          this.processingPlanId = null;
         }
       },
       error: (err: any) => {
         console.error('Payment error', err);
         this.notificationService.error('Error al conectar con el servidor de pagos');
-        this.loading = false;
+        this.processingPlanId = null;
       }
     });
   }

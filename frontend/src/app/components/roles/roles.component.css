@@ -243,3 +243,28 @@
         padding: 1.5rem;
     }
 }
+
+.select-button.loading {
+    background: linear-gradient(135deg, #2ecc71, #27ae60) !important;
+    opacity: 0.8;
+    cursor: wait;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.button-spinner {
+    width: 1rem;
+    height: 1rem;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-top-color: white;
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
