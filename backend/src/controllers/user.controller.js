@@ -236,9 +236,32 @@ export const getNumberOfAttemptsToday = async (req, res) => {
         const user = req.user;
         const today = new Date().toISOString().split("T")[0];
         const numberOfAttempts = await UserExerciseAttempt.count({ where: { user_id: user.id, created_at: { [Op.gte]: today } } });
-        res.json({ numberOfAttempts });
+
+        const dailyGoal = user.daily_goal || 5;
+        const percentage = Math.min(Math.floor((numberOfAttempts / dailyGoal) * 100), 100);
+
+        res.json({ numberOfAttempts, dailyGoal, percentage });
     } catch (error) {
         console.error(error);
         res.status(500).json({ message: "Error getting number of attempts" });
+    }
+};
+
+export const updateDailyGoal = async (req, res) => {
+    try {
+        const user = req.user;
+        const { daily_goal } = req.body;
+
+        if (daily_goal === undefined || daily_goal < 1 || daily_goal > 100) {
+            return res.status(400).json({ message: "Daily goal must be between 1 and 100" });
+        }
+
+        user.daily_goal = daily_goal;
+        await user.save();
+
+        res.json({ message: "Daily goal updated", daily_goal: user.daily_goal });
+    } catch (error) {
+        console.error(error);
+        res.status(500).json({ message: "Error updating daily goal" });
     }
 };

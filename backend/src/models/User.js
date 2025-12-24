@@ -28,6 +28,11 @@ export const User = sequelize.define("User", {
     subscription_expires_at: {
         type: DataTypes.DATE,
         allowNull: true
+    },
+    daily_goal: {
+        type: DataTypes.INTEGER,
+        allowNull: false,
+        defaultValue: 5
     }
 }, {
     tableName: "users",

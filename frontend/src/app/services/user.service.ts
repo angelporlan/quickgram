@@ -71,4 +71,12 @@ export class UserService {
         });
         return this.http.delete(`${this.apiUrl}/users/me`, { headers });
     }
+
+    getDailyGoalProgress(): Observable<any> {
+        const token = this.authService.getToken();
+        const headers = new HttpHeaders({
+            'Authorization': `Bearer ${token}`
+        });
+        return this.http.get(`${this.apiUrl}/users/me/numberOfAttemptsToday`, { headers });
+    }
 }

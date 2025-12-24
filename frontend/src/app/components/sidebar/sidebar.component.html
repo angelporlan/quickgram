@@ -92,12 +92,15 @@
             <div class="daily-goal-box">
                 <div class="goal-header">
                     <span>Meta Diaria</span>
-                    <span class="goal-percent">80%</span>
+                    <span class="goal-percent">{{ percentage }}%</span>
                 </div>
                 <div class="goal-bar-bg">
-                    <div class="goal-bar-fill" style="width: 80%"></div>
+                    <div class="goal-bar-fill" [style.width.%]="percentage"></div>
                 </div>
-                <p class="goal-text">¡Sigue así! Casi completas tu racha.</p>
+                <p class="goal-text">
+                    {{ numberOfAttempts }}/{{ dailyGoal }} ejercicios completados
+                    <span *ngIf="percentage >= 100">🎉</span>
+                </p>
             </div>
         </div>
     </nav>

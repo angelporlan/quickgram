@@ -37,7 +37,7 @@ app.use("/api", paymentsRoutes);
     try {
         // await AttemptExplanation.sync();
 
-        await sequelize.sync();
+        await sequelize.sync({ alter: true });
         console.log("Base de datos conectada y tablas sincronizadas");
 
         await seedLevels();
