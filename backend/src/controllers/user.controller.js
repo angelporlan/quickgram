@@ -3,7 +3,7 @@ import { Exercise } from "../models/Exercise.js";
 import { Subcategory } from "../models/Subcategory.js";
 import { Category } from "../models/Category.js";
 import { Level } from "../models/Level.js";
-import { Sequelize } from "sequelize";
+import { Sequelize, Op } from "sequelize";
 
 import { AiUsageDaily } from "../models/AiUsageDaily.js";
 import { AI_LIMITS } from "../config/aiLimits.js";
@@ -228,5 +228,17 @@ export const deleteUser = async (req, res) => {
     } catch (error) {
         console.error(error);
         res.status(500).json({ message: "Error deleting account" });
+    }
+};
+
+export const getNumberOfAttemptsToday = async (req, res) => {
+    try {
+        const user = req.user;
+        const today = new Date().toISOString().split("T")[0];
+        const numberOfAttempts = await UserExerciseAttempt.count({ where: { user_id: user.id, created_at: { [Op.gte]: today } } });
+        res.json({ numberOfAttempts });
+    } catch (error) {
+        console.error(error);
+        res.status(500).json({ message: "Error getting number of attempts" });
     }
 };
