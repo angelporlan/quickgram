@@ -1,5 +1,19 @@
 <div class="success-container">
     <div class="success-card">
+        @if (loading) {
+        <div class="loading-spinner"></div>
+        <p>Verificando tu pago...</p>
+        } @else if (error) {
+        <div class="icon-circle error">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                stroke="currentColor" class="x-icon">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+        </div>
+        <h1>Error de verificación</h1>
+        <p>No pudimos verificar tu pago. Por favor, contacta a soporte.</p>
+        <a routerLink="/roles" class="btn-home">Volver a planes</a>
+        } @else {
         <div class="icon-circle">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
                 stroke="currentColor" class="check-icon">
@@ -7,7 +21,13 @@
             </svg>
         </div>
         <h1>¡Pago realizado con éxito!</h1>
+        @if (role) {
+        <p>Tu plan <strong>{{ role | titlecase }}</strong> ha sido activado correctamente. Ya puedes disfrutar de todas
+            las ventajas.</p>
+        } @else {
         <p>Tu subscripción ha sido activada correctamente. Ya puedes disfrutar de todas las ventajas.</p>
+        }
         <a routerLink="/" class="btn-home">Volver al inicio</a>
+        }
     </div>
 </div>
