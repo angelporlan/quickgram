@@ -173,7 +173,7 @@ export const updateUserInfo = async (req, res) => {
         if (name) user.name = name;
         if (username) {
             // Check if username already exists
-            const { User } = await import("../models/User.js");
+            const { User } = await import("../models/user.js");
             const existingUser = await User.findOne({ where: { username } });
             if (existingUser && existingUser.id !== user.id) {
                 return res.status(400).json({ message: "Username already taken" });
