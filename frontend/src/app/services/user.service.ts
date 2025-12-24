@@ -11,6 +11,7 @@ export class UserService {
     private apiUrl = 'http://localhost:4000/api';
 
     private aiUsageCache: any = null;
+    private userInfoCache: any = null;
 
     constructor(private http: HttpClient, private authService: AuthService) { }
 
@@ -31,6 +32,7 @@ export class UserService {
 
     clearCache() {
         this.aiUsageCache = null;
+        this.userInfoCache = null;
     }
 
     getUserInfo(): Observable<any> {
@@ -38,7 +40,12 @@ export class UserService {
         const headers = new HttpHeaders({
             'Authorization': `Bearer ${token}`
         });
-        return this.http.get(`${this.apiUrl}/users/me`, { headers });
+        if (this.userInfoCache) {
+            return of(this.userInfoCache);
+        }
+        return this.http.get(`${this.apiUrl}/users/me`, { headers }).pipe(
+            tap(data => this.userInfoCache = data)
+        );
     }
 
     updateUserInfo(data: any): Observable<any> {
