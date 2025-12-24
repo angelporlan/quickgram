@@ -1,11 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { UserService } from '../../../services/user.service';
+import { RouterLink } from '@angular/router';
 
 @Component({
     selector: 'app-ai-tutor-card',
     standalone: true,
-    imports: [CommonModule],
+    imports: [CommonModule, RouterLink],
     templateUrl: './ai-tutor-card.component.html',
     styleUrl: './ai-tutor-card.component.css'
 })
@@ -36,7 +37,6 @@ export class AiTutorCardComponent implements OnInit {
         }
         const today = new Date();
         const expiration = new Date(dateStr);
-        // Show only if expiration is in the future
         this.showRenewalInfo = expiration > today;
     }
 
