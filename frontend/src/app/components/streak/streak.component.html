@@ -1,0 +1,83 @@
+<div class="streak-page">
+    <div class="streak-container">
+        <!-- Left Section -->
+        <div class="left-section">
+            <span class="subtitle">TU RUTA AL ÉXITO</span>
+            <h1 class="title">Establece tu<br>Meta Diaria</h1>
+            <p class="description">
+                La constancia es el secreto para aprobar el B2. Elige un objetivo realizable que puedas cumplir todos
+                los días sin falta.
+            </p>
+
+            <div class="stats-row">
+                <div class="stat-box">
+                    <span class="stat-label">Promedio Actual</span>
+                    <span class="stat-value">{{ numberOfAttempts }} ejercicios</span>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-label">Racha Actual</span>
+                    <span class="stat-value">{{ percentage >= 100 ? '🔥' : '📊' }} {{ percentage }}%</span>
+                </div>
+            </div>
+
+            <div class="pro-tip">
+                <div class="pro-tip-header">
+                    <span class="pro-badge">💡 Consejo Pro</span>
+                </div>
+                <p>Los estudiantes que hacen al menos 15 ejercicios diarios tienen un 40% más de probabilidad de
+                    aprobar.</p>
+            </div>
+        </div>
+
+        <!-- Right Section -->
+        <div class="right-section">
+            <div class="goal-card">
+                <h2>¿Cuántos ejercicios quieres hacer hoy?</h2>
+                <p class="recommendation">Recomendado: 15-20 ejercicios</p>
+
+                <div class="counter-section">
+                    <button class="counter-btn minus" (click)="decrement()" [disabled]="dailyGoal <= 1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                        </svg>
+                    </button>
+                    <div class="counter-display">
+                        <span class="counter-value">{{ dailyGoal }}</span>
+                        <span class="counter-label">ejercicios / día</span>
+                    </div>
+                    <button class="counter-btn plus" (click)="increment()" [disabled]="dailyGoal >= 100">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <line x1="12" y1="5" x2="12" y2="19"></line>
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="info-row">
+                    <div class="info-item">
+                        <span class="info-icon">⏱️</span>
+                        <div class="info-text">
+                            <span class="info-label">Tiempo estimado</span>
+                            <span class="info-value">~{{ estimatedMinutes }} minutos</span>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-icon">📅</span>
+                        <div class="info-text">
+                            <span class="info-label">Meta semanal</span>
+                            <span class="info-value">{{ weeklyExercises }} ejercicios</span>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="save-btn" (click)="saveGoal()" [disabled]="saving">
+                    <span *ngIf="!saving">✓ Guardar Meta</span>
+                    <span *ngIf="saving">Guardando...</span>
+                </button>
+                <button class="cancel-btn" (click)="cancel()">Cancelar cambios</button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { Observable, of } from 'rxjs';
+import { Observable, of, Subject } from 'rxjs';
 import { tap } from 'rxjs/operators';
 import { AuthService } from './auth.service';
 
@@ -12,6 +12,9 @@ export class UserService {
 
     private aiUsageCache: any = null;
     private userInfoCache: any = null;
+
+    private dailyGoalUpdatedSubject = new Subject<void>();
+    dailyGoalUpdated$ = this.dailyGoalUpdatedSubject.asObservable();
 
     constructor(private http: HttpClient, private authService: AuthService) { }
 
@@ -78,5 +81,17 @@ export class UserService {
             'Authorization': `Bearer ${token}`
         });
         return this.http.get(`${this.apiUrl}/users/me/numberOfAttemptsToday`, { headers });
+    }
+
+    updateDailyGoal(daily_goal: number): Observable<any> {
+        const token = this.authService.getToken();
+        const headers = new HttpHeaders({
+            'Authorization': `Bearer ${token}`
+        });
+        return this.http.put(`${this.apiUrl}/users/me/daily-goal`, { daily_goal }, { headers });
+    }
+
+    notifyDailyGoalUpdated() {
+        this.dailyGoalUpdatedSubject.next();
     }
 }

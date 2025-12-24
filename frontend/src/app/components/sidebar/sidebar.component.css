@@ -90,6 +90,12 @@
     border: 1px solid #1f2929;
     padding: 1rem;
     border-radius: 12px;
+    transition: all 0.2s;
+}
+
+.daily-goal-box:hover {
+    background-color: #1a2a29;
+    border-color: #2ecc71;
 }
 
 .goal-header {

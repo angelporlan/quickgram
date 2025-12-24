@@ -1,8 +1,9 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, OnDestroy } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Router, RouterLink, RouterLinkActive } from '@angular/router';
 import { AuthService } from '../../services/auth.service';
 import { UserService } from '../../services/user.service';
+import { Subscription } from 'rxjs';
 
 @Component({
     selector: 'app-sidebar',
@@ -11,7 +12,7 @@ import { UserService } from '../../services/user.service';
     templateUrl: './sidebar.component.html',
     styleUrl: './sidebar.component.css'
 })
-export class SidebarComponent implements OnInit {
+export class SidebarComponent implements OnInit, OnDestroy {
     @Input() user: any = {
         username: 'guest',
         name: 'Guest User',
@@ -22,6 +23,8 @@ export class SidebarComponent implements OnInit {
     numberOfAttempts = 0;
     percentage = 0;
 
+    private goalUpdateSub?: Subscription;
+
     constructor(
         private authService: AuthService,
         private router: Router,
@@ -29,13 +32,25 @@ export class SidebarComponent implements OnInit {
     ) { }
 
     ngOnInit() {
+        this.loadDailyGoalProgress();
+
+        this.goalUpdateSub = this.userService.dailyGoalUpdated$.subscribe(() => {
+            this.loadDailyGoalProgress();
+        });
+    }
+
+    ngOnDestroy() {
+        this.goalUpdateSub?.unsubscribe();
+    }
+
+    private loadDailyGoalProgress() {
         this.userService.getDailyGoalProgress().subscribe({
-            next: (data) => {
+            next: (data: any) => {
                 this.dailyGoal = data.dailyGoal;
                 this.numberOfAttempts = data.numberOfAttempts;
                 this.percentage = data.percentage;
             },
-            error: (err) => console.error('Error loading daily goal:', err)
+            error: (err: any) => console.error('Error loading daily goal:', err)
         });
     }
 
@@ -44,3 +59,4 @@ export class SidebarComponent implements OnInit {
         this.router.navigate(['/login']);
     }
 }
+
