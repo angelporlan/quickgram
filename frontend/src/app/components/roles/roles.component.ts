@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { UserService } from '../../services/user.service';
 import { NotificationService } from '../../services/notification.service';
+import { PaymentService } from '../../services/payment.service';
 
 interface PricingPlan {
   id: string;
@@ -69,7 +70,8 @@ export class RolesComponent implements OnInit {
 
   constructor(
     private userService: UserService,
-    private notificationService: NotificationService
+    private notificationService: NotificationService,
+    private paymentService: PaymentService
   ) { }
 
   ngOnInit() {
@@ -98,7 +100,37 @@ export class RolesComponent implements OnInit {
       return;
     }
 
-    // Aquí iría la lógica de pago/cambio de plan
-    this.notificationService.info('Funcionalidad de pago próximamente');
+    if (planId === 'free') {
+      this.notificationService.info('Contacta a soporte para cancelar tu suscripción');
+      return;
+    }
+
+    // this.loading = true;
+    let paymentObservable;
+
+    if (planId === 'pro') {
+      paymentObservable = this.paymentService.createCheckoutSessionPro();
+    } else if (planId === 'premium') {
+      paymentObservable = this.paymentService.createCheckoutSessionPremium();
+    } else {
+      this.loading = false;
+      return;
+    }
+
+    paymentObservable.subscribe({
+      next: (response: any) => {
+        if (response && response.url) {
+          window.location.href = response.url;
+        } else {
+          this.notificationService.error('Error al iniciar el pago');
+          this.loading = false;
+        }
+      },
+      error: (err: any) => {
+        console.error('Payment error', err);
+        this.notificationService.error('Error al conectar con el servidor de pagos');
+        this.loading = false;
+      }
+    });
   }
 }

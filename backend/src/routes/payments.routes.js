@@ -3,7 +3,7 @@ import { createSessionPremium, createSessionPro } from "../controllers/payments.
 
 const router = express.Router();
 
-router.get("/create-checkout-session-premium", createSessionPremium);
-router.get("/create-checkout-session-pro", createSessionPro);
+router.post("/create-checkout-session-premium", createSessionPremium);
+router.post("/create-checkout-session-pro", createSessionPro);
 
 export default router;
