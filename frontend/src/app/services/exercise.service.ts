@@ -94,4 +94,13 @@ export class ExerciseService {
 
         return this.http.get<any>(`${this.apiUrl}/attempts?${params}`, { headers });
     }
+
+    getUserStats(): Observable<{ total: number, average: number }> {
+        const token = this.authService.getToken();
+        const headers = new HttpHeaders({
+            'Authorization': `Bearer ${token}`
+        });
+
+        return this.http.get<{ total: number, average: number }>(`${this.apiUrl}/attempts/stats/global`, { headers });
+    }
 }

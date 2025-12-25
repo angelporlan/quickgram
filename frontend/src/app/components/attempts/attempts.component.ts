@@ -42,7 +42,17 @@ export class AttemptsComponent implements OnInit {
             error: (err) => console.error('Error fetching categories', err)
         });
 
+        this.loadGlobalStats();
         this.loadAttempts();
+    }
+
+    loadGlobalStats() {
+        this.exerciseService.getUserStats().subscribe({
+            next: (stats) => {
+                this.stats.average = stats.average;
+            },
+            error: (err) => console.error('Error fetching global stats', err)
+        });
     }
 
     loadAttempts() {
@@ -80,17 +90,10 @@ export class AttemptsComponent implements OnInit {
         this.stats.total = this.totalAttempts;
 
         if (this.attempts.length === 0) {
-            this.stats.average = 0;
             this.stats.streak = 0;
             return;
         }
 
-        const totalScore = this.attempts.reduce((sum, attempt) => {
-            const pct = this.calculatePercentage(attempt.correct_gaps, attempt.total_gaps);
-            return sum + pct;
-        }, 0);
-
-        this.stats.average = Math.round(totalScore / this.attempts.length);
         this.stats.streak = this.calculateStreak();
     }
 

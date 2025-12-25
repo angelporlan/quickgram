@@ -206,3 +206,38 @@ export const getUserAttempts = async (req, res) => {
         res.status(500).json({ message: "Error fetching user attempts" });
     }
 };
+
+export const getUserStats = async (req, res) => {
+    try {
+        const userId = req.user.id;
+
+        const attempts = await UserExerciseAttempt.findAll({
+            where: { user_id: userId },
+            attributes: ['correct_gaps', 'total_gaps']
+        });
+
+        if (attempts.length === 0) {
+            return res.json({
+                total: 0,
+                average: 0
+            });
+        }
+
+        const totalScore = attempts.reduce((sum, attempt) => {
+            const percentage = attempt.total_gaps > 0
+                ? Math.round((attempt.correct_gaps / attempt.total_gaps) * 100)
+                : 0;
+            return sum + percentage;
+        }, 0);
+
+        const average = Math.round(totalScore / attempts.length);
+
+        res.json({
+            total: attempts.length,
+            average
+        });
+    } catch (error) {
+        console.error(error);
+        res.status(500).json({ message: "Error fetching user stats" });
+    }
+};
