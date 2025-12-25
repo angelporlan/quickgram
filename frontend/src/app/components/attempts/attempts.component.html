@@ -168,4 +168,29 @@
             </div>
         </div>
     </div>
+
+    <!-- Pagination Controls -->
+    <div *ngIf="!loading && totalPages > 1" class="pagination-container">
+        <button class="pagination-btn" (click)="prevPage()" [disabled]="currentPage === 1">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+            Anterior
+        </button>
+
+        <div class="page-numbers">
+            <button *ngFor="let page of getPageNumbers()" [class.active]="page === currentPage"
+                [class.ellipsis]="page === -1" (click)="page !== -1 && goToPage(page)" [disabled]="page === -1"
+                class="page-number">
+                {{ page === -1 ? '...' : page }}
+            </button>
+        </div>
+
+        <button class="pagination-btn" (click)="nextPage()" [disabled]="currentPage === totalPages">
+            Siguiente
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+        </button>
+    </div>
 </div>

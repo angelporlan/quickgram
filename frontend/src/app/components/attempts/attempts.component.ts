@@ -16,8 +16,13 @@ export class AttemptsComponent implements OnInit {
     loading = true;
     searchTerm: string = '';
     selectedCategory: string = 'Todos';
-    selectedDateFilter: string = 'all'; // 'all', 'last30', 'last7', 'today'
+    selectedDateFilter: string = 'all';
     showDateDropdown: boolean = false;
+
+    currentPage: number = 1;
+    pageSize: number = 20;
+    totalPages: number = 1;
+    totalAttempts: number = 0;
 
     stats = {
         total: 0,
@@ -37,11 +42,20 @@ export class AttemptsComponent implements OnInit {
             error: (err) => console.error('Error fetching categories', err)
         });
 
-        this.exerciseService.getUserAttempts().subscribe({
-            next: (data) => {
-                this.attempts = data;
-                this.filteredAttempts = data;
+        this.loadAttempts();
+    }
+
+    loadAttempts() {
+        this.loading = true;
+        this.exerciseService.getUserAttempts(this.currentPage, this.pageSize, this.selectedCategory).subscribe({
+            next: (response) => {
+                this.attempts = response.attempts;
+                this.filteredAttempts = response.attempts;
+                this.totalAttempts = response.pagination.total;
+                this.currentPage = response.pagination.page;
+                this.totalPages = response.pagination.totalPages;
                 this.calculateStats();
+                this.applyClientSideFilters();
                 this.loading = false;
             },
             error: (error) => {
@@ -63,9 +77,13 @@ export class AttemptsComponent implements OnInit {
     }
 
     calculateStats() {
-        if (this.attempts.length === 0) return;
+        this.stats.total = this.totalAttempts;
 
-        this.stats.total = this.attempts.length;
+        if (this.attempts.length === 0) {
+            this.stats.average = 0;
+            this.stats.streak = 0;
+            return;
+        }
 
         const totalScore = this.attempts.reduce((sum, attempt) => {
             const pct = this.calculatePercentage(attempt.correct_gaps, attempt.total_gaps);
@@ -73,37 +91,33 @@ export class AttemptsComponent implements OnInit {
         }, 0);
 
         this.stats.average = Math.round(totalScore / this.attempts.length);
-
-        // Mock streak calculation based on today
         this.stats.streak = this.calculateStreak();
     }
 
     calculateStreak(): number {
-        // Simple mock: count consecutive days backwards from today? 
-        // For MVP, just returning a random or calculated number based on recent activity
         return this.attempts.length > 0 ? Math.min(this.attempts.length, 5) : 0;
     }
 
     filterAttempts(category: string) {
         this.selectedCategory = category;
-        this.applyFilters();
+        this.currentPage = 1;
+        this.loadAttempts();
     }
 
     search(term: string) {
         this.searchTerm = term;
-        this.applyFilters();
+        this.applyClientSideFilters();
     }
 
     setDateFilter(filter: string) {
         this.selectedDateFilter = filter;
         this.showDateDropdown = false;
-        this.applyFilters();
+        this.applyClientSideFilters();
     }
 
-    applyFilters() {
+    applyClientSideFilters() {
         let temp = this.attempts;
 
-        // Date Filter
         if (this.selectedDateFilter !== 'all') {
             const now = new Date();
             const todayStart = new Date(now.getFullYear(), now.getMonth(), now.getDate());
@@ -131,20 +145,62 @@ export class AttemptsComponent implements OnInit {
             });
         }
 
-        if (this.selectedCategory !== 'Todos') {
-            temp = temp.filter(a => {
-                // Now we check the Category name directly from the nested include
-                const catName = a.exercise.Subcategory?.Category?.name || '';
-                return catName === this.selectedCategory;
-            });
-        }
-
         if (this.searchTerm) {
             const term = this.searchTerm.toLowerCase();
             temp = temp.filter(a => a.exercise.question_text.toLowerCase().includes(term));
         }
 
         this.filteredAttempts = temp;
+    }
+
+    nextPage() {
+        if (this.currentPage < this.totalPages) {
+            this.currentPage++;
+            this.loadAttempts();
+        }
+    }
+
+    prevPage() {
+        if (this.currentPage > 1) {
+            this.currentPage--;
+            this.loadAttempts();
+        }
+    }
+
+    goToPage(page: number) {
+        if (page >= 1 && page <= this.totalPages) {
+            this.currentPage = page;
+            this.loadAttempts();
+        }
+    }
+
+    getPageNumbers(): number[] {
+        const pages: number[] = [];
+        const maxVisible = 5;
+
+        if (this.totalPages <= maxVisible) {
+            for (let i = 1; i <= this.totalPages; i++) {
+                pages.push(i);
+            }
+        } else {
+            if (this.currentPage <= 3) {
+                for (let i = 1; i <= 4; i++) pages.push(i);
+                pages.push(-1);
+                pages.push(this.totalPages);
+            } else if (this.currentPage >= this.totalPages - 2) {
+                pages.push(1);
+                pages.push(-1);
+                for (let i = this.totalPages - 3; i <= this.totalPages; i++) pages.push(i);
+            } else {
+                pages.push(1);
+                pages.push(-1);
+                for (let i = this.currentPage - 1; i <= this.currentPage + 1; i++) pages.push(i);
+                pages.push(-1);
+                pages.push(this.totalPages);
+            }
+        }
+
+        return pages;
     }
 
     toSlug(text: string): string {

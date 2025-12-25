@@ -125,35 +125,82 @@ export const getExerciseAttemptById = async (req, res) => {
 export const getUserAttempts = async (req, res) => {
     try {
         const userId = req.user.id;
+        const { page = 1, limit = 20, category } = req.query;
 
-        const attempts = await UserExerciseAttempt.findAll({
-            where: {
-                user_id: userId
-            },
-            include: [
+        const offset = (parseInt(page) - 1) * parseInt(limit);
+
+        const whereClause = { user_id: userId };
+
+        const categoryInclude = {
+            model: Category,
+            attributes: ['name']
+        };
+
+        if (category && category !== 'Todos') {
+            categoryInclude.where = { name: category };
+            categoryInclude.required = true;
+        }
+
+        const includeClause = [
+            {
+                model: Exercise,
+                as: 'exercise',
+                required: category && category !== 'Todos',
+                include: [
+                    {
+                        model: Subcategory,
+                        attributes: ['name'],
+                        required: category && category !== 'Todos',
+                        include: [categoryInclude]
+                    },
+                    {
+                        model: Level,
+                        attributes: ['name']
+                    }
+                ]
+            }
+        ];
+
+        const total = await UserExerciseAttempt.count({
+            where: whereClause,
+            include: category && category !== 'Todos' ? [
                 {
                     model: Exercise,
                     as: 'exercise',
-                    include: [
-                        {
-                            model: Subcategory,
-                            attributes: ['name'],
-                            include: [{
-                                model: Category,
-                                attributes: ['name']
-                            }]
-                        },
-                        {
-                            model: Level,
-                            attributes: ['name']
-                        }
-                    ]
+                    required: true,
+                    include: [{
+                        model: Subcategory,
+                        required: true,
+                        include: [{
+                            model: Category,
+                            where: { name: category },
+                            required: true
+                        }]
+                    }]
                 }
-            ],
-            order: [['created_at', 'DESC']]
+            ] : [],
+            distinct: true
         });
 
-        res.json(attempts);
+        const attempts = await UserExerciseAttempt.findAll({
+            where: whereClause,
+            include: includeClause,
+            order: [['created_at', 'DESC']],
+            limit: parseInt(limit),
+            offset: offset
+        });
+
+        const totalPages = Math.ceil(total / parseInt(limit));
+
+        res.json({
+            attempts,
+            pagination: {
+                total,
+                page: parseInt(page),
+                limit: parseInt(limit),
+                totalPages
+            }
+        });
     } catch (error) {
         console.error(error);
         res.status(500).json({ message: "Error fetching user attempts" });
