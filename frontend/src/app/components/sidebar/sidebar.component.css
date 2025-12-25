@@ -98,6 +98,12 @@
     border-color: #2ecc71;
 }
 
+.daily-goal-box.active {
+    background-color: #1a2a29;
+    border-color: #2ecc71;
+    box-shadow: 0 0 0 1px #2ecc71;
+}
+
 .goal-header {
     display: flex;
     justify-content: space-between;
