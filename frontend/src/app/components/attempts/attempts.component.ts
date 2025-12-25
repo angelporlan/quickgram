@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterLink } from '@angular/router';
 import { ExerciseService } from '../../services/exercise.service';
+import { UserService } from '../../services/user.service';
 
 @Component({
     selector: 'app-attempts',
@@ -32,7 +33,10 @@ export class AttemptsComponent implements OnInit {
 
     categories = ['Todos'];
 
-    constructor(private exerciseService: ExerciseService) { }
+    constructor(
+        private exerciseService: ExerciseService,
+        private userService: UserService
+    ) { }
 
     ngOnInit() {
         this.exerciseService.getCategories().subscribe({
@@ -52,6 +56,13 @@ export class AttemptsComponent implements OnInit {
                 this.stats.average = stats.average;
             },
             error: (err) => console.error('Error fetching global stats', err)
+        });
+
+        this.userService.getUserInfo().subscribe({
+            next: (user) => {
+                this.stats.streak = user.streak || 0;
+            },
+            error: (err) => console.error('Error fetching user info', err)
         });
     }
 
