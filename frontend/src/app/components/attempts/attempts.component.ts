@@ -98,14 +98,25 @@ export class AttemptsComponent implements OnInit {
     }
 
     calculateStats() {
-        this.stats.total = this.totalAttempts;
+        const isClientSideFiltered = this.searchTerm || this.selectedDateFilter !== 'all';
 
-        if (this.attempts.length === 0) {
-            this.stats.streak = 0;
-            return;
+        if (isClientSideFiltered) {
+            this.stats.total = this.filteredAttempts.length;
+
+            if (this.filteredAttempts.length === 0) {
+                this.stats.average = 0;
+                return;
+            }
+
+            const totalScore = this.filteredAttempts.reduce((sum, attempt) => {
+                const pct = this.calculatePercentage(attempt.correct_gaps, attempt.total_gaps);
+                return sum + pct;
+            }, 0);
+
+            this.stats.average = Math.round(totalScore / this.filteredAttempts.length);
+        } else {
+            this.stats.total = this.totalAttempts;
         }
-
-        this.stats.streak = this.calculateStreak();
     }
 
     calculateStreak(): number {
@@ -165,6 +176,7 @@ export class AttemptsComponent implements OnInit {
         }
 
         this.filteredAttempts = temp;
+        this.calculateStats();
     }
 
     nextPage() {
