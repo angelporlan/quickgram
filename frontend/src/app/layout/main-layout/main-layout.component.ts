@@ -17,6 +17,13 @@ export class MainLayoutComponent implements OnInit {
     constructor(private userService: UserService) { }
 
     ngOnInit() {
+        this.loadUser();
+        this.userService.userInfoUpdated$.subscribe(() => {
+            this.loadUser();
+        });
+    }
+
+    loadUser() {
         this.userService.getUserInfo().subscribe({
             next: (data) => {
                 this.user = data;

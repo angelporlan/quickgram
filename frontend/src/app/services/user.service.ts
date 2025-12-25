@@ -16,6 +16,9 @@ export class UserService {
     private dailyGoalUpdatedSubject = new Subject<void>();
     dailyGoalUpdated$ = this.dailyGoalUpdatedSubject.asObservable();
 
+    private userInfoUpdatedSubject = new Subject<void>();
+    userInfoUpdated$ = this.userInfoUpdatedSubject.asObservable();
+
     constructor(private http: HttpClient, private authService: AuthService) { }
 
     getAiUsage(): Observable<any> {
@@ -93,5 +96,10 @@ export class UserService {
 
     notifyDailyGoalUpdated() {
         this.dailyGoalUpdatedSubject.next();
+    }
+
+    notifyUserInfoUpdated() {
+        this.userInfoCache = null;
+        this.userInfoUpdatedSubject.next();
     }
 }

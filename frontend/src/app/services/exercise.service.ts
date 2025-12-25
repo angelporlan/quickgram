@@ -3,6 +3,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable, of } from 'rxjs';
 import { tap } from 'rxjs/operators';
 import { AuthService } from './auth.service';
+import { UserService } from './user.service';
 
 @Injectable({
     providedIn: 'root'
@@ -12,7 +13,7 @@ export class ExerciseService {
     private cache = new Map<string, any[]>();
     private cacheCategories = new Map<string, any[]>();
 
-    constructor(private http: HttpClient, private authService: AuthService) { }
+    constructor(private http: HttpClient, private authService: AuthService, private userService: UserService) { }
 
     getCategories(): Observable<any[]> {
         if (this.cacheCategories.has('categories')) {
@@ -57,7 +58,9 @@ export class ExerciseService {
             'Authorization': `Bearer ${token}`
         });
 
-        return this.http.post(`${this.apiUrl}/exercises/${exerciseId}/attempt`, attemptData, { headers });
+        return this.http.post(`${this.apiUrl}/exercises/${exerciseId}/attempt`, attemptData, { headers }).pipe(
+            tap(() => this.userService.notifyUserInfoUpdated())
+        );
     }
 
     explainAttempt(attemptId: number): Observable<any> {
