@@ -16,7 +16,8 @@ export class SidebarComponent implements OnInit, OnDestroy {
     @Input() user: any = {
         username: 'guest',
         name: 'Guest User',
-        plan: 'Free'
+        plan: 'Free',
+        coins: 0
     };
 
     dailyGoal = 5;

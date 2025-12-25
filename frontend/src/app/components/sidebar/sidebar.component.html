@@ -111,7 +111,12 @@
         </div>
         <div class="user-info">
             <div class="user-name">{{ user.name }}</div>
-            <div class="user-plan">{{ user.subscription_role | uppercase }}</div>
+            <div class="user-plan">
+                {{ user.subscription_role | uppercase }}
+                <span class="user-coins" title="Monedas disponibles">
+                    <span class="coin-icon">🪙</span> {{ user.coins || 0 }}
+                </span>
+            </div>
         </div>
         <button class="logout-mini" (click)="logout()">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">

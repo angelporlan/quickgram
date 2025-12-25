@@ -189,6 +189,26 @@
     margin-top: 2px;
     font-size: 0.75rem;
     color: #8b9bb4;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.user-coins {
+    color: #f1c40f;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    background: rgba(241, 196, 15, 0.1);
+    padding: 2px 6px;
+    border-radius: 4px;
+    margin-left: 8px;
+    font-size: 0.7rem;
+}
+
+.coin-icon {
+    font-size: 0.8rem;
 }
 
 .logout-mini {

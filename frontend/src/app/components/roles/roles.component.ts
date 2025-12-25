@@ -36,7 +36,8 @@ export class RolesComponent implements OnInit {
         '3 consultas IA diarias',
         'Acceso a ejercicios básicos',
         'Seguimiento de progreso',
-        'Estadísticas básicas'
+        'Estadísticas básicas',
+        '10 monedas por ejercicio'
       ]
     },
     {
@@ -50,7 +51,8 @@ export class RolesComponent implements OnInit {
         'Acceso a todos los ejercicios',
         'Estadísticas avanzadas',
         'Simulacros de examen',
-        'Soporte prioritario'
+        'Soporte prioritario',
+        'x1.5 más monedas por ejercicio'
       ]
     },
     {
@@ -64,7 +66,8 @@ export class RolesComponent implements OnInit {
         'Contenido exclusivo',
         'Análisis personalizado',
         'Sesiones 1-on-1',
-        'Certificados oficiales'
+        'Certificados oficiales',
+        'x2 más monedas por ejercicio'
       ]
     }
   ];

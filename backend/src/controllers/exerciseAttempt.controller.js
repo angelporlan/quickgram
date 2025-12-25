@@ -33,6 +33,20 @@ export const createExerciseAttempt = async (req, res) => {
             score
         });
 
+        const user = req.user;
+
+        const REWARD_MAP = {
+            free: 10,
+            pro: 15,
+            premium: 20
+        };
+
+        const activeRole = user.getActiveRole();
+
+        const coinsToAdd = REWARD_MAP[activeRole] || 10;
+        user.coins = (user.coins || 0) + coinsToAdd;
+        await user.save();
+
         res.status(201).json({
             message: "Attempt saved",
             attempt

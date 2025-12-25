@@ -33,6 +33,10 @@ export const User = sequelize.define("User", {
         type: DataTypes.INTEGER,
         allowNull: false,
         defaultValue: 5
+    },
+    coins: {
+        type: DataTypes.INTEGER,
+        defaultValue: 0
     }
 }, {
     tableName: "users",
@@ -50,3 +54,22 @@ export const User = sequelize.define("User", {
         }
     }
 });
+
+User.prototype.getActiveRole = function () {
+    if (this.subscription_role === 'free') {
+        return 'free';
+    }
+
+    if (!this.subscription_expires_at) {
+        return 'free';
+    }
+
+    const now = new Date();
+    const expirationDate = new Date(this.subscription_expires_at);
+
+    if (now > expirationDate) {
+        return 'free';
+    }
+
+    return this.subscription_role;
+};
