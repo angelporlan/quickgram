@@ -103,16 +103,29 @@
     }
 }
 
-/* Skeleton Loader */
 .skeleton-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
     gap: 2rem;
 }
 
+.back-icon {
+    cursor: pointer;
+    margin-right: 1rem;
+}
+
+.back-icon svg {
+    width: 30px;
+    height: 30px;
+    color: #8b9bb4;
+}
+
+.back-icon:hover {
+    color: #2ecc71;
+}
+
 .skeleton-card {
     background: #15201f;
-    /* Darker bg to match theme */
     border-radius: 16px;
     padding: 1.5rem;
     height: 250px;

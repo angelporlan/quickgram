@@ -40,6 +40,7 @@
     flex-direction: column;
     gap: 0.5rem;
     flex: 1;
+    overflow-y: auto;
 }
 
 
@@ -241,10 +242,10 @@
         flex-direction: row;
         padding: 0.5rem;
         justify-content: space-between;
+        align-items: center;
     }
 
     .brand,
-    .user-profile,
     .section-title,
     .daily-goal-box {
         display: none;
@@ -255,6 +256,7 @@
         overflow-x: auto;
         gap: 0.5rem;
         padding: 0;
+        flex: 1;
     }
 
     .nav-section {
@@ -282,11 +284,51 @@
     .mt-auto {
         margin-top: 0;
         display: none;
-        /* Hide daily goal section completely on mobile */
+    }
+
+    .user-profile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0.5rem;
+        border-top: none;
+        padding-top: 0;
+        gap: 0.25rem;
+        min-width: 70px;
+        font-size: 0.7rem;
+        text-align: center;
+    }
+
+    .user-profile.active {
+        background-color: #2ecc71;
+        border-radius: 8px;
+        padding: 0.5rem;
+        margin: 0;
+    }
+
+    .user-profile.active .user-name,
+    .user-profile.active .user-plan {
+        color: #0e1515;
+    }
+
+    .avatar {
+        margin: 0;
+    }
+
+    .avatar img {
+        width: 28px;
+        height: 28px;
+    }
+
+    .user-info {
+        display: none;
+    }
+
+    .logout-mini {
+        display: none;
     }
 }
 
-/* Definimos la animación de rotación */
 @keyframes spin-glow {
     0% {
         transform: translate(-50%, -50%) rotate(0deg);
@@ -297,7 +339,6 @@
     }
 }
 
-/* Asegúrate de tener la animación definida (si no la tienes, agrégala) */
 @keyframes spin-glow {
     0% {
         transform: translate(-50%, -50%) rotate(0deg);

@@ -122,4 +122,8 @@ export class CategoryDetailComponent implements OnInit {
     handleStartTopic(topic: any) {
         this.router.navigate(['/exercise', topic.title]);
     }
+
+    goBack() {
+        this.router.navigate(['/categories']);
+    }
 }

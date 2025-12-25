@@ -11,6 +11,7 @@ export const routes: Routes = [
         component: MainLayoutComponent,
         children: [
             { path: '', component: HomeComponent },
+            { path: 'categories', loadComponent: () => import('./components/categories/categories.component').then(m => m.CategoriesComponent) },
             { path: 'streak', loadComponent: () => import('./components/streak/streak.component').then(m => m.StreakComponent) },
             { path: 'attempts', loadComponent: () => import('./components/attempts/attempts.component').then(m => m.AttemptsComponent) },
             { path: 'user', loadComponent: () => import('./components/user-profile/user-profile.component').then(m => m.UserProfileComponent) },
