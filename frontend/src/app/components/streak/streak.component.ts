@@ -16,6 +16,7 @@ export class StreakComponent implements OnInit {
     percentage = 0;
     saving = false;
     originalGoal = 5;
+    streak = 0;
 
     constructor(private userService: UserService, private router: Router) { }
 
@@ -26,6 +27,7 @@ export class StreakComponent implements OnInit {
                 this.originalGoal = data.dailyGoal;
                 this.numberOfAttempts = data.numberOfAttempts;
                 this.percentage = data.percentage;
+                this.streak = data.streak || 0;
             },
             error: (err: any) => console.error('Error loading daily goal:', err)
         });

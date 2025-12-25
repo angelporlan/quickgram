@@ -148,7 +148,10 @@ export const changeRole = async (req, res) => {
 
 export const userInformation = async (req, res) => {
     try {
-        const user = req.user.toJSON();
+        const userData = req.user;
+        await userData.checkStreak();
+
+        const user = userData.toJSON();
         delete user.password_hash;
         if (user.subscription_expires_at && new Date() > new Date(user.subscription_expires_at)) {
             user.subscription_role = "free";
@@ -173,7 +176,7 @@ export const updateUserInfo = async (req, res) => {
         if (name) user.name = name;
         if (username) {
             // Check if username already exists
-            const { User } = await import("../models/user.js");
+            const { User } = await import("../models/User.js");
             const existingUser = await User.findOne({ where: { username } });
             if (existingUser && existingUser.id !== user.id) {
                 return res.status(400).json({ message: "Username already taken" });
@@ -234,13 +237,15 @@ export const deleteUser = async (req, res) => {
 export const getNumberOfAttemptsToday = async (req, res) => {
     try {
         const user = req.user;
+        await user.checkStreak();
+
         const today = new Date().toISOString().split("T")[0];
         const numberOfAttempts = await UserExerciseAttempt.count({ where: { user_id: user.id, created_at: { [Op.gte]: today } } });
 
         const dailyGoal = user.daily_goal || 5;
         const percentage = Math.min(Math.floor((numberOfAttempts / dailyGoal) * 100), 100);
 
-        res.json({ numberOfAttempts, dailyGoal, percentage });
+        res.json({ numberOfAttempts, dailyGoal, percentage, streak: user.streak || 0 });
     } catch (error) {
         console.error(error);
         res.status(500).json({ message: "Error getting number of attempts" });

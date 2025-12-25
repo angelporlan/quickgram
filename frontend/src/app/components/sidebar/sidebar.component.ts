@@ -17,12 +17,14 @@ export class SidebarComponent implements OnInit, OnDestroy {
         username: 'guest',
         name: 'Guest User',
         plan: 'Free',
-        coins: 0
+        coins: 0,
+        streak: 0
     };
 
     dailyGoal = 5;
     numberOfAttempts = 0;
     percentage = 0;
+    streak = 0;
 
     private goalUpdateSub?: Subscription;
 
@@ -50,6 +52,7 @@ export class SidebarComponent implements OnInit, OnDestroy {
                 this.dailyGoal = data.dailyGoal;
                 this.numberOfAttempts = data.numberOfAttempts;
                 this.percentage = data.percentage;
+                this.streak = data.streak || 0;
             },
             error: (err: any) => console.error('Error loading daily goal:', err)
         });

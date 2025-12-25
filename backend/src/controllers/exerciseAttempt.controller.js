@@ -45,6 +45,35 @@ export const createExerciseAttempt = async (req, res) => {
 
         const coinsToAdd = REWARD_MAP[activeRole] || 10;
         user.coins = (user.coins || 0) + coinsToAdd;
+
+        const todayStr = new Date().toISOString().split('T')[0];
+        const { Op } = await import("sequelize");
+        const numberOfAttemptsToday = await UserExerciseAttempt.count({
+            where: {
+                user_id: user.id,
+                created_at: { [Op.gte]: todayStr }
+            }
+        });
+
+        const dailyGoal = user.daily_goal || 5;
+
+        if (numberOfAttemptsToday >= dailyGoal) {
+            const lastCompleted = user.last_completed_date;
+
+            if (lastCompleted !== todayStr) {
+                const yesterday = new Date();
+                yesterday.setDate(yesterday.getDate() - 1);
+                const yesterdayStr = yesterday.toISOString().split('T')[0];
+
+                if (lastCompleted === yesterdayStr) {
+                    user.streak = (user.streak || 0) + 1;
+                } else {
+                    user.streak = 1;
+                }
+                user.last_completed_date = todayStr;
+            }
+        }
+
         await user.save();
 
         res.status(201).json({
@@ -105,7 +134,6 @@ export const getUserAttempts = async (req, res) => {
                 {
                     model: Exercise,
                     as: 'exercise',
-                    // Removed invalid attributes like title/difficulty
                     include: [
                         {
                             model: Subcategory,

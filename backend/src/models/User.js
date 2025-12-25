@@ -37,6 +37,14 @@ export const User = sequelize.define("User", {
     coins: {
         type: DataTypes.INTEGER,
         defaultValue: 0
+    },
+    streak: {
+        type: DataTypes.INTEGER,
+        defaultValue: 0
+    },
+    last_completed_date: {
+        type: DataTypes.DATEONLY,
+        allowNull: true
     }
 }, {
     tableName: "users",
@@ -54,6 +62,26 @@ export const User = sequelize.define("User", {
         }
     }
 });
+
+User.prototype.checkStreak = async function () {
+    if (!this.last_completed_date) return;
+
+    const today = new Date();
+    const lastCompleted = new Date(this.last_completed_date);
+
+    const todayStr = today.toISOString().split('T')[0];
+    const lastCompletedStr = this.last_completed_date;
+
+    if (todayStr === lastCompletedStr) return;
+
+    const diffTime = Math.abs(new Date(todayStr) - new Date(lastCompletedStr));
+    const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+
+    if (diffDays > 1) {
+        this.streak = 0;
+        await this.save();
+    }
+};
 
 User.prototype.getActiveRole = function () {
     if (this.subscription_role === 'free') {
