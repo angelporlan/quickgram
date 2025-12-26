@@ -22,6 +22,9 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+// Servir archivos estáticos desde la carpeta public
+app.use('/public', express.static('public'));
+
 app.get("/", (req, res) => {
     res.send("API funcionando correctamente");
 });
@@ -37,7 +40,7 @@ app.use("/api", paymentsRoutes);
     try {
         // await AttemptExplanation.sync();
 
-        await sequelize.sync({ alter: true });
+        await sequelize.sync();
         console.log("Base de datos conectada y tablas sincronizadas");
 
         await seedLevels();

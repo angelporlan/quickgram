@@ -10,8 +10,16 @@ const getFrontUrl = () => {
     return rawUrl.startsWith("http") ? rawUrl : `http://${rawUrl}`;
 };
 
+const getBackendUrl = () => {
+    const PORT = process.env.ENV === "TEST" ? process.env.PORT_TEST : process.env.PORT_PROD || 4000;
+    const URL = process.env.ENV === "TEST" ? process.env.URL_TEST : process.env.URL_PROD || "http://localhost";
+    return `${URL}:${PORT}`;
+};
+
 const FRONT_URL = getFrontUrl();
+const BACKEND_URL = getBackendUrl();
 console.log("Stripe Redirect URL Base:", FRONT_URL);
+console.log("Backend URL Base:", BACKEND_URL);
 
 export const createSessionPremium = async (req, res) => {
     const session = await stripe.checkout.sessions.create({
@@ -22,7 +30,8 @@ export const createSessionPremium = async (req, res) => {
                     currency: "eur",
                     product_data: {
                         name: "Premium Subscription",
-                        description: "40 consultas IA diarias\nTodo lo de Pro\nContenido exclusivo\nAnálisis personalizado\nSesiones 1-on-1\nCertificados oficiales",
+                        description: "400 consultas IA diarias\nTodo lo de Pro\nContenido exclusivo\nAnálisis personalizado\nSesiones 1-on-1\nCertificados oficiales",
+                        images: [`${BACKEND_URL}/public/images/stripe-image.png`],
                     },
                     unit_amount: 1999,
                 },
@@ -50,6 +59,7 @@ export const createSessionPro = async (req, res) => {
                     product_data: {
                         name: "Pro Subscription",
                         description: "15 consultas IA diarias\nAcceso a todos los ejercicios\nEstadísticas avanzadas\nSimulacros de examen",
+                        images: [`${BACKEND_URL}/public/images/stripe-image.png`],
                     },
                     unit_amount: 999,
                 },
