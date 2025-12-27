@@ -97,13 +97,17 @@ export class CategoryDetailComponent implements OnInit {
         this.exerciseService.getSubcategories(this.categoryTitle)
             .pipe(finalize(() => this.isLoading = false))
             .subscribe((topics: any[]) => {
-                this.topics = topics.map(topic => ({
-                    ...topic,
-                    title: topic.name,
-                    icon: this.getIconForTopic(topic.name),
-                    status: 'not-started',
-                    progress: 0,
-                }));
+                this.topics = topics.map(topic => {
+                    const isLocked = topic.name === 'Short Dialogues' || topic.name === 'Long Audios';
+
+                    return {
+                        ...topic,
+                        title: topic.name,
+                        icon: isLocked ? 'locked' : this.getIconForTopic(topic.name),
+                        status: isLocked ? 'locked' : 'not-started',
+                        progress: 0,
+                    };
+                });
             });
     }
 
