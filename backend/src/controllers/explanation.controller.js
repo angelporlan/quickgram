@@ -98,6 +98,7 @@ Output requirements:
 `;
 
         const isMultipleChoice = attempt.exercise.type === 'multiple_choice' || attempt.exercise.type === 'multiple-choice';
+        const isConditionals = attempt.exercise.type === 'conditionals';
 
         if (isMultipleChoice) {
             prompt = `
@@ -113,6 +114,33 @@ Student answer:
 ${JSON.stringify(attempt.user_answer)}
 
 Explain clearly why the student answer is wrong and what the correct option is for each incorrect gap.
+`;
+        } else if (isConditionals) {
+            prompt = `
+${systemPromptJson}
+
+Exercise type: Conditionals (Fill in the blanks with correct verb forms)
+
+Exercise:
+${attempt.exercise.question_text}
+
+Correct answers:
+${attempt.exercise.correct_answer}
+
+Student answers:
+${JSON.stringify(attempt.user_answer)}
+
+For each incorrect answer, explain:
+- Why the student's verb form is incorrect
+- What the correct verb form should be
+- The grammar rule (conditional type, tense, etc.)
+- Keep explanations concise and focused on the specific conditional structure
+
+Focus on:
+- Zero conditional (present simple + present simple)
+- First conditional (present simple + will/won't)
+- Verb tense accuracy
+- Common mistakes with conditionals
 `;
         } else {
             prompt = `
