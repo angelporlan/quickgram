@@ -2,6 +2,10 @@
     <p>Cargando ejercicio...</p>
 </div>
 
-<app-multiple-choice *ngIf="!isLoading && exercise" [exercise]="exercise" (close)="goBack()"
-    (attemptSubmitted)="handleAttemptSubmission($event)">
+<app-multiple-choice *ngIf="!isLoading && exercise && exercise.type === 'multiple_choice'" [exercise]="exercise"
+    (close)="goBack()" (attemptSubmitted)="handleAttemptSubmission($event)">
 </app-multiple-choice>
+
+<app-conditionals *ngIf="!isLoading && exercise && exercise.type === 'conditionals'" [exercise]="exercise"
+    (close)="goBack()" (attemptSubmitted)="handleAttemptSubmission($event)">
+</app-conditionals>

@@ -10,7 +10,7 @@ const exercisesData = [
     subcategory_id: 2,
     question_text: `Complete the sentences with the correct form of the verbs in brackets to make the zero or first conditional.
 
-1   If you take the earlier bus, you ……will have…… (have) more time.
+1   If you take the earlier bus, you (1)…………… (have) more time.
 2   I usually (2)………………… (take) a book if I go on a long journey.
 3   If we can’t come tomorrow, we (3)………………… (send) you a message.
 4   You might be less bored if you (4)………………… (invite) some friends.
@@ -20,6 +20,7 @@ const exercisesData = [
 8   If you ask your friends tomorrow, they (8)………………… (explain) what to do, I’m sure.`,
     options: {},
     correct_answer: {
+      "1": "will have",
       "2": "take",
       "3": "’ll/will send",
       "4": "invite",

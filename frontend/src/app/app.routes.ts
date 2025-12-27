@@ -30,6 +30,10 @@ export const routes: Routes = [
             {
                 path: 'multiple-choice',
                 loadComponent: () => import('./components/results/reviews/multiple-choice-review/multiple-choice-review.component').then(m => m.MultipleChoiceReviewComponent)
+            },
+            {
+                path: 'conditionals',
+                loadComponent: () => import('./components/results/reviews/conditionals-review/conditionals-review.component').then(m => m.ConditionalsReviewComponent)
             }
         ]
     },
