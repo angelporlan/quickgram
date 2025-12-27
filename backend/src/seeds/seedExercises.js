@@ -5,6 +5,31 @@ import { Op } from "sequelize";
 
 const exercisesData = [
   {
+    title_like: "%Complete the sentences with the correct form%",
+    type: "conditionals",
+    subcategory_id: 2,
+    question_text: `Complete the sentences with the correct form of the verbs in brackets to make the zero or first conditional.
+
+1   If you take the earlier bus, you ……will have…… (have) more time.
+2   I usually (2)………………… (take) a book if I go on a long journey.
+3   If we can’t come tomorrow, we (3)………………… (send) you a message.
+4   You might be less bored if you (4)………………… (invite) some friends.
+5   My dad always (5)………………… (get) annoyed if I don’t tidy my room.
+6   When all the exams are over, you (6)………………… (be able to) relax.
+7   If you have a pet, you (7)………………… (need) to spend lots of time with it.
+8   If you ask your friends tomorrow, they (8)………………… (explain) what to do, I’m sure.`,
+    options: {},
+    correct_answer: {
+      "2": "take",
+      "3": "’ll/will send",
+      "4": "invite",
+      "5": "gets",
+      "6": "’ll/will be able to",
+      "7": "need",
+      "8": "’ll/will explain",
+    },
+  },
+  {
     title_like: "%Why you should read fiction%",
     question_text: `Why you should read fiction
 
@@ -150,7 +175,6 @@ At the following Girls’ Football Week in October 2016, the focus was more abou
       "9": "announced",
     },
   },
-  // EJERCICIO 6: The world’s quietest railway station
   {
     title_like: "%The world’s quietest railway station%",
     question_text: `The world’s quietest railway station
@@ -185,11 +209,12 @@ But keeping the station open for just one passenger simply was not (7)………�
 
 export const seedExercises = async () => {
   const level = await Level.findOne({ where: { name: "B2" } });
-  const subcategory = await Subcategory.findOne({
+
+  const defaultSubcategory = await Subcategory.findOne({
     where: { name: "Multiple Choice" },
   });
 
-  if (!level || !subcategory) {
+  if (!level || !defaultSubcategory) {
     throw new Error(
       "Level 'B2' or Subcategory 'Multiple Choice' not found. Please run seedLevels and seedSubcategories first."
     );
@@ -203,9 +228,12 @@ export const seedExercises = async () => {
         },
       },
       defaults: {
-        subcategory_id: subcategory.id,
+        subcategory_id: data.subcategory_id || defaultSubcategory.id,
+
         level_id: level.id,
-        type: "multiple_choice",
+
+        type: data.type || "multiple_choice",
+
         question_text: data.question_text,
         options: data.options,
         correct_answer: data.correct_answer,

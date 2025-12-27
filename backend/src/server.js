@@ -16,13 +16,13 @@ import { seedCategories } from "./seeds/seedCategories.js";
 import { seedSubcategories } from "./seeds/seedSubcategories.js";
 import { seedExercises } from "./seeds/seedExercises.js";
 import { seedUsers } from "./seeds/seedUsers.js";
+import { seedUserExerciseAttempts } from "./seeds/seedUserExerciseAttempts.js";
 
 const app = express();
 
 app.use(cors());
 app.use(express.json());
 
-// Servir archivos estáticos desde la carpeta public
 app.use('/public', express.static('public'));
 
 app.get("/", (req, res) => {
@@ -40,7 +40,7 @@ app.use("/api", paymentsRoutes);
     try {
         // await AttemptExplanation.sync();
 
-        await sequelize.sync();
+        await sequelize.sync({ force: true });
         console.log("Base de datos conectada y tablas sincronizadas");
 
         await seedLevels();
@@ -48,6 +48,7 @@ app.use("/api", paymentsRoutes);
         await seedSubcategories();
         await seedUsers();
         await seedExercises();
+        await seedUserExerciseAttempts();
         console.log("Seeds ejecutadas correctamente");
 
         const PORT = process.env.ENV === "TEST" ? process.env.PORT_TEST : process.env.PORT_PROD || 4000;
