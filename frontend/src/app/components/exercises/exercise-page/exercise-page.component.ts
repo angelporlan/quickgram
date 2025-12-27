@@ -69,11 +69,12 @@ export class ExercisePageComponent implements OnInit {
     }
 
     handleAttemptSubmission(data: any) {
-        console.log('handleAttemptSubmission called with data:', data);
-        console.log('Exercise type:', data.exercise.type);
+        // console.log('handleAttemptSubmission called with data:', data);
+        // console.log('Exercise type:', data.exercise.type);
         this.resultService.setResult(data.exercise, data.result, data.attemptId);
-        const exerciseType = data.exercise.type || 'multiple-choice';
-        console.log('Navigating to:', ['/results', data.attemptId, exerciseType]);
+
+        const exerciseType = (data.exercise.type || 'multiple-choice').replace(/_/g, '-');
+        // console.log('Navigating to:', ['/results', data.attemptId, exerciseType]);
         this.router.navigate(['/results', data.attemptId, exerciseType]);
     }
 }
