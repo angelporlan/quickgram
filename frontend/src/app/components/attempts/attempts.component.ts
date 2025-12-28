@@ -230,6 +230,14 @@ export class AttemptsComponent implements OnInit {
     }
 
     toSlug(text: string): string {
-        return text ? text.toLowerCase().replace(/ /g, '-') : '';
+        if (!text) return '';
+
+        const lowerText = text.toLowerCase();
+
+        if (lowerText === 'travel' || lowerText === 'work' || lowerText === 'education') {
+            return 'vocabulary';
+        }
+
+        return lowerText.replace(/ /g, '-');
     }
 }

@@ -64,7 +64,7 @@
                 <span class="btn-icon">💬</span> {{ isAnalyzing ? 'Analizando...' : 'Explicar con IA' }}
             </button>
         </div>
-        <button class="back-btn" routerLink="/">
+        <button class="back-btn" routerLink="/attempts">
             <span class="btn-icon">↩</span> Volver al inicio
         </button>
         <div class="ai-analysis-card" *ngIf="isAnalyzing || structuredExplanation || htmlExplanation">
