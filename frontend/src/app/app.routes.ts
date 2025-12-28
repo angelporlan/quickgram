@@ -34,6 +34,10 @@ export const routes: Routes = [
             {
                 path: 'conditionals',
                 loadComponent: () => import('./components/results/reviews/conditionals-review/conditionals-review.component').then(m => m.ConditionalsReviewComponent)
+            },
+            {
+                path: 'vocabulary',
+                loadComponent: () => import('./components/results/reviews/vocabulary-review/vocabulary-review.component').then(m => m.VocabularyReviewComponent)
             }
         ]
     },

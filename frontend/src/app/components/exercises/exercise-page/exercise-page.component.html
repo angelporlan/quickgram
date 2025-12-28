@@ -9,3 +9,7 @@
 <app-conditionals *ngIf="!isLoading && exercise && exercise.type === 'conditionals'" [exercise]="exercise"
     (close)="goBack()" (attemptSubmitted)="handleAttemptSubmission($event)">
 </app-conditionals>
+
+<app-vocabulary *ngIf="!isLoading && exercise && exercise.type === 'vocabulary'" [exercise]="exercise"
+    (close)="goBack()" (attemptSubmitted)="handleAttemptSubmission($event)">
+</app-vocabulary>

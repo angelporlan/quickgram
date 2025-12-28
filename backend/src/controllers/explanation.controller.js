@@ -49,7 +49,6 @@ export const explainAttempt = async (req, res) => {
         }
 
         const user = await User.findByPk(userId);
-
         const usageCheck = await checkAndConsumeAiUsage(user, { dryRun: true });
 
         if (!usageCheck.allowed) {
@@ -59,7 +58,6 @@ export const explainAttempt = async (req, res) => {
             });
         }
 
-        let prompt = '';
         const systemPromptJson = `
 You are an English B2 exam teacher.
 
@@ -80,42 +78,13 @@ Output requirements:
 }
 `;
 
-        const systemPromptHtml = `
-You are an English B2 exam teacher.
-
-Output requirements:
-- Return the explanation ONLY in HTML
-- Use semantic HTML tags (div, p, ul, li, strong)
-- Include inline CSS styles (do NOT use external styles or classes)
-- Structure the response with clear sections:
-  - Title
-  - Why it's incorrect
-  - Correct answer
-  - Explanation
-- Use simple, readable styling (fonts, spacing, colors)
-- Do NOT include markdown
-- Do NOT include explanations outside the HTML
-`;
+        let prompt = '';
 
         const isMultipleChoice = attempt.exercise.type === 'multiple_choice' || attempt.exercise.type === 'multiple-choice';
         const isConditionals = attempt.exercise.type === 'conditionals';
+        const isVocabulary = attempt.exercise.type === 'vocabulary';
 
-        if (isMultipleChoice) {
-            prompt = `
-${systemPromptJson}
-
-Exercise:
-${attempt.exercise.question_text}
-
-Correct answer:
-${attempt.exercise.correct_answer}
-
-Student answer:
-${JSON.stringify(attempt.user_answer)}
-
-Explain clearly why the student answer is wrong and what the correct option is for each incorrect gap.
-`;
-        } else if (isConditionals) {
+        if (isConditionals) {
             prompt = `
 ${systemPromptJson}
 
@@ -125,44 +94,53 @@ Exercise:
 ${attempt.exercise.question_text}
 
 Correct answers:
-${attempt.exercise.correct_answer}
+${JSON.stringify(attempt.exercise.correct_answer)}
 
 Student answers:
 ${JSON.stringify(attempt.user_answer)}
 
 For each incorrect answer, explain:
 - Why the student's verb form is incorrect
-- What the correct verb form should be
-- The grammar rule (conditional type, tense, etc.)
-- Keep explanations concise and focused on the specific conditional structure
-
-Focus on:
-- Zero conditional (present simple + present simple)
-- First conditional (present simple + will/won't)
-- Verb tense accuracy
-- Common mistakes with conditionals
+- What the correct verb form should be and why (Zero, First, Second conditional rules)
 `;
-        } else {
+        } else if (isVocabulary) {
             prompt = `
-${systemPromptHtml}
+${systemPromptJson}
+
+Exercise type: Vocabulary (Word Formation, Phrasal Verbs, or Collocations)
 
 Exercise:
 ${attempt.exercise.question_text}
 
-Correct answer:
-${attempt.exercise.correct_answer}
+Correct answers:
+${JSON.stringify(attempt.exercise.correct_answer)}
 
-Student answer:
+Student answers:
 ${JSON.stringify(attempt.user_answer)}
 
-Explain clearly:
-- Why the student answer is wrong
-- What the correct option is
-- Give a short grammar or vocabulary explanation
-- Keep it concise and easy to understand
+For each incorrect answer:
+- Explain the meaning of the correct word.
+- If it's a collocation, explain which words go together.
+- If it's word formation, explain the suffix/prefix used.
+`;
+        } else {
+            prompt = `
+${systemPromptJson}
+
+Exercise Type: ${attempt.exercise.type}
+
+Exercise:
+${attempt.exercise.question_text}
+
+Correct answers:
+${JSON.stringify(attempt.exercise.correct_answer)}
+
+Student answers:
+${JSON.stringify(attempt.user_answer)}
+
+Explain clearly why the student answer is wrong and what the correct option is for each incorrect gap.
 `;
         }
-
 
         const completion = await openai.chat.completions.create({
             model: "tngtech/deepseek-r1t2-chimera:free",
@@ -175,7 +153,10 @@ Explain clearly:
             temperature: 0.4
         });
 
-        const explanationText = completion.choices[0].message.content;
+        let explanationText = completion.choices[0].message.content;
+
+        explanationText = explanationText.replace(/<think>[\s\S]*?<\/think>/g, "").trim();
+        explanationText = explanationText.replace(/```json/g, "").replace(/```/g, "").trim();
 
         const finalUsage = await checkAndConsumeAiUsage(user);
 
