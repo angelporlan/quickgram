@@ -8,7 +8,9 @@ const exercisesData = [
     title_like: "%Travel Vocabulary: Fill in the gaps%",
     type: "vocabulary",
     subcategory_id: 4,
-    question_text: `1   We arrived at the airport early to (1)………………… our bags.
+    question_text: `Travel Vocabulary: Fill in the gaps
+
+1   We arrived at the airport early to (1)………………… our bags.
 2   The plane couldn't (2)………………… because of the heavy storm.
 3   We have a lot of (3)…………………, so we need to find a trolley.
 4   You must show your (4)………………… and passport before you get on the plane.
@@ -40,7 +42,9 @@ const exercisesData = [
     title_like: "%Work Vocabulary: Fill in the gaps%",
     type: "vocabulary",
     subcategory_id: 5,
-    question_text: `1   She decided to (1)………………… the job because the pay was good.
+    question_text: `Work Vocabulary: Fill in the gaps
+
+1   She decided to (1)………………… the job because the pay was good.
 2   I have to work (2)………………… tonight to finish this project on time.
 3   He was (3)………………… to manager after working there for five years.
 4   Nurses often have to work night (4)…………………, which can be very tiring.
@@ -72,7 +76,9 @@ const exercisesData = [
     title_like: "%Education Vocabulary: Fill in the gaps%",
     type: "vocabulary",
     subcategory_id: 6,
-    question_text: `1   You need to (1)………………… for the exam if you want to pass.
+    question_text: `Education Vocabulary: Fill in the gaps
+
+1   You need to (1)………………… for the exam if you want to pass.
 2   She hopes to (2)………………… from university next year.
 3   He got a (3)………………… to study music because he is so talented.
 4   I have to finish a difficult history (4)………………… by next Friday.
