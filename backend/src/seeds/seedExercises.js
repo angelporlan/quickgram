@@ -308,6 +308,28 @@ But keeping the station open for just one passenger simply was not (7)………�
       "9": "transport",
     },
   },
+  {
+    title_like: "%Join the Young Green Group!%",
+    type: "gap_fill",
+    subcategory_id: 12,
+    question_text: `Join the Young Green Group!
+
+If you take an interest in the environment and (1)…………… keen to learn more about how you can (2)…………… a real difference, the Young Green Group is for you. We are a club (3)…………… meets in towns and cities around the country and is open to anyone (4)…………… the ages of 11 and 16, who wants to (5)…………… involved in raising awareness of ‘green’ issues.
+
+We know you’ve heard it all before: turn taps off (6)…………… you’re cleaning your teeth; take the bus instead of asking for a lift; recycle, recycle, recycle! That is why this group offers (7)…………… a little different at our weekly meetings. You’ll learn about the direct impact our lifestyles have (8)…………… our wildlife and environment through a series of fun yet challenging activities. We’ll also put you in touch with other young people around the globe (9)…………… that you can find out what’s happening where they live. You may even be able to visit them!`,
+    options: {},
+    correct_answer: {
+      "1": "are",
+      "2": "make",
+      "3": "which/that",
+      "4": "between",
+      "5": "get/be/become",
+      "6": "while/whilst/when",
+      "7": "something",
+      "8": "on/upon",
+      "9": "so",
+    },
+  },
 ];
 
 export const seedExercises = async () => {
