@@ -5,6 +5,102 @@ import { Op } from "sequelize";
 
 const exercisesData = [
   {
+    title_like: "%Travel Vocabulary: Fill in the gaps%",
+    type: "vocabulary",
+    subcategory_id: 4,
+    question_text: `1   We arrived at the airport early to (1)………………… our bags.
+2   The plane couldn't (2)………………… because of the heavy storm.
+3   We have a lot of (3)…………………, so we need to find a trolley.
+4   You must show your (4)………………… and passport before you get on the plane.
+5   We plan to (5)………………… very early tomorrow morning to avoid the traffic.
+6   The train was cancelled, so there was a long (6)………………… at the station.
+7   We went (7)………………… in Paris and saw the Eiffel Tower.`,
+    options: {
+      "words": [
+        "boarding pass",
+        "check in",
+        "delay",
+        "luggage",
+        "set off",
+        "sightseeing",
+        "take off"
+      ]
+    },
+    correct_answer: {
+      "1": "check in",
+      "2": "take off",
+      "3": "luggage",
+      "4": "boarding pass",
+      "5": "set off",
+      "6": "delay",
+      "7": "sightseeing",
+    },
+  },
+  {
+    title_like: "%Work Vocabulary: Fill in the gaps%",
+    type: "vocabulary",
+    subcategory_id: 5,
+    question_text: `1   She decided to (1)………………… the job because the pay was good.
+2   I have to work (2)………………… tonight to finish this project on time.
+3   He was (3)………………… to manager after working there for five years.
+4   Nurses often have to work night (4)…………………, which can be very tiring.
+5   If you don't like the working conditions, you can always (5)………………… .
+6   The (6)………………… is paid directly into my bank account every month.
+7   He has been (7)………………… for three months and is still looking for a job.`,
+    options: {
+      "words": [
+        "apply for",
+        "overtime",
+        "salary",
+        "promoted",
+        "shifts",
+        "resign",
+        "unemployed"
+      ]
+    },
+    correct_answer: {
+      "1": "apply for",
+      "2": "overtime",
+      "3": "promoted",
+      "4": "shifts",
+      "5": "resign",
+      "6": "salary",
+      "7": "unemployed",
+    },
+  },
+  {
+    title_like: "%Education Vocabulary: Fill in the gaps%",
+    type: "vocabulary",
+    subcategory_id: 6,
+    question_text: `1   You need to (1)………………… for the exam if you want to pass.
+2   She hopes to (2)………………… from university next year.
+3   He got a (3)………………… to study music because he is so talented.
+4   I have to finish a difficult history (4)………………… by next Friday.
+5   It is important to (5)………………… all your classes so you don't miss information.
+6   Her (6)………………… have improved significantly this term; she got an 'A' in Math.
+7   After three years of hard study, she finally got her (7)………………… .`,
+    options: {
+      "words": [
+        "degree",
+        "revise",
+        "attend",
+        "scholarship",
+        "assignment",
+        "grades",
+        "graduate"
+      ]
+    },
+    correct_answer: {
+      "1": "revise",
+      "2": "graduate",
+      "3": "scholarship",
+      "4": "assignment",
+      "5": "attend",
+      "6": "grades",
+      "7": "degree",
+    },
+  },
+  {
     title_like: "%Complete the sentences with the correct form%",
     type: "conditionals",
     subcategory_id: 2,
