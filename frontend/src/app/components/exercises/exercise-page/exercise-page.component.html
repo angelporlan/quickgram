@@ -13,3 +13,7 @@
 <app-vocabulary *ngIf="!isLoading && exercise && exercise.type === 'vocabulary'" [exercise]="exercise"
     (close)="goBack()" (attemptSubmitted)="handleAttemptSubmission($event)">
 </app-vocabulary>
+
+<app-gap-fill *ngIf="!isLoading && exercise && exercise.type === 'gap_fill'" [exercise]="exercise" (close)="goBack()"
+    (attemptSubmitted)="handleAttemptSubmission($event)">
+</app-gap-fill>

@@ -38,6 +38,10 @@ export const routes: Routes = [
             {
                 path: 'vocabulary',
                 loadComponent: () => import('./components/results/reviews/vocabulary-review/vocabulary-review.component').then(m => m.VocabularyReviewComponent)
+            },
+            {
+                path: 'gap-fill',
+                loadComponent: () => import('./components/results/reviews/gap-fill-review/gap-fill-review.component').then(m => m.GapFillReviewComponent)
             }
         ]
     },

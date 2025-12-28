@@ -6,11 +6,12 @@ import { ExerciseResultService } from '../../../services/exercise-result.service
 import { MultipleChoiceComponent } from '../multiple-choice/multiple-choice.component';
 import { ConditionalsComponent } from '../conditionals/conditionals.component';
 import { VocabularyComponent } from '../vocabulary/vocabulary.component';
+import { GapFillComponent } from '../gap-fill/gap-fill.component';
 
 @Component({
     selector: 'app-exercise-page',
     standalone: true,
-    imports: [CommonModule, MultipleChoiceComponent, ConditionalsComponent, VocabularyComponent],
+    imports: [CommonModule, MultipleChoiceComponent, ConditionalsComponent, VocabularyComponent, GapFillComponent],
     templateUrl: './exercise-page.component.html',
     styles: [`
     :host {
