@@ -84,6 +84,11 @@ export const seedSubcategories = async () => {
             category_id: useOfEnglish.id,
             description: "Selección de la palabra o frase correcta entre varias opciones para completar oraciones o textos."
         },
+        {
+            name: "Word Formation",
+            category_id: useOfEnglish.id,
+            description: "Formación de palabras a partir de prefijos, sufijos y raíces."
+        },
 
         // Writting, email, letter
         {

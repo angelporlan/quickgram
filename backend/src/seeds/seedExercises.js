@@ -7,7 +7,7 @@ const exercisesData = [
   {
     title_like: "%Travel Vocabulary: Fill in the gaps%",
     type: "vocabulary",
-    subcategory_id: 4,
+    subcategory_name: "Travel",
     question_text: `Travel Vocabulary: Fill in the gaps
 
 1   We arrived at the airport early to (1)………………… our bags.
@@ -41,7 +41,7 @@ const exercisesData = [
   {
     title_like: "%Work Vocabulary: Fill in the gaps%",
     type: "vocabulary",
-    subcategory_id: 5,
+    subcategory_name: "Work",
     question_text: `Work Vocabulary: Fill in the gaps
 
 1   She decided to (1)………………… the job because the pay was good.
@@ -75,7 +75,7 @@ const exercisesData = [
   {
     title_like: "%Education Vocabulary: Fill in the gaps%",
     type: "vocabulary",
-    subcategory_id: 6,
+    subcategory_name: "Education",
     question_text: `Education Vocabulary: Fill in the gaps
 
 1   You need to (1)………………… for the exam if you want to pass.
@@ -109,7 +109,7 @@ const exercisesData = [
   {
     title_like: "%Complete the sentences with the correct form%",
     type: "conditionals",
-    subcategory_id: 2,
+    subcategory_name: "Conditionals",
     question_text: `Complete the sentences with the correct form of the verbs in brackets to make the zero or first conditional.
 
 1   If you take the earlier bus, you (1)…………… (have) more time.
@@ -130,6 +130,48 @@ const exercisesData = [
       "6": "’ll/will be able to",
       "7": "need",
       "8": "’ll/will explain",
+    },
+  },
+  {
+    title_like: "%Join the Young Green Group!%",
+    type: "gap_fill",
+    subcategory_name: "Gap Fill",
+    question_text: `Join the Young Green Group!
+
+If you take an interest in the environment and (1)…………… keen to learn more about how you can (2)…………… a real difference, the Young Green Group is for you. We are a club (3)…………… meets in towns and cities around the country and is open to anyone (4)…………… the ages of 11 and 16, who wants to (5)…………… involved in raising awareness of ‘green’ issues.
+
+We know you’ve heard it all before: turn taps off (6)…………… you’re cleaning your teeth; take the bus instead of asking for a lift; recycle, recycle, recycle! That is why this group offers (7)…………… a little different at our weekly meetings. You’ll learn about the direct impact our lifestyles have (8)…………… our wildlife and environment through a series of fun yet challenging activities. We’ll also put you in touch with other young people around the globe (9)…………… that you can find out what’s happening where they live. You may even be able to visit them!`,
+    options: {},
+    correct_answer: {
+      "1": "are",
+      "2": "make",
+      "3": "which/that",
+      "4": "between",
+      "5": "get/be/become",
+      "6": "while/whilst/when",
+      "7": "something",
+      "8": "on/upon",
+      "9": "so",
+    },
+  },
+  {
+    title_like: "%Smartphones at school%",
+    type: "word_formation",
+    subcategory_name: "Word Formation",
+    question_text: `Smartphones at school
+
+Some of the schools in my home town are really strict and students are not (1)…………… (ALLOW) to use their smartphones at school. Mine is different – there’s a much more (2)…………… (RELAX) policy. In break times, it’s (3)…………… (ACCEPT) to use our smartphones. But in lessons, it’s the individual teacher’s (4)…………… (DECIDE) whether we can use them or not. For some pieces of work, like a timed writing task, they’re completely (5)…………… (FORBID) . Of course it’s our (6)…………… (RESPONSIBLE) to follow the rules, which we do. In some lessons, the teachers actively encourage us to use our phones when they think it’ll be (7)…………… (BENEFIT) to us. There are lots of really good ways to use smartphones in class, and I’m in favour of these. One example is games, where we choose multiple-choice answers on our phones. I’m really (8)…………… (COMPETE), so love doing those. Although it can be a bit (9)…………… (SOCIAL), when everyone just uses their phone instead of talking.`,
+    options: {},
+    correct_answer: {
+      "1": "allowed",
+      "2": "relaxed",
+      "3": "acceptable",
+      "4": "decision",
+      "5": "forbidden",
+      "6": "responsibility",
+      "7": "beneficial",
+      "8": "competitive",
+      "9": "anti-social",
     },
   },
   {
@@ -308,44 +350,33 @@ But keeping the station open for just one passenger simply was not (7)………�
       "9": "transport",
     },
   },
-  {
-    title_like: "%Join the Young Green Group!%",
-    type: "gap_fill",
-    subcategory_id: 12,
-    question_text: `Join the Young Green Group!
-
-If you take an interest in the environment and (1)…………… keen to learn more about how you can (2)…………… a real difference, the Young Green Group is for you. We are a club (3)…………… meets in towns and cities around the country and is open to anyone (4)…………… the ages of 11 and 16, who wants to (5)…………… involved in raising awareness of ‘green’ issues.
-
-We know you’ve heard it all before: turn taps off (6)…………… you’re cleaning your teeth; take the bus instead of asking for a lift; recycle, recycle, recycle! That is why this group offers (7)…………… a little different at our weekly meetings. You’ll learn about the direct impact our lifestyles have (8)…………… our wildlife and environment through a series of fun yet challenging activities. We’ll also put you in touch with other young people around the globe (9)…………… that you can find out what’s happening where they live. You may even be able to visit them!`,
-    options: {},
-    correct_answer: {
-      "1": "are",
-      "2": "make",
-      "3": "which/that",
-      "4": "between",
-      "5": "get/be/become",
-      "6": "while/whilst/when",
-      "7": "something",
-      "8": "on/upon",
-      "9": "so",
-    },
-  },
 ];
 
 export const seedExercises = async () => {
   const level = await Level.findOne({ where: { name: "B2" } });
 
-  const defaultSubcategory = await Subcategory.findOne({
-    where: { name: "Multiple Choice" },
+  const allSubcategories = await Subcategory.findAll();
+
+  const subcategoryMap = {};
+  allSubcategories.forEach(sub => {
+    subcategoryMap[sub.name] = sub.id;
   });
 
-  if (!level || !defaultSubcategory) {
+  if (!level || !subcategoryMap["Multiple Choice"]) {
     throw new Error(
       "Level 'B2' or Subcategory 'Multiple Choice' not found. Please run seedLevels and seedSubcategories first."
     );
   }
 
   for (const data of exercisesData) {
+    let subCategoryIdToUse;
+
+    if (data.subcategory_name && subcategoryMap[data.subcategory_name]) {
+      subCategoryIdToUse = subcategoryMap[data.subcategory_name];
+    } else {
+      subCategoryIdToUse = subcategoryMap["Multiple Choice"];
+    }
+
     await Exercise.findOrCreate({
       where: {
         question_text: {
@@ -353,12 +384,9 @@ export const seedExercises = async () => {
         },
       },
       defaults: {
-        subcategory_id: data.subcategory_id || defaultSubcategory.id,
-
+        subcategory_id: subCategoryIdToUse,
         level_id: level.id,
-
         type: data.type || "multiple_choice",
-
         question_text: data.question_text,
         options: data.options,
         correct_answer: data.correct_answer,
