@@ -1,0 +1,45 @@
+<div class="review-list">
+    <div class="review-card" *ngFor="let q of processedQuestions" [class.correct]="q.isCorrect"
+        [class.incorrect]="!q.isCorrect">
+        <div class="card-header-row">
+            <span class="question-label">PREGUNTA {{ q.id }}</span>
+            <div class="status-icon">
+                {{ q.isCorrect ? '✓' : '✕' }}
+            </div>
+        </div>
+
+        <div class="first-sentence-box">
+            <span class="section-label">ORACIÓN ORIGINAL:</span>
+            <p class="first-sentence">{{ q.firstSentence }}</p>
+        </div>
+
+        <div class="keyword-display">
+            <span class="keyword-label">PALABRA CLAVE:</span>
+            <span class="keyword-value">{{ q.keyword }}</span>
+        </div>
+
+        <div class="second-sentence-box">
+            <span class="section-label">ORACIÓN A COMPLETAR:</span>
+            <p class="second-sentence-template">{{ q.secondSentence }}</p>
+        </div>
+
+        <div class="answers-section">
+            <div class="answer-box user-answer" [class.wrong]="!q.isCorrect">
+                <span class="answer-label">TU RESPUESTA:</span>
+                <div class="sentence-with-answer"
+                    [innerHTML]="getCompleteSentence(q.secondSentence, q.userAnswer || '-')">
+                </div>
+            </div>
+
+            <div class="answer-box correct-answer" *ngIf="!q.isCorrect">
+                <span class="answer-label">RESPUESTA CORRECTA:</span>
+                <div class="sentence-with-answer" [innerHTML]="getCompleteSentence(q.secondSentence, q.correctAnswer)">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="empty-state" *ngIf="processedQuestions.length === 0">
+    <p>No hay resultados para mostrar.</p>
+</div>
