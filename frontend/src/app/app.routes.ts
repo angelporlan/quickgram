@@ -46,6 +46,10 @@ export const routes: Routes = [
             {
                 path: 'word-formation',
                 loadComponent: () => import('./components/results/reviews/word-formation-review/word-formation-review.component').then(m => m.WordFormationReviewComponent)
+            },
+            {
+                path: 'key-word-transformation',
+                loadComponent: () => import('./components/results/reviews/key-word-transformation-review/key-word-transformation-review.component').then(m => m.KeyWordTransformationReviewComponent)
             }
         ]
     },

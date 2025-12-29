@@ -21,3 +21,7 @@
 <app-word-formation *ngIf="!isLoading && exercise && exercise.type === 'word_formation'" [exercise]="exercise"
     (close)="goBack()" (attemptSubmitted)="handleAttemptSubmission($event)">
 </app-word-formation>
+
+<app-key-word-transformation *ngIf="!isLoading && exercise && exercise.type === 'key_word_transformation'"
+    [exercise]="exercise" (close)="goBack()" (attemptSubmitted)="handleAttemptSubmission($event)">
+</app-key-word-transformation>
