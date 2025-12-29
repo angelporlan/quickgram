@@ -1,8 +1,10 @@
 <div class="card progress-card full-width">
     <div class="card-header">
         <h3>Progreso General del Curso</h3>
-        <p>Has completado el <span class="highlight">65%</span> del temario necesario. Tu nivel actual estimado es B2.1,
-            ¡estás muy cerca del objetivo!</p>
+        <!-- <p>Has completado el <span class="highlight">{{ syllabusPercentage }}%</span> del temario necesario. Tu nivel
+            actual estimado es {{ level }},
+            ¡estás muy cerca del objetivo!</p> -->
+        <p>Un breve resumen de tu progreso, aquí puedes ver tus aciertos, completados y uso de IA</p>
     </div>
 
     <div class="progress-stats">
@@ -13,7 +15,7 @@
                 </svg>
                 ACIERTOS
             </div>
-            <div class="stat-value">78%</div>
+            <div class="stat-value">{{ accuracy }}%</div>
         </div>
 
         <div class="stat-box">
@@ -25,13 +27,14 @@
                 </svg>
                 COMPLETADOS
             </div>
-            <div class="stat-value">142</div>
+            <div class="stat-value">{{ completed }}</div>
         </div>
 
         <div class="circular-progress-container">
-            <div class="circular-progress">
+            <div class="circular-progress"
+                [style.background]="'conic-gradient(#2ea043 ' + syllabusPercentage + '%, #2a2033 0)'">
                 <div class="inner-circle">
-                    <span class="percentage">65%</span>
+                    <span class="percentage">{{ syllabusPercentage }}%</span>
                     <span class="label">COMPLETADO</span>
                 </div>
             </div>

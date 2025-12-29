@@ -16,15 +16,16 @@ export const getUserProgress = async (req, res) => {
             where: { user_id: userId }
         });
 
-        const totalCorrect = await UserExerciseAttempt.count({
-            where: {
-                user_id: userId,
-                is_fully_correct: true
-            }
+        const totalCorrectGaps = await UserExerciseAttempt.sum('correct_gaps', {
+            where: { user_id: userId }
         });
 
-        const globalScore = totalAttempts
-            ? (totalCorrect / totalAttempts)
+        const totalTotalGaps = await UserExerciseAttempt.sum('total_gaps', {
+            where: { user_id: userId }
+        });
+
+        const globalScore = totalTotalGaps
+            ? (totalCorrectGaps / totalTotalGaps)
             : 0;
 
         const progressByCategory = await UserExerciseAttempt.findAll({
@@ -35,6 +36,7 @@ export const getUserProgress = async (req, res) => {
             ],
             include: {
                 model: Exercise,
+                as: 'exercise',
                 attributes: [],
                 include: {
                     model: Subcategory,
@@ -45,7 +47,7 @@ export const getUserProgress = async (req, res) => {
                     }
                 }
             },
-            group: ["Exercise.Subcategory.Category.id"]
+            group: ["exercise.Subcategory.Category.id", "exercise.Subcategory.Category.name"]
         });
 
         const progressByLevel = await UserExerciseAttempt.findAll({
@@ -56,13 +58,14 @@ export const getUserProgress = async (req, res) => {
             ],
             include: {
                 model: Exercise,
+                as: 'exercise',
                 attributes: [],
                 include: {
                     model: Level,
                     attributes: ["id", "name"]
                 }
             },
-            group: ["Exercise.Level.id"]
+            group: ["exercise.Level.id", "exercise.Level.name"]
         });
 
         const lastAttempts = await UserExerciseAttempt.findAll({
@@ -71,6 +74,7 @@ export const getUserProgress = async (req, res) => {
             limit: 10,
             include: {
                 model: Exercise,
+                as: 'exercise',
                 attributes: ["id", "type"]
             }
         });
@@ -78,7 +82,7 @@ export const getUserProgress = async (req, res) => {
         res.json({
             global: {
                 attempts: totalAttempts,
-                correct: totalCorrect,
+                correct: totalCorrectGaps || 0,
                 score: Number(globalScore.toFixed(2))
             },
             byCategory: progressByCategory,

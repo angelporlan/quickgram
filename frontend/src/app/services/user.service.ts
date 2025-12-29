@@ -12,6 +12,7 @@ export class UserService {
 
     private aiUsageCache: any = null;
     private userInfoCache: any = null;
+    private userProgressCache: any = null;
 
     private dailyGoalUpdatedSubject = new Subject<void>();
     dailyGoalUpdated$ = this.dailyGoalUpdatedSubject.asObservable();
@@ -36,9 +37,23 @@ export class UserService {
         );
     }
 
+    getUserProgress(): Observable<any> {
+        const token = this.authService.getToken();
+        const headers = new HttpHeaders({
+            'Authorization': `Bearer ${token}`
+        });
+        if (this.userProgressCache) {
+            return of(this.userProgressCache);
+        }
+        return this.http.get(`${this.apiUrl}/users/me/progress`, { headers }).pipe(
+            tap(data => this.userProgressCache = data)
+        );
+    }
+
     clearCache() {
         this.aiUsageCache = null;
         this.userInfoCache = null;
+        this.userProgressCache = null;
     }
 
     getUserInfo(): Observable<any> {
