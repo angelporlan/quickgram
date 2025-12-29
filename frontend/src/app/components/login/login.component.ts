@@ -14,6 +14,7 @@ import { AuthService } from '../../services/auth.service';
 export class LoginComponent {
     loginForm: FormGroup;
     errorMessage: string = '';
+    showPassword = false;
 
     constructor(
         private fb: FormBuilder,
@@ -39,5 +40,9 @@ export class LoginComponent {
                 }
             });
         }
+    }
+
+    togglePasswordVisibility() {
+        this.showPassword = !this.showPassword;
     }
 }
