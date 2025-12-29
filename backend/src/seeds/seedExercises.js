@@ -350,6 +350,56 @@ But keeping the station open for just one passenger simply was not (7)………�
       "9": "transport",
     },
   },
+  {
+    title_like: "%Jane dyed her hair orange%",
+    type: "key_word_transformation",
+    subcategory_name: "Key Word Transformation",
+    question_text: `Key Word Transformation
+For each question, complete the second sentence so that it has a similar meaning to the first sentence, using the word given. Do not change the word given. You must use between two and five words, including the word given.
+
+1. Jane dyed her hair orange two months ago and it has been that colour ever since.
+**FOR**
+Jane's hair (1)…………… two months.
+
+2. During the film on TV, the phone rang.
+**WAS**
+While I (2)…………… on TV, the phone rang.
+
+3. Do you have any plans for next Wednesday evening?
+**DOING**
+What (3)…………… next Wednesday evening?
+
+4. Please don't smoke in this room.
+**RATHER**
+I'd (4)…………… in this room.
+
+5. Everyone thinks that someone murdered Harry.
+**WAS**
+It (5)…………… murdered.
+
+6. I visited Paris with the idea of improving my French.
+**TO**
+I visited Paris (6)…………… .
+
+7. I didn't answer the phone, even though I knew it was my husband calling.
+**DESPITE**
+I didn't answer the phone (7)…………… husband.
+
+8. The weather was beautiful but we never went on the picnic.
+**OF**
+We never went on the picnic (8)…………… weather.`,
+    options: {},
+    correct_answer: {
+      "1": "has been orange for",
+      "2": "was watching the film",
+      "3": "are you doing",
+      "4": "rather you didn't smoke/rather you did not smoke",
+      "5": "is thought Harry was/is thought that Harry was",
+      "6": "to improve my French",
+      "7": "despite knowing it was my",
+      "8": "in spite of the beautiful",
+    },
+  },
 ];
 
 export const seedExercises = async () => {

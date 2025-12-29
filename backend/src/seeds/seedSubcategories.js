@@ -89,6 +89,11 @@ export const seedSubcategories = async () => {
             category_id: useOfEnglish.id,
             description: "Formación de palabras a partir de prefijos, sufijos y raíces."
         },
+        {
+            name: "Key Word Transformation",
+            category_id: useOfEnglish.id,
+            description: "Reescribir oraciones manteniendo el significado original y usando una palabra clave obligatoria."
+        },
 
         // Writting, email, letter
         {
