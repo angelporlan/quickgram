@@ -42,6 +42,10 @@ export const routes: Routes = [
             {
                 path: 'gap-fill',
                 loadComponent: () => import('./components/results/reviews/gap-fill-review/gap-fill-review.component').then(m => m.GapFillReviewComponent)
+            },
+            {
+                path: 'word-formation',
+                loadComponent: () => import('./components/results/reviews/word-formation-review/word-formation-review.component').then(m => m.WordFormationReviewComponent)
             }
         ]
     },

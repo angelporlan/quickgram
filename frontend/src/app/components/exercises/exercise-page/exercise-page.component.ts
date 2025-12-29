@@ -7,11 +7,12 @@ import { MultipleChoiceComponent } from '../multiple-choice/multiple-choice.comp
 import { ConditionalsComponent } from '../conditionals/conditionals.component';
 import { VocabularyComponent } from '../vocabulary/vocabulary.component';
 import { GapFillComponent } from '../gap-fill/gap-fill.component';
+import { WordFormationComponent } from '../word-formation/word-formation.component';
 
 @Component({
     selector: 'app-exercise-page',
     standalone: true,
-    imports: [CommonModule, MultipleChoiceComponent, ConditionalsComponent, VocabularyComponent, GapFillComponent],
+    imports: [CommonModule, MultipleChoiceComponent, ConditionalsComponent, VocabularyComponent, GapFillComponent, WordFormationComponent],
     templateUrl: './exercise-page.component.html',
     styles: [`
     :host {

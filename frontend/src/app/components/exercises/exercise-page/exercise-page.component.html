@@ -17,3 +17,7 @@
 <app-gap-fill *ngIf="!isLoading && exercise && exercise.type === 'gap_fill'" [exercise]="exercise" (close)="goBack()"
     (attemptSubmitted)="handleAttemptSubmission($event)">
 </app-gap-fill>
+
+<app-word-formation *ngIf="!isLoading && exercise && exercise.type === 'word_formation'" [exercise]="exercise"
+    (close)="goBack()" (attemptSubmitted)="handleAttemptSubmission($event)">
+</app-word-formation>
