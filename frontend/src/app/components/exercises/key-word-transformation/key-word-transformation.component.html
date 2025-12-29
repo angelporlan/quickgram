@@ -1,0 +1,104 @@
+<div class="exercise-overlay">
+    <header class="exercise-header">
+        <button class="back-btn" (click)="close.emit()">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M19 12H5M12 19l-7-7 7-7" />
+            </svg>
+            Salir
+        </button>
+        <div class="header-center">
+            <span class="logo-icon">🎓</span>
+            <span class="header-title">English B2 Prep</span>
+        </div>
+        <div class="progress-info">
+            Pregunta {{ answeredQuestions }} de {{ totalQuestions }}
+        </div>
+    </header>
+
+    <div class="progress-bar-container">
+        <div class="progress-bar" [style.width.%]="progressPercentage"></div>
+    </div>
+
+    <div class="exercise-body">
+        <div class="content-wrapper">
+            <h1>Grammar Practice</h1>
+            <p class="subtitle">Key Word Transformation - Rewrite Using the Given Word</p>
+
+            <div class="question-navigation" *ngIf="questions.length > 0">
+                <button *ngFor="let q of questions; let i = index" class="nav-dot"
+                    [class.active]="i === currentQuestionIndex" [class.answered]="userAnswers.has(q.id)"
+                    (click)="goToQuestion(i)">
+                    {{ q.id }}
+                </button>
+            </div>
+
+            <div class="question-container" *ngIf="currentQuestion">
+                <div class="question-card">
+                    <div class="question-header">
+                        <span class="question-number">PREGUNTA {{ currentQuestion.id }}</span>
+                    </div>
+
+                    <div class="instruction-box">
+                        <div class="lamp-icon">💡</div>
+                        <div class="instruction-text">
+                            <span class="label">INSTRUCCIÓN</span>
+                            <p>Completa la segunda oración para que tenga un significado similar a la primera, usando la
+                                palabra clave. Debes usar entre 2 y 5 palabras, incluyendo la palabra clave.</p>
+                        </div>
+                    </div>
+
+                    <div class="first-sentence">
+                        <span class="sentence-label">ORACIÓN ORIGINAL:</span>
+                        <p>{{ currentQuestion.firstSentence }}</p>
+                    </div>
+
+                    <div class="keyword-box">
+                        <span class="keyword-label">PALABRA CLAVE:</span>
+                        <span class="keyword">{{ currentQuestion.keyword }}</span>
+                    </div>
+
+                    <div class="second-sentence">
+                        <span class="sentence-label">COMPLETA LA ORACIÓN:</span>
+                        <p class="sentence-with-gap">
+                            <ng-container *ngFor="let part of currentQuestion.secondSentence.split('(')">
+                                <ng-container *ngIf="!part.includes(')')">{{ part }}</ng-container>
+                                <ng-container *ngIf="part.includes(')')">
+                                    <span class="gap-container">
+                                        <input type="text" class="gap-input" [value]="currentAnswer"
+                                            (input)="onInputChange($any($event.target).value)"
+                                            placeholder="Escribe aquí..." autocomplete="off" />
+                                    </span>
+                                    {{ part.split(')')[1] }}
+                                </ng-container>
+                            </ng-container>
+                        </p>
+                    </div>
+
+                    <div class="word-counter" style="display: none;"
+                        [class.invalid]="currentAnswer && !isValidWordCount">
+                        <span class="counter-label">Palabras:</span>
+                        <span class="counter-value">{{ currentWordCount }}/5</span>
+                        <span class="counter-hint" *ngIf="currentAnswer && !isValidWordCount">
+                            Debe tener entre 2 y 5 palabras
+                        </span>
+                    </div>
+
+                    <div class="navigation-buttons">
+                        <button class="nav-btn prev-btn" (click)="previousQuestion()"
+                            [disabled]="currentQuestionIndex === 0">
+                            ← Anterior
+                        </button>
+                        <button class="nav-btn next-btn" (click)="nextQuestion()"
+                            [disabled]="currentQuestionIndex === questions.length - 1">
+                            Siguiente →
+                        </button>
+                    </div>
+
+                    <button class="submit-btn" (click)="submit()" [disabled]="!allQuestionsAnswered">
+                        Enviar Respuestas
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
