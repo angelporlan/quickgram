@@ -432,6 +432,159 @@ Finally, education is key. Schools should **have students participate** (Causati
 In conclusion, although the damage is severe, it is reversible. By improving transport and protecting our waters, we can make a difference.`
     },
   },
+  {
+    title_like: "%Article: The Internet%",
+    type: "writing",
+    subcategory_name: "Article",
+    question_text: `You have seen this announcement on an English-language website.
+
+**ARTICLES WANTED: The Internet**
+
+What is the most important thing you use the internet for? Does it do more harm than good?
+Write an article answering these questions and giving your opinion.
+
+Write your article in **140–190 words**.`,
+    options: {},
+    correct_answer: {
+      "model_answer": `**The Web of Wonders: Friend or Foe?**
+
+Can you imagine a world without Google or Instagram? For my generation, the internet is not just a tool; it is the air we breathe. But is it actually good for us?
+
+Personally, the most important thing I use the internet for is education. Whether I need to research history for an assignment or learn how to cook pasta, the answer is just a click away. It is like having a library in your pocket 24/7.
+
+However, there is a dark side. Social media can make people feel inadequate and lonely. Furthermore, fake news spreads faster than truth, which is dangerous for society. If we are not careful, we might lose the ability to think critically.
+
+In my view, the internet does more good than harm, but only if we use it wisely. It connects us and educates us, but we must control it, rather than letting it control us.
+
+So, log on, learn something new, but don't forget to switch off and live in the real world too!`
+    }
+  },
+  {
+    title_like: "%Review: A TV Series%",
+    type: "writing",
+    subcategory_name: "Review",
+    question_text: `You have seen this announcement in an entertainment magazine.
+
+**Reviews Wanted: TV Series**
+Have you watched a TV series recently that you really enjoyed (or hated)?
+Write a review describing the plot and the characters. Tell us why you liked or disliked it and whether you would recommend it to people your age.
+
+Write your review in **140–190 words**.`,
+    options: {},
+    correct_answer: {
+      "model_answer": `**Stranger Things: A Nostalgic Masterpiece**
+
+If you are looking for a series that combines horror, sci-fi, and 80s nostalgia, then 'Stranger Things' is the show for you. I recently binged the latest season, and I was completely hooked.
+
+The story is set in a small town where a young boy vanishes mysteriously. His friends set out to find him and discover secret government experiments and supernatural forces. The plot is incredibly gripping, with cliffhangers that force you to watch "just one more episode".
+
+The characters are the best part of the show. You really care about them, especially Eleven, a girl with telekinetic powers. The acting is superb, and the soundtrack is absolutely fantastic.
+
+My only criticism is that some episodes in the second season felt a bit slow. However, the action-packed finale made up for it.
+
+I would highly recommend this series to anyone who loves mysteries or Stephen King movies. It is definitely a must-watch!`
+    }
+  },
+  {
+    title_like: "%Report: School Trip%",
+    type: "writing",
+    subcategory_name: "Report",
+    question_text: `You recently went on a one-day class trip to a local museum. The school principal has asked you to write a report.
+
+**Write a report** covering the following points:
+* What students learned from the trip.
+* Problems you had during the day.
+* Suggestions for future trips.
+
+Write your report in **140–190 words**.`,
+    options: {},
+    correct_answer: {
+      "model_answer": `**Report on the Class Trip to the Science Museum**
+
+**Introduction**
+The aim of this report is to evaluate the recent class visit to the Science Museum and to make recommendations for future school excursions.
+
+**Educational Value**
+The vast majority of students found the trip extremely educational. The interactive exhibitions were particularly popular because they allowed students to conduct their own experiments. Consequently, many students commented that they now understand physics concepts much better.
+
+**Problems Encountered**
+Despite the success of the exhibitions, there were some logistical issues:
+* **Transport:** The bus arrived 30 minutes late, which reduced our time at the museum.
+* **The Canteen:** The food was expensive and there were not enough tables for our group.
+
+**Suggestions**
+Based on the feedback, the following recommendations are made for next year:
+1.  **Book** a private coach company to ensure punctuality.
+2.  **Advise** students to bring their own packed lunches to avoid the queues and high prices in the canteen.
+
+**Conclusion**
+To sum up, the trip was a success academically, but better planning is needed regarding transport and food.`
+    }
+  },
+  {
+    title_like: "%Email: Visiting a friend%",
+    type: "writing",
+    subcategory_name: "Email",
+    question_text: `You have received an email from your English friend, Sam.
+
+*"I'm so excited that you're coming to visit me in my city next month! I need to know what kind of things you'd like to do while you are here. Also, what kind of food do you like? And do you need me to meet you at the airport?"*
+
+Write your email to Sam answering his questions.
+Write **140–190 words**.`,
+    options: {},
+    correct_answer: {
+      "model_answer": `Subject: Can't wait to see you!
+
+Hi Sam,
+
+Thanks for your email! I’m absolutely thrilled about coming to stay with you next month. It feels like ages since we last saw each other!
+
+As for what I’d like to do, I’m really keen on sightseeing. I’ve heard your city has a beautiful old castle, so I’d love to visit that if possible. Also, I wouldn't say no to a bit of shopping if we have time! I'm easy-going, though, so I'm happy to do whatever you suggest.
+
+Regarding food, I’m not a fussy eater at all. I love trying new things, especially spicy food. The only thing I can't stand is seafood, so please don't take me to a sushi restaurant!
+
+It would be wonderful if you could pick me up at the airport. My flight lands at 10:30 am, but I can take a bus if you are working or busy.
+
+I can't wait to see you soon.
+
+Best wishes,
+
+[User Name]`
+    }
+  },
+  {
+    title_like: "%Letter: Job Application%",
+    type: "writing",
+    subcategory_name: "Letter",
+    question_text: `You have seen this advertisement in a local newspaper.
+
+**Part-time Tour Guides Wanted**
+We are looking for enthusiastic young people to work as tour guides for foreign tourists in your town this summer.
+* Do you speak English fluently?
+* Do you know the history of our town?
+* Are you available in July and August?
+
+**Write a letter of application** to Mr. Jones, explaining why you are suitable for the job.
+Write **140–190 words**.`,
+    options: {},
+    correct_answer: {
+      "model_answer": `Dear Mr. Jones,
+
+I am writing to apply for the position of part-time tour guide which I saw advertised in the 'Daily News' yesterday.
+
+I am a final-year student at the local university and I believe I would be an excellent candidate for this vacancy. I have lived in this town all my life, so I have extensive knowledge of its history and local landmarks. In addition, I have a C1 level certificate in English, which allows me to communicate fluently with international visitors.
+
+As for my personality, I consider myself to be an enthusiastic and outgoing person. I have previous experience working as a camp monitor, so I am used to organising groups and public speaking.
+
+I am available to work every day during July and August as I have finished my exams. I enclose my CV for your attention.
+
+Thank you for considering my application. I look forward to hearing from you.
+
+Yours sincerely,
+
+[User Name]`
+    }
+  },
 ];
 
 export const seedExercises = async () => {

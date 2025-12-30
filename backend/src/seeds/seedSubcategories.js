@@ -99,8 +99,33 @@ export const seedSubcategories = async () => {
         {
             name: "Essay",
             category_id: writing.id,
-            description: "Escritura de ensayos académicos expresando opinión, argumentos y conclusiones (Part 1 Compulsory)."
+            description: "Ensayo académico (Compulsory Part 1). Requiere opinión, argumentos y conclusión."
         },
+        {
+            name: "Article",
+            category_id: writing.id,
+            description: "Artículo para revista o web. Tono interesante, título pegadizo, preguntas retóricas y opinión personal."
+        },
+        {
+            name: "Review",
+            category_id: writing.id,
+            description: "Reseña crítica sobre libros, películas, restaurantes o productos, finalizando con una recomendación."
+        },
+        {
+            name: "Report",
+            category_id: writing.id,
+            description: "Informe formal para un superior o grupo. Estructura clara con encabezados (Headings), datos objetivos y sugerencias."
+        },
+        {
+            name: "Email",
+            category_id: writing.id,
+            description: "Correo electrónico. Puede ser informal (a un amigo) o formal, respondiendo a preguntas específicas."
+        },
+        {
+            name: "Letter",
+            category_id: writing.id,
+            description: "Carta formal (solicitud de empleo, queja) o informal. Estructura y saludos/despedidas definidos."
+        }
     ];
 
     for (const sub of subcategories) {
