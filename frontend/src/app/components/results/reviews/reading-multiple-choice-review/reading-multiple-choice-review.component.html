@@ -1,0 +1,38 @@
+<div class="review-container">
+    <div class="reading-section">
+        <h2 class="section-title">TEXTO DE LECTURA</h2>
+        <div class="reading-text">
+            <p class="text-content">{{ readingText }}</p>
+        </div>
+    </div>
+
+    <div class="questions-section">
+        <h2 class="section-title">REVISIÓN DE RESPUESTAS</h2>
+
+        <div class="question-review-card" *ngFor="let question of questions" [class.correct]="question.isCorrect"
+            [class.incorrect]="!question.isCorrect">
+
+            <div class="card-header">
+                <span class="question-label">PREGUNTA {{ question.id }}</span>
+                <div class="status-badge" [class.correct]="question.isCorrect" [class.incorrect]="!question.isCorrect">
+                    <span class="status-icon">{{ question.isCorrect ? '✓' : '✕' }}</span>
+                    <span class="status-text">{{ question.isCorrect ? 'Correcta' : 'Incorrecta' }}</span>
+                </div>
+            </div>
+
+            <p class="question-text">{{ question.text }}</p>
+
+            <div class="answers-section">
+                <div class="answer-box user-answer" [class.wrong]="!question.isCorrect">
+                    <span class="answer-label">TU RESPUESTA:</span>
+                    <span class="answer-value">{{ question.userAnswer }}</span>
+                </div>
+
+                <div class="answer-box correct-answer" *ngIf="!question.isCorrect">
+                    <span class="answer-label">RESPUESTA CORRECTA:</span>
+                    <span class="answer-value">{{ question.correctAnswer }}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
