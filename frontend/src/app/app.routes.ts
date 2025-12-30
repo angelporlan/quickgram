@@ -50,6 +50,10 @@ export const routes: Routes = [
             {
                 path: 'key-word-transformation',
                 loadComponent: () => import('./components/results/reviews/key-word-transformation-review/key-word-transformation-review.component').then(m => m.KeyWordTransformationReviewComponent)
+            },
+            {
+                path: 'essay',
+                loadComponent: () => import('./components/results/reviews/essay-review/essay-review.component').then(m => m.EssayReviewComponent)
             }
         ]
     },

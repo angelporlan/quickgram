@@ -9,11 +9,12 @@ import { VocabularyComponent } from '../vocabulary/vocabulary.component';
 import { GapFillComponent } from '../gap-fill/gap-fill.component';
 import { WordFormationComponent } from '../word-formation/word-formation.component';
 import { KeyWordTransformationComponent } from '../key-word-transformation/key-word-transformation.component';
+import { EssayComponent } from '../essay/essay.component';
 
 @Component({
     selector: 'app-exercise-page',
     standalone: true,
-    imports: [CommonModule, MultipleChoiceComponent, ConditionalsComponent, VocabularyComponent, GapFillComponent, WordFormationComponent, KeyWordTransformationComponent],
+    imports: [CommonModule, MultipleChoiceComponent, ConditionalsComponent, VocabularyComponent, GapFillComponent, WordFormationComponent, KeyWordTransformationComponent, EssayComponent],
     templateUrl: './exercise-page.component.html',
     styles: [`
     :host {
