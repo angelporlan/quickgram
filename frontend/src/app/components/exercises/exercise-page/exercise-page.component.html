@@ -37,3 +37,7 @@
 <app-gapped-text *ngIf="!isLoading && exercise && exercise.type === 'reading_gapped_text'" [exercise]="exercise"
     (close)="goBack()" (attemptSubmitted)="handleAttemptSubmission($event)">
 </app-gapped-text>
+
+<app-multiple-matching *ngIf="!isLoading && exercise && exercise.type === 'reading_multiple_matching'"
+    [exercise]="exercise" (close)="goBack()" (attemptSubmitted)="handleAttemptSubmission($event)">
+</app-multiple-matching>
