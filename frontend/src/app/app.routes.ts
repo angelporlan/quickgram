@@ -60,7 +60,7 @@ export const routes: Routes = [
                 loadComponent: () => import('./components/results/reviews/essay-review/essay-review.component').then(m => m.EssayReviewComponent)
             },
             {
-                path: 'reading-multiple-choice',
+                path: 'multiple-choice-reading',
                 loadComponent: () => import('./components/results/reviews/reading-multiple-choice-review/reading-multiple-choice-review.component').then(m => m.ReadingMultipleChoiceReviewComponent)
             }
         ]
