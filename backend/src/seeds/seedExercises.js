@@ -400,6 +400,38 @@ We never went on the picnic (8)…………… weather.`,
       "8": "in spite of the beautiful",
     },
   },
+  {
+    title_like: "%Protecting the Environment%",
+    type: "essay",
+    subcategory_name: "Essay",
+    question_text: `In your English class you have been talking about the environment. Now, your English teacher has asked you to write an essay.
+
+Write an essay using all the notes and giving reasons for your point of view.
+
+"Every country in the world has problems with pollution and damage to the environment. Do you think these problems can be solved?"
+
+Notes:
+Write about:
+1.  Transport
+2.  Rivers and seas
+3.  .......... (your own idea)
+
+(Write 140-190 words. Try to include: specific adverbs, 2nd & 3rd conditionals, causative verbs, and conjunctions).`,
+    options: {},
+    correct_answer: {
+      "model_answer": `Protecting the Environment: A Joint Responsibility
+
+Pollution is one of the most significant challenges of the 21st century. **However**, I believe that if we take immediate action, these problems can be solved.
+
+**Particularly** in large cities, traffic is a major cause of pollution. If governments **invested** more in efficient electric buses, fewer people **would feel** the need to drive their private cars (2nd Conditional). **In addition**, we should **have our car engines checked** (Causative) regularly to ensure they are not emitting excessive fumes.
+
+**Not only** does pollution affect the air, **but** it **also** damages our water sources. **Approximately** 8 million tons of plastic end up in the oceans every year. If we **had banned** single-use plastics twenty years ago, our oceans **would be** much cleaner today (3rd Conditional/Mixed). **Therefore**, strict laws are necessary to prevent factories from dumping waste into rivers.
+
+Finally, education is key. Schools should **have students participate** (Causative) in local clean-up projects. 
+
+In conclusion, although the damage is severe, it is reversible. By improving transport and protecting our waters, we can make a difference.`
+    },
+  },
 ];
 
 export const seedExercises = async () => {

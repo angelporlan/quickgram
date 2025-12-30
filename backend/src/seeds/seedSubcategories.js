@@ -97,15 +97,10 @@ export const seedSubcategories = async () => {
 
         // Writting, email, letter
         {
-            name: "Email",
+            name: "Essay",
             category_id: writing.id,
-            description: "Ejercicios de redacción de correos electrónicos."
+            description: "Escritura de ensayos académicos expresando opinión, argumentos y conclusiones (Part 1 Compulsory)."
         },
-        {
-            name: "Letter",
-            category_id: writing.id,
-            description: "Ejercicios de redacción de cartas."
-        }
     ];
 
     for (const sub of subcategories) {
