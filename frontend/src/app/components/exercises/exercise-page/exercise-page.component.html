@@ -26,6 +26,6 @@
     [exercise]="exercise" (close)="goBack()" (attemptSubmitted)="handleAttemptSubmission($event)">
 </app-key-word-transformation>
 
-<app-essay *ngIf="!isLoading && exercise && exercise.type === 'essay'" [exercise]="exercise" (close)="goBack()"
-    (attemptSubmitted)="handleAttemptSubmission($event)">
+<app-essay *ngIf="!isLoading && exercise && (exercise.type === 'essay' || exercise.type === 'writing')"
+    [exercise]="exercise" (close)="goBack()" (attemptSubmitted)="handleAttemptSubmission($event)">
 </app-essay>
