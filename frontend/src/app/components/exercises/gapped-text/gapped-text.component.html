@@ -1,0 +1,79 @@
+<div class="gapped-container">
+    <div class="header">
+        <button class="close-btn" (click)="close.emit()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+        </button>
+        <h1 class="title">Gapped Text</h1>
+        <div class="progress-info">
+            <span>{{ answeredCount }} / {{ gaps.length }} huecos completados</span>
+            <div class="progress-bar">
+                <div class="progress-fill" [style.width.%]="progressPercentage"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="content-wrapper">
+        <div class="left-column">
+            <div class="instructions-section">
+                <h2 class="section-title">Instrucciones</h2>
+                <p class="instructions-text">{{ instructions }}</p>
+            </div>
+
+            <div class="reading-section">
+                <h2 class="section-title">Texto</h2>
+                <div class="reading-text">
+                    <div class="text-with-gaps">
+                        <ng-container *ngFor="let part of getTextWithGaps()">
+                            <span *ngIf="!part.startsWith('GAP_')" class="text-part">{{ part }}</span>
+                            <span *ngIf="part.startsWith('GAP_')" class="gap-placeholder">
+                                <span class="gap-number">({{ part.replace('GAP_', '') }})</span>
+                                <span class="gap-content" [class.filled]="userAnswers[+part.replace('GAP_', '')]">
+                                    {{ userAnswers[+part.replace('GAP_', '')] || '...........' }}
+                                </span>
+                            </span>
+                        </ng-container>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="right-column">
+            <div class="sentences-section">
+                <h2 class="section-title">Oraciones Disponibles</h2>
+                <p class="helper-text">Haz clic en una oración y luego en el hueco donde quieres colocarla</p>
+
+                <div class="sentences-list">
+                    <div class="sentence-card" *ngFor="let sentence of availableSentences | keyvalue"
+                        [class.used]="isSentenceUsed(sentence.key)"
+                        (click)="!isSentenceUsed(sentence.key) && selectedSentence = sentence.key"
+                        [class.selected]="selectedSentence === sentence.key">
+                        <span class="sentence-key">{{ sentence.key }}</span>
+                        <span class="sentence-text">{{ sentence.value }}</span>
+                    </div>
+                </div>
+
+                <div class="gaps-selector">
+                    <h3 class="selector-title">Selecciona el hueco:</h3>
+                    <div class="gaps-grid">
+                        <button class="gap-btn" *ngFor="let gap of gaps" [class.filled]="userAnswers[gap]"
+                            [disabled]="!selectedSentence"
+                            (click)="selectedSentence && selectSentence(gap, selectedSentence); selectedSentence = null">
+                            {{ gap }}
+                            <span class="gap-value" *ngIf="userAnswers[gap]">({{ userAnswers[gap] }})</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="submit-section">
+                    <button class="submit-btn" (click)="submit()" [disabled]="!allGapsFilled">
+                        Enviar Respuestas
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

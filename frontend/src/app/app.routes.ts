@@ -62,6 +62,10 @@ export const routes: Routes = [
             {
                 path: 'multiple-choice-reading',
                 loadComponent: () => import('./components/results/reviews/reading-multiple-choice-review/reading-multiple-choice-review.component').then(m => m.ReadingMultipleChoiceReviewComponent)
+            },
+            {
+                path: 'gapped-text',
+                loadComponent: () => import('./components/results/reviews/gapped-text-review/gapped-text-review.component').then(m => m.GappedTextReviewComponent)
             }
         ]
     },

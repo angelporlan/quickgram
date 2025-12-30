@@ -11,11 +11,12 @@ import { WordFormationComponent } from '../word-formation/word-formation.compone
 import { KeyWordTransformationComponent } from '../key-word-transformation/key-word-transformation.component';
 import { EssayComponent } from '../essay/essay.component';
 import { ReadingMultipleChoiceComponent } from '../reading-multiple-choice/reading-multiple-choice.component';
+import { GappedTextComponent } from '../gapped-text/gapped-text.component';
 
 @Component({
     selector: 'app-exercise-page',
     standalone: true,
-    imports: [CommonModule, MultipleChoiceComponent, ConditionalsComponent, VocabularyComponent, GapFillComponent, WordFormationComponent, KeyWordTransformationComponent, EssayComponent, ReadingMultipleChoiceComponent],
+    imports: [CommonModule, MultipleChoiceComponent, ConditionalsComponent, VocabularyComponent, GapFillComponent, WordFormationComponent, KeyWordTransformationComponent, EssayComponent, ReadingMultipleChoiceComponent, GappedTextComponent],
     templateUrl: './exercise-page.component.html',
     styles: [`
     :host {
@@ -81,6 +82,10 @@ export class ExercisePageComponent implements OnInit {
 
         if (exerciseType === 'reading-multiple-choice') {
             exerciseType = 'multiple-choice-reading';
+        }
+
+        if (exerciseType === 'reading-gapped-text') {
+            exerciseType = 'gapped-text';
         }
 
         this.router.navigate(['/results', data.attemptId, exerciseType]);
