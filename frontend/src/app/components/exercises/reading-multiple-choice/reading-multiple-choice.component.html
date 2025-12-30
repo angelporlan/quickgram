@@ -16,37 +16,44 @@
         </div>
     </div>
 
-    <div class="content">
-        <div class="reading-section">
-            <h2 class="section-title">Texto de Lectura</h2>
-            <div class="reading-text">
-                <p class="text-content">{{ readingText }}</p>
-            </div>
-        </div>
-
-        <div class="questions-section">
-            <h2 class="section-title">Preguntas</h2>
-            <div class="question-card" *ngFor="let question of questions">
-                <h3 class="question-number">Pregunta {{ question.id }}</h3>
-                <p class="question-text">{{ question.text }}</p>
-
-                <div class="options-list">
-                    <div class="option-item" *ngFor="let option of question.options; let i = index"
-                        [class.selected]="userAnswers[question.id] === option"
-                        (click)="selectAnswer(question.id, option)">
-                        <div class="option-radio">
-                            <span class="radio-circle" [class.checked]="userAnswers[question.id] === option"></span>
-                        </div>
-                        <span class="option-text">{{ option }}</span>
-                    </div>
+    <div class="content-wrapper">
+        <div class="left-column">
+            <div class="reading-section">
+                <h2 class="section-title">Texto de Lectura</h2>
+                <div class="reading-text">
+                    <p class="text-content">{{ readingText }}</p>
                 </div>
             </div>
         </div>
 
-        <div class="submit-section">
-            <button class="submit-btn" (click)="submit()" [disabled]="!allQuestionsAnswered">
-                Enviar Respuestas
-            </button>
+        <div class="right-column">
+            <div class="questions-section">
+                <h2 class="section-title">Preguntas</h2>
+                <div class="questions-scroll">
+                    <div class="question-card" *ngFor="let question of questions">
+                        <h3 class="question-number">Pregunta {{ question.id }}</h3>
+                        <p class="question-text">{{ question.text }}</p>
+
+                        <div class="options-list">
+                            <div class="option-item" *ngFor="let option of question.options; let i = index"
+                                [class.selected]="userAnswers[question.id] === option"
+                                (click)="selectAnswer(question.id, option)">
+                                <div class="option-radio">
+                                    <span class="radio-circle"
+                                        [class.checked]="userAnswers[question.id] === option"></span>
+                                </div>
+                                <span class="option-text">{{ option }}</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="submit-section">
+                        <button class="submit-btn" (click)="submit()" [disabled]="!allQuestionsAnswered">
+                            Enviar Respuestas
+                        </button>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
