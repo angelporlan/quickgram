@@ -46,19 +46,19 @@ export const seedSubcategories = async () => {
 
         // Reading
         {
-            name: "Main Idea",
+            name: "Multiple Choice Reading",
             category_id: reading.id,
-            description: "Habilidad para identificar el tema central y el propósito principal de un texto."
+            description: "Lectura detallada para identificar opinión, tono, propósito, idea principal y actitud. Selección entre opciones A, B, C o D."
         },
         {
-            name: "Detail Comprehension",
+            name: "Gapped Text",
             category_id: reading.id,
-            description: "Habilidad para localizar información específica y datos concretos dentro de un texto."
+            description: "Prueba de estructura y cohesión del texto. Consiste en reinsertar párrafos u oraciones extraídas en los huecos correctos."
         },
         {
-            name: "Inference",
+            name: "Multiple Matching",
             category_id: reading.id,
-            description: "Desarrollo de la habilidad para deducir significados y conclusiones no explícitas en la lectura."
+            description: "Escaneo rápido (scanning) para localizar información específica y entender el parafraseo. Emparejar enunciados con la sección correcta del texto."
         },
 
         // Listening
