@@ -1,0 +1,42 @@
+<div class="essay-review-container">
+    <div class="completion-badge">
+        <div class="badge-icon">✓</div>
+        <h2 class="badge-title">Ensayo Completado</h2>
+        <p class="badge-subtitle">{{ wordCount }} palabras escritas</p>
+    </div>
+
+    <div class="essay-section">
+        <div class="section-header">
+            <h3 class="section-title">TU ENSAYO</h3>
+        </div>
+        <div class="essay-content user-essay">
+            <p class="essay-text">{{ userEssay }}</p>
+        </div>
+    </div>
+
+    <div class="model-answer-section">
+        <div class="section-header">
+            <div class="info-badge">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="12" y1="16" x2="12" y2="12"></line>
+                    <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                </svg>
+                <span>Ejemplo de respuesta correcta</span>
+            </div>
+            <h3 class="section-title">RESPUESTA MODELO</h3>
+        </div>
+        <div class="info-message">
+            <p>
+                <strong>Nota importante:</strong> La siguiente respuesta es un <strong>ejemplo</strong> de una forma
+                correcta de escribir el ensayo.
+                No es la única respuesta válida. Tu ensayo puede ser diferente y aún así ser correcto si cumple con los
+                requisitos del ejercicio.
+            </p>
+        </div>
+        <div class="essay-content model-essay">
+            <p class="essay-text" [innerHTML]="modelAnswer"></p>
+        </div>
+    </div>
+</div>
