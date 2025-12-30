@@ -10,11 +10,12 @@ import { GapFillComponent } from '../gap-fill/gap-fill.component';
 import { WordFormationComponent } from '../word-formation/word-formation.component';
 import { KeyWordTransformationComponent } from '../key-word-transformation/key-word-transformation.component';
 import { EssayComponent } from '../essay/essay.component';
+import { ReadingMultipleChoiceComponent } from '../reading-multiple-choice/reading-multiple-choice.component';
 
 @Component({
     selector: 'app-exercise-page',
     standalone: true,
-    imports: [CommonModule, MultipleChoiceComponent, ConditionalsComponent, VocabularyComponent, GapFillComponent, WordFormationComponent, KeyWordTransformationComponent, EssayComponent],
+    imports: [CommonModule, MultipleChoiceComponent, ConditionalsComponent, VocabularyComponent, GapFillComponent, WordFormationComponent, KeyWordTransformationComponent, EssayComponent, ReadingMultipleChoiceComponent],
     templateUrl: './exercise-page.component.html',
     styles: [`
     :host {

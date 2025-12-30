@@ -29,3 +29,7 @@
 <app-essay *ngIf="!isLoading && exercise && (exercise.type === 'essay' || exercise.type === 'writing')"
     [exercise]="exercise" (close)="goBack()" (attemptSubmitted)="handleAttemptSubmission($event)">
 </app-essay>
+
+<app-reading-multiple-choice *ngIf="!isLoading && exercise && exercise.type === 'reading_multiple_choice'"
+    [exercise]="exercise" (close)="goBack()" (attemptSubmitted)="handleAttemptSubmission($event)">
+</app-reading-multiple-choice>
