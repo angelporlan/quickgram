@@ -2,6 +2,7 @@ import { Exercise } from "../models/Exercise.js";
 import { Subcategory } from "../models/Subcategory.js";
 import { Category } from "../models/Category.js";
 import { Level } from "../models/Level.js";
+import { UserExerciseAttempt } from "../models/UserExerciseAttempt.js";
 
 import { Sequelize } from "sequelize";
 
@@ -17,20 +18,24 @@ export const getExercises = async (req, res) => {
                 model: Level,
                 where: level ? { name: level } : undefined,
                 attributes: ["id", "name"]
-            },
-            {
-                model: Subcategory,
-                where: subcategory ? { name: subcategory } : undefined,
-                attributes: ["id", "name"],
-                include: [
-                    {
-                        model: Category,
-                        where: category ? { name: category } : undefined,
-                        attributes: ["id", "name"]
-                    }
-                ]
             }
         ];
+
+        const subcategoryInclude = {
+            model: Subcategory,
+            where: subcategory ? { name: subcategory } : undefined,
+            attributes: ["id", "name"]
+        };
+
+        if (category) {
+            subcategoryInclude.include = [{
+                model: Category,
+                where: { name: category },
+                attributes: ["id", "name"]
+            }];
+        }
+
+        includeOption.push(subcategoryInclude);
 
         // random exercise
         if (random) {
@@ -45,25 +50,44 @@ export const getExercises = async (req, res) => {
         const offset = (page - 1) * limit;
 
         const includeOptionPagination = includeOption.map(inc => {
-            const newInc = { ...inc, attributes: [] };
-            if (newInc.include) {
+            const newInc = { ...inc };
+            if (newInc.include && newInc.include.length > 0) {
+                newInc.attributes = ['id', 'category_id'];
                 newInc.include = newInc.include.map(subInc => ({ ...subInc, attributes: [] }));
+            } else {
+                newInc.attributes = [];
             }
             return newInc;
         });
 
         const { count, rows } = await Exercise.findAndCountAll({
             where,
-            include: includeOptionPagination,
+            include: [
+                ...includeOptionPagination,
+                {
+                    model: UserExerciseAttempt,
+                    where: { user_id: req.user.id },
+                    required: false,
+                    attributes: ['score', 'is_fully_correct', 'created_at']
+                }
+            ],
             limit: parseInt(limit),
             offset: parseInt(offset),
-            attributes: ['id', 'title']
+            attributes: ['id', 'title'],
+            distinct: true
         });
 
-        const cleanExercises = rows.map(exercise => ({
-            id: exercise.id,
-            title: exercise.title
-        }));
+        const cleanExercises = rows.map(exercise => {
+            const attempts = exercise.UserExerciseAttempts || [];
+            const latestAttempt = attempts.sort((a, b) => new Date(b.created_at) - new Date(a.created_at))[0];
+
+            return {
+                id: exercise.id,
+                title: exercise.title,
+                isCompleted: !!latestAttempt,
+                score: latestAttempt ? latestAttempt.score : null
+            };
+        });
 
         res.json({
             totalItems: count,

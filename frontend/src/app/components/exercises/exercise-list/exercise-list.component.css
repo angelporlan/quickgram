@@ -112,6 +112,41 @@
     gap: 1rem;
 }
 
+.title-row {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.25rem;
+}
+
+.title-row h3 {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #ecf0f1;
+}
+
+.status-indicator {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.score-badge {
+    background: rgba(46, 204, 113, 0.2);
+    color: #2ecc71;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.check-icon {
+    width: 18px;
+    height: 18px;
+    color: #2ecc71;
+}
+
+
 .pagination button {
     background: #1e2626;
     border: 1px solid #2c3e50;
