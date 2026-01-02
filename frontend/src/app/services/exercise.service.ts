@@ -52,6 +52,21 @@ export class ExerciseService {
         return this.http.get<any[]>(`${this.apiUrl}/exercises?level=${level}&subcategory=${subcategory}&random=true`, { headers });
     }
 
+    getExercises(params: any): Observable<any> {
+        const token = this.authService.getToken();
+        const headers = new HttpHeaders({
+            'Authorization': `Bearer ${token}`
+        });
+
+        const queryParams = new URLSearchParams();
+        if (params.level) queryParams.append('level', params.level);
+        if (params.subcategory) queryParams.append('subcategory', params.subcategory);
+        if (params.page) queryParams.append('page', params.page.toString());
+        if (params.limit) queryParams.append('limit', params.limit.toString());
+
+        return this.http.get<any>(`${this.apiUrl}/exercises?${queryParams.toString()}`, { headers });
+    }
+
     submitAttempt(exerciseId: number, attemptData: any): Observable<any> {
         const token = this.authService.getToken();
         const headers = new HttpHeaders({
@@ -79,6 +94,15 @@ export class ExerciseService {
         });
 
         return this.http.get(`${this.apiUrl}/attempts/${attemptId}`, { headers });
+    }
+
+    getExerciseById(id: number): Observable<any> {
+        const token = this.authService.getToken();
+        const headers = new HttpHeaders({
+            'Authorization': `Bearer ${token}`
+        });
+
+        return this.http.get<any>(`${this.apiUrl}/exercises/${id}`, { headers });
     }
 
     getUserAttempts(page: number = 1, limit: number = 20, category?: string): Observable<any> {
