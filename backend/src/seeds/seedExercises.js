@@ -351,6 +351,269 @@ But keeping the station open for just one passenger simply was not (7)………�
     },
   },
   {
+    title_like: "%Lighting a town%",
+    question_text: `Lighting a town
+
+The Norwegian town of Rjukan lies along the ﬂoor of a narrow valley, (1)…………… by sheer mountains. Because of its location, the town, with its 3,400 (2)……………, has in the past lived in shadow for half the year. During the day, from late September to mid-March, the town gets no direct natural sunlight at all. Its residents all agreed this (3)…………… that the town was incredibly depressing during the winter months.
+However, that all changed in 2013 with the (4)…………… of a system of mirrors whose design Martin Anderson, an artist, had first (5)…………… up with some 12 years earlier. With financial (6)…………… from the local government and from several prominent business people, Anderson’s idea became a (7)…………… . Today, high on the mountain opposite the town, (8)…………… three large solar-powered, computer-controlled mirrors (9)…………… the precise movement of the sun across the winter sky, reﬂecting its rays onto the town’s market square and ﬂooding it in bright sunlight.`,
+    options: {
+      "1": ["closed", "contained", "surrounded", "shut"],
+      "2": ["totals", "populations", "numbers", "inhabitants"],
+      "3": ["meant", "explained", "showed", "made"],
+      "4": ["ending", "conclusion", "completion", "result"],
+      "5": ["brought", "come", "caught", "got"],
+      "6": ["budget", "cost", "expense", "investment"],
+      "7": ["reality", "truth", "principle", "practicality"],
+      "8": ["find", "sit", "stay", "hold"],
+      "9": ["passing", "following", "proceeding", "continuing"],
+    },
+    correct_answer: {
+      "1": "surrounded",
+      "2": "inhabitants",
+      "3": "meant",
+      "4": "completion",
+      "5": "come",
+      "6": "investment",
+      "7": "reality",
+      "8": "sit",
+      "9": "following",
+    },
+  },
+  {
+    title_like: "%The importance of science%",
+    question_text: `The importance of science
+
+The aim of science is to (1)…………… out how the world and everything in it, and beyond it, works. Some people, though, (2)…………… that much of what is done in the name of science is a waste of time and money. What is the (3)…………… in investigating how atoms behave or in studying stars billions of kilometres away? Science, they argue, is of (4)…………… only if it has some practical use.
+When the Scottish scientist James Clerk Maxwell (5)…………… experiments with electricity and magnetism in the late 19th century, he had no particular end in (6)…………… and was certainly not (7)…………… to make money; he was simply trying to reveal more about how the world works. And yet his work laid the (8)…………… for our modern way of life. Computers, the internet, satellites, mobile phones, televisions, medical scanners all owe their existence to the fact that a scientist (9)…………… the need to understand the world a little better.`,
+    options: {
+      "1": ["open", "think", "find", "look"],
+      "2": ["claim", "demand", "tell", "review"],
+      "3": ["basis", "cause", "point", "sake"],
+      "4": ["gain", "profit", "advantage", "value"],
+      "5": ["brought on", "carried out", "pulled out", "set off"],
+      "6": ["plan", "idea", "mind", "thought"],
+      "7": ["reaching", "aiming", "targeting", "designing"],
+      "8": ["sources", "origins", "structures", "foundations"],
+      "9": ["held", "felt", "chose", "used"],
+    },
+    correct_answer: {
+      "1": "find",
+      "2": "claim",
+      "3": "point",
+      "4": "value",
+      "5": "carried out",
+      "6": "mind",
+      "7": "aiming",
+      "8": "foundations",
+      "9": "felt",
+    },
+  },
+  {
+    title_like: "%A new partnership%",
+    question_text: `A new partnership
+
+In 1884, a small engineering firm was (1)…………… in a part of Manchester. Its owner had (2)…………… to complete only two years in formal education yet was still successfully (3)…………… a business. In 1903, he bought his first car but it did not meet his high (4)…………… and, being an engineer, he could not (5)…………… having a go at improving it. By the following year he had designed a new car himself, and then started manufacturing this model. One of his cars came to the (6)…………… of a wealthy car salesman from an aristocratic background. He was (7)…………… impressed by the car and a meeting was (8)…………… between the two of them at the Midland Hotel in Manchester. The meeting was a success and the two men decided to go into business together. The name of the manufacturer was Henry Royce and that of the wealthy aristocrat, Charles Rolls – and so the world-famous brand, the luxurious Rolls-Royce, was (9)…………… .`,
+    options: {
+      "1": ["settled", "established", "installed", "found"],
+      "2": ["passed", "achieved", "managed", "allowed"],
+      "3": ["arranging", "running", "working", "dealing"],
+      "4": ["standards", "rates", "levels", "ranks"],
+      "5": ["obstruct", "resist", "oppose", "refuse"],
+      "6": ["attention", "view", "interest", "attraction"],
+      "7": ["widely", "mainly", "greatly", "fully"],
+      "8": ["put out", "turned up", "taken out", "set up"],
+      "9": ["brought", "originated", "discovered", "born"],
+    },
+    correct_answer: {
+      "1": "established",
+      "2": "managed",
+      "3": "running",
+      "4": "standards",
+      "5": "resist",
+      "6": "attention",
+      "7": "greatly",
+      "8": "set up",
+      "9": "born",
+    },
+  },
+  {
+    title_like: "%Dr Joseph Bell%",
+    question_text: `Dr Joseph Bell
+
+Dr Joseph Bell was a distinguished Scottish doctor and professor at Edinburgh University in the (1)…………… nineteenth century. He had remarkable powers of observation and deduction. This (2)…………… him to accumulate useful information about patients in a very (3)…………… space of time.
+He was very good at (4)…………… where his patients were from by identifying small differences in their accents. He could also (5)…………… a patient’s occupation from marks on their hand. He claimed to be able to (6)…………… a sailor from a soldier just from the way they moved. If he identified a person as a sailor he would look for any tattoos that might assist him in knowing where their travels had (7)…………… them.
+Dr Bell’s skills for observation and deduction (8)…………… a great impression on his students, particularly on one called Arthur Conan Doyle. Conan Doyle went on to create the famous fictional detective Sherlock Holmes, whose character was (9)…………… on that of Dr Bell.`,
+    options: {
+      "1": ["late", "previous", "closing", "final"],
+      "2": ["enabled", "authorised", "guaranteed", "caused"],
+      "3": ["small", "rapid", "narrow", "short"],
+      "4": ["showing off", "working out", "setting down", "turning up"],
+      "5": ["relate", "acknowledge", "solve", "determine"],
+      "6": ["change", "differ", "distinguish", "contrast"],
+      "7": ["transported", "brought", "conveyed", "taken"],
+      "8": ["set", "made", "formed", "put"],
+      "9": ["applied", "established", "based", "written"],
+    },
+    correct_answer: {
+      "1": "late",
+      "2": "enabled",
+      "3": "short",
+      "4": "working out",
+      "5": "determine",
+      "6": "distinguish",
+      "7": "taken",
+      "8": "made",
+      "9": "based",
+    },
+  },
+  {
+    title_like: "%Where to go whale watching%",
+    question_text: `Where to go whale watching
+
+When asked to list the things they would most like to experience in life, a surprising (1)…………… of people mention seeing whales in their natural habitat. It’s an ambition that can be (2)…………… surprisingly easily. It is (3)…………… that the seas around Iceland are home to over five thousand orca whales. But their behaviour, and therefore your chances of seeing them, varies (4)…………… to the season.
+In summer, the whales have a (5)…………… to hang out near the coast and can be seen swimming up fjords and inlets. During the winter months, however, the animals are generally to be found (6)…………… out at sea. (7)…………… season you choose for your trip, whale-watching trips are very easy to organise, and there’s a chance you’ll get to see other whale species too.
+Besides Iceland, another option is to (8)…………… for northern Norway between October and January. Orcas arrive here at this time of year in (9)…………… of large shoals of herring, which form an important part of their diet.`,
+    options: {
+      "1": ["number", "amount", "honoured", "crowd"],
+      "2": ["answered", "rewarded", "quantity", "fulfilled"],
+      "3": ["estimated", "counted", "guessed", "totalled"],
+      "4": ["according", "depending", "relying", "agreeing"],
+      "5": ["custom", "tendency", "habit", "trend"],
+      "6": ["longer", "wider", "broader", "further"],
+      "7": ["Whenever", "Whoever", "Whichever", "However"],
+      "8": ["head", "set", "point", "pick"],
+      "9": ["hunt", "follow", "pursuit", "seek"],
+    },
+    correct_answer: {
+      "1": "number",
+      "2": "fulfilled",
+      "3": "estimated",
+      "4": "according",
+      "5": "tendency",
+      "6": "further",
+      "7": "Whichever",
+      "8": "head",
+      "9": "pursuit",
+    },
+  },
+  {
+    title_like: "%Vera Neumann: fabric designer%",
+    question_text: `Vera Neumann: fabric designer
+
+Vera Neumann was a designer and businesswoman whose products (1)…………… their way into the homes of people across the USA.
+Vera was born in Connecticut in 1907 and showed artistic (2)…………… from an early age. After attending art college in New York, she got a job as a textile designer, but didn’t like being (3)…………… what to do. Determined to develop her own styles, Vera started to produce tablecloths each item printed by hand in her kitchen.
+But it was her scarves that (4)…………… Vera’s name. Good fabric was in short (5)…………… during the Second World War, but Vera was lucky enough to (6)…………… across some silk left over from the manufacture of parachutes. Vera used it to design scarves with floral, abstract and geometric designs. These were an (7)…………… success when they appeared in department stores and during the 1950s they were the (8)…………… of fashion, being worn by celebrities such as the film star Marilyn Monroe. By 1960, the company which Vera had (9)…………… was employing 200 staff and producing 130 patterns per season.`,
+    options: {
+      "1": ["found", "arrived", "fetched", "reached"],
+      "2": ["training", "talent", "expert", "gift"],
+      "3": ["led", "directed", "told", "forced"],
+      "4": ["got", "did", "gained", "made"],
+      "5": ["supply", "availability", "quantity", "delivery"],
+      "6": ["fall", "come", "happen", "run"],
+      "7": ["acute", "urgent", "instant", "extreme"],
+      "8": ["height", "peak", "top", "crown"],
+      "9": ["worked out", "put on", "carried off", "set up"],
+    },
+    correct_answer: {
+      "1": "found",
+      "2": "talent",
+      "3": "told",
+      "4": "made",
+      "5": "supply",
+      "6": "come",
+      "7": "instant",
+      "8": "height",
+      "9": "set up",
+    },
+  },
+  {
+    title_like: "%Old skills: new products%",
+    question_text: `Old skills: new products
+
+If ancient skills which have been (1)…………… down from generation to generation are going to survive, then we must find new uses for them. A good example is the cloth (2)…………… as Harris tweed, which is produced on an island off the northwest coast of Scotland. A few years ago, there was only one full-time weaver of the cloth left on the island. It was all that (3)…………… of an industry that once employed a large (4)…………… of local people.
+But local producers are now providing material for use in a (5)…………… of fashionable handbags, hats and furnishings. This (6)…………… in the fortunes of the industry all started way (7)…………… in 2004, when a sample of Harris tweed was sent to Nike, the sportswear manufacturer. The company decided to use the material on a trainer called ‘The Terminator’ to demonstrate how (8)…………… a traditional material can be incorporated into a modern product. This (9)…………… to a large order for cloth, which involved lots of people on the island rediscovering the ancient skill of weaving.`,
+    options: {
+      "1": ["handed", "brought", "carried", "taken"],
+      "2": ["seen", "referred", "known", "regarded"],
+      "3": ["remained", "recalled", "resumed", "repeated"],
+      "4": ["extent", "number", "degree", "amount"],
+      "5": ["range", "choice", "mixture", "pick"],
+      "6": ["turn", "change", "switch", "move"],
+      "7": ["ago", "past", "back", "since"],
+      "8": ["effectively", "especially", "actually", "certainly"],
+      "9": ["followed", "resulted", "caused", "led"],
+    },
+    correct_answer: {
+      "1": "handed",
+      "2": "known",
+      "3": "remained",
+      "4": "number",
+      "5": "range",
+      "6": "change",
+      "7": "back",
+      "8": "effectively",
+      "9": "led",
+    },
+  },
+  {
+    title_like: "%Messages from the Stone Age%",
+    question_text: `Messages from the Stone Age
+
+The incredible pre-historic Chauvet cave art in France is painted in (1)…………… colours and dates back to a period around thirty thousand years ago when early humans first started to create rock art. Although various (2)…………… of this art have been found in caves in Western Europe, very few people have seen the art at Chauvet because it is located (3)…………… inside an inaccessible underground cave system. Those who have seen it say that it is very impressive, showing animals (4)…………… horses, rhinos and cows, and that the artwork is good enough to (5)…………… modern compositions.
+The first scientists (6)…………… the Chauvet paintings missed some other important (7)…………… however. The walls of the cave are also marked with a series of lines and symbols, that were initially (8)…………… as insignificant. But recent research has suggested that these marks may represent humankind’s first steps towards the development of writing, which is (9)…………… people to rethink their ideas about when written communication first started.`,
+    options: {
+      "1": ["bright", "fair", "keen", "sharp"],
+      "2": ["illustrations", "models", "cases", "examples"],
+      "3": ["deep", "thick", "long", "dense"],
+      "4": ["by means of", "apart from", "as well as", "such as"],
+      "5": ["rival", "compare", "compete", "oppose"],
+      "6": ["arrive", "reach", "meet", "know"],
+      "7": ["instances", "matters", "details", "issues"],
+      "8": ["believed", "regarded", "thought", "agreed"],
+      "9": ["resulting", "having", "making", "causing"],
+    },
+    correct_answer: {
+      "1": "bright",
+      "2": "examples",
+      "3": "deep",
+      "4": "such as",
+      "5": "rival",
+      "6": "reach",
+      "7": "details",
+      "8": "regarded",
+      "9": "causing",
+    },
+  },
+  {
+    title_like: "%What is a coincidence?%",
+    question_text: `What is a coincidence?
+
+A coincidence is a surprising thing that happen to us. For example, two friends go shopping alone on the same day. When they (1)…………… up afterwards, they discover that they’ve each bought an identical T-shirt. Many people (2)…………… coincidences as significant or mysterious. But the simple (3)…………… could be that friends tend to have similar taste in clothes.
+In reality, life is (4)…………… of coincidences, but normally we don’t notice them. For example, in almost fifty percent of all football matches, two players share the same birthday. This seems surprising, (5)…………… that there are 365 possible birthdays in the year. But most of these matches will be played without anybody being (6)…………… that the coincidence exists. (7)…………… your birthday is today or tomorrow, you don’t generally go around telling people when it is. What’s more, without realising it, you probably (8)…………… into contact with lots of people born on the same day as you. But when a coincidence is (9)…………… to your attention, it still seems amazing.`,
+    options: {
+      "1": ["meet", "link", "join", "unite"],
+      "2": ["regard", "think", "consider", "believe"],
+      "3": ["explanation", "definition", "motivation", "resolution"],
+      "4": ["heavy", "rich", "full", "crowded"],
+      "5": ["given", "except", "even", "instead"],
+      "6": ["noticed", "known", "aware", "intelligent"],
+      "7": ["Therefore", "Whereas", "Meanwhile", "Unless"],
+      "8": ["make", "come", "have", "go"],
+      "9": ["taken", "carried", "brought", "shown"],
+    },
+    correct_answer: {
+      "1": "meet",
+      "2": "regard",
+      "3": "explanation",
+      "4": "full",
+      "5": "given",
+      "6": "aware",
+      "7": "Unless",
+      "8": "come",
+      "9": "brought",
+    },
+  },
+  {
     title_like: "%Jane dyed her hair orange%",
     type: "key_word_transformation",
     subcategory_name: "Key Word Transformation",
