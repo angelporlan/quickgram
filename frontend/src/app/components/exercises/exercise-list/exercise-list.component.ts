@@ -41,10 +41,14 @@ export class ExerciseListComponent implements OnInit {
             limit: 10
         }).subscribe({
             next: (data) => {
-                this.exercises = data.exercises;
                 this.totalPages = data.totalPages;
                 this.currentPage = data.currentPage;
+                this.exercises = data.exercises.map((exercise: any, index: number) => ({
+                    ...exercise,
+                    fictitious_id: (this.currentPage - 1) * 10 + index + 1
+                }));
                 this.isLoading = false;
+                console.log(this.exercises);
             },
             error: (err) => {
                 console.error('Error loading exercises', err);
