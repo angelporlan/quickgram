@@ -1,0 +1,154 @@
+.exercise-list-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    color: #ecf0f1;
+}
+
+.list-header {
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.list-header h1 {
+    font-size: 1.5rem;
+    color: #2ecc71;
+    margin: 0;
+}
+
+.back-btn {
+    background: none;
+    border: none;
+    color: #95a5a6;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1rem;
+    padding: 0.5rem;
+    border-radius: 4px;
+    transition: all 0.2s;
+}
+
+.back-btn:hover {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.back-btn svg {
+    width: 20px;
+    height: 20px;
+}
+
+.exercises-grid {
+    display: grid;
+    gap: 1rem;
+}
+
+.exercise-card {
+    background: #1e2626;
+    border: 1px solid #2c3e50;
+    border-radius: 8px;
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.exercise-card:hover {
+    transform: translateY(-2px);
+    border-color: #2ecc71;
+    background: #252e2e;
+}
+
+.card-icon {
+    background: rgba(46, 204, 113, 0.1);
+    color: #2ecc71;
+    padding: 0.75rem;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-icon svg {
+    width: 24px;
+    height: 24px;
+}
+
+.card-content {
+    flex: 1;
+}
+
+.card-content h3 {
+    margin: 0 0 0.25rem 0;
+    font-size: 1.1rem;
+    color: #ecf0f1;
+}
+
+.exercise-id {
+    font-size: 0.85rem;
+    color: #7f8c8d;
+}
+
+.card-action {
+    color: #95a5a6;
+}
+
+.card-action svg {
+    width: 20px;
+    height: 20px;
+}
+
+.pagination {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.pagination button {
+    background: #1e2626;
+    border: 1px solid #2c3e50;
+    color: #ecf0f1;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.pagination button:hover:not([disabled]) {
+    border-color: #2ecc71;
+    color: #2ecc71;
+}
+
+.pagination button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.loading-spinner {
+    display: flex;
+    justify-content: center;
+    padding: 3rem;
+}
+
+.spinner {
+    width: 40px;
+    height: 40px;
+    border: 3px solid rgba(46, 204, 113, 0.3);
+    border-radius: 50%;
+    border-top-color: #2ecc71;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
