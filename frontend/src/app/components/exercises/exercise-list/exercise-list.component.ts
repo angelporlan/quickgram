@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { CommonModule, Location } from '@angular/common';
 import { ActivatedRoute, Router } from '@angular/router';
 import { ExerciseService } from '../../../services/exercise.service';
 
@@ -16,11 +16,13 @@ export class ExerciseListComponent implements OnInit {
     isLoading: boolean = true;
     currentPage: number = 1;
     totalPages: number = 1;
+    totalExercises: number = 0;
 
     constructor(
         private route: ActivatedRoute,
         private router: Router,
-        private exerciseService: ExerciseService
+        private exerciseService: ExerciseService,
+        private location: Location
     ) { }
 
     ngOnInit() {
@@ -41,8 +43,10 @@ export class ExerciseListComponent implements OnInit {
             limit: 10
         }).subscribe({
             next: (data) => {
+                console.log(data);
                 this.totalPages = data.totalPages;
                 this.currentPage = data.currentPage;
+                this.totalExercises = data.totalItems;
                 this.exercises = data.exercises.map((exercise: any, index: number) => ({
                     ...exercise,
                     fictitious_id: (this.currentPage - 1) * 10 + index + 1
@@ -68,6 +72,6 @@ export class ExerciseListComponent implements OnInit {
     }
 
     goBack() {
-        this.router.navigate(['/categories']);
+        this.location.back();
     }
 }
