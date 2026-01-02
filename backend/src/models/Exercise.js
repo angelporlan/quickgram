@@ -6,6 +6,10 @@ export const Exercise = sequelize.define("Exercise", {
         type: DataTypes.STRING,
         allowNull: false
     },
+    title: {
+        type: DataTypes.STRING,
+        allowNull: false
+    },
     question_text: {
         type: DataTypes.TEXT,
         allowNull: false

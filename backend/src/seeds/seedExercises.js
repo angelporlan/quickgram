@@ -107,7 +107,7 @@ const exercisesData = [
     },
   },
   {
-    title_like: "%Complete the sentences with the correct form%",
+    title_like: "%Conditionals first and zero conditional%",
     type: "conditionals",
     subcategory_name: "Conditionals",
     question_text: `Complete the sentences with the correct form of the verbs in brackets to make the zero or first conditional.
@@ -786,6 +786,7 @@ export const seedExercises = async () => {
         subcategory_id: subCategoryIdToUse,
         level_id: level.id,
         type: data.type || "multiple_choice",
+        title: data.title_like.replaceAll('%', ''),
         question_text: data.question_text,
         options: data.options,
         correct_answer: data.correct_answer,
