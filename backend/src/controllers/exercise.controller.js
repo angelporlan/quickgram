@@ -78,6 +78,39 @@ export const getExercises = async (req, res) => {
     }
 };
 
+export const getExerciseById = async (req, res) => {
+    try {
+        const { id } = req.params;
+        const exercise = await Exercise.findByPk(id, {
+            include: [
+                {
+                    model: Level,
+                    attributes: ["id", "name"]
+                },
+                {
+                    model: Subcategory,
+                    attributes: ["id", "name"],
+                    include: [
+                        {
+                            model: Category,
+                            attributes: ["id", "name"]
+                        }
+                    ]
+                }
+            ]
+        });
+
+        if (!exercise) {
+            return res.status(404).json({ message: "Exercise not found" });
+        }
+
+        res.json(exercise);
+    } catch (error) {
+        console.error(error);
+        res.status(500).json({ message: "Error fetching exercise" });
+    }
+};
+
 export const getCategories = async (req, res) => {
     try {
         const categories = await Category.findAll();
