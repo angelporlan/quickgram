@@ -7,46 +7,71 @@ import { Sequelize } from "sequelize";
 
 export const getExercises = async (req, res) => {
     try {
-        const { level, subcategory, category, type, random } = req.query;
+        const { level, subcategory, category, type, random, page = 1, limit = 10 } = req.query;
 
         const where = {};
         if (type) where.type = type;
 
-        const queryOptions = {
+        const includeOption = [
+            {
+                model: Level,
+                where: level ? { name: level } : undefined,
+                attributes: ["id", "name"]
+            },
+            {
+                model: Subcategory,
+                where: subcategory ? { name: subcategory } : undefined,
+                attributes: ["id", "name"],
+                include: [
+                    {
+                        model: Category,
+                        where: category ? { name: category } : undefined,
+                        attributes: ["id", "name"]
+                    }
+                ]
+            }
+        ];
+
+        // random exercise
+        if (random) {
+            const exercise = await Exercise.findOne({
+                where,
+                include: includeOption,
+                order: [Sequelize.fn('RAND')]
+            });
+            return res.json(exercise);
+        }
+
+        const offset = (page - 1) * limit;
+
+        const includeOptionPagination = includeOption.map(inc => {
+            const newInc = { ...inc, attributes: [] };
+            if (newInc.include) {
+                newInc.include = newInc.include.map(subInc => ({ ...subInc, attributes: [] }));
+            }
+            return newInc;
+        });
+
+        const { count, rows } = await Exercise.findAndCountAll({
             where,
-            include: [
-                {
-                    model: Level,
-                    where: level ? { name: level } : undefined,
-                    attributes: ["id", "name"]
-                },
-                {
-                    model: Subcategory,
-                    where: subcategory ? { name: subcategory } : undefined,
-                    attributes: ["id", "name"],
-                    include: [
-                        {
-                            model: Category,
-                            where: category ? { name: category } : undefined,
-                            attributes: ["id", "name"]
-                        }
-                    ]
-                }
-            ]
-        };
+            include: includeOptionPagination,
+            limit: parseInt(limit),
+            offset: parseInt(offset),
+            attributes: ['id', 'title']
+        });
 
-        if (random) {
-            queryOptions.order = [Sequelize.fn('RAND')];
-            queryOptions.limit = 1;
-        }
+        const cleanExercises = rows.map(exercise => ({
+            id: exercise.id,
+            title: exercise.title
+        }));
 
-        const exercises = await Exercise.findAll(queryOptions);
+        res.json({
+            totalItems: count,
+            exercises: cleanExercises,
+            totalPages: Math.ceil(count / limit),
+            currentPage: parseInt(page)
+        });
 
-        if (random) {
-            return res.json(exercises[0]);
-        }
-
-        res.json(exercises);
     } catch (error) {
         console.error(error);
         res.status(500).json({ message: "Error fetching exercises" });
