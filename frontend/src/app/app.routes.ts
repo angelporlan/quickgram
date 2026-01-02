@@ -16,12 +16,12 @@ export const routes: Routes = [
             { path: 'attempts', loadComponent: () => import('./components/attempts/attempts.component').then(m => m.AttemptsComponent) },
             { path: 'user', loadComponent: () => import('./components/user-profile/user-profile.component').then(m => m.UserProfileComponent) },
             { path: 'roles', loadComponent: () => import('./components/roles/roles.component').then(m => m.RolesComponent) },
-            { path: 'category/:slug', component: CategoryDetailComponent }
+            { path: 'category/:slug', component: CategoryDetailComponent },
+            {
+                path: 'exercises/list/:subcategory',
+                loadComponent: () => import('./components/exercises/exercise-list/exercise-list.component').then(m => m.ExerciseListComponent)
+            }
         ]
-    },
-    {
-        path: 'exercises/list/:subcategory',
-        loadComponent: () => import('./components/exercises/exercise-list/exercise-list.component').then(m => m.ExerciseListComponent)
     },
     {
         path: 'exercise/:subcategory',
