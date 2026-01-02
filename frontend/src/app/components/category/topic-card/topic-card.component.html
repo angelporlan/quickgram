@@ -55,23 +55,43 @@
             </div>
         </div>
 
-        <button class="action-btn" (click)="onStart()" [ngClass]="{
+        <div class="buttons-action">
+            <button class="action-btn random-btn" (click)="onStart()" [ngClass]="{
         'btn-primary': topic.status === 'in-progress',
         'btn-outline': topic.status !== 'in-progress' && topic.status !== 'locked',
         'btn-locked': topic.status === 'locked'
     }">
-            <span *ngIf="topic.status === 'in-progress'">Continuar</span>
-            <span *ngIf="topic.status === 'not-started'">Empezar</span>
-            <span *ngIf="topic.status === 'locked'">Bloqueado</span>
+                <span *ngIf="topic.status === 'in-progress'">Aleatorio</span>
+                <span *ngIf="topic.status === 'not-started'">Aleatorio</span>
+                <span *ngIf="topic.status === 'locked'">Bloqueado</span>
 
-            <svg *ngIf="topic.status !== 'locked'" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                stroke-width="2" class="arrow-icon">
-                <line x1="5" y1="12" x2="19" y2="12"></line>
-                <polyline points="12 5 19 12 12 19"></polyline>
-            </svg>
-            <svg *ngIf="topic.status === 'locked'" viewBox="0 0 24 24" fill="currentColor" class="lock-icon-btn">
-                <path d="M12 17a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm6-9v2H6V8a6 6 0 1 1 12 0zM8 8h8V6a4 4 0 1 0-8 0v2z" />
-            </svg>
-        </button>
+                <svg *ngIf="topic.status !== 'locked'" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2" class="arrow-icon">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+                <svg *ngIf="topic.status === 'locked'" viewBox="0 0 24 24" fill="currentColor" class="lock-icon-btn">
+                    <path d="M12 17a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm6-9v2H6V8a6 6 0 1 1 12 0zM8 8h8V6a4 4 0 1 0-8 0v2z" />
+                </svg>
+            </button>
+            <button class="action-btn" (click)="onList()" [ngClass]="{
+        'btn-primary': topic.status === 'in-progress',
+        'btn-outline': topic.status !== 'in-progress' && topic.status !== 'locked',
+        'btn-locked': topic.status === 'locked'
+    }">
+                <span *ngIf="topic.status === 'in-progress'">Continuar</span>
+                <span *ngIf="topic.status === 'not-started'">Empezar</span>
+                <span *ngIf="topic.status === 'locked'">Bloqueado</span>
+
+                <svg *ngIf="topic.status !== 'locked'" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2" class="arrow-icon">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+                <svg *ngIf="topic.status === 'locked'" viewBox="0 0 24 24" fill="currentColor" class="lock-icon-btn">
+                    <path d="M12 17a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm6-9v2H6V8a6 6 0 1 1 12 0zM8 8h8V6a4 4 0 1 0-8 0v2z" />
+                </svg>
+            </button>
+        </div>
     </div>
 </div>

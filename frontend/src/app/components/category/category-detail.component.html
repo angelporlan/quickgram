@@ -41,7 +41,7 @@
     </div>
 
     <div class="topics-grid" *ngIf="!isLoading">
-        <app-topic-card *ngFor="let topic of topics" [topic]="topic"
-            (startTopic)="handleStartTopic($event)"></app-topic-card>
+        <app-topic-card *ngFor="let topic of topics" [topic]="topic" (startTopic)="handleStartTopic($event)"
+            (listTopic)="handleListTopic($event)"></app-topic-card>
     </div>
 </div>

@@ -20,6 +20,10 @@ export const routes: Routes = [
         ]
     },
     {
+        path: 'exercises/list/:subcategory',
+        loadComponent: () => import('./components/exercises/exercise-list/exercise-list.component').then(m => m.ExerciseListComponent)
+    },
+    {
         path: 'exercise/:subcategory',
         loadComponent: () => import('./components/exercises/exercise-page/exercise-page.component').then(m => m.ExercisePageComponent)
     },

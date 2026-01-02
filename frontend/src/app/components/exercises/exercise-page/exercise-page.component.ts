@@ -50,15 +50,37 @@ export class ExercisePageComponent implements OnInit {
     ngOnInit() {
         this.route.paramMap.subscribe(params => {
             const subcategory = params.get('subcategory');
-            if (subcategory) {
-                this.loadExercise(subcategory);
+            // Check for query params first
+            this.route.queryParamMap.subscribe(queryParams => {
+                const exerciseId = queryParams.get('id');
+                if (exerciseId) {
+                    this.loadExerciseById(parseInt(exerciseId));
+                } else if (subcategory) {
+                    this.loadRandomExercise(subcategory);
+                }
+            });
+        });
+    }
+
+    loadRandomExercise(subcategory: string) {
+        this.isLoading = true;
+        this.exerciseService.getRandomExercise('B2', subcategory).subscribe({
+            next: (data) => {
+                this.exercise = data;
+                this.isLoading = false;
+            },
+            error: (err) => {
+                console.error('Error loading exercise:', err);
+                this.isLoading = false;
+                alert('Error loading exercise');
+                this.goBack();
             }
         });
     }
 
-    loadExercise(subcategory: string) {
+    loadExerciseById(id: number) {
         this.isLoading = true;
-        this.exerciseService.getRandomExercise('B2', subcategory).subscribe({
+        this.exerciseService.getExerciseById(id).subscribe({
             next: (data) => {
                 this.exercise = data;
                 this.isLoading = false;

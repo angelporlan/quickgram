@@ -11,10 +11,18 @@ import { CommonModule } from '@angular/common';
 export class TopicCardComponent {
     @Input() topic: any;
     @Output() startTopic = new EventEmitter<any>();
+    @Output() listTopic = new EventEmitter<any>();
+
 
     onStart() {
         if (this.topic.status !== 'locked') {
             this.startTopic.emit(this.topic);
+        }
+    }
+
+    onList() {
+        if (this.topic.status !== 'locked') {
+            this.listTopic.emit(this.topic);
         }
     }
 }
