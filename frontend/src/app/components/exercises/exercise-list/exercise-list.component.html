@@ -31,8 +31,15 @@
         </div>
     </header>
 
-    <div class="loading-spinner" *ngIf="isLoading">
-        <div class="spinner"></div>
+    <div class="exercises-grid" *ngIf="isLoading">
+        <div class="exercise-card-loader" *ngFor="let item of [1,2,3]">
+            <div class="loader-icon skeleton"></div>
+            <div class="loader-content">
+                <div class="loader-title skeleton"></div>
+                <div class="loader-subtitle skeleton"></div>
+            </div>
+            <div class="loader-action skeleton"></div>
+        </div>
     </div>
 
     <div class="exercises-grid" *ngIf="!isLoading">

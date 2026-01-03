@@ -235,19 +235,66 @@
     cursor: not-allowed;
 }
 
-.loading-spinner {
+/* Skeleton Loader Styles */
+.exercise-card-loader {
+    background: #1e2626;
+    border: 1px solid #2c3e50;
+    border-radius: 8px;
+    padding: 1.5rem;
     display: flex;
-    justify-content: center;
-    padding: 3rem;
+    align-items: center;
+    gap: 1.5rem;
+    pointer-events: none;
 }
 
-.spinner {
-    width: 40px;
-    height: 40px;
-    border: 3px solid rgba(46, 204, 113, 0.3);
-    border-radius: 50%;
-    border-top-color: #2ecc71;
-    animation: spin 1s linear infinite;
+.skeleton {
+    background: linear-gradient(90deg,
+            #1e2626 0%,
+            #2a3535 50%,
+            #1e2626 100%);
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite;
+    border-radius: 4px;
+}
+
+.loader-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 8px;
+    flex-shrink: 0;
+}
+
+.loader-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.loader-title {
+    height: 20px;
+    width: 70%;
+}
+
+.loader-subtitle {
+    height: 14px;
+    width: 40%;
+}
+
+.loader-action {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: -200% 0;
+    }
+
+    100% {
+        background-position: 200% 0;
+    }
 }
 
 .total-exercises {

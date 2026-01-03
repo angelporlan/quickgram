@@ -1,5 +1,11 @@
 <div *ngIf="isLoading" class="loading-container">
-    <p>Cargando ejercicio...</p>
+    <div class="spinner-loader">
+        <div class="spinner-ring"></div>
+        <div class="spinner-ring"></div>
+        <div class="spinner-ring"></div>
+        <div class="spinner-core"></div>
+    </div>
+    <p class="loading-text">Cargando ejercicio...</p>
 </div>
 
 <app-multiple-choice *ngIf="!isLoading && exercise && exercise.type === 'multiple_choice'" [exercise]="exercise"

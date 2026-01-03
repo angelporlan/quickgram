@@ -20,19 +20,110 @@ import { MultipleMatchingComponent } from '../multiple-matching/multiple-matchin
     imports: [CommonModule, MultipleChoiceComponent, ConditionalsComponent, VocabularyComponent, GapFillComponent, WordFormationComponent, KeyWordTransformationComponent, EssayComponent, ReadingMultipleChoiceComponent, GappedTextComponent, MultipleMatchingComponent],
     templateUrl: './exercise-page.component.html',
     styles: [`
-    :host {
-        display: block;
-        width: 100vw;
-        height: 100vh;
-        background-color: #0e1515;
-    }
-    .loading-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        color: #2ecc71;
-    }
+:host {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    background-color: #0e1515;
+    font-family: 'Segoe UI', sans-serif; /* Opcional: fuente más limpia */
+}
+
+.loading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    gap: 2rem; /* Separa el spinner del texto de forma flexible */
+}
+
+.spinner-loader {
+    position: relative;
+    width: 150px; /* Ligeramente más grande */
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.spinner-ring {
+    position: absolute;
+    border-radius: 50%;
+    border: 2px solid rgba(46, 204, 113, 0.1); /* Anillo base tenue */
+    will-change: transform;
+}
+
+/* Anillo Exterior */
+.spinner-ring:nth-child(1) {
+    width: 140px;
+    height: 140px;
+    border-top: 4px solid #2ecc71;
+    border-left: 4px solid transparent; /* Crea un efecto de arco asimétrico */
+    box-shadow: 0 0 15px rgba(46, 204, 113, 0.4); /* Glow */
+    animation: spin 2s cubic-bezier(0.68, -0.55, 0.265, 1.55) infinite;
+}
+
+/* Anillo Medio */
+.spinner-ring:nth-child(2) {
+    width: 100px;
+    height: 100px;
+    border-top: 4px solid #27ae60;
+    border-right: 4px solid transparent;
+    box-shadow: 0 0 10px rgba(39, 174, 96, 0.4);
+    animation: spin-reverse 1.5s linear infinite; /* Gira al revés */
+}
+
+/* Anillo Interior */
+.spinner-ring:nth-child(3) {
+    width: 60px;
+    height: 60px;
+    border-top: 4px solid #1e8449;
+    border-bottom: 4px solid transparent;
+    box-shadow: 0 0 8px rgba(30, 132, 73, 0.4);
+    animation: spin 1s linear infinite;
+}
+
+/* Núcleo central (punto) */
+.spinner-core {
+    width: 10px;
+    height: 10px;
+    background-color: #2ecc71;
+    border-radius: 50%;
+    box-shadow: 0 0 15px #2ecc71;
+    animation: pulse 1s ease-in-out infinite;
+}
+
+.loading-text {
+    color: #2ecc71;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-shadow: 0 0 10px rgba(46, 204, 113, 0.5);
+    animation: text-blink 1.5s ease-in-out infinite;
+    margin: 0; /* El gap del contenedor maneja el espacio */
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes spin-reverse {
+    0% { transform: rotate(360deg); }
+    100% { transform: rotate(0deg); }
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(0.8); opacity: 0.5; }
+    50% { transform: scale(1.2); opacity: 1; }
+}
+
+@keyframes text-blink {
+    0%, 100% { opacity: 0.4; }
+    50% { opacity: 1; text-shadow: 0 0 20px rgba(46, 204, 113, 0.8); }
+}
   `]
 })
 export class ExercisePageComponent implements OnInit {
