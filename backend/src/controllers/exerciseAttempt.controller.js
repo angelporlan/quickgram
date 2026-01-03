@@ -204,32 +204,25 @@ export const getUserAttempts = async (req, res) => {
 export const getUserStats = async (req, res) => {
     try {
         const userId = req.user.id;
+        const { sequelize } = await import('../config/db.js');
 
-        const attempts = await UserExerciseAttempt.findAll({
+        const stats = await UserExerciseAttempt.findOne({
             where: { user_id: userId },
-            attributes: ['correct_gaps', 'total_gaps']
+            attributes: [
+                [sequelize.fn('COUNT', sequelize.col('id')), 'total'],
+                [
+                    sequelize.literal('ROUND(AVG((correct_gaps * 100.0) / NULLIF(total_gaps, 0)))'),
+                    'average'
+                ]
+            ],
+            raw: true
         });
-
-        if (attempts.length === 0) {
-            return res.json({
-                total: 0,
-                average: 0
-            });
-        }
-
-        const totalScore = attempts.reduce((sum, attempt) => {
-            const percentage = attempt.total_gaps > 0
-                ? Math.round((attempt.correct_gaps / attempt.total_gaps) * 100)
-                : 0;
-            return sum + percentage;
-        }, 0);
-
-        const average = Math.round(totalScore / attempts.length);
 
         res.json({
-            total: attempts.length,
-            average
+            total: stats ? parseInt(stats.total) : 0,
+            average: stats ? parseFloat(stats.average || 0) : 0
         });
+
     } catch (error) {
         console.error(error);
         res.status(500).json({ message: "Error fetching user stats" });

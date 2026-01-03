@@ -24,7 +24,6 @@
             <div class="stat-content">
                 <span class="stat-label">COMPLETADOS</span>
                 <div class="stat-value">{{ stats.total }}</div>
-                <div class="stat-trend">+{{ attempts.length > 0 ? 1 : 0 }} esta semana</div>
             </div>
         </div>
 
@@ -38,8 +37,7 @@
             </div>
             <div class="stat-content">
                 <span class="stat-label">PROMEDIO</span>
-                <div class="stat-value">{{ stats.average }}% <span class="level-tag">B2 Alto</span></div>
-                <div class="stat-trend">Mejorando en Gramática</div>
+                <div class="stat-value">{{ stats.average }}%</div>
             </div>
         </div>
 
@@ -55,7 +53,6 @@
             <div class="stat-content">
                 <span class="stat-label">RACHA ACTUAL</span>
                 <div class="stat-value">{{ stats.streak }} días</div>
-                <div class="stat-trend">Sigue así para ganar una insignia</div>
             </div>
         </div>
     </div>
