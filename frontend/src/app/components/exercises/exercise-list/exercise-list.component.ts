@@ -17,6 +17,7 @@ export class ExerciseListComponent implements OnInit {
     currentPage: number = 1;
     totalPages: number = 1;
     totalExercises: number = 0;
+    percentageCompleted: number = 0;
 
     constructor(
         private route: ActivatedRoute,
@@ -49,6 +50,7 @@ export class ExerciseListComponent implements OnInit {
                 this.totalExercises = data.totalItems;
 
                 const totalCompleted = data.totalCompleted || 0;
+                this.percentageCompleted = this.totalExercises > 0 ? Math.round((totalCompleted / this.totalExercises) * 100) : 0;
 
                 this.exercises = data.exercises.map((exercise: any, index: number) => {
                     const globalIndex = (this.currentPage - 1) * 10 + index + 1;

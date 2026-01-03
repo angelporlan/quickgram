@@ -8,14 +8,79 @@
 .list-header {
     margin-bottom: 2rem;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    gap: 1rem;
+    background-color: #1a1a1a;
+    padding: 1rem 1.5rem;
+    border-radius: 12px;
 }
 
-.list-header h1 {
+.header-left h1 {
     font-size: 1.5rem;
-    color: #2ecc71;
+    color: #ecf0f1;
     margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.progress-container {
+    display: flex;
+    align-items: center;
+}
+
+.circular-chart-container {
+    position: relative;
+    width: 100px;
+    height: 100px;
+}
+
+.circular-chart {
+    display: block;
+    width: 100%;
+    height: 100%;
+    transform: rotate(0deg);
+}
+
+.circle-bg {
+    fill: none;
+    stroke: #2D2B3B;
+    stroke-width: 2.5;
+}
+
+.circle {
+    fill: none;
+    stroke: #10B981;
+    stroke-width: 2.5;
+    stroke-linecap: round;
+    transition: stroke-dasharray 0.5s ease;
+}
+
+.percentage-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.percent {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 1;
+}
+
+.label {
+    font-size: 0.55rem;
+    color: #9CA3AF;
+    margin-top: 4px;
+    letter-spacing: 0.05em;
+    font-weight: 500;
 }
 
 .back-btn {
@@ -31,6 +96,7 @@
     border-radius: 4px;
     transition: all 0.2s;
     text-decoration: none;
+    padding-left: 0;
 }
 
 .back-btn:hover {

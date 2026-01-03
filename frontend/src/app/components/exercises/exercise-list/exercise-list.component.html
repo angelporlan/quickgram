@@ -1,14 +1,34 @@
 <div class="exercise-list-container">
     <header class="list-header">
-        <a class="back-btn" (click)="goBack()">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                stroke-linejoin="round">
-                <path d="M19 12H5M12 19l-7-7 7-7" />
-            </svg>
-            Volver
-        </a>
-        <h1>{{ subcategory }} <span class="total-exercises">({{ totalExercises }} {{ totalExercises === 1 ? 'ejercicio'
-                : 'ejercicios' }})</span></h1>
+        <div class="header-left">
+            <a class="back-btn" (click)="goBack()">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path d="M19 12H5M12 19l-7-7 7-7" />
+                </svg>
+                Volver
+            </a>
+            <h1>{{ subcategory }} <span class="total-exercises">({{ totalExercises }} {{ totalExercises === 1 ?
+                    'ejercicio'
+                    : 'ejercicios' }})</span></h1>
+        </div>
+
+        <div class="progress-container" *ngIf="!isLoading">
+            <div class="circular-chart-container">
+                <svg viewBox="0 0 36 36" class="circular-chart">
+                    <path class="circle-bg" d="M18 2.0845
+                          a 15.9155 15.9155 0 0 1 0 31.831
+                          a 15.9155 15.9155 0 0 1 0 -31.831" />
+                    <path class="circle" [attr.stroke-dasharray]="percentageCompleted + ', 100'" d="M18 2.0845
+                          a 15.9155 15.9155 0 0 1 0 31.831
+                          a 15.9155 15.9155 0 0 1 0 -31.831" />
+                </svg>
+                <div class="percentage-text">
+                    <span class="percent">{{ percentageCompleted }}%</span>
+                    <span class="label">COMPLETADO</span>
+                </div>
+            </div>
+        </div>
     </header>
 
     <div class="loading-spinner" *ngIf="isLoading">
