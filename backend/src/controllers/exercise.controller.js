@@ -74,7 +74,11 @@ export const getExercises = async (req, res) => {
             limit: parseInt(limit),
             offset: parseInt(offset),
             attributes: ['id', 'title'],
-            distinct: true
+            distinct: true,
+            order: [
+                [UserExerciseAttempt, 'created_at', 'DESC'],
+                ['id', 'ASC']
+            ]
         });
 
         const totalCompleted = await Exercise.count({
