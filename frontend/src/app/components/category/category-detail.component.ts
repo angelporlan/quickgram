@@ -104,6 +104,8 @@ export class CategoryDetailComponent implements OnInit {
                     let status = 'not-started';
                     if (isLocked) {
                         status = 'locked';
+                    } else if (progress >= 100) {
+                        status = 'completed';
                     } else if (progress > 0) {
                         status = 'in-progress';
                     }

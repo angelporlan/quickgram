@@ -1,8 +1,8 @@
 <div class="topic-card" [ngClass]="{'locked': topic.status === 'locked'}">
     <div class="card-header">
         <div class="icon-badge" [ngClass]="{
-      'green': topic.status === 'in-progress',
-      'gray': topic.status !== 'in-progress'
+      'green': topic.status === 'in-progress' || topic.status === 'completed',
+      'gray': topic.status !== 'in-progress' && topic.status !== 'completed'
     }">
             <ng-container [ngSwitch]="topic.status">
                 <svg *ngSwitchCase="'locked'" viewBox="0 0 24 24" fill="currentColor" class="icon">
@@ -36,6 +36,7 @@
             </ng-container>
         </div>
         <span class="status-badge" *ngIf="topic.status === 'in-progress'">EN PROGRESO</span>
+        <span class="status-badge" *ngIf="topic.status === 'completed'">COMPLETADO</span>
         <span class="status-badge locked-badge" *ngIf="topic.status === 'locked'">BLOQUEADO</span>
     </div>
 
@@ -45,7 +46,7 @@
     </div>
 
     <div class="card-footer">
-        <div class="progress-section" *ngIf="topic.status === 'in-progress'">
+        <div class="progress-section" *ngIf="topic.status === 'in-progress' || topic.status === 'completed'">
             <div class="circular-chart-container">
                 <svg viewBox="0 0 36 36" class="circular-chart">
                     <path class="circle-bg" d="M18 2.0845
@@ -63,11 +64,11 @@
 
         <div class="buttons-action">
             <button class="action-btn random-btn" (click)="onStart()" [ngClass]="{
-        'btn-primary': topic.status === 'in-progress',
-        'btn-outline': topic.status !== 'in-progress' && topic.status !== 'locked',
+        'btn-primary': topic.status === 'in-progress' || topic.status === 'completed',
+        'btn-outline': topic.status !== 'in-progress' && topic.status !== 'locked' && topic.status !== 'completed',
         'btn-locked': topic.status === 'locked'
     }">
-                <span *ngIf="topic.status === 'in-progress'">Aleatorio</span>
+                <span *ngIf="topic.status === 'in-progress' || topic.status === 'completed'">Aleatorio</span>
                 <span *ngIf="topic.status === 'not-started'">Aleatorio</span>
                 <span *ngIf="topic.status === 'locked'">Bloqueado</span>
 
@@ -81,11 +82,12 @@
                 </svg>
             </button>
             <button class="action-btn" (click)="onList()" [ngClass]="{
-        'btn-primary': topic.status === 'in-progress',
-        'btn-outline': topic.status !== 'in-progress' && topic.status !== 'locked',
+        'btn-primary': topic.status === 'in-progress' || topic.status === 'completed',
+        'btn-outline': topic.status !== 'in-progress' && topic.status !== 'locked' && topic.status !== 'completed',
         'btn-locked': topic.status === 'locked'
     }">
                 <span *ngIf="topic.status === 'in-progress'">Continuar</span>
+                <span *ngIf="topic.status === 'completed'">Repasar</span>
                 <span *ngIf="topic.status === 'not-started'">Empezar</span>
                 <span *ngIf="topic.status === 'locked'">Bloqueado</span>
 
