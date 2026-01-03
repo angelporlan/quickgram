@@ -173,7 +173,7 @@ export class AttemptsComponent implements OnInit {
 
         if (this.searchTerm) {
             const term = this.searchTerm.toLowerCase();
-            temp = temp.filter(a => a.exercise.question_text.toLowerCase().includes(term));
+            temp = temp.filter(a => a.exercise.title.toLowerCase().includes(term));
         }
 
         this.filteredAttempts = temp;

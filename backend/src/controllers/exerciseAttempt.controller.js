@@ -2,7 +2,6 @@ import { UserExerciseAttempt } from "../models/UserExerciseAttempt.js";
 import { Exercise } from "../models/Exercise.js";
 import { Subcategory } from "../models/Subcategory.js";
 import { AttemptExplanation } from "../models/AttemptExplanation.js";
-import { Level } from "../models/Level.js";
 import { Category } from "../models/Category.js";
 
 export const createExerciseAttempt = async (req, res) => {
@@ -130,34 +129,28 @@ export const getUserAttempts = async (req, res) => {
         const offset = (parseInt(page) - 1) * parseInt(limit);
 
         const whereClause = { user_id: userId };
-
-        const categoryInclude = {
-            model: Category,
-            attributes: ['name']
+        const subcategoryInclude = {
+            model: Subcategory,
+            attributes: ['name'],
+            required: category && category !== 'Todos'
         };
 
         if (category && category !== 'Todos') {
-            categoryInclude.where = { name: category };
-            categoryInclude.required = true;
+            subcategoryInclude.include = [{
+                model: Category,
+                attributes: [],
+                where: { name: category },
+                required: true
+            }];
         }
 
         const includeClause = [
             {
                 model: Exercise,
                 as: 'exercise',
+                attributes: ['title'],
                 required: category && category !== 'Todos',
-                include: [
-                    {
-                        model: Subcategory,
-                        attributes: ['name'],
-                        required: category && category !== 'Todos',
-                        include: [categoryInclude]
-                    },
-                    {
-                        model: Level,
-                        attributes: ['name']
-                    }
-                ]
+                include: [subcategoryInclude]
             }
         ];
 
@@ -184,6 +177,7 @@ export const getUserAttempts = async (req, res) => {
 
         const attempts = await UserExerciseAttempt.findAll({
             where: whereClause,
+            attributes: ['id', 'correct_gaps', 'total_gaps', 'created_at'],
             include: includeClause,
             order: [['created_at', 'DESC']],
             limit: parseInt(limit),
