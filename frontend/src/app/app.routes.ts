@@ -15,6 +15,7 @@ export const routes: Routes = [
             { path: 'streak', loadComponent: () => import('./components/streak/streak.component').then(m => m.StreakComponent) },
             { path: 'attempts', loadComponent: () => import('./components/attempts/attempts.component').then(m => m.AttemptsComponent) },
             { path: 'user', loadComponent: () => import('./components/user-profile/user-profile.component').then(m => m.UserProfileComponent) },
+            { path: 'shop', loadComponent: () => import('./components/shop/shop.component').then(m => m.ShopComponent) },
             { path: 'roles', loadComponent: () => import('./components/roles/roles.component').then(m => m.RolesComponent) },
             { path: 'category/:slug', component: CategoryDetailComponent },
             {

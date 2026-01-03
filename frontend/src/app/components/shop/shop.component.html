@@ -1,0 +1,54 @@
+<div class="shop-container" *ngIf="user">
+    <div class="shop-header">
+        <h1>Tienda</h1>
+        <div class="user-balance">
+            <span>Tus Monedas:</span>
+            <span class="coins-amount">🪙 {{ user.coins }}</span>
+        </div>
+    </div>
+
+    <div class="shop-grid">
+        <!-- Avatar Section -->
+        <div class="shop-item avatar-shop">
+            <h2>Personaliza tu Avatar</h2>
+            <p class="description">¡Destaca con un nuevo look! Genera avatares únicos y compra tu favorito.</p>
+
+            <div class="avatar-preview-area">
+                <div class="current-avatar">
+                    <span>Actual</span>
+                    <img [src]="'https://api.dicebear.com/7.x/avataaars/svg?seed=' + (user.avatar_seed || user.username)"
+                        alt="Current Avatar">
+                </div>
+                <div class="arrow">➜</div>
+                <div class="new-avatar">
+                    <span>Nuevo</span>
+                    <img [src]="'https://api.dicebear.com/7.x/avataaars/svg?seed=' + previewSeed"
+                        alt="New Avatar Preview">
+                </div>
+            </div>
+
+            <div class="actions">
+                <button (click)="randomizeAvatar()" class="btn-random">
+                    <i class="fas fa-dice"></i> Generar Nuevo
+                </button>
+
+                <button (click)="buyAvatar()" [disabled]="user.coins < avatarCost || isLoadingAvatar" class="btn-buy">
+                    {{ isLoadingAvatar ? 'Comprando...' : 'Comprar por ' + avatarCost + ' 🪙' }}
+                </button>
+            </div>
+
+            <div *ngIf="avatarErrorMsg" class="msg error">{{ avatarErrorMsg }}</div>
+            <div *ngIf="avatarSuccessMsg" class="msg success">{{ avatarSuccessMsg }}</div>
+        </div>
+
+        <!-- Future Items Placeholders -->
+        <div class="shop-item coming-soon">
+            <h2>Pociones de Vida</h2>
+            <p>Proximamente...</p>
+        </div>
+        <div class="shop-item coming-soon">
+            <h2>Congelar Racha</h2>
+            <p>Proximamente...</p>
+        </div>
+    </div>
+</div>

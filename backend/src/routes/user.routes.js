@@ -9,6 +9,7 @@ import { updatePassword } from "../controllers/user.controller.js";
 import { deleteUser } from "../controllers/user.controller.js";
 import { getNumberOfAttemptsToday } from "../controllers/user.controller.js";
 import { updateDailyGoal } from "../controllers/user.controller.js";
+import { purchaseAvatar } from "../controllers/user.controller.js";
 
 const router = express.Router();
 
@@ -21,5 +22,6 @@ router.put("/users/me/password", authenticate, updatePassword);
 router.delete("/users/me", authenticate, deleteUser);
 router.get("/users/me/numberOfAttemptsToday", authenticate, getNumberOfAttemptsToday);
 router.put("/users/me/daily-goal", authenticate, updateDailyGoal);
+router.post("/users/me/avatar", authenticate, purchaseAvatar);
 
 export default router;

@@ -21,6 +21,7 @@ export class SidebarComponent implements OnInit, OnDestroy {
         streak: 0
     };
 
+
     dailyGoal = 5;
     numberOfAttempts = 0;
     percentage = 0;
@@ -39,6 +40,13 @@ export class SidebarComponent implements OnInit, OnDestroy {
 
         this.goalUpdateSub = this.userService.dailyGoalUpdated$.subscribe(() => {
             this.loadDailyGoalProgress();
+        });
+
+        this.userService.userInfoUpdated$.subscribe(() => {
+            this.userService.getUserInfo().subscribe(user => {
+                this.user = { ...this.user, ...user };
+                this.loadDailyGoalProgress();
+            });
         });
     }
 
@@ -63,5 +71,7 @@ export class SidebarComponent implements OnInit, OnDestroy {
         this.authService.logout();
         this.router.navigate(['/login']);
     }
+
+
 }
 

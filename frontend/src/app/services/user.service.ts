@@ -109,6 +109,14 @@ export class UserService {
         return this.http.put(`${this.apiUrl}/users/me/daily-goal`, { daily_goal }, { headers });
     }
 
+    purchaseAvatar(seed: string): Observable<any> {
+        const token = this.authService.getToken();
+        const headers = new HttpHeaders({
+            'Authorization': `Bearer ${token}`
+        });
+        return this.http.post(`${this.apiUrl}/users/me/avatar`, { seed }, { headers });
+    }
+
     notifyDailyGoalUpdated() {
         this.dailyGoalUpdatedSubject.next();
     }

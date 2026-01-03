@@ -285,3 +285,32 @@ export const updateDailyGoal = async (req, res) => {
         res.status(500).json({ message: "Error updating daily goal" });
     }
 };
+
+export const purchaseAvatar = async (req, res) => {
+    try {
+        const user = req.user;
+        const { seed } = req.body;
+        const AVATAR_COST = 50;
+
+        if (!seed) {
+            return res.status(400).json({ message: "Seed is required" });
+        }
+
+        if (user.coins < AVATAR_COST) {
+            return res.status(400).json({ message: "Insufficient coins" });
+        }
+
+        user.coins -= AVATAR_COST;
+        user.avatar_seed = seed;
+        await user.save();
+
+        res.json({
+            message: "Avatar purchased successfully",
+            coins: user.coins,
+            avatar_seed: user.avatar_seed
+        });
+    } catch (error) {
+        console.error(error);
+        res.status(500).json({ message: "Error purchasing avatar" });
+    }
+};
