@@ -28,6 +28,13 @@ export const getUserProgress = async (req, res) => {
             ? (totalCorrectGaps / totalTotalGaps)
             : 0;
 
+        const totalExercises = await Exercise.count();
+        const completedUniqueExercises = await UserExerciseAttempt.count({
+            where: { user_id: userId },
+            distinct: true,
+            col: 'exercise_id'
+        });
+
         const progressByCategory = await UserExerciseAttempt.findAll({
             where: { user_id: userId },
             attributes: [
@@ -87,7 +94,11 @@ export const getUserProgress = async (req, res) => {
             },
             byCategory: progressByCategory,
             byLevel: progressByLevel,
-            lastAttempts
+            lastAttempts,
+            syllabus: {
+                total: totalExercises,
+                completed: completedUniqueExercises
+            }
         });
 
     } catch (error) {

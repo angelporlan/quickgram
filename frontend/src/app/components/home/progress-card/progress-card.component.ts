@@ -24,7 +24,11 @@ export class ProgressCardComponent implements OnInit {
                 this.accuracy = Math.round((data.global.score || 0) * 100);
                 this.completed = data.global.attempts || 0;
 
-                this.syllabusPercentage = Math.min(Math.round((this.completed / 200) * 100), 100);
+                if (data.syllabus && data.syllabus.total > 0) {
+                    this.syllabusPercentage = Math.round((data.syllabus.completed / data.syllabus.total) * 100);
+                } else {
+                    this.syllabusPercentage = 0;
+                }
 
                 if (this.completed > 150) this.level = 'C1';
                 else if (this.completed > 100) this.level = 'B2.2';
