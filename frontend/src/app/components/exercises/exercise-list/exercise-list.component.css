@@ -193,3 +193,18 @@
         transform: rotate(360deg);
     }
 }
+
+.exercise-card.locked {
+    opacity: 0.5;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.exercise-card.locked .card-icon {
+    background: rgba(127, 140, 141, 0.1);
+    color: #7f8c8d;
+}
+
+.exercise-card.locked .card-action {
+    color: #7f8c8d;
+}

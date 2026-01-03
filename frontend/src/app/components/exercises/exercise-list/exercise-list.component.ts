@@ -47,10 +47,19 @@ export class ExerciseListComponent implements OnInit {
                 this.totalPages = data.totalPages;
                 this.currentPage = data.currentPage;
                 this.totalExercises = data.totalItems;
-                this.exercises = data.exercises.map((exercise: any, index: number) => ({
-                    ...exercise,
-                    fictitious_id: (this.currentPage - 1) * 10 + index + 1
-                }));
+
+                const totalCompleted = data.totalCompleted || 0;
+
+                this.exercises = data.exercises.map((exercise: any, index: number) => {
+                    const globalIndex = (this.currentPage - 1) * 10 + index + 1;
+                    const isLocked = !exercise.isCompleted && globalIndex > totalCompleted + 1;
+
+                    return {
+                        ...exercise,
+                        fictitious_id: (this.currentPage - 1) * 10 + index + 1,
+                        isLocked: isLocked
+                    };
+                });
                 this.isLoading = false;
                 console.log(this.exercises);
             },
