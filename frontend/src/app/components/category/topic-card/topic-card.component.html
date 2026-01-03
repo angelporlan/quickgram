@@ -46,12 +46,18 @@
 
     <div class="card-footer">
         <div class="progress-section" *ngIf="topic.status === 'in-progress'">
-            <div class="progress-labels">
-                <span>Progreso</span>
-                <span>{{ topic.progress }}%</span>
-            </div>
-            <div class="progress-bar-bg">
-                <div class="progress-bar-fill" [style.width.%]="topic.progress"></div>
+            <div class="circular-chart-container">
+                <svg viewBox="0 0 36 36" class="circular-chart">
+                    <path class="circle-bg" d="M18 2.0845
+                             a 15.9155 15.9155 0 0 1 0 31.831
+                             a 15.9155 15.9155 0 0 1 0 -31.831" />
+                    <path class="circle" [attr.stroke-dasharray]="topic.progress + ', 100'" d="M18 2.0845
+                             a 15.9155 15.9155 0 0 1 0 31.831
+                             a 15.9155 15.9155 0 0 1 0 -31.831" />
+                </svg>
+                <div class="percentage-text">
+                    <span class="percent">{{ topic.progress | number:'1.0-0' }}%</span>
+                </div>
             </div>
         </div>
 

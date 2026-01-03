@@ -99,13 +99,23 @@ export class CategoryDetailComponent implements OnInit {
             .subscribe((topics: any[]) => {
                 this.topics = topics.map(topic => {
                     const isLocked = topic.name === 'Short Dialogues' || topic.name === 'Long Audios';
+                    const progress = topic.totalItems > 0 ? (topic.totalCompleted / topic.totalItems) * 100 : 0;
+
+                    let status = 'not-started';
+                    if (isLocked) {
+                        status = 'locked';
+                    } else if (progress > 0) {
+                        status = 'in-progress';
+                    }
 
                     return {
                         ...topic,
                         title: topic.name,
                         icon: isLocked ? 'locked' : this.getIconForTopic(topic.name),
-                        status: isLocked ? 'locked' : 'not-started',
-                        progress: 0,
+                        status: status,
+                        progress: progress,
+                        totalCompleted: topic.totalCompleted,
+                        totalItems: topic.totalItems
                     };
                 });
             });

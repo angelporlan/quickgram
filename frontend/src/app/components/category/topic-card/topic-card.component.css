@@ -102,30 +102,54 @@
     gap: 1rem;
 }
 
+/* Progress Bar - Circular */
 .progress-section {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 1rem;
     margin-bottom: 0.5rem;
 }
 
-.progress-labels {
+.circular-chart-container {
+    position: relative;
+    width: 50px;
+    height: 50px;
+}
+
+.circular-chart {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.circle-bg {
+    fill: none;
+    stroke: #1f2929;
+    stroke-width: 3;
+}
+
+.circle {
+    fill: none;
+    stroke: #2ecc71;
+    stroke-width: 3;
+    stroke-linecap: round;
+    transition: stroke-dasharray 0.5s ease;
+}
+
+.percentage-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+}
+
+.percent {
     font-size: 0.75rem;
-    color: #8b9bb4;
-    margin-bottom: 0.25rem;
-    font-weight: 600;
-}
-
-.progress-bar-bg {
-    height: 8px;
-    background-color: #1f2929;
-    border-radius: 4px;
-    overflow: hidden;
-}
-
-.progress-bar-fill {
-    height: 100%;
-    background-color: #2ecc71;
-    border-radius: 4px;
+    font-weight: bold;
+    color: #fff;
 }
 
 .buttons-action {
