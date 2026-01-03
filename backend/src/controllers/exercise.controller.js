@@ -77,7 +77,7 @@ export const getExercises = async (req, res) => {
             distinct: true,
             order: [
                 [UserExerciseAttempt, 'created_at', 'DESC'],
-                ['id', 'ASC']
+                ['id', 'DESC']
             ]
         });
 
