@@ -74,7 +74,10 @@ export class ExerciseService {
         });
 
         return this.http.post(`${this.apiUrl}/exercises/${exerciseId}/attempt`, attemptData, { headers }).pipe(
-            tap(() => this.userService.notifyUserInfoUpdated())
+            tap(() => {
+                this.userService.notifyUserInfoUpdated();
+                this.cache.clear();
+            })
         );
     }
 
