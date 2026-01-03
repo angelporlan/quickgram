@@ -179,7 +179,30 @@ export const getSubcategories = async (req, res) => {
         }
 
         const subcategories = await Subcategory.findAll({ where });
-        res.json(subcategories);
+
+        const subcategoriesWithStats = await Promise.all(subcategories.map(async (sub) => {
+            const totalItems = await Exercise.count({
+                where: { subcategory_id: sub.id }
+            });
+
+            const totalCompleted = await Exercise.count({
+                where: { subcategory_id: sub.id },
+                include: [{
+                    model: UserExerciseAttempt,
+                    where: { user_id: req.user.id },
+                    required: true
+                }],
+                distinct: true
+            });
+
+            return {
+                ...sub.toJSON(),
+                totalItems,
+                totalCompleted
+            };
+        }));
+
+        res.json(subcategoriesWithStats);
     } catch (error) {
         console.error(error);
         res.status(500).json({ message: "Error fetching subcategories" });
