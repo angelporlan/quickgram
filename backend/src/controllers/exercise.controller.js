@@ -77,6 +77,19 @@ export const getExercises = async (req, res) => {
             distinct: true
         });
 
+        const totalCompleted = await Exercise.count({
+            where,
+            include: [
+                ...includeOption,
+                {
+                    model: UserExerciseAttempt,
+                    where: { user_id: req.user.id },
+                    required: true
+                }
+            ],
+            distinct: true
+        });
+
         const cleanExercises = rows.map(exercise => {
             const attempts = exercise.UserExerciseAttempts || [];
             const latestAttempt = attempts.sort((a, b) => new Date(b.created_at) - new Date(a.created_at))[0];
@@ -93,7 +106,8 @@ export const getExercises = async (req, res) => {
             totalItems: count,
             exercises: cleanExercises,
             totalPages: Math.ceil(count / limit),
-            currentPage: parseInt(page)
+            currentPage: parseInt(page),
+            totalCompleted: totalCompleted
         });
 
     } catch (error) {
