@@ -111,7 +111,7 @@ export class GappedTextComponent implements OnInit {
       total_gaps: this.gaps.length,
       correct_gaps: correctCount,
       is_fully_correct: correctCount === this.gaps.length,
-      score: correctCount
+      score: this.gaps.length > 0 ? Math.round((correctCount / this.gaps.length) * 10) : 0
     };
 
     this.exerciseService.submitAttempt(this.exercise.id, payload).subscribe({

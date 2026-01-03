@@ -113,7 +113,7 @@ export class MultipleMatchingComponent implements OnInit {
       total_gaps: this.questions.length,
       correct_gaps: correctCount,
       is_fully_correct: correctCount === this.questions.length,
-      score: correctCount
+      score: this.questions.length > 0 ? Math.round((correctCount / this.questions.length) * 10) : 0
     };
 
     this.exerciseService.submitAttempt(this.exercise.id, payload).subscribe({

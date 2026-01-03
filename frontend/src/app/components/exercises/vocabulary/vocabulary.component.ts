@@ -141,7 +141,7 @@ export class VocabularyComponent implements OnInit {
             total_gaps: this.totalGaps,
             correct_gaps: correctCount,
             is_fully_correct: correctCount === this.totalGaps,
-            score: correctCount
+            score: this.totalGaps > 0 ? Math.round((correctCount / this.totalGaps) * 10) : 0
         };
 
         console.log('Submitting attempt:', payload);

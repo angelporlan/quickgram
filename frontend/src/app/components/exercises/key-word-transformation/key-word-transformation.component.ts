@@ -162,7 +162,7 @@ export class KeyWordTransformationComponent implements OnInit {
             total_gaps: this.totalQuestions,
             correct_gaps: correctCount,
             is_fully_correct: correctCount === this.totalQuestions,
-            score: correctCount
+            score: this.totalQuestions > 0 ? Math.round((correctCount / this.totalQuestions) * 10) : 0
         };
 
         console.log('Submitting attempt:', payload);

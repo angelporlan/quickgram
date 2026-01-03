@@ -64,7 +64,7 @@ export class EssayComponent implements OnInit {
       total_gaps: 1,
       correct_gaps: 1,
       is_fully_correct: true,
-      score: 1
+      score: 10
     };
 
     console.log('Submitting essay:', payload);
