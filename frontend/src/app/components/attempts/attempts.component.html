@@ -133,7 +133,8 @@
                     </svg>
                 </div>
                 <div class="exercise-details">
-                    <h3>{{ attempt.exercise.question_text | slice:0:40 }}...</h3>
+                    <h3>{{ attempt.exercise.title | slice:0:40 }} {{ attempt.exercise.title.length > 40 ? '...' : '' }}
+                    </h3>
                     <span class="sub-tag">{{ attempt.exercise.Subcategory?.name || 'General' }}</span>
                 </div>
             </div>

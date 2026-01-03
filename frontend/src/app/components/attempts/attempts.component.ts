@@ -70,6 +70,7 @@ export class AttemptsComponent implements OnInit {
         this.loading = true;
         this.exerciseService.getUserAttempts(this.currentPage, this.pageSize, this.selectedCategory).subscribe({
             next: (response) => {
+                console.log(response);
                 this.attempts = response.attempts;
                 this.filteredAttempts = response.attempts;
                 this.totalAttempts = response.pagination.total;
