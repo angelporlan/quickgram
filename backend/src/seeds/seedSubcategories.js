@@ -14,117 +14,117 @@ export const seedSubcategories = async () => {
         {
             name: "Tenses",
             category_id: grammar.id,
-            description: "Práctica y comprensión de los tiempos verbales (presente, pasado, futuro, perfectos) y sus usos."
+            description: "Practice and understanding of verb tenses (present, past, future, perfects) and their uses."
         },
         {
             name: "Conditionals",
             category_id: grammar.id,
-            description: "Ejercicios sobre las estructuras condicionales (tipo cero, uno, dos, tres y mixtas)."
+            description: "Exercises on conditional structures (types zero, one, two, three, and mixed)."
         },
         {
             name: "Passive Voice",
             category_id: grammar.id,
-            description: "Construcción y uso de la voz pasiva en diferentes tiempos verbales y contextos."
+            description: "Construction and use of the passive voice in different tenses and contexts."
         },
 
         // Vocabulary
         {
             name: "Travel",
             category_id: vocabulary.id,
-            description: "Vocabulario relacionado con viajes, aeropuertos, hoteles, transporte y destinos turísticos."
+            description: "Vocabulary related to travel, airports, hotels, transportation, and tourist destinations."
         },
         {
             name: "Work",
             category_id: vocabulary.id,
-            description: "Vocabulario específico de negocios, entrevistas de trabajo, oficinas y terminología laboral."
+            description: "Vocabulary specific to business, job interviews, offices, and workplace terminology."
         },
         {
             name: "Education",
             category_id: vocabulary.id,
-            description: "Términos relacionados con el ámbito escolar, universitario, asignaturas y métodos de estudio."
+            description: "Terms related to school, university, subjects, and study methods."
         },
 
         // Reading
         {
             name: "Multiple Choice Reading",
             category_id: reading.id,
-            description: "Lectura detallada para identificar opinión, tono, propósito, idea principal y actitud. Selección entre opciones A, B, C o D."
+            description: "Detailed reading to identify opinion, tone, purpose, main idea, and attitude. Selection between options A, B, C, or D."
         },
         {
             name: "Gapped Text",
             category_id: reading.id,
-            description: "Prueba de estructura y cohesión del texto. Consiste en reinsertar párrafos u oraciones extraídas en los huecos correctos."
+            description: "Test of text structure and cohesion. Involves reinserting paragraphs or sentences extracted into the correct gaps."
         },
         {
             name: "Multiple Matching",
             category_id: reading.id,
-            description: "Escaneo rápido (scanning) para localizar información específica y entender el parafraseo. Emparejar enunciados con la sección correcta del texto."
+            description: "Rapid scanning to locate specific information and understand paraphrasing. Match statements with the correct section of the text."
         },
 
         // Listening
         {
             name: "Short Dialogues",
             category_id: listening.id,
-            description: "Comprensión de conversaciones breves y extracción de información puntual."
+            description: "Comprehension of brief conversations and extraction of specific information."
         },
         {
             name: "Long Audios",
             category_id: listening.id,
-            description: "Comprensión auditiva de monólogos o conversaciones extensas, incluyendo detalles y contexto."
+            description: "Listening comprehension of extended monologues or conversations, including details and context."
         },
 
         // Use of English
         {
             name: "Gap Fill",
             category_id: useOfEnglish.id,
-            description: "Ejercicios de rellenar espacios en blanco, enfocados en gramática, colocaciones y *phrasal verbs*."
+            description: "Fill-in-the-blank exercises focusing on grammar, collocations, and *phrasal verbs*."
         },
         {
             name: "Multiple Choice",
             category_id: useOfEnglish.id,
-            description: "Selección de la palabra o frase correcta entre varias opciones para completar oraciones o textos."
+            description: "Selection of the correct word or phrase among several options to complete sentences or texts."
         },
         {
             name: "Word Formation",
             category_id: useOfEnglish.id,
-            description: "Formación de palabras a partir de prefijos, sufijos y raíces."
+            description: "Formation of words from prefixes, suffixes, and roots."
         },
         {
             name: "Key Word Transformation",
             category_id: useOfEnglish.id,
-            description: "Reescribir oraciones manteniendo el significado original y usando una palabra clave obligatoria."
+            description: "Rewrite sentences keeping the original meaning and using a mandatory key word."
         },
 
         // Writting, email, letter
         {
             name: "Essay",
             category_id: writing.id,
-            description: "Ensayo académico (Compulsory Part 1). Requiere opinión, argumentos y conclusión."
+            description: "Academic essay (Compulsory Part 1). Requires opinion, arguments, and conclusion."
         },
         {
             name: "Article",
             category_id: writing.id,
-            description: "Artículo para revista o web. Tono interesante, título pegadizo, preguntas retóricas y opinión personal."
+            description: "Article for a magazine or website. Interesting tone, catchy title, rhetorical questions, and personal opinion."
         },
         {
             name: "Review",
             category_id: writing.id,
-            description: "Reseña crítica sobre libros, películas, restaurantes o productos, finalizando con una recomendación."
+            description: "Critical review of books, movies, restaurants, or products, ending with a recommendation."
         },
         {
             name: "Report",
             category_id: writing.id,
-            description: "Informe formal para un superior o grupo. Estructura clara con encabezados (Headings), datos objetivos y sugerencias."
+            description: "Formal report for a superior or group. Clear structure with headings, objective data, and suggestions."
         },
         {
             name: "Email",
             category_id: writing.id,
-            description: "Correo electrónico. Puede ser informal (a un amigo) o formal, respondiendo a preguntas específicas."
+            description: "Email. Can be informal (to a friend) or formal, responding to specific questions."
         },
         {
             name: "Letter",
             category_id: writing.id,
-            description: "Carta formal (solicitud de empleo, queja) o informal. Estructura y saludos/despedidas definidos."
+            description: "Formal letter (job application, complaint) or informal. Defined structure and salutations/closings."
         }
     ];
 
