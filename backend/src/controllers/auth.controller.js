@@ -156,12 +156,64 @@ export const forgotPassword = async (req, res) => {
                 to: email,
                 subject: 'Restablecer contraseña - QuickGram',
                 html: `
-                    <h1>Restablecer Contraseña</h1>
-                    <p>Has solicitado restablecer tu contraseña.</p>
-                    <p>Haz clic en el siguiente enlace para continuar:</p>
-                    <a href="${resetUrl}">Restablecer contraseña</a>
-                    <p>Este enlace expirará en 1 hora.</p>
-                `
+                    <!DOCTYPE html>
+                    <html>
+                    <head>
+                        <meta charset="UTF-8">
+                        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    </head>
+                    <body style="margin: 0; padding: 0; background-color: #0e1515; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                        <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" style="background-color: #0e1515; padding: 40px 0;">
+                            <tr>
+                                <td align="center">
+                                    <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" style="max-width: 500px; background-color: #161f1f; border-radius: 20px; border: 1px solid #2a3b3b; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.5);">
+                                        
+                                        <tr>
+                                            <td align="center" style="padding: 40px 0 20px 0;">
+                                                <div style="display: inline-block; padding: 15px; border-radius: 50%; background-color: rgba(46, 204, 113, 0.1);">
+                                                    <span style="font-size: 30px;">🔐</span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                
+                                        <tr>
+                                            <td align="center" style="padding: 0 40px;">
+                                                <h1 style="color: #ffffff; font-size: 24px; margin: 0; font-weight: 600;">Restablecer Contraseña</h1>
+                                            </td>
+                                        </tr>
+                                
+                                        <tr>
+                                            <td align="center" style="padding: 20px 40px; color: #a0aec0; font-size: 16px; line-height: 1.5;">
+                                                Hemos recibido una solicitud para restablecer la contraseña de tu cuenta. Si fuiste tú, haz clic en el botón de abajo.
+                                            </td>
+                                        </tr>
+                                
+                                        <tr>
+                                            <td align="center" style="padding: 30px 40px;">
+                                                <a href="${resetUrl}" style="background-color: #2ecc71; color: #0e1515; padding: 16px 32px; text-decoration: none; border-radius: 50px; font-weight: bold; font-size: 16px; display: inline-block; box-shadow: 0 0 15px rgba(46, 204, 113, 0.4); letter-spacing: 0.5px;">
+                                                    Restablecer mi contraseña &rarr;
+                                                </a>
+                                            </td>
+                                        </tr>
+                                
+                                        <tr>
+                                            <td align="center" style="padding: 0 40px 40px 40px; color: #718096; font-size: 13px;">
+                                                <p style="margin: 0;">Este enlace expirará en <strong>1 hora</strong>.</p>
+                                                <p style="margin: 10px 0 0 0;">Si no solicitaste este cambio, puedes ignorar este correo de forma segura.</p>
+                                            </td>
+                                        </tr>
+                                        
+                                    </table>
+                                    
+                                    <p style="color: #4a5568; font-size: 12px; margin-top: 20px;">
+                                        &copy; ${new Date().getFullYear()} QuickGram. Todos los derechos reservados.
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </body>
+                    </html>
+                    `
             });
             console.log(`Reset email sent to ${email}`);
         } catch (emailError) {
