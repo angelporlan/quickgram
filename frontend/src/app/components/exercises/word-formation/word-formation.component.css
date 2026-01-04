@@ -21,6 +21,11 @@
     border-bottom: 1px solid #1f2929;
 }
 
+.lamp-icon {
+    width: 40px;
+    height: 40px;
+}
+
 .back-btn {
     background: none;
     border: none;
@@ -187,18 +192,7 @@ h1 {
     gap: 1rem;
     position: relative;
     margin-bottom: 1.5rem;
-}
-
-.lamp-icon {
-    width: 40px;
-    height: 40px;
-    background-color: rgba(46, 204, 113, 0.1);
-    color: #2ecc71;
-    border-radius: 50%;
-    display: flex;
     align-items: center;
-    justify-content: center;
-    font-size: 1.2rem;
 }
 
 .enunciado-text .label {

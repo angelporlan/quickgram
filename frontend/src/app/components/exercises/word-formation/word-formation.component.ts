@@ -21,6 +21,7 @@ export class WordFormationComponent implements OnInit {
     currentGapId: number | null = null;
     userAnswers = new Map<number, string>();
     totalGaps = 0;
+    gapIds: number[] = [];
     answeredGaps = 0;
 
     constructor(
@@ -47,7 +48,6 @@ export class WordFormationComponent implements OnInit {
     }
 
     processText(text: string) {
-        // Regex to match patterns like (1)…………… (ALLOW)
         const regex = /\((\d+)\)[.…]*\s*\(([A-Z]+)\)/g;
 
         let lastIndex = 0;
@@ -84,10 +84,22 @@ export class WordFormationComponent implements OnInit {
         }
 
         this.totalGaps = gapIds.size;
+        this.gapIds = this.textParts
+            .filter(part => part.type === 'gap')
+            .map(part => part.id);
+
     }
 
     selectGap(id: number) {
         this.currentGapId = id;
+    }
+
+    nextGap() {
+        if (this.currentGapId === null) return;
+        const currentIndex = this.gapIds.indexOf(this.currentGapId);
+        if (currentIndex !== -1 && currentIndex < this.gapIds.length - 1) {
+            this.selectGap(this.gapIds[currentIndex + 1]);
+        }
     }
 
     onInputChange(value: string) {

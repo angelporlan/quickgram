@@ -4,13 +4,13 @@
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path d="M19 12H5M12 19l-7-7 7-7" />
             </svg>
-            Salir
+            Exit
         </button>
         <div class="header-center">
             <span class="header-title">QuickGram</span>
         </div>
         <div class="progress-info">
-            Pregunta {{ answeredQuestions }} de {{ totalQuestions }}
+            Question {{ answeredQuestions }} of {{ totalQuestions }}
         </div>
     </header>
 
@@ -34,30 +34,30 @@
             <div class="question-container" *ngIf="currentQuestion">
                 <div class="question-card">
                     <div class="question-header">
-                        <span class="question-number">PREGUNTA {{ currentQuestion.id }}</span>
+                        <span class="question-number">Question {{ currentQuestion.id }}</span>
                     </div>
 
                     <div class="instruction-box">
-                        <div class="lamp-icon">💡</div>
+                        <img src="../svg/light-bulb-on.svg" alt="lamp-icon" class="lamp-icon">
                         <div class="instruction-text">
-                            <span class="label">INSTRUCCIÓN</span>
-                            <p>Completa la segunda oración para que tenga un significado similar a la primera, usando la
-                                palabra clave. Debes usar entre 2 y 5 palabras, incluyendo la palabra clave.</p>
+                            <span class="label">INSTRUCTIONS</span>
+                            <p>Complete the second sentence to have a similar meaning to the first, using the given
+                                word. You must use between 2 and 5 words, including the given word.</p>
                         </div>
                     </div>
 
                     <div class="first-sentence">
-                        <span class="sentence-label">ORACIÓN ORIGINAL:</span>
+                        <span class="sentence-label">Original Sentence:</span>
                         <p>{{ currentQuestion.firstSentence }}</p>
                     </div>
 
                     <div class="keyword-box">
-                        <span class="keyword-label">PALABRA CLAVE:</span>
+                        <span class="keyword-label">GIVEN WORD:</span>
                         <span class="keyword">{{ currentQuestion.keyword }}</span>
                     </div>
 
                     <div class="second-sentence">
-                        <span class="sentence-label">COMPLETA LA ORACIÓN:</span>
+                        <span class="sentence-label">Complete the sentence:</span>
                         <p class="sentence-with-gap">
                             <ng-container *ngFor="let part of currentQuestion.secondSentence.split('(')">
                                 <ng-container *ngIf="!part.includes(')')">{{ part }}</ng-container>
@@ -65,7 +65,7 @@
                                     <span class="gap-container">
                                         <input type="text" class="gap-input" [value]="currentAnswer"
                                             (input)="onInputChange($any($event.target).value)"
-                                            placeholder="Escribe aquí..." autocomplete="off" />
+                                            placeholder="Write here..." autocomplete="off" />
                                     </span>
                                     {{ part.split(')')[1] }}
                                 </ng-container>
@@ -75,26 +75,26 @@
 
                     <div class="word-counter" style="display: none;"
                         [class.invalid]="currentAnswer && !isValidWordCount">
-                        <span class="counter-label">Palabras:</span>
+                        <span class="counter-label">Words:</span>
                         <span class="counter-value">{{ currentWordCount }}/5</span>
                         <span class="counter-hint" *ngIf="currentAnswer && !isValidWordCount">
-                            Debe tener entre 2 y 5 palabras
+                            Must have between 2 and 5 words
                         </span>
                     </div>
 
                     <div class="navigation-buttons">
                         <button class="nav-btn prev-btn" (click)="previousQuestion()"
                             [disabled]="currentQuestionIndex === 0">
-                            ← Anterior
+                            ← Previous
                         </button>
                         <button class="nav-btn next-btn" (click)="nextQuestion()"
                             [disabled]="currentQuestionIndex === questions.length - 1">
-                            Siguiente →
+                            Next →
                         </button>
                     </div>
 
                     <button class="submit-btn" (click)="submit()" [disabled]="!allQuestionsAnswered">
-                        Enviar Respuestas
+                        Submit Answer
                     </button>
                 </div>
             </div>
