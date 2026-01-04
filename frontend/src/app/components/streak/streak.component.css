@@ -67,21 +67,38 @@
 }
 
 .stat-label {
-    font-size: 0.75rem;
-    color: #8b9bb4;
+    font-size: 0.9rem;
+    color: #a0aec0;
+    margin-bottom: 0.5rem;
 }
 
 .stat-value {
-    font-size: 1.1rem;
-    font-weight: 600;
-    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lottie-container {
+    width: 24px;
+    height: 24px;
+}
+
+.lottie-container-star {
+    width: 24px;
+    height: 24px;
 }
 
 .pro-tip {
-    background-color: #15201f;
-    border: 1px solid #1f2929;
+    background-color: rgba(52, 250, 136, 0.1);
+    border: 1px solid rgba(52, 250, 136, 0.2);
     border-radius: 12px;
-    padding: 1rem 1.5rem;
+    padding: 1.5rem;
 }
 
 .pro-tip-header {
@@ -89,9 +106,16 @@
 }
 
 .pro-badge {
-    color: #2ecc71;
-    font-size: 0.85rem;
-    font-weight: 600;
+    background-color: #34fa88;
+    color: #0b1110;
+    font-size: 0.8rem;
+    font-weight: 700;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    width: fit-content;
 }
 
 .pro-tip p {
@@ -209,7 +233,13 @@
 }
 
 .info-icon {
-    font-size: 1.25rem;
+    width: 24px;
+    height: 24px;
+}
+
+.info-icon-calendar {
+    width: 24px;
+    height: 24px;
 }
 
 .info-text {

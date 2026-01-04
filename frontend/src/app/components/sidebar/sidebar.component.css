@@ -208,8 +208,10 @@
     font-size: 0.7rem;
 }
 
-.coin-icon {
-    font-size: 0.8rem;
+.ser-coin svg {
+    width: 16px;
+    height: 16px;
+
 }
 
 .logout-mini {

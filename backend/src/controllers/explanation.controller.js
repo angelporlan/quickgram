@@ -32,7 +32,7 @@ export const explainAttempt = async (req, res) => {
 
         if (attempt.is_fully_correct) {
             return res.json({
-                explanation: "Your answer is fully correct. No explanation needed 🎉",
+                explanation: "Your answer is fully correct. No explanation needed",
                 cached: true
             });
         }

@@ -20,6 +20,8 @@
     "@angular/router": "^19.1.0",
     "@stripe/stripe-js": "^8.6.0",
     "@types/google.accounts": "^0.0.18",
+    "lottie-web": "^5.13.0",
+    "ngx-lottie": "^20.0.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.15.0"

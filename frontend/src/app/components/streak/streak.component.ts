@@ -1,12 +1,16 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, NgZone } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Router } from '@angular/router';
 import { UserService } from '../../services/user.service';
 
+import { LottieComponent } from 'ngx-lottie';
+import { AnimationItem } from 'lottie-web';
+import { AnimationOptions } from 'ngx-lottie';
+
 @Component({
     selector: 'app-streak',
     standalone: true,
-    imports: [CommonModule],
+    imports: [CommonModule, LottieComponent],
     templateUrl: './streak.component.html',
     styleUrl: './streak.component.css'
 })
@@ -18,7 +22,82 @@ export class StreakComponent implements OnInit {
     originalGoal = 5;
     streak = 0;
 
-    constructor(private userService: UserService, private router: Router) { }
+    private animationItem: AnimationItem | null = null;
+    private starAnimationItem: AnimationItem | null = null;
+    private clockAnimationItem: AnimationItem | null = null;
+
+    options: AnimationOptions = {
+        path: '/svg-lottie/flame.json',
+        loop: false,
+        autoplay: true
+    };
+
+    starOptions: AnimationOptions = {
+        path: '/svg-lottie/star.json',
+        loop: false,
+        autoplay: true
+    };
+
+    clockOptions: AnimationOptions = {
+        path: '/svg-lottie/clock.json',
+        loop: false,
+        autoplay: true
+    };
+
+    constructor(
+        private userService: UserService,
+        private router: Router,
+        private ngZone: NgZone
+    ) { }
+
+
+    animationCreated(animationItem: AnimationItem): void {
+        this.animationItem = animationItem;
+    }
+
+    starAnimationCreated(animationItem: AnimationItem): void {
+        this.starAnimationItem = animationItem;
+    }
+
+    clockAnimationCreated(animationItem: AnimationItem): void {
+        this.clockAnimationItem = animationItem;
+    }
+
+    onComplete(): void {
+        this.ngZone.runOutsideAngular(() => {
+            setTimeout(() => {
+                this.ngZone.run(() => {
+                    if (this.animationItem) {
+                        this.animationItem.goToAndPlay(0);
+                    }
+                });
+            }, 3000);
+        });
+    }
+
+    onStarComplete(): void {
+        this.ngZone.runOutsideAngular(() => {
+            setTimeout(() => {
+                this.ngZone.run(() => {
+                    if (this.starAnimationItem) {
+                        this.starAnimationItem.goToAndPlay(0);
+                    }
+                });
+            }, 5000);
+        });
+    }
+
+    onClockComplete(): void {
+        this.ngZone.runOutsideAngular(() => {
+            setTimeout(() => {
+                this.ngZone.run(() => {
+                    if (this.clockAnimationItem) {
+                        this.clockAnimationItem.goToAndPlay(0);
+                    }
+                });
+            }, 5000);
+        });
+    }
 
     ngOnInit() {
         this.userService.getDailyGoalProgress().subscribe({

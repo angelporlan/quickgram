@@ -16,13 +16,27 @@
                 </div>
                 <div class="stat-box">
                     <span class="stat-label">Racha Actual</span>
-                    <span class="stat-value">{{ streak }} {{ streak >= 1 ? '🔥' : '' }}</span>
+                    <span class="stat-value">
+                        {{ streak }}
+                        <div class="lottie-container" *ngIf="streak >= 1">
+                            <ng-lottie [options]="options" (animationCreated)="animationCreated($event)"
+                                (complete)="onComplete()">
+                            </ng-lottie>
+                        </div>
+                    </span>
                 </div>
             </div>
 
             <div class="pro-tip">
                 <div class="pro-tip-header">
-                    <span class="pro-badge">💡 Consejo Pro</span>
+                    <span class="pro-badge">
+                        <div class="lottie-container-star">
+                            <ng-lottie [options]="starOptions" (animationCreated)="starAnimationCreated($event)"
+                                (complete)="onStarComplete()">
+                            </ng-lottie>
+                        </div>
+                        Consejo Pro
+                    </span>
                 </div>
                 <p>Los estudiantes que hacen al menos 15 ejercicios diarios tienen un 40% más de probabilidad de
                     aprobar.</p>
@@ -57,14 +71,18 @@
 
                 <div class="info-row">
                     <div class="info-item">
-                        <span class="info-icon">⏱️</span>
+                        <span class="info-icon">
+                            <ng-lottie [options]="clockOptions" (animationCreated)="clockAnimationCreated($event)"
+                                (complete)="onClockComplete()">
+                            </ng-lottie>
+                        </span>
                         <div class="info-text">
                             <span class="info-label">Tiempo estimado</span>
                             <span class="info-value">~{{ estimatedMinutes }} minutos</span>
                         </div>
                     </div>
                     <div class="info-item">
-                        <span class="info-icon">📅</span>
+                        <img class="info-icon-calendar" src="../svg/calendar.svg" alt="calendar">
                         <div class="info-text">
                             <span class="info-label">Meta semanal</span>
                             <span class="info-value">{{ weeklyExercises }} ejercicios</span>
