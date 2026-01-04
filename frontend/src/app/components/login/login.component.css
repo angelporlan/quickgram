@@ -1,3 +1,13 @@
+#googleSignInButton {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#googleSignInButton>div {
+  width: 100% !important;
+}
+
 .login-bg {
   min-height: 100vh;
   display: flex;
@@ -116,7 +126,6 @@ input.error {
   border-color: #f85149;
 }
 
-/* Password eye toggle */
 .toggle-password {
   position: absolute;
   right: 1rem;

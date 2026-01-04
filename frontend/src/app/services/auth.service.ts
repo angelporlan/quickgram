@@ -31,6 +31,16 @@ export class AuthService {
         );
     }
 
+    googleLogin(credential: string): Observable<any> {
+        return this.http.post<{ token: string }>(`${this.apiUrl}/auth/google`, { credential }).pipe(
+            tap(response => {
+                if (response.token) {
+                    this.saveToken(response.token);
+                }
+            })
+        );
+    }
+
     saveToken(token: string): void {
         localStorage.setItem(this.tokenKey, token);
     }
