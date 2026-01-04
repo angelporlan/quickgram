@@ -314,3 +314,96 @@ export const purchaseAvatar = async (req, res) => {
         res.status(500).json({ message: "Error purchasing avatar" });
     }
 };
+
+
+
+export const getGlobalRankings = async (req, res) => {
+    try {
+        const { User } = await import("../models/User.js");
+
+        const page = parseInt(req.query.page) || 1;
+        const limit = parseInt(req.query.limit) || 20;
+        const type = req.query.type || 'mostActive';
+        const offset = (page - 1) * limit;
+
+        let resultData = [];
+        let totalCount = 0;
+
+        if (type === 'mostActive') {
+            totalCount = await UserExerciseAttempt.count({
+                distinct: true,
+                col: 'user_id'
+            });
+
+            const mostActive = await UserExerciseAttempt.findAll({
+                attributes: [
+                    'user_id',
+                    [Sequelize.fn('COUNT', Sequelize.fn('DISTINCT', Sequelize.col('exercise_id'))), 'count']
+                ],
+                include: [{
+                    model: User,
+                    attributes: ['username', 'avatar_seed']
+                }],
+                group: ['user_id', 'User.id', 'User.username', 'User.avatar_seed'],
+                order: [[Sequelize.literal('count'), 'DESC']],
+                limit: limit,
+                offset: offset,
+                subQuery: false
+            });
+
+            resultData = mostActive.map(item => {
+                const plain = item.get({ plain: true });
+                return {
+                    username: plain.User?.username || 'Unknown',
+                    avatar_seed: plain.User?.avatar_seed,
+                    value: parseInt(plain.count)
+                };
+            });
+
+        } else if (type === 'highestAverage') {
+            totalCount = await UserExerciseAttempt.count({
+                distinct: true,
+                col: 'user_id'
+            });
+
+            const highestAvg = await UserExerciseAttempt.findAll({
+                attributes: [
+                    'user_id',
+                    [Sequelize.fn('AVG', Sequelize.col('score')), 'average']
+                ],
+                include: [{
+                    model: User,
+                    attributes: ['username', 'avatar_seed']
+                }],
+                group: ['user_id', 'User.id', 'User.username', 'User.avatar_seed'],
+                order: [[Sequelize.literal('average'), 'DESC']],
+                limit: limit,
+                offset: offset,
+                subQuery: false
+            });
+
+            resultData = highestAvg.map(item => {
+                const plain = item.get({ plain: true });
+                return {
+                    username: plain.User?.username || 'Unknown',
+                    avatar_seed: plain.User?.avatar_seed,
+                    value: parseFloat(plain.average)
+                };
+            });
+        }
+
+        res.json({
+            data: resultData,
+            meta: {
+                total: totalCount,
+                page,
+                limit,
+                totalPages: Math.ceil(totalCount / limit)
+            }
+        });
+
+    } catch (error) {
+        console.error("Error fetching rankings:", error);
+        res.status(500).json({ message: "Error fetching global rankings" });
+    }
+};

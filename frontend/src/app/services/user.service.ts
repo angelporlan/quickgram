@@ -117,6 +117,21 @@ export class UserService {
         return this.http.post(`${this.apiUrl}/users/me/avatar`, { seed }, { headers });
     }
 
+    getRankings(type: 'mostActive' | 'highestAverage', page: number = 1, limit: number = 20): Observable<any> {
+        const token = this.authService.getToken();
+        const headers = new HttpHeaders({
+            'Authorization': `Bearer ${token}`
+        });
+        return this.http.get(`${this.apiUrl}/users/rankings`, {
+            headers,
+            params: {
+                type,
+                page: page.toString(),
+                limit: limit.toString()
+            }
+        });
+    }
+
     notifyDailyGoalUpdated() {
         this.dailyGoalUpdatedSubject.next();
     }

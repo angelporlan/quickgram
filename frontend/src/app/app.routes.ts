@@ -17,6 +17,7 @@ export const routes: Routes = [
             { path: 'user', loadComponent: () => import('./components/user-profile/user-profile.component').then(m => m.UserProfileComponent) },
             { path: 'shop', loadComponent: () => import('./components/shop/shop.component').then(m => m.ShopComponent) },
             { path: 'roles', loadComponent: () => import('./components/roles/roles.component').then(m => m.RolesComponent) },
+            { path: 'rankings', loadComponent: () => import('./components/ranking/ranking.component').then(m => m.RankingComponent) },
             { path: 'category/:slug', component: CategoryDetailComponent },
             {
                 path: 'exercises/list/:subcategory',
