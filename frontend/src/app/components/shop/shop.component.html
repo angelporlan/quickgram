@@ -5,7 +5,7 @@
             <span class="coins-amount">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="200" height="200">
                     <circle cx="50" cy="50" r="48" fill="#D4AF37" />
-                    <circle cx="50" cy="50" r="42" fill="#F7D54A" stroke="#B8860B" stroke-width="2"/>
+                    <circle cx="50" cy="50" r="42" fill="#F7D54A" stroke="#B8860B" stroke-width="2" />
                     <path d="M56 25 L40 52 L52 52 L44 82 L68 45 L54 45 Z" fill="#996515" />
                 </svg>
                 {{ user.coins }}
@@ -39,22 +39,12 @@
                 </button>
 
                 <button (click)="buyAvatar()" [disabled]="user.coins < avatarCost || isLoadingAvatar" class="btn-buy">
-                    {{ isLoadingAvatar ? 'Comprando...' : 'Comprar por ' + avatarCost + ' 🪙' }}
+                    {{ isLoadingAvatar ? 'Comprando...' : 'Comprar por ' + avatarCost + ' monedas'}}
                 </button>
             </div>
 
             <div *ngIf="avatarErrorMsg" class="msg error">{{ avatarErrorMsg }}</div>
             <div *ngIf="avatarSuccessMsg" class="msg success">{{ avatarSuccessMsg }}</div>
-        </div>
-
-        <!-- Future Items Placeholders -->
-        <div class="shop-item coming-soon">
-            <h2>Pociones de Vida</h2>
-            <p>Proximamente...</p>
-        </div>
-        <div class="shop-item coming-soon">
-            <h2>Congelar Racha</h2>
-            <p>Proximamente...</p>
         </div>
     </div>
 </div>

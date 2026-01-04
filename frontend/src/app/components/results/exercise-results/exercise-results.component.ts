@@ -70,7 +70,6 @@ export class ExerciseResultsComponent implements OnInit {
                     this.processExplanation(data.AttemptExplanation.explanation);
                 }
 
-
                 this.resultService.setResult(this.exercise, this.result, id);
             },
             error: (err) => {

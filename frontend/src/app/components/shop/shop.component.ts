@@ -26,7 +26,7 @@ export class ShopComponent implements OnInit {
   loadUser() {
     this.userService.getUserInfo().subscribe(user => {
       this.user = user;
-      this.previewSeed = this.user.avatar_seed || this.generateRandomSeed();
+      this.previewSeed = this.generateRandomSeed();
     });
   }
 

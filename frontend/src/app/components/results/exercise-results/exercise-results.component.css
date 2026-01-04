@@ -6,6 +6,11 @@
     padding: 2rem;
 }
 
+a {
+    text-decoration: none;
+    color: #8b9bb4;
+}
+
 .results-layout {
     display: grid;
     grid-template-columns: 1fr 350px;
@@ -192,6 +197,12 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
+}
+
+.ai-icon img {
+    width: 70%;
+    height: 70%;
+    object-fit: contain;
 }
 
 .ai-card h3 {
