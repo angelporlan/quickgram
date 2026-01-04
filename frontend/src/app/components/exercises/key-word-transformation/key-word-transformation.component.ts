@@ -147,13 +147,11 @@ export class KeyWordTransformationComponent implements OnInit {
             userAnswerObj[questionId] = answer;
             const correctAnswer = this.parsedAnswers[questionId];
 
-            if (correctAnswer && correctAnswer.includes('/')) {
+            if (correctAnswer) {
                 const possibleAnswers = correctAnswer.split('/').map((a: string) => a.trim().toLowerCase());
                 if (possibleAnswers.includes(answer.toLowerCase())) {
                     correctCount++;
                 }
-            } else if (correctAnswer && correctAnswer.toLowerCase() === answer.toLowerCase()) {
-                correctCount++;
             }
         });
 

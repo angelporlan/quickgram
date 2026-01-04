@@ -158,6 +158,25 @@
     border-bottom: 2px solid #2ecc71;
 }
 
+.other-answers {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px dashed #2c3e50;
+}
+
+.other-answers .answer-label {
+    color: #f1c40f;
+}
+
+.alternative {
+    color: #f1c40f;
+}
+
+.separator {
+    color: #555;
+    margin: 0 0.5rem;
+}
+
 .answer-box.user-answer.wrong .sentence-with-answer ::ng-deep .filled-answer {
     color: #e74c3c;
     background-color: rgba(231, 76, 60, 0.15);

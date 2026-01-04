@@ -66,16 +66,22 @@ export class GapFillReviewComponent implements OnInit {
             const correctAnswerStr = parsedCorrectAnswers[gapId];
             const userAnswer = parsedUserAnswers[gapId];
 
-            const correctOptions = correctAnswerStr.split('/').map((opt: string) => opt.trim().toLowerCase());
+            const correctOptions = correctAnswerStr.split('/').map((opt: string) => opt.trim());
             const userAnswerLower = userAnswer?.toLowerCase() || '';
-            const isCorrect = correctOptions.includes(userAnswerLower);
+            const isCorrect = correctOptions.some((opt: string) => opt.toLowerCase() === userAnswerLower);
+
+            let otherAnswers: string[] = [];
+            if (isCorrect && correctOptions.length > 1) {
+                otherAnswers = correctOptions.filter((opt: string) => opt.toLowerCase() !== userAnswerLower);
+            }
 
             this.processedQuestions.push({
                 id: gapId,
                 userAnswer: userAnswer,
                 correctAnswer: correctAnswerStr,
                 isCorrect: isCorrect,
-                context: this.getContextForGap(parsedQuestionText, gapId)
+                context: this.getContextForGap(parsedQuestionText, gapId),
+                otherAnswers: otherAnswers
             });
         }
     }

@@ -4,6 +4,22 @@
     gap: 1.5rem;
 }
 
+.other-answers {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px dashed #2c3e50;
+    width: 100%;
+}
+
+.other-answers .answer-label {
+    color: #f1c40f;
+}
+
+.alternative {
+    color: #f1c40f;
+    font-weight: 500;
+}
+
 .review-card {
     background-color: #15201f;
     border-radius: 12px;

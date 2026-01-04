@@ -36,6 +36,17 @@
                 <div class="sentence-with-answer" [innerHTML]="getCompleteSentence(q.secondSentence, q.correctAnswer)">
                 </div>
             </div>
+
+            <div class="answer-box other-answers" *ngIf="q.isCorrect && q.otherAnswers && q.otherAnswers.length > 0">
+                <span class="answer-label">OTRAS POSIBLES RESPUESTAS:</span>
+                <div class="other-options-list">
+                    <span *ngFor="let alt of q.otherAnswers; let last = last">
+                        <span class="sentence-with-answer alternative"
+                            [innerHTML]="getCompleteSentence(q.secondSentence, alt)"></span>
+                        <span *ngIf="!last" class="separator"> / </span>
+                    </span>
+                </div>
+            </div>
         </div>
     </div>
 </div>

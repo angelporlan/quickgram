@@ -30,6 +30,11 @@
                 <span class="answer-label">CORRECT ANSWER:</span>
                 <span class="answer-val">{{ q.correctAnswer }}</span>
             </div>
+
+            <div class="answer-box other-answers" *ngIf="q.isCorrect && q.otherAnswers && q.otherAnswers.length > 0">
+                <span class="answer-label">OTHER POSSIBLE ANSWERS:</span>
+                <span class="answer-val alternative">{{ q.otherAnswers.join(' / ') }}</span>
+            </div>
         </div>
     </div>
 </div>

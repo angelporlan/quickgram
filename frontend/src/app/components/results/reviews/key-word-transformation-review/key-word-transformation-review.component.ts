@@ -55,7 +55,6 @@ export class KeyWordTransformationReviewComponent implements OnInit {
             }
         }
 
-        // Parse questions from text
         const questions = this.parseQuestions(parsedQuestionText);
 
         this.processedQuestions = [];
@@ -66,11 +65,16 @@ export class KeyWordTransformationReviewComponent implements OnInit {
             const userAnswer = parsedUserAnswers[questionId];
             const questionData = questions.find(q => q.id === questionId);
 
-            // Check if answer is correct (case-insensitive, supports multiple answers)
             let isCorrect = false;
+            let otherAnswers: string[] = [];
+
             if (correctAnswer && correctAnswer.includes('/')) {
-                const possibleAnswers = correctAnswer.split('/').map((a: string) => a.trim().toLowerCase());
-                isCorrect = possibleAnswers.includes(userAnswer?.toLowerCase());
+                const possibleAnswers = correctAnswer.split('/').map((a: string) => a.trim());
+                isCorrect = possibleAnswers.some((p: string) => p.toLowerCase() === userAnswer?.trim().toLowerCase());
+
+                if (isCorrect) {
+                    otherAnswers = possibleAnswers.filter((p: string) => p.toLowerCase() !== userAnswer?.trim().toLowerCase());
+                }
             } else {
                 isCorrect = userAnswer?.toLowerCase() === correctAnswer?.toLowerCase();
             }
@@ -82,7 +86,8 @@ export class KeyWordTransformationReviewComponent implements OnInit {
                 isCorrect: isCorrect,
                 firstSentence: questionData?.firstSentence || '',
                 keyword: questionData?.keyword || '',
-                secondSentence: questionData?.secondSentence || ''
+                secondSentence: questionData?.secondSentence || '',
+                otherAnswers: otherAnswers
             });
         }
     }
