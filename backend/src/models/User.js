@@ -54,6 +54,14 @@ export const User = sequelize.define("User", {
     last_completed_date: {
         type: DataTypes.DATEONLY,
         allowNull: true
+    },
+    reset_password_token: {
+        type: DataTypes.STRING,
+        allowNull: true
+    },
+    reset_password_expires: {
+        type: DataTypes.DATE,
+        allowNull: true
     }
 }, {
     tableName: "users",

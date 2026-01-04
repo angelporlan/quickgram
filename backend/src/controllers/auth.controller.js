@@ -126,3 +126,78 @@ export const googleLogin = async (req, res) => {
         res.status(401).json({ message: "Invalid Google token" });
     }
 };
+
+export const forgotPassword = async (req, res) => {
+    const { email } = req.body;
+    try {
+        const user = await User.findOne({ where: { email } });
+        if (!user) {
+            return res.status(404).json({ message: "User not found" });
+        }
+
+        const crypto = await import('crypto');
+        const token = crypto.randomBytes(20).toString('hex');
+        const expires = Date.now() + 3600000;
+
+        user.reset_password_token = token;
+        user.reset_password_expires = expires;
+        await user.save();
+
+        const resetUrl = `http://localhost:4200/reset-password/${token}`;
+
+        try {
+            const { Resend } = await import('resend');
+            const resend = new Resend(process.env.RESEND_API_KEY);
+
+            await resend.emails.send({
+                from: 'onboarding@resend.dev',
+                to: email,
+                subject: 'Restablecer contraseña - QuickGram',
+                html: `
+                    <h1>Restablecer Contraseña</h1>
+                    <p>Has solicitado restablecer tu contraseña.</p>
+                    <p>Haz clic en el siguiente enlace para continuar:</p>
+                    <a href="${resetUrl}">Restablecer contraseña</a>
+                    <p>Este enlace expirará en 1 hora.</p>
+                `
+            });
+            console.log(`Reset email sent to ${email}`);
+        } catch (emailError) {
+            console.error('Resend error:', emailError);
+            console.log(`Backup Link: ${resetUrl}`);
+            return res.status(500).json({ message: "Error sending email, check console for backup link" });
+        }
+
+        res.json({ message: "Enlace de recuperación enviado a tu correo" });
+    } catch (error) {
+        console.error('Forgot password error:', error);
+        res.status(500).json({ message: "Internal server error" });
+    }
+};
+
+export const resetPassword = async (req, res) => {
+    const { token, password } = req.body;
+    try {
+        const { Op } = await import("sequelize");
+        const user = await User.findOne({
+            where: {
+                reset_password_token: token,
+                reset_password_expires: { [Op.gt]: Date.now() }
+            }
+        });
+
+        if (!user) {
+            return res.status(400).json({ message: "Password reset token is invalid or has expired" });
+        }
+
+        user.password_hash = await bcrypt.hash(password, 10);
+        user.reset_password_token = null;
+        user.reset_password_expires = null;
+        await user.save();
+
+        res.json({ message: "Password has been reset" });
+    } catch (error) {
+        console.error('Reset password error:', error);
+        res.status(500).json({ message: "Internal server error" });
+    }
+};
