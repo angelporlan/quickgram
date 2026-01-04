@@ -5,69 +5,61 @@
     </div>
 
     <div class="categories-grid">
-        <a routerLink="/category/grammar" class="category-card">
+        <a routerLink="/category/grammar" class="category-card" (mouseenter)="onHover('grammar')"
+            (mouseleave)="onLeave('grammar')">
             <div class="category-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
-                    <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
-                </svg>
+                <ng-lottie [options]="grammarOptions" height="50px" width="50px"
+                    (animationCreated)="onAnimationCreated($event, 'grammar')"></ng-lottie>
             </div>
             <h2>Grammar</h2>
             <p>Practice grammar structures and English rules</p>
         </a>
 
-        <a routerLink="/category/vocabulary" class="category-card">
+        <a routerLink="/category/vocabulary" class="category-card" (mouseenter)="onHover('vocabulary')"
+            (mouseleave)="onLeave('vocabulary')">
             <div class="category-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M2.5 7h19"></path>
-                    <path d="M9.5 22l-6-15h18l-6 15"></path>
-                </svg>
+                <ng-lottie [options]="vocabularyOptions" height="50px" width="50px"
+                    (animationCreated)="onAnimationCreated($event, 'vocabulary')"></ng-lottie>
             </div>
             <h2>Vocabulary</h2>
             <p>Expand your vocabulary with useful words and expressions</p>
         </a>
 
-        <a routerLink="/category/reading" class="category-card">
+        <a routerLink="/category/reading" class="category-card" (mouseenter)="onHover('reading')"
+            (mouseleave)="onLeave('reading')">
             <div class="category-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                    <circle cx="12" cy="12" r="3"></circle>
-                </svg>
+                <ng-lottie [options]="readingOptions" height="50px" width="50px"
+                    (animationCreated)="onAnimationCreated($event, 'reading')"></ng-lottie>
             </div>
             <h2>Reading</h2>
             <p>Improve your reading comprehension with varied texts</p>
         </a>
 
-        <a routerLink="/category/listening" class="category-card">
+        <a routerLink="/category/listening" class="category-card" (mouseenter)="onHover('listening')"
+            (mouseleave)="onLeave('listening')">
             <div class="category-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M3 18v-6a9 9 0 0 1 18 0v6"></path>
-                    <path
-                        d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z">
-                    </path>
-                </svg>
+                <ng-lottie [options]="listeningOptions" height="50px" width="50px"
+                    (animationCreated)="onAnimationCreated($event, 'listening')"></ng-lottie>
             </div>
             <h2>Listening</h2>
             <p>Develop your listening skills with audio exercises</p>
         </a>
 
-        <a routerLink="/category/writing" class="category-card">
+        <a routerLink="/category/writing" class="category-card" (mouseenter)="onHover('writing')"
+            (mouseleave)="onLeave('writing')">
             <div class="category-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path>
-                </svg>
+                <ng-lottie [options]="writingOptions" height="50px" width="50px"
+                    (animationCreated)="onAnimationCreated($event, 'writing')"></ng-lottie>
             </div>
             <h2>Writing</h2>
             <p>Practice your writing with composition exercises</p>
         </a>
 
-        <a routerLink="/category/use-of-english" class="category-card">
+        <a routerLink="/category/use-of-english" class="category-card" (mouseenter)="onHover('useOfEnglish')"
+            (mouseleave)="onLeave('useOfEnglish')">
             <div class="category-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
-                    <path d="M2 17l10 5 10-5"></path>
-                    <path d="M2 12l10 5 10-5"></path>
-                </svg>
+                <ng-lottie [options]="useOfEnglishOptions" height="50px" width="50px"
+                    (animationCreated)="onAnimationCreated($event, 'useOfEnglish')"></ng-lottie>
             </div>
             <h2>Use of English</h2>
             <p>Master the correct use of English in context</p>

@@ -63,7 +63,7 @@
                     {{ numberOfAttempts }}/{{ dailyGoal }} exercises completed
                     <span *ngIf="percentage >= 100">🎉</span>
                 </p>
-                <p class="goal-text" style="margin-top: 8px; display: flex; align-items: center;">
+                <p class="goal-text goal-text-orange" style="margin-top: 8px; display: flex; align-items: center;">
                     <img src="../svg/flame.svg" width="16" height="16" alt="flame" style="margin-right: 4px;">
                     Streak: {{ streak }} day<span *ngIf="streak !== 1">s</span>
                 </p>
