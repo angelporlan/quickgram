@@ -164,7 +164,7 @@ export class WordFormationComponent implements OnInit {
             },
             error: (err) => {
                 console.error('Submission failed', err);
-                alert('Error al enviar la respuesta.');
+                alert('Error submitting answer.');
             }
         });
     }

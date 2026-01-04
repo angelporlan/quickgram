@@ -71,7 +71,7 @@ export class RegisterComponent implements OnInit {
                     this.router.navigate(['/']);
                 },
                 error: (err) => {
-                    this.errorMessage = err.error?.message || 'Error al registrarse con Google';
+                    this.errorMessage = err.error?.message || 'Error signing up with Google';
                     console.error('Google registration error:', err);
                 }
             });

@@ -31,14 +31,14 @@
                 <rect x="14" y="14" width="7" height="7"></rect>
                 <rect x="3" y="14" width="7" height="7"></rect>
             </svg>
-            Categorías
+            Categories
         </a>
 
         <a routerLink="/attempts" routerLinkActive="active" class="nav-item">
             <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path d="M12 8v4l3 3m6-3a9 9 0 1 1-18 0 9 9 0 0 1 18 0z"></path>
             </svg>
-            Mis Intentos
+            My Attempts
         </a>
 
         <a routerLink="/shop" routerLinkActive="active" class="nav-item">
@@ -47,25 +47,25 @@
                 <line x1="3" y1="6" x2="21" y2="6"></line>
                 <path d="M16 10a4 4 0 0 1-8 0"></path>
             </svg>
-            Tienda
+            Shop
         </a>
 
         <div class="nav-section mt-auto">
             <div class="daily-goal-box" routerLink="/streak" routerLinkActive="active" style="cursor: pointer;">
                 <div class="goal-header">
-                    <span>Meta Diaria</span>
+                    <span>Daily Goal</span>
                     <span class="goal-percent">{{ percentage }}%</span>
                 </div>
                 <div class="goal-bar-bg">
                     <div class="goal-bar-fill" [style.width.%]="percentage"></div>
                 </div>
                 <p class="goal-text">
-                    {{ numberOfAttempts }}/{{ dailyGoal }} ejercicios completados
+                    {{ numberOfAttempts }}/{{ dailyGoal }} exercises completed
                     <span *ngIf="percentage >= 100">🎉</span>
                 </p>
                 <p class="goal-text" style="margin-top: 8px; display: flex; align-items: center;">
                     <img src="../svg/flame.svg" width="16" height="16" alt="flame" style="margin-right: 4px;">
-                    Racha: {{ streak }} día<span *ngIf="streak !== 1">s</span>
+                    Streak: {{ streak }} day<span *ngIf="streak !== 1">s</span>
                 </p>
             </div>
         </div>
@@ -80,7 +80,7 @@
             <div class="user-name">{{ user.name }}</div>
             <div class="user-plan">
                 {{ user.subscription_role | uppercase }}
-                <span class="user-coins" title="Monedas disponibles">
+                <span class="user-coins" title="Available coins">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="16" height="16">
                         <circle cx="50" cy="50" r="48" fill="#D4AF37" />
                         <circle cx="50" cy="50" r="42" fill="#F7D54A" stroke="#B8860B" stroke-width="2" />

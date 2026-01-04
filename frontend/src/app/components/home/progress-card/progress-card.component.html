@@ -1,10 +1,10 @@
 <div class="card progress-card full-width">
     <div class="card-header">
-        <h3>Progreso General del Curso</h3>
-        <!-- <p>Has completado el <span class="highlight">{{ syllabusPercentage }}%</span> del temario necesario. Tu nivel
-            actual estimado es {{ level }},
-            ¡estás muy cerca del objetivo!</p> -->
-        <p>Un breve resumen de tu progreso, aquí puedes ver tus aciertos, completados y uso de IA</p>
+        <h3>General Course Progress</h3>
+        <!-- <p>You have completed <span class="highlight">{{ syllabusPercentage }}%</span> of the necessary syllabus. Your estimated
+            current level is {{ level }},
+            you are very close to the goal!</p> -->
+        <p>A brief summary of your progress, here you can see your accuracy, completed exercises, and AI usage</p>
     </div>
 
     <div class="progress-stats">
@@ -13,7 +13,7 @@
                 <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
                     <polyline points="20 6 9 17 4 12"></polyline>
                 </svg>
-                ACIERTOS
+                ACCURACY
             </div>
             <div class="stat-value">{{ accuracy }}%</div>
         </div>
@@ -25,7 +25,7 @@
                     <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
                     <polyline points="22 4 12 14.01 9 11.01"></polyline>
                 </svg>
-                COMPLETADOS
+                COMPLETED
             </div>
             <div class="stat-value">{{ completed }}</div>
         </div>
@@ -35,14 +35,14 @@
                 [style.background]="'conic-gradient(#2ea043 ' + syllabusPercentage + '%, #2a2033 0)'">
                 <div class="inner-circle">
                     <span class="percentage">{{ syllabusPercentage }}%</span>
-                    <span class="label">COMPLETADO</span>
+                    <span class="label">COMPLETED</span>
                 </div>
             </div>
         </div>
     </div>
 
     <button class="cta-button" routerLink="/categories">
-        Continuar Estudiando
+        Continue Studying
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <line x1="5" y1="12" x2="19" y2="12"></line>
             <polyline points="12 5 19 12 12 19"></polyline>

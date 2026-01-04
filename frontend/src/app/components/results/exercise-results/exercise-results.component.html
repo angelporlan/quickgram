@@ -2,12 +2,12 @@
     <div class="main-content">
         <header class="results-header">
             <div class="breadcrumb">
-                <a routerLink="/">Inicio</a> <span class="separator">›</span>
-                <a routerLink="/attempts">Intentos</a> <span class="separator">›</span>
-                <span class="current">Resultados</span>
+                <a routerLink="/">Home</a> <span class="separator">›</span>
+                <a routerLink="/attempts">Attempts</a> <span class="separator">›</span>
+                <span class="current">Results</span>
             </div>
 
-            <h1 class="page-title">Resultados: {{ exercise?.Subcategory?.name }}</h1>
+            <h1 class="page-title">Results: {{ exercise?.Subcategory?.name }}</h1>
             <div class="meta-info">
                 Completed on {{ result.created_at | date:'MMMM d, yyyy' }} at {{ result.created_at | date:'h:mm a' }}
             </div>
@@ -16,10 +16,10 @@
         <div class="stats-container">
             <div class="stat-card score-card">
                 <div class="stat-content">
-                    <span class="label">PUNTUACIÓN</span>
+                    <span class="label">SCORE</span>
                     <div class="score-value">{{ scorePercentage }}%</div>
                     <div class="badge" [class.pass]="scorePercentage >= 50" [class.fail]="scorePercentage < 50">
-                        {{ scorePercentage >= 50 ? 'Aprobado' : 'Suspenso' }}
+                        {{ scorePercentage >= 50 ? 'Passed' : 'Failed' }}
                     </div>
                 </div>
                 <div class="circle-progress" [style.--percent]="scorePercentage">
@@ -35,7 +35,7 @@
             <div class="stat-card">
                 <div class="icon-check">✓</div>
                 <div class="stat-text">
-                    <span class="label">Aciertos</span>
+                    <span class="label">Correct</span>
                     <div class="value">{{ result.correct_gaps }}</div>
                 </div>
             </div>
@@ -43,13 +43,13 @@
             <div class="stat-card">
                 <div class="icon-cross">✕</div>
                 <div class="stat-text">
-                    <span class="label">Errores</span>
+                    <span class="label">Mistakes</span>
                     <div class="value">{{ result.total_gaps - result.correct_gaps }}</div>
                 </div>
             </div>
         </div>
 
-        <h2 class="section-title">Revisión detallada</h2>
+        <h2 class="section-title">Detailed Review</h2>
 
         <router-outlet></router-outlet>
 
@@ -60,18 +60,18 @@
             <div class="ai-icon">
                 <img src="../svg/lights.svg" alt="AI Icon">
             </div>
-            <h3>¿Dudas con los errores?</h3>
-            <p>Obtén una explicación detallada y personalizada de tus fallos con nuestra IA.</p>
+            <h3>Doubts about errors?</h3>
+            <p>Get a detailed and personalized explanation of your mistakes with our AI.</p>
             <button class="ai-btn" (click)="explainWithIA()" [disabled]="isAnalyzing">
-                <span class="btn-icon"></span> {{ isAnalyzing ? 'Analizando...' : 'Explicar con IA' }}
+                <span class="btn-icon"></span> {{ isAnalyzing ? 'Analyzing...' : 'Explain with AI' }}
             </button>
         </div>
         <button class="back-btn" routerLink="/attempts">
-            <span class="btn-icon">↩</span> Volver al inicio
+            <span class="btn-icon">↩</span> Back to attempts
         </button>
         <div class="ai-analysis-card" *ngIf="isAnalyzing || structuredExplanation || htmlExplanation">
             <div class="card-header">
-                ANÁLISIS IA <span class="version">v2.4</span>
+                AI ANALYSIS <span class="version">v2.4</span>
             </div>
             <div class="analysis-content">
                 <div *ngIf="isAnalyzing" class="ai-loading">

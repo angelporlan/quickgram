@@ -1,15 +1,15 @@
 <div class="page-container">
     <header class="header">
         <div class="header-content">
-            <h1>Historial de Ejercicios</h1>
-            <p>Revisa tu progreso, analiza tus resultados anteriores y repasa las explicaciones de la IA.</p>
+            <h1>Exercise History</h1>
+            <p>Review your progress, analyze previous results and review AI explanations.</p>
         </div>
         <button class="btn-new-practice" routerLink="/category/use-of-english">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <line x1="12" y1="5" x2="12" y2="19"></line>
                 <line x1="5" y1="12" x2="19" y2="12"></line>
             </svg>
-            Nueva Práctica
+            New Practice
         </button>
     </header>
 
@@ -22,7 +22,7 @@
                 </svg>
             </div>
             <div class="stat-content">
-                <span class="stat-label">COMPLETADOS</span>
+                <span class="stat-label">COMPLETED</span>
                 <div class="stat-value">{{ stats.total }}</div>
             </div>
         </div>
@@ -36,7 +36,7 @@
                 </svg>
             </div>
             <div class="stat-content">
-                <span class="stat-label">PROMEDIO</span>
+                <span class="stat-label">AVERAGE</span>
                 <div class="stat-value">{{ stats.average }}%</div>
             </div>
         </div>
@@ -51,8 +51,8 @@
                 </svg>
             </div>
             <div class="stat-content">
-                <span class="stat-label">RACHA ACTUAL</span>
-                <div class="stat-value">{{ stats.streak }} días</div>
+                <span class="stat-label">CURRENT STREAK</span>
+                <div class="stat-value">{{ stats.streak }} days</div>
             </div>
         </div>
     </div>
@@ -64,7 +64,7 @@
                 <circle cx="11" cy="11" r="8"></circle>
                 <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
             </svg>
-            <input type="text" placeholder="Buscar por título..." [value]="searchTerm"
+            <input type="text" placeholder="Search by title..." [value]="searchTerm"
                 (input)="search($any($event.target).value)">
         </div>
 
@@ -77,10 +77,10 @@
                     <line x1="3" y1="10" x2="21" y2="10"></line>
                 </svg>
                 <span>
-                    {{ selectedDateFilter === 'all' ? 'Todos los tiempos' : '' }}
-                    {{ selectedDateFilter === 'last30' ? 'Últimos 30 días' : '' }}
-                    {{ selectedDateFilter === 'last7' ? 'Últimos 7 días' : '' }}
-                    {{ selectedDateFilter === 'today' ? 'Hoy' : '' }}
+                    {{ selectedDateFilter === 'all' ? 'All time' : '' }}
+                    {{ selectedDateFilter === 'last30' ? 'Last 30 days' : '' }}
+                    {{ selectedDateFilter === 'last7' ? 'Last 7 days' : '' }}
+                    {{ selectedDateFilter === 'today' ? 'Today' : '' }}
                 </span>
                 <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <polyline points="6 9 12 15 18 9"></polyline>
@@ -89,13 +89,13 @@
 
             <div class="filter-dropdown" *ngIf="showDateDropdown">
                 <div class="filter-option" (click)="setDateFilter('all')" [class.active]="selectedDateFilter === 'all'">
-                    Todos los tiempos</div>
+                    All time</div>
                 <div class="filter-option" (click)="setDateFilter('last30')"
-                    [class.active]="selectedDateFilter === 'last30'">Últimos 30 días</div>
+                    [class.active]="selectedDateFilter === 'last30'">Last 30 days</div>
                 <div class="filter-option" (click)="setDateFilter('last7')"
-                    [class.active]="selectedDateFilter === 'last7'">Últimos 7 días</div>
+                    [class.active]="selectedDateFilter === 'last7'">Last 7 days</div>
                 <div class="filter-option" (click)="setDateFilter('today')"
-                    [class.active]="selectedDateFilter === 'today'">Hoy</div>
+                    [class.active]="selectedDateFilter === 'today'">Today</div>
             </div>
         </div>
 
@@ -108,19 +108,19 @@
     </div>
 
     <div class="list-header">
-        <span class="col-exercise">EJERCICIO</span>
-        <span class="col-date">FECHA</span>
-        <span class="col-result">RESULTADO</span>
-        <span class="col-action">ACCIÓN</span>
+        <span class="col-exercise">EXERCISE</span>
+        <span class="col-date">DATE</span>
+        <span class="col-result">RESULT</span>
+        <span class="col-action">ACTION</span>
     </div>
 
-    <div *ngIf="loading" class="loading">Cargando...</div>
+    <div *ngIf="loading" class="loading">Loading...</div>
 
     <div *ngIf="!loading && filteredAttempts.length === 0" class="empty-state">
-        No se encontraron ejercicios.
+        No exercises found.
     </div>
 
-    <div *ngIf="!loading" class="attempts-list">
+    <div *ngIf="!loading && filteredAttempts.length > 0" class="attempts-list">
         <div *ngFor="let attempt of filteredAttempts" class="attempt-row">
             <div class="col-exercise">
                 <div class="exercise-icon-box" [ngClass]="toSlug(attempt.exercise.Subcategory?.name || 'blue')">
@@ -173,7 +173,7 @@
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <polyline points="15 18 9 12 15 6"></polyline>
             </svg>
-            Anterior
+            Previous
         </button>
 
         <div class="page-numbers">
@@ -185,7 +185,7 @@
         </div>
 
         <button class="pagination-btn" (click)="nextPage()" [disabled]="currentPage === totalPages">
-            Siguiente
+            Next
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <polyline points="9 18 15 12 9 6"></polyline>
             </svg>

@@ -28,23 +28,23 @@ export class ResetPasswordComponent implements OnInit {
     ngOnInit() {
         this.token = this.route.snapshot.paramMap.get('token') || '';
         if (!this.token) {
-            this.error = 'Enlace inválido o expirado.';
+            this.error = 'Invalid or expired link.';
         }
     }
 
     onSubmit() {
         if (!this.password || !this.confirmPassword) {
-            this.error = 'Por favor completa todos los campos.';
+            this.error = 'Please complete all fields.';
             return;
         }
 
         if (this.password !== this.confirmPassword) {
-            this.error = 'Las contraseñas no coinciden.';
+            this.error = 'Passwords do not match.';
             return;
         }
 
         if (this.password.length < 6) {
-            this.error = 'La contraseña debe tener al menos 6 caracteres.';
+            this.error = 'Password must be at least 6 characters.';
             return;
         }
 
@@ -61,7 +61,7 @@ export class ResetPasswordComponent implements OnInit {
                 }, 3000);
             },
             error: (err) => {
-                this.error = err.error?.message || 'Error al restablecer la contraseña.';
+                this.error = err.error?.message || 'Error resetting password.';
                 this.isLoading = false;
             }
         });

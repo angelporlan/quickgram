@@ -33,11 +33,11 @@ export class RolesComponent implements OnInit {
       price: '€0',
       aiLimit: 3,
       features: [
-        '3 consultas IA diarias',
-        'Acceso a ejercicios básicos',
-        'Seguimiento de progreso',
-        'Estadísticas básicas',
-        '10 monedas por ejercicio'
+        '3 daily AI queries',
+        'Access to basic exercises',
+        'Progress tracking',
+        'Basic stats',
+        '10 coins per exercise'
       ]
     },
     {
@@ -47,12 +47,12 @@ export class RolesComponent implements OnInit {
       aiLimit: 15,
       recommended: true,
       features: [
-        '15 consultas IA diarias',
-        'Acceso a todos los ejercicios',
-        'Estadísticas avanzadas',
-        'Simulacros de examen',
-        'Soporte prioritario',
-        'x1.5 más monedas por ejercicio'
+        '15 daily AI queries',
+        'Access to all exercises',
+        'Advanced stats',
+        'Exam simulations',
+        'Priority support',
+        '1.5x coins per exercise'
       ]
     },
     {
@@ -61,13 +61,13 @@ export class RolesComponent implements OnInit {
       price: '€19.99',
       aiLimit: 40,
       features: [
-        '40 consultas IA diarias',
-        'Todo lo de Pro',
-        'Contenido exclusivo',
-        'Análisis personalizado',
-        'Sesiones 1-on-1',
-        'Certificados oficiales',
-        'x2 más monedas por ejercicio'
+        '40 daily AI queries',
+        'Everything in Pro',
+        'Exclusive content',
+        'Personalized analysis',
+        '1-on-1 sessions',
+        'Official certificates',
+        '2x coins per exercise'
       ]
     }
   ];

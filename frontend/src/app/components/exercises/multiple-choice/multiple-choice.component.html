@@ -4,13 +4,13 @@
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path d="M19 12H5M12 19l-7-7 7-7" />
             </svg>
-            Salir
+            Exit
         </button>
         <div class="header-center">
             <span class="header-title">QuickGram</span>
         </div>
         <div class="progress-info">
-            Pregunta {{ answeredGaps }} de {{ totalGaps }}
+            Question {{ answeredGaps }} of {{ totalGaps }}
         </div>
     </header>
 
@@ -45,8 +45,8 @@
                         <div class="enunciado">
                             <div class="lamp-icon">💡</div>
                             <div class="enunciado-text">
-                                <span class="label">ENUNCIADO</span>
-                                <p>Selecciona la mejor opción para completar el hueco {{ currentGapId }}.</p>
+                                <span class="label">INSTRUCTION</span>
+                                <p>Select the best option to complete gap {{ currentGapId }}.</p>
                             </div>
                             <div class="big-question-mark">?</div>
                         </div>
@@ -60,12 +60,12 @@
                         </div>
 
                         <button class="submit-btn" (click)="submit()" [disabled]="!allQuestionsAnswered">
-                            Enviar Respuesta
+                            Submit Answer
                         </button>
                     </div>
 
                     <div class="empty-state" *ngIf="!currentGapId">
-                        <p>Selecciona un hueco en el texto para ver las opciones.</p>
+                        <p>Select a gap in the text to see options.</p>
                     </div>
                 </div>
             </div>

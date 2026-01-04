@@ -30,7 +30,7 @@ export const createSessionPremium = async (req, res) => {
                     currency: "eur",
                     product_data: {
                         name: "Premium Subscription",
-                        description: "400 consultas IA diarias\nTodo lo de Pro\nContenido exclusivo\nAnálisis personalizado\nSesiones 1-on-1\nCertificados oficiales",
+                        description: "40 daily AI queries\nIncludes everything in Pro plan\nExclusive content\nPersonalized performance analysis\n1-on-1 tutoring sessions\nOfficial completion certificates",
                         images: [`${BACKEND_URL}/public/images/stripe-image.png`],
                     },
                     unit_amount: 1999,
@@ -58,7 +58,7 @@ export const createSessionPro = async (req, res) => {
                     currency: "eur",
                     product_data: {
                         name: "Pro Subscription",
-                        description: "15 consultas IA diarias\nAcceso a todos los ejercicios\nEstadísticas avanzadas\nSimulacros de examen",
+                        description: "15 daily AI queries\nUnlimited access to all exercises\nAdvanced performance statistics\nFull exam simulations",
                         images: [`${BACKEND_URL}/public/images/stripe-image.png`],
                     },
                     unit_amount: 999,

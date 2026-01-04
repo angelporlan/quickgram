@@ -69,7 +69,7 @@ export class LoginComponent implements OnInit {
                     this.router.navigate(['/']);
                 },
                 error: (err) => {
-                    this.errorMessage = err.error?.message || 'Error al iniciar sesión con Google';
+                    this.errorMessage = err.error?.message || 'Error logging in with Google';
                     console.error('Google login error:', err);
                 }
             });

@@ -66,7 +66,7 @@ export class UserProfileComponent implements OnInit {
       },
       error: (err) => {
         console.error('Error updating name', err);
-        this.notificationService.error('Error al actualizar el nombre');
+        this.notificationService.error('Error updating name');
       }
     });
   }
@@ -76,14 +76,14 @@ export class UserProfileComponent implements OnInit {
       next: () => {
         this.user.username = this.usernameForm.username;
         this.editingUsername = false;
-        this.notificationService.success('Nombre de usuario actualizado correctamente');
+        this.notificationService.success('Username updated successfully');
       },
       error: (err) => {
         console.error('Error updating username', err);
         if (err.status === 400) {
-          this.notificationService.error('El nombre de usuario ya está en uso');
+          this.notificationService.error('Username is already in use');
         } else {
-          this.notificationService.error('Error al actualizar el nombre de usuario');
+          this.notificationService.error('Error updating username');
         }
       }
     });
@@ -91,7 +91,7 @@ export class UserProfileComponent implements OnInit {
 
   updatePassword() {
     if (this.passwordForm.newPassword !== this.passwordForm.confirmPassword) {
-      this.notificationService.error('Las contraseñas no coinciden');
+      this.notificationService.error('Passwords do not match');
       return;
     }
 
@@ -102,18 +102,18 @@ export class UserProfileComponent implements OnInit {
       next: () => {
         this.editingPassword = false;
         this.passwordForm = { currentPassword: '', newPassword: '', confirmPassword: '' };
-        this.notificationService.success('Contraseña actualizada correctamente');
+        this.notificationService.success('Password updated successfully');
       },
       error: (err) => {
         console.error('Error updating password', err);
-        this.notificationService.error('Error al actualizar la contraseña');
+        this.notificationService.error('Error updating password');
       }
     });
   }
 
   deleteAccount() {
     if (this.deleteConfirmText !== this.user.username) {
-      this.notificationService.error('El nombre de usuario no coincide');
+      this.notificationService.error('Username does not match');
       return;
     }
 
@@ -124,7 +124,7 @@ export class UserProfileComponent implements OnInit {
       },
       error: (err) => {
         console.error('Error deleting account', err);
-        this.notificationService.error('Error al eliminar la cuenta');
+        this.notificationService.error('Error deleting account');
       }
     });
   }

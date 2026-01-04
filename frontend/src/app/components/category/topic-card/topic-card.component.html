@@ -35,9 +35,9 @@
                 </svg>
             </ng-container>
         </div>
-        <span class="status-badge" *ngIf="topic.status === 'in-progress'">EN PROGRESO</span>
-        <span class="status-badge" *ngIf="topic.status === 'completed'">COMPLETADO</span>
-        <span class="status-badge locked-badge" *ngIf="topic.status === 'locked'">BLOQUEADO</span>
+        <span class="status-badge" *ngIf="topic.status === 'in-progress'">IN PROGRESS</span>
+        <span class="status-badge" *ngIf="topic.status === 'completed'">COMPLETED</span>
+        <span class="status-badge locked-badge" *ngIf="topic.status === 'locked'">LOCKED</span>
     </div>
 
     <div class="card-content">
@@ -68,9 +68,9 @@
         'btn-outline': topic.status !== 'in-progress' && topic.status !== 'locked' && topic.status !== 'completed',
         'btn-locked': topic.status === 'locked'
     }">
-                <span *ngIf="topic.status === 'in-progress' || topic.status === 'completed'">Aleatorio</span>
-                <span *ngIf="topic.status === 'not-started'">Aleatorio</span>
-                <span *ngIf="topic.status === 'locked'">Bloqueado</span>
+                <span *ngIf="topic.status === 'in-progress' || topic.status === 'completed'">Random</span>
+                <span *ngIf="topic.status === 'not-started'">Random</span>
+                <span *ngIf="topic.status === 'locked'">Locked</span>
 
                 <svg *ngIf="topic.status !== 'locked'" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                     stroke-width="2" class="arrow-icon">
@@ -86,10 +86,10 @@
         'btn-outline': topic.status !== 'in-progress' && topic.status !== 'locked' && topic.status !== 'completed',
         'btn-locked': topic.status === 'locked'
     }">
-                <span *ngIf="topic.status === 'in-progress'">Continuar</span>
-                <span *ngIf="topic.status === 'completed'">Repasar</span>
-                <span *ngIf="topic.status === 'not-started'">Empezar</span>
-                <span *ngIf="topic.status === 'locked'">Bloqueado</span>
+                <span *ngIf="topic.status === 'in-progress'">Continue</span>
+                <span *ngIf="topic.status === 'completed'">Review</span>
+                <span *ngIf="topic.status === 'not-started'">Start</span>
+                <span *ngIf="topic.status === 'locked'">Locked</span>
 
                 <svg *ngIf="topic.status !== 'locked'" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                     stroke-width="2" class="arrow-icon">

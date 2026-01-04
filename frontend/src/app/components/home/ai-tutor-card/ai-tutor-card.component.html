@@ -9,8 +9,8 @@
                 </svg>
             </div>
             <div class="card-info">
-                <h3>IA Tutor</h3>
-                <p>Explicaciones detalladas</p>
+                <h3>AI Tutor</h3>
+                <p>Detailed explanations</p>
             </div>
         </div>
         <span class="badge" *ngIf="stats">{{ stats.effective_role | uppercase }}</span>
@@ -21,19 +21,19 @@
             <div class="numbers-group">
                 <span class="big-num">{{ stats.used }}</span><span class="total"> /{{ stats.limit }}</span>
             </div>
-            <span class="usage-percent">{{ usagePercent }}% Usado (día)</span>
+            <span class="usage-percent">{{ usagePercent }}% Used (day)</span>
         </div>
         <div class="progress-bar-bg">
             <div class="progress-bar-fill" [style.width.%]="usagePercent"></div>
         </div>
-        <p class="usage-note" *ngIf="showRenewalInfo">Próxima renovación el {{ stats.expiration_date |
+        <p class="usage-note" *ngIf="showRenewalInfo">Next renewal on {{ stats.expiration_date |
             date:'dd/MM/yyyy' }}.
         </p>
     </div>
 
     <div class="loading-state" *ngIf="!stats">
-        <p>Cargando estadísticas...</p>
+        <p>Loading statistics...</p>
     </div>
 
-    <button routerLink="/roles" class="outline-button">Obtener más</button>
+    <button routerLink="/roles" class="outline-button">Get more</button>
 </div>
