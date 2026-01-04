@@ -143,7 +143,9 @@ export const forgotPassword = async (req, res) => {
         user.reset_password_expires = expires;
         await user.save();
 
-        const resetUrl = `http://localhost:4200/reset-password/${token}`;
+        const rawUrl = process.env.ENV === "TEST" ? process.env.URL_FRONT_TEST : process.env.URL_PROD;
+
+        const resetUrl = `${rawUrl}/reset-password/${token}`;
 
         try {
             const { Resend } = await import('resend');
