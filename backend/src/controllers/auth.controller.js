@@ -1,6 +1,8 @@
 import jwt from "jsonwebtoken";
 import bcrypt from "bcrypt";
-import { User } from "../models/user.js";
+import { User } from "../models/User.js";
+import { sequelize } from "../config/db.js";
+
 
 export const login = async (req, res) => {
     const { email, password } = req.body;
@@ -62,4 +64,65 @@ export const register = async (req, res) => {
     );
 
     res.json({ token });
+};
+
+export const googleLogin = async (req, res) => {
+    try {
+        const { credential } = req.body;
+
+        if (!credential) {
+            return res.status(400).json({ message: "Missing Google credential" });
+        }
+
+        const { OAuth2Client } = await import('google-auth-library');
+        const client = new OAuth2Client(process.env.GOOGLE_CLIENT_ID);
+
+        const ticket = await client.verifyIdToken({
+            idToken: credential,
+            audience: process.env.GOOGLE_CLIENT_ID
+        });
+
+        const payload = ticket.getPayload();
+        const { email, name, picture, sub: googleId } = payload;
+
+        if (!email) {
+            return res.status(400).json({ message: "Email not provided by Google" });
+        }
+
+        let user = await User.findOne({
+            where: {
+                [sequelize.Sequelize.Op.or]: [
+                    { email },
+                    { google_id: googleId }
+                ]
+            }
+        });
+
+        if (!user) {
+            const username = email.split('@')[0] + Math.floor(Math.random() * 1000);
+            user = await User.create({
+                name: name || email.split('@')[0],
+                username,
+                email,
+                password_hash: await bcrypt.hash(Math.random().toString(36), 10),
+                google_id: googleId,
+                avatar_seed: email,
+                coins: 10
+            });
+        } else if (!user.google_id) {
+            user.google_id = googleId;
+            await user.save();
+        }
+
+        const token = jwt.sign(
+            { id: user.id, email: user.email },
+            process.env.JWT_SECRET,
+            { expiresIn: "7d" }
+        );
+
+        res.json({ token, user: { id: user.id, email: user.email, name: user.name } });
+    } catch (error) {
+        console.error('Google login error:', error);
+        res.status(401).json({ message: "Invalid Google token" });
+    }
 };

@@ -42,6 +42,11 @@ export const User = sequelize.define("User", {
         type: DataTypes.STRING,
         allowNull: true
     },
+    google_id: {
+        type: DataTypes.STRING,
+        allowNull: true,
+        unique: true
+    },
     streak: {
         type: DataTypes.INTEGER,
         defaultValue: 0
