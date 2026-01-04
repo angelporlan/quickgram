@@ -1,6 +1,6 @@
 <div class="shop-container" *ngIf="user">
     <div class="shop-header">
-        <h1>Tienda</h1>
+        <h1>Shop</h1>
         <div class="user-balance">
             <span class="coins-amount">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="200" height="200">
@@ -16,18 +16,18 @@
     <div class="shop-grid">
         <!-- Avatar Section -->
         <div class="shop-item avatar-shop">
-            <h2>Personaliza tu Avatar</h2>
-            <p class="description">¡Destaca con un nuevo look! Genera avatares únicos y compra tu favorito.</p>
+            <h2>Customize your Avatar</h2>
+            <p class="description">Stand out with a new look! Generate unique avatars and buy your favorite.</p>
 
             <div class="avatar-preview-area">
                 <div class="current-avatar">
-                    <span>Actual</span>
+                    <span>Current</span>
                     <img [src]="'https://api.dicebear.com/7.x/avataaars/svg?seed=' + (user.avatar_seed || user.username)"
                         alt="Current Avatar">
                 </div>
                 <div class="arrow">➜</div>
                 <div class="new-avatar">
-                    <span>Nuevo</span>
+                    <span>New</span>
                     <img [src]="'https://api.dicebear.com/7.x/avataaars/svg?seed=' + previewSeed"
                         alt="New Avatar Preview">
                 </div>
@@ -35,11 +35,11 @@
 
             <div class="actions">
                 <button (click)="randomizeAvatar()" class="btn-random">
-                    <i class="fas fa-dice"></i> Generar Nuevo
+                    <i class="fas fa-dice"></i> Generate New
                 </button>
 
                 <button (click)="buyAvatar()" [disabled]="user.coins < avatarCost || isLoadingAvatar" class="btn-buy">
-                    {{ isLoadingAvatar ? 'Comprando...' : 'Comprar por ' + avatarCost + ' monedas'}}
+                    {{ isLoadingAvatar ? 'Buying...' : 'Buy for ' + avatarCost + ' coins'}}
                 </button>
             </div>
 

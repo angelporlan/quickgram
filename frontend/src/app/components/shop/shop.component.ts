@@ -44,7 +44,7 @@ export class ShopComponent implements OnInit {
     if (!this.user) return;
 
     if (this.user.coins < this.avatarCost) {
-      this.avatarErrorMsg = 'No tienes suficientes monedas';
+      this.avatarErrorMsg = 'Not enough coins';
       return;
     }
 
@@ -57,13 +57,13 @@ export class ShopComponent implements OnInit {
         this.isLoadingAvatar = false;
         this.user.coins = res.coins;
         this.user.avatar_seed = res.avatar_seed;
-        this.avatarSuccessMsg = '¡Avatar comprado y actualizado!';
+        this.avatarSuccessMsg = 'Avatar purchased and updated!';
         this.userService.notifyUserInfoUpdated();
       },
       error: (err) => {
         this.isLoadingAvatar = false;
         console.error('Error buying avatar', err);
-        this.avatarErrorMsg = err.error?.message || 'Error al comprar el avatar';
+        this.avatarErrorMsg = err.error?.message || 'Error buying avatar';
       }
     });
   }
