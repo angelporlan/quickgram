@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ActivatedRoute, Router, RouterLink } from '@angular/router';
+import { FormsModule } from '@angular/forms';
 import { TopicCardComponent } from './topic-card/topic-card.component';
 import { ExerciseService } from '../../services/exercise.service';
 import { finalize } from 'rxjs/operators';
@@ -8,7 +9,7 @@ import { finalize } from 'rxjs/operators';
 @Component({
     selector: 'app-category-detail',
     standalone: true,
-    imports: [CommonModule, TopicCardComponent, RouterLink],
+    imports: [CommonModule, TopicCardComponent, RouterLink, FormsModule],
     templateUrl: './category-detail.component.html',
     styleUrl: './category-detail.component.css'
 })
@@ -16,6 +17,8 @@ export class CategoryDetailComponent implements OnInit {
     categoryTitle: string = 'Gramática';
     urlCategory: string = '';
     isLoading: boolean = true;
+    searchTerm: string = '';
+    filteredTopics: any[] = [];
 
     // Mock Data matching the image
     // topics = [
@@ -120,6 +123,7 @@ export class CategoryDetailComponent implements OnInit {
                         totalItems: topic.totalItems
                     };
                 });
+                this.filteredTopics = this.topics;
             });
     }
 
@@ -141,5 +145,18 @@ export class CategoryDetailComponent implements OnInit {
 
     handleListTopic(topic: any) {
         this.router.navigate(['/exercises/list', topic.title]);
+    }
+
+    onSearch() {
+        if (!this.searchTerm.trim()) {
+            this.filteredTopics = this.topics;
+            return;
+        }
+
+        const term = this.searchTerm.toLowerCase().trim();
+        this.filteredTopics = this.topics.filter(topic =>
+            topic.title.toLowerCase().includes(term) ||
+            (topic.description && topic.description.toLowerCase().includes(term))
+        );
     }
 }

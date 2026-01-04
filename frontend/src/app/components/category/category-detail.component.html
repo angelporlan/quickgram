@@ -21,7 +21,8 @@
                 <circle cx="11" cy="11" r="8"></circle>
                 <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
             </svg>
-            <input type="text" placeholder="Search topics (e.g. Verbs)...">
+            <input type="text" [(ngModel)]="searchTerm" (input)="onSearch()"
+                placeholder="Search topics (e.g. Verbs)...">
         </div>
     </header>
 
@@ -41,7 +42,7 @@
     </div>
 
     <div class="topics-grid" *ngIf="!isLoading">
-        <app-topic-card *ngFor="let topic of topics" [topic]="topic" (startTopic)="handleStartTopic($event)"
+        <app-topic-card *ngFor="let topic of filteredTopics" [topic]="topic" (startTopic)="handleStartTopic($event)"
             (listTopic)="handleListTopic($event)"></app-topic-card>
     </div>
 </div>
