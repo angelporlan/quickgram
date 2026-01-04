@@ -1,17 +1,17 @@
 <div class="category-container">
     <div class="breadcrumb">
-        <span>Inicio</span> / <span class="current">{{ categoryTitle }}</span>
+        <a class="back-icon" routerLink="/categories">Categorías</a> / <span class="current">{{ categoryTitle }}</span>
     </div>
 
     <header class="category-header">
         <div class="text-content">
             <h1>
-                <span class="back-icon" (click)="goBack()">
+                <a class="back-icon" routerLink="/categories">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round">
                         <path d="M19 12H5M12 19l-7-7 7-7" />
                     </svg>
-                </span>
+                </a>
                 {{ categoryTitle }}
             </h1>
             <p>Domina las reglas y estructuras esenciales para el nivel B2. Selecciona un tema para comenzar.</p>

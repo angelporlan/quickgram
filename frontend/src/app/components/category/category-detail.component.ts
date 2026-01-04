@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ActivatedRoute, Router } from '@angular/router';
+import { ActivatedRoute, Router, RouterLink } from '@angular/router';
 import { TopicCardComponent } from './topic-card/topic-card.component';
 import { ExerciseService } from '../../services/exercise.service';
 import { finalize } from 'rxjs/operators';
@@ -8,7 +8,7 @@ import { finalize } from 'rxjs/operators';
 @Component({
     selector: 'app-category-detail',
     standalone: true,
-    imports: [CommonModule, TopicCardComponent],
+    imports: [CommonModule, TopicCardComponent, RouterLink],
     templateUrl: './category-detail.component.html',
     styleUrl: './category-detail.component.css'
 })
@@ -141,9 +141,5 @@ export class CategoryDetailComponent implements OnInit {
 
     handleListTopic(topic: any) {
         this.router.navigate(['/exercises/list', topic.title]);
-    }
-
-    goBack() {
-        this.router.navigate(['/categories']);
     }
 }

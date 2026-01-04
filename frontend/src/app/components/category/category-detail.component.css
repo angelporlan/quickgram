@@ -4,6 +4,12 @@
     margin: 0 auto;
 }
 
+.back-icon {
+    text-decoration: none;
+    color: #8b9bb4;
+    margin-right: 0 !important;
+}
+
 .breadcrumb {
     color: #8b9bb4;
     font-size: 0.9rem;
