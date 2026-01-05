@@ -47,11 +47,11 @@ export class EssayComponent implements OnInit {
 
   get wordCountStatus(): string {
     if (this.wordCount < this.minWords) {
-      return `${this.wordCount} / ${this.minWords} palabras (mínimo)`;
+      return `${this.wordCount} / ${this.minWords} words (minimum)`;
     } else if (this.wordCount > this.maxWords) {
-      return `${this.wordCount} / ${this.maxWords} palabras (¡excedido!)`;
+      return `${this.wordCount} / ${this.maxWords} words (exceeded!)`;
     } else {
-      return `${this.wordCount} palabras (${this.minWords}-${this.maxWords})`;
+      return `${this.wordCount} words (${this.minWords}-${this.maxWords})`;
     }
   }
 

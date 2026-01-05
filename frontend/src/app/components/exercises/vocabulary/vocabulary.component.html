@@ -4,13 +4,13 @@
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path d="M19 12H5M12 19l-7-7 7-7" />
             </svg>
-            Salir
+            Exit
         </button>
         <div class="header-center">
             <span class="header-title">QuickGram</span>
         </div>
         <div class="progress-info">
-            Pregunta {{ answeredGaps }} de {{ totalGaps }}
+            Question {{ answeredGaps }} of {{ totalGaps }}
         </div>
     </header>
 
@@ -45,15 +45,15 @@
                         <div class="enunciado">
                             <img src="../svg/light-bulb-on.svg" alt="lamp-icon" class="lamp-icon">
                             <div class="enunciado-text">
-                                <span class="label">INSTRUCCIÓN</span>
-                                <p>Selecciona la palabra correcta del banco de palabras para completar el hueco {{
-                                    currentGapId }}.</p>
+                                <span class="label">INSTRUCTION</span>
+                                <p>Select the correct word from the word bank to complete the gap {{ currentGapId }}.
+                                </p>
                             </div>
                             <div class="big-question-mark">?</div>
                         </div>
 
                         <div class="word-bank-container">
-                            <label class="input-label">Banco de Palabras:</label>
+                            <label class="input-label">Word Bank:</label>
                             <div class="word-bank">
                                 <button *ngFor="let word of availableWords" class="word-chip"
                                     [class.used]="isWordUsed(word)" [class.selected]="currentAnswer === word"
@@ -61,16 +61,16 @@
                                     {{ word }}
                                 </button>
                             </div>
-                            <p class="input-hint">Haz clic en una palabra para seleccionarla</p>
+                            <p class="input-hint">Click on a word to select it</p>
                         </div>
 
                         <button class="submit-btn" (click)="submit()" [disabled]="!allQuestionsAnswered">
-                            Enviar Respuesta
+                            Submit Answer
                         </button>
                     </div>
 
                     <div class="empty-state" *ngIf="!currentGapId">
-                        <p>Selecciona un hueco en el texto para elegir una palabra.</p>
+                        <p>Select a gap in the text to write your answer.</p>
                     </div>
                 </div>
             </div>

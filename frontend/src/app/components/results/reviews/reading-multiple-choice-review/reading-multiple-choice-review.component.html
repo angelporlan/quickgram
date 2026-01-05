@@ -1,7 +1,13 @@
 <div class="review-container">
     <div class="reading-section">
-        <h2 class="section-title">READING TEXT</h2>
-        <div class="reading-text">
+        <div class="section-header" (click)="toggleReadingText()">
+            <h2 class="section-title">READING TEXT</h2>
+            <button class="toggle-text-btn">
+                {{ showReadingText ? 'Hide Text' : 'Show Text' }}
+                <span class="arrow" [class.expanded]="showReadingText">▼</span>
+            </button>
+        </div>
+        <div class="reading-text" *ngIf="showReadingText">
             <p class="text-content">{{ readingText }}</p>
         </div>
     </div>

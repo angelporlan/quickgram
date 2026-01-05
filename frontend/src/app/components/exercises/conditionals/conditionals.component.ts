@@ -87,6 +87,29 @@ export class ConditionalsComponent implements OnInit {
         this.currentGapId = id;
     }
 
+    nextGap() {
+        if (!this.currentGapId) return;
+
+        let nextId: number | null = null;
+        let foundCurrent = false;
+
+        for (const part of this.textParts) {
+            if (part.type === 'gap') {
+                if (foundCurrent) {
+                    nextId = part.id;
+                    break;
+                }
+                if (part.id === this.currentGapId) {
+                    foundCurrent = true;
+                }
+            }
+        }
+
+        if (nextId) {
+            this.selectGap(nextId);
+        }
+    }
+
     onInputChange(value: string) {
         if (this.currentGapId === null) return;
 

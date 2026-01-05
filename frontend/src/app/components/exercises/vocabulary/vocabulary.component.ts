@@ -88,6 +88,11 @@ export class VocabularyComponent implements OnInit {
     }
 
     selectGap(id: number) {
+        // If the gap already has an answer, clicking it should clear it (return word to bank)
+        if (this.userAnswers.has(id)) {
+            this.userAnswers.delete(id);
+            this.answeredGaps = this.userAnswers.size;
+        }
         this.currentGapId = id;
     }
 

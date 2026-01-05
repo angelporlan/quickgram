@@ -1,14 +1,14 @@
 <div class="review-container">
     <div class="instructions-section">
-        <h2 class="section-title">INSTRUCCIONES</h2>
+        <h2 class="section-title">Instructions</h2>
         <p class="instructions-text">{{ instructions }}</p>
     </div>
 
     <div class="reading-section">
         <div class="section-header">
-            <h2 class="section-title">TEXTO CON RESPUESTAS</h2>
+            <h2 class="section-title">Text with Answers</h2>
             <button class="toggle-btn" (click)="showFullText = !showFullText">
-                {{ showFullText ? 'Ocultar' : 'Mostrar' }}
+                {{ showFullText ? 'Hide' : 'Show' }}
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                     [class.rotated]="showFullText">
@@ -34,22 +34,22 @@
     </div>
 
     <div class="gaps-review-section">
-        <h2 class="section-title">REVISIÓN DE HUECOS</h2>
+        <h2 class="section-title">Gaps Review</h2>
 
         <div class="gap-review-card" *ngFor="let gap of gaps" [class.correct]="gap.isCorrect"
             [class.incorrect]="!gap.isCorrect">
 
             <div class="card-header">
-                <span class="gap-label">HUECO {{ gap.number }}</span>
+                <span class="gap-label">GAP {{ gap.number }}</span>
                 <div class="status-badge" [class.correct]="gap.isCorrect" [class.incorrect]="!gap.isCorrect">
                     <span class="status-icon">{{ gap.isCorrect ? '✓' : '✕' }}</span>
-                    <span class="status-text">{{ gap.isCorrect ? 'Correcta' : 'Incorrecta' }}</span>
+                    <span class="status-text">{{ gap.isCorrect ? 'Correct' : 'Incorrect' }}</span>
                 </div>
             </div>
 
             <div class="answers-section">
                 <div class="answer-box user-answer" [class.wrong]="!gap.isCorrect">
-                    <span class="answer-label">TU RESPUESTA:</span>
+                    <span class="answer-label">YOUR ANSWER:</span>
                     <div class="answer-content">
                         <span class="answer-key">{{ gap.userAnswer }}</span>
                         <span class="answer-text">{{ availableSentences[gap.userAnswer] }}</span>
@@ -57,7 +57,7 @@
                 </div>
 
                 <div class="answer-box correct-answer" *ngIf="!gap.isCorrect">
-                    <span class="answer-label">RESPUESTA CORRECTA:</span>
+                    <span class="answer-label">CORRECT ANSWER:</span>
                     <div class="answer-content">
                         <span class="answer-key">{{ gap.correctAnswer }}</span>
                         <span class="answer-text">{{ availableSentences[gap.correctAnswer] }}</span>

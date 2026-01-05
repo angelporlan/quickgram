@@ -1,30 +1,32 @@
 <div class="matching-container">
-    <div class="header">
-        <button class="close-btn" (click)="close.emit()">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <line x1="18" y1="6" x2="6" y2="18"></line>
-                <line x1="6" y1="6" x2="18" y2="18"></line>
+    <header class="exercise-header">
+        <button class="back-btn" (click)="close.emit()">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M19 12H5M12 19l-7-7 7-7" />
             </svg>
+            Exit
         </button>
-        <h1 class="title">Multiple Matching</h1>
-        <div class="progress-info">
-            <span>{{ answeredCount }} / {{ questions.length }} preguntas respondidas</span>
-            <div class="progress-bar">
-                <div class="progress-fill" [style.width.%]="progressPercentage"></div>
-            </div>
+        <div class="header-center">
+            <span class="header-title">QuickGram</span>
         </div>
+        <div class="progress-info">
+            Question {{ answeredCount }} of {{ questions.length }}
+        </div>
+    </header>
+
+    <div class="progress-bar-container">
+        <div class="progress-bar" [style.width.%]="progressPercentage"></div>
     </div>
 
     <div class="content-wrapper">
         <div class="left-column">
             <div class="instructions-section">
-                <h2 class="section-title">Instrucciones</h2>
+                <h2 class="section-title">Instructions</h2>
                 <p class="instructions-text">{{ instructions }}</p>
             </div>
 
             <div class="passages-section">
-                <h2 class="section-title">Textos</h2>
+                <h2 class="section-title">Texts</h2>
                 <div class="passage-card" *ngFor="let passage of passages">
                     <div class="passage-header">
                         <span class="passage-letter">{{ passage.letter }}</span>
@@ -37,7 +39,7 @@
 
         <div class="right-column">
             <div class="questions-section">
-                <h2 class="section-title">Preguntas</h2>
+                <h2 class="section-title">Questions</h2>
                 <div class="questions-scroll">
                     <div class="question-card" *ngFor="let question of questions">
                         <p class="question-text">
@@ -56,7 +58,7 @@
 
                     <div class="submit-section">
                         <button class="submit-btn" (click)="submit()" [disabled]="!allQuestionsAnswered">
-                            Enviar Respuestas
+                            Submit Answers
                         </button>
                     </div>
                 </div>

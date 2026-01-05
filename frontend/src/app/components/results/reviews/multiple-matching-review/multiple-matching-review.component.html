@@ -1,14 +1,14 @@
 <div class="review-container">
     <div class="instructions-section">
-        <h2 class="section-title">INSTRUCCIONES</h2>
+        <h2 class="section-title">Instructions</h2>
         <p class="instructions-text">{{ instructions }}</p>
     </div>
 
     <div class="passages-section">
         <div class="section-header">
-            <h2 class="section-title">TEXTOS DE REFERENCIA</h2>
+            <h2 class="section-title">TEXTS OF REFERENCE</h2>
             <button class="toggle-btn" (click)="showPassages = !showPassages">
-                {{ showPassages ? 'Ocultar' : 'Mostrar' }}
+                {{ showPassages ? 'Hide' : 'Show' }}
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                     [class.rotated]="showPassages">
@@ -28,16 +28,16 @@
     </div>
 
     <div class="questions-review-section">
-        <h2 class="section-title">REVISIÓN DE RESPUESTAS</h2>
+        <h2 class="section-title">QUESTIONS REVIEW</h2>
 
         <div class="question-review-card" *ngFor="let question of questions" [class.correct]="question.isCorrect"
             [class.incorrect]="!question.isCorrect">
 
             <div class="card-header">
-                <span class="question-label">PREGUNTA {{ question.id }}</span>
+                <span class="question-label">QUESTION {{ question.id }}</span>
                 <div class="status-badge" [class.correct]="question.isCorrect" [class.incorrect]="!question.isCorrect">
                     <span class="status-icon">{{ question.isCorrect ? '✓' : '✕' }}</span>
-                    <span class="status-text">{{ question.isCorrect ? 'Correcta' : 'Incorrecta' }}</span>
+                    <span class="status-text">{{ question.isCorrect ? 'Correct' : 'Incorrect' }}</span>
                 </div>
             </div>
 
@@ -45,12 +45,12 @@
 
             <div class="answers-section">
                 <div class="answer-box user-answer" [class.wrong]="!question.isCorrect">
-                    <span class="answer-label">TU RESPUESTA:</span>
+                    <span class="answer-label">YOUR ANSWER:</span>
                     <span class="answer-value">{{ question.userAnswer }}</span>
                 </div>
 
                 <div class="answer-box correct-answer" *ngIf="!question.isCorrect">
-                    <span class="answer-label">RESPUESTA CORRECTA:</span>
+                    <span class="answer-label">CORRECT ANSWER:</span>
                     <span class="answer-value">{{ question.correctAnswer }}</span>
                 </div>
             </div>

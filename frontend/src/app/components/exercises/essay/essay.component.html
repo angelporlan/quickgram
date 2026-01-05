@@ -1,13 +1,21 @@
 <div class="essay-container">
-    <div class="header">
-        <button class="close-btn" (click)="close.emit()">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <line x1="18" y1="6" x2="6" y2="18"></line>
-                <line x1="6" y1="6" x2="18" y2="18"></line>
+    <header class="exercise-header">
+        <button class="back-btn" (click)="close.emit()">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M19 12H5M12 19l-7-7 7-7" />
             </svg>
+            Exit
         </button>
-        <h1 class="title">{{ exercise?.question_text?.split('\n')[0] || 'Essay Writing' }}</h1>
+        <div class="header-center">
+            <span class="header-title">QuickGram</span>
+        </div>
+        <div class="progress-info">
+            {{ exercise?.title || 'Essay Writing' }}
+        </div>
+    </header>
+
+    <div class="progress-bar-container">
+        <div class="header-progress-bar" [style.width.%]="progressPercentage"></div>
     </div>
 
     <div class="content">
@@ -19,7 +27,7 @@
         <div class="writing-section">
             <div class="word-counter">
                 <div class="counter-info">
-                    <span class="counter-label">Contador de palabras:</span>
+                    <span class="counter-label">Word Counter:</span>
                     <span class="counter-value" [class.warning]="wordCount > maxWords" [class.success]="canSubmit">
                         {{ wordCountStatus }}
                     </span>
@@ -29,12 +37,12 @@
                 </div>
             </div>
 
-            <textarea class="essay-textarea" [(ngModel)]="userEssay" placeholder="Escribe tu ensayo aquí..."
+            <textarea class="essay-textarea" [(ngModel)]="userEssay" placeholder="Write your writing here..."
                 [maxlength]="maxWords * 10"></textarea>
 
             <div class="actions">
                 <button class="submit-btn" (click)="submit()" [disabled]="!canSubmit">
-                    Enviar Ensayo
+                    Submit Essay
                 </button>
             </div>
         </div>

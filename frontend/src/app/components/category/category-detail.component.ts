@@ -101,7 +101,7 @@ export class CategoryDetailComponent implements OnInit {
             .pipe(finalize(() => this.isLoading = false))
             .subscribe((topics: any[]) => {
                 this.topics = topics.map(topic => {
-                    const isLocked = topic.name === 'Short Dialogues' || topic.name === 'Long Audios';
+                    const isLocked = topic.name === 'Short Dialogues' || topic.name === 'Long Audios' || topic.name === 'Tenses' || topic.name === 'Passive Voice';
                     const progress = topic.totalItems > 0 ? (topic.totalCompleted / topic.totalItems) * 100 : 0;
 
                     let status = 'not-started';

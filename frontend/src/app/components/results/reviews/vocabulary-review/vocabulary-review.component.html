@@ -1,5 +1,5 @@
 <div class="word-bank-section" *ngIf="availableWords.length > 0">
-    <h3 class="section-title">BANCO DE PALABRAS</h3>
+    <h3 class="section-title">WORD BANK</h3>
     <div class="word-bank">
         <span class="word-chip" *ngFor="let word of availableWords">{{ word }}</span>
     </div>
@@ -7,7 +7,7 @@
 
 <div class="full-text-section" *ngIf="fullTextWithSolutions">
     <button class="toggle-text-btn" (click)="toggleFullText()">
-        {{ showFullText ? 'Ocultar Texto Completo' : 'Ver Texto Completo con Soluciones' }}
+        {{ showFullText ? 'Hide Full Text' : 'Show Full Text with Solutions' }}
     </button>
 
     <div class="full-text-container" *ngIf="showFullText">
@@ -19,7 +19,7 @@
     <div class="review-card" *ngFor="let q of processedQuestions" [class.correct]="q.isCorrect"
         [class.incorrect]="!q.isCorrect">
         <div class="card-header-row">
-            <span class="question-label">PREGUNTA {{ q.id }}</span>
+            <span class="question-label">QUESTION {{ q.id }}</span>
             <div class="status-icon">
                 {{ q.isCorrect ? '✓' : '✕' }}
             </div>
@@ -29,12 +29,12 @@
 
         <div class="answers-row">
             <div class="answer-box user-answer" [class.wrong]="!q.isCorrect">
-                <span class="answer-label">TU RESPUESTA:</span>
+                <span class="answer-label">YOUR ANSWER:</span>
                 <span class="answer-val">{{ q.userAnswer || '-' }}</span>
             </div>
 
             <div class="answer-box correct-answer" *ngIf="!q.isCorrect">
-                <span class="answer-label">RESPUESTA CORRECTA:</span>
+                <span class="answer-label">CORRECT ANSWER:</span>
                 <span class="answer-val">{{ q.correctAnswer }}</span>
             </div>
         </div>

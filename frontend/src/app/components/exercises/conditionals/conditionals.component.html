@@ -4,13 +4,13 @@
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path d="M19 12H5M12 19l-7-7 7-7" />
             </svg>
-            Salir
+            Exit
         </button>
         <div class="header-center">
             <span class="header-title">QuickGram</span>
         </div>
         <div class="progress-info">
-            Pregunta {{ answeredGaps }} de {{ totalGaps }}
+            Question {{ answeredGaps }} of {{ totalGaps }}
         </div>
     </header>
 
@@ -45,27 +45,27 @@
                         <div class="enunciado">
                             <img src="../svg/light-bulb-on.svg" alt="lamp-icon" class="lamp-icon">
                             <div class="enunciado-text">
-                                <span class="label">INSTRUCCIÓN</span>
-                                <p>Escribe la forma correcta del verbo para completar el hueco {{ currentGapId }}.</p>
+                                <span class="label">INSTRUCTION</span>
+                                <p>Write the correct form of the verb to complete the gap {{ currentGapId }}.</p>
                             </div>
                             <div class="big-question-mark">?</div>
                         </div>
 
                         <div class="input-area">
-                            <label class="input-label">Tu respuesta:</label>
+                            <label class="input-label">Your answer:</label>
                             <input type="text" class="answer-input" [value]="currentAnswer"
-                                (input)="onInputChange($any($event.target).value)"
-                                placeholder="Escribe tu respuesta aquí..." autocomplete="off" />
-                            <p class="input-hint">Presiona Enter o haz clic en otro hueco para continuar</p>
+                                (input)="onInputChange($any($event.target).value)" (keyup.enter)="nextGap()"
+                                placeholder="Write your answer here..." autocomplete="off" />
+                            <p class="input-hint">Press Enter or click on another gap to continue</p>
                         </div>
 
                         <button class="submit-btn" (click)="submit()" [disabled]="!allQuestionsAnswered">
-                            Enviar Respuesta
+                            Submit Answer
                         </button>
                     </div>
 
                     <div class="empty-state" *ngIf="!currentGapId">
-                        <p>Selecciona un hueco en el texto para escribir tu respuesta.</p>
+                        <p>Select a gap in the text to write your answer.</p>
                     </div>
                 </div>
             </div>

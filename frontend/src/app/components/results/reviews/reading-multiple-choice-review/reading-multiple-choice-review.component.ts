@@ -14,6 +14,11 @@ export class ReadingMultipleChoiceReviewComponent implements OnInit {
   exercise: any;
   readingText: string = '';
   questions: any[] = [];
+  showReadingText: boolean = false;
+
+  toggleReadingText() {
+    this.showReadingText = !this.showReadingText;
+  }
 
   constructor(private resultService: ExerciseResultService) { }
 
