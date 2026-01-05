@@ -38,15 +38,15 @@ app.use("/api", paymentsRoutes);
 
 (async () => {
     try {
-        //await sequelize.sync({ force: true });
+        await sequelize.sync({ force: true });
         console.log("Base de datos conectada y tablas sincronizadas");
 
-        //await seedLevels();
-        //await seedCategories();
-        //await seedSubcategories();
-        //await seedUsers();
-        //await seedExercises();
-        //await seedUserExerciseAttempts();
+        await seedLevels();
+        await seedCategories();
+        await seedSubcategories();
+        await seedUsers();
+        await seedExercises();
+        await seedUserExerciseAttempts();
         console.log("Seeds ejecutadas correctamente");
 
         const PORT = process.env.ENV === "TEST" ? process.env.PORT_TEST : process.env.PORT_PROD || 4000;

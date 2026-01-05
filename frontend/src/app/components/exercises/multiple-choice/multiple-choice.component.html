@@ -20,12 +20,13 @@
 
     <div class="exercise-body">
         <div class="content-wrapper">
-            <h1>Use of English Part 1</h1>
+            <h1>Use of English</h1>
             <p class="subtitle">Multiple Choice Cloze</p>
 
             <div class="split-view">
                 <div class="text-area card">
                     <div class="text-content">
+                        <h3 class="exercise-title">{{ exercise.title }}</h3>
                         <ng-container *ngFor="let part of textParts">
                             <span *ngIf="part.type === 'text'" [innerHTML]="part.content"></span>
                             <span *ngIf="part.type === 'gap'" class="gap-marker"

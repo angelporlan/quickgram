@@ -21,6 +21,11 @@
     border-bottom: 1px solid #1f2929;
 }
 
+.exercise-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
 .back-btn {
     background: none;
     border: none;
