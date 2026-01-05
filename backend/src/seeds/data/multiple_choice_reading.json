@@ -1,0 +1,54 @@
+[
+  {
+    "title_like": "%World Book Day – the test teen reads%",
+    "type": "reading_multiple_choice",
+    "subcategory_name": "Multiple Choice Reading",
+    "question_text": "World Book Day – the test teen reads\nby Genny Haslett, 24, English literature teacher at Bathampton Secondary School\n\nIt is often suggested that teachers and librarians aren’t pushing secondary school readers towards titles that challenge them enough, and so the organisers of World Book Day have announced a list which might provide some inspiration for anyone who’s stuck for ideas. This list of popular books for young adults, voted for by 10,000 people across the UK, features a top 10 to ‘shape and inspire’ teenagers, and handle some of the challenges of adolescence.\n\nAll but one of the books have already been made into films, demonstrating that when a book makes it to the big screen, it often then acquires more readers thanks to the film’s success. Of course, this isn’t always the case, as with George Orwell’s 1984, where the rather mediocre film does not compare so favourably with the book’s ability to conjure up a dark vision of life in a police state.\n\nJames Bowen’s A Streetcat Named Bob, published in 2012, is one of the few relatively contemporary books here. It’s also certainly for me the least predictable member of the list, but its extended stay on the bestseller list earned it – and its author – a devoted following. It is the touching story of Bob, the cat who helped a homeless man called James get his life back on track. Bob sits on James’s shoulder and sleeps at his feet while he plays the guitar on the street, and soon becomes the centre of attention. What makes the story particularly powerful is that it is based on author James Bowen’s real life.\n\nAlso on the list are J. K. Rowling’s Harry Potter books. In this case it’s actually the whole series rather than one particular title that makes the shortlist. Perhaps the judges struggled to agree which one book to pick. For me, the books are rather more pre-teen than the rest of the books on the list, which are aimed at a more mature readership.\n\nBut Harry Potter is a special case: as Harry gets older in each successive book in the series, the stories do become more complex and darker. In a way, readers themselves grow up with Harry and his friends. Rowling asks some tough questions about standing up to authority, challenging ‘normal’ views and many other subjects close to teenage readers’ hearts. This should get rid of the idea that the whole series is just for young kids. In actual fact, half of all Harry Potter readers are over the age of 35, but that’s another story.\n\nThe list goes right back to the nineteenth century with Charlotte Bronte’s great romance Jane Eyre, showing that some books never grow old, though the majority are twentieth-century works such as Anne Frank’s heartbreaking wartime memoir The Diary of a Young Girl, which even now I find hard to get through without shedding tears. Personally, I would have swapped J. R. R. Tolkien’s The Lord of the Rings for one of the many classics that didn’t make the final selection, Lord of the Flies perhaps, William Golding’s nightmare vision of schoolboys stuck on an island.\n\nOf course there’ll always be some choices we don’t agree with, but that’s what I think makes a list like this so fascinating. I’ve been using it with my class of 16-year-olds, and I got them to evaluate it and make other suggestions for what to include or how it could be changed. But what I hope can really make a lasting difference is if it stimulates them to try out writers on the list, perhaps ones they haven’t come across before, and be introduced to new styles of writing.\n\n1. What criticism does the writer make in the first paragraph?\n2. What point is made about books which are made into films?\n3. What does the writer suggest about A Streetcat Named Bob?\n4. How does the writer justify the presence of the Harry Potter books on the list?\n5. Which book does the writer feel shouldn’t be on the list?\n6. What does the writer intend to do?",
+    "options": {
+      "1": [
+        "World Book Day has been poorly organised.",
+        "School librarians aren’t working hard enough.",
+        "Teenagers are reading books that are too easy.",
+        "Teachers don’t encourage pupils to read enough."
+      ],
+      "2": [
+        "The best books tend to be made into films.",
+        "The film of a book makes more people read the book.",
+        "Many people prefer to watch a film than read the book.",
+        "It is useful to be able to compare the book and the film."
+      ],
+      "3": [
+        "She is surprised that it is on the list.",
+        "The book did not sell as well as it deserved to.",
+        "It is the most recently published book on the list.",
+        "It is the only autobiography on the list."
+      ],
+      "4": [
+        "The books’ fame can help the list get more attention.",
+        "The later books in the series are more suitable for teenagers.",
+        "Teenagers should read books that they will also enjoy as adults.",
+        "It makes sense to have a whole series as well as individual books."
+      ],
+      "5": [
+        "Jane Eyre",
+        "The Diary of a Young Girl",
+        "The Lord of the Rings",
+        "Lord of the Flies"
+      ],
+      "6": [
+        "be more fully developed in future",
+        "prompt pupils to read more widely",
+        "enable pupils to write more effectively",
+        "provide a useful topic for discussion in class"
+      ]
+    },
+    "correct_answer": {
+      "1": "Teenagers are reading books that are too easy.",
+      "2": "The film of a book makes more people read the book.",
+      "3": "She is surprised that it is on the list.",
+      "4": "The later books in the series are more suitable for teenagers.",
+      "5": "The Lord of the Rings",
+      "6": "prompt pupils to read more widely"
+    }
+  }
+]

@@ -1,0 +1,28 @@
+[
+  {
+    "title_like": "%Four teenage business stars%",
+    "type": "reading_multiple_matching",
+    "subcategory_name": "Multiple Matching",
+    "question_text": "You are going to read an article about four teenagers who have started their own business. For questions 1-10, choose from the teenagers (A-D). The teenagers may be chosen more than once.\n\n1   Which teenager says they are highly motivated? (1)……………\n2   Which teenager has started to feel more confident? (2)……………\n3   Which teenager is planning to open another business? (3)……………\n4   Which teenager says that managing time can be hard? (4)……………\n5   Which teenager says they learn from their mistakes? (5)……………\n6   Which teenager says that their age surprises some people? (6)……………\n7   Which teenager tends not to tell people how old they are? (7)……………\n8   Which teenager wanted to improve an experience for customers? (8)……………\n9   Which teenager says their work involves something they find easy? (9)……………\n10  Which teenager realised what they wanted to do while helping someone else? (10)……………\n\n***\n\n**A   Rebecca Dundee, 16**\nI suppose it was obvious I had a head for business when I was about six. I used to make my parents cups of tea in the morning – and charge them 20p for each one. And it was another 20p if it needed reheating. And then about a year ago I was in a chain coffee shop waiting in line to get my drink, and I just realised how dreadful the whole experience was – dirty tables, rubbish Wifi and grumpy staff. And I thought ‘I bet I could do better than that’. So a friend and I launched an app enabling people to access menus, order and interact with each other. Since then I haven’t looked back. I was concerned that I wasn’t doing too well at school, which was a bit depressing, but with the business going so well, it feels great to be where I am now.\n\n**B   Jimbo, 15**\nWhen people ask what I do, I tell them I advise people about their brand on social media. They can’t believe I’m doing this while I’m so young. But I love it. The tricky bit is getting everything done that I need to; sometimes there aren’t enough hours in the day! I’ve been doing the job about six months, and it took quite a lot of effort at the start to persuade my mum and dad that it wasn’t just a waste of time. But now they’re confident I’m doing OK. Which is just as well, because now that I’ve launched an online magazine, I should have several more projects on the way, as long as I can get the money together. One’s going to be setting up a firm with my best mate – it should start to do quite well after about a year. So watch this space!\n\n**C   Sarah McFinny, 18**\nUsing social media comes naturally to me, and it’s not something I’ve ever had to try to get my head around. I’m in my first year at uni, and I was lending a hand to someone who wanted to organise a social media campaign for a university sports club. I did lots of work for her, setting it up and publicising it, and she couldn’t believe the results I got. It was amazing! So I thought, ‘You know what – I could make some money out of doing this sort of thing’. When I’m talking to clients, obviously I don’t shout about my age, I mean you want to be taken seriously. When I graduate, I want to help my parents run their business, or at least do that part-time. I’m excited about the future.\n\n**D   Duncan Jackson, 15**\nWell, I’ve never liked spending money, even at a really young age. But now that I’ve worked out how to make money, I’m really driven to get out of bed every morning and make as much as I can. I basically run an online shop, and I’ve had over 100 customers so far. It’s always nice when a customer visits the store and buys from you again – you know you’re doing something right. I don’t always get things right though. In fact, there are lots of things I’ve got very wrong, like setting my prices too high – or too low! But that can be useful, because when something doesn’t go as planned, you can always adapt and hope you do it better next time.",
+    "options": {
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ]
+    },
+    "correct_answer": {
+      "1": "D",
+      "2": "A",
+      "3": "B",
+      "4": "B",
+      "5": "D",
+      "6": "B",
+      "7": "C",
+      "8": "A",
+      "9": "C",
+      "10": "C"
+    }
+  }
+]

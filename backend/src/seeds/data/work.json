@@ -1,0 +1,28 @@
+[
+  {
+    "title_like": "%Work Vocabulary: Fill in the gaps%",
+    "type": "vocabulary",
+    "subcategory_name": "Work",
+    "question_text": "1   She decided to (1)………………… the job because the pay was good.\n2   I have to work (2)………………… tonight to finish this project on time.\n3   He was (3)………………… to manager after working there for five years.\n4   Nurses often have to work night (4)…………………, which can be very tiring.\n5   If you don't like the working conditions, you can always (5)………………… .\n6   The (6)………………… is paid directly into my bank account every month.\n7   He has been (7)………………… for three months and is still looking for a job.",
+    "options": {
+      "words": [
+        "apply for",
+        "overtime",
+        "salary",
+        "promoted",
+        "shifts",
+        "resign",
+        "unemployed"
+      ]
+    },
+    "correct_answer": {
+      "1": "apply for",
+      "2": "overtime",
+      "3": "promoted",
+      "4": "shifts",
+      "5": "resign",
+      "6": "salary",
+      "7": "unemployed"
+    }
+  }
+]

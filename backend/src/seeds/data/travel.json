@@ -1,0 +1,28 @@
+[
+  {
+    "title_like": "%Travel Vocabulary: Fill in the gaps%",
+    "type": "vocabulary",
+    "subcategory_name": "Travel",
+    "question_text": "1   We arrived at the airport early to (1)………………… our bags.\n2   The plane couldn't (2)………………… because of the heavy storm.\n3   We have a lot of (3)…………………, so we need to find a trolley.\n4   You must show your (4)………………… and passport before you get on the plane.\n5   We plan to (5)………………… very early tomorrow morning to avoid the traffic.\n6   The train was cancelled, so there was a long (6)………………… at the station.\n7   We went (7)………………… in Paris and saw the Eiffel Tower.",
+    "options": {
+      "words": [
+        "boarding pass",
+        "check in",
+        "delay",
+        "luggage",
+        "set off",
+        "sightseeing",
+        "take off"
+      ]
+    },
+    "correct_answer": {
+      "1": "check in",
+      "2": "take off",
+      "3": "luggage",
+      "4": "boarding pass",
+      "5": "set off",
+      "6": "delay",
+      "7": "sightseeing"
+    }
+  }
+]

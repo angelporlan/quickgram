@@ -1,0 +1,12 @@
+[
+  {
+    "title_like": "%Letter: Job Application%",
+    "type": "writing",
+    "subcategory_name": "Letter",
+    "question_text": "You have seen this advertisement in a local newspaper.\n\n**Part-time Tour Guides Wanted**\nWe are looking for enthusiastic young people to work as tour guides for foreign tourists in your town this summer.\n* Do you speak English fluently?\n* Do you know the history of your town?\n* Are you available in July and August?\n\n**Write a letter of application** to Mr. Jones, explaining why you are suitable for the job.\nWrite **140–190 words**.",
+    "options": {},
+    "correct_answer": {
+      "model_answer": "Dear Mr. Jones,\n\nI am writing to apply for the position of part-time tour guide which I saw advertised in the 'Daily News' yesterday.\n\nI am a final-year student at the local university and I believe I would be an excellent candidate for this vacancy. I have lived in this town all my life, so I have extensive knowledge of its history and local landmarks. In addition, I have a C1 level certificate in English, which allows me to communicate fluently with international visitors.\n\nAs for my personality, I consider myself to be an enthusiastic and outgoing person. I have previous experience working as a camp monitor, so I am used to organising groups and public speaking.\n\nI am available to work every day during July and August as I have finished my exams. I enclose my CV for your attention.\n\nThank you for considering my application. I look forward to hearing from you.\n\nYours sincerely,\n\n[User Name]"
+    }
+  }
+]

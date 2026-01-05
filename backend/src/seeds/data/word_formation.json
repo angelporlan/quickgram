@@ -1,0 +1,20 @@
+[
+  {
+    "title_like": "%Smartphones at school%",
+    "type": "word_formation",
+    "subcategory_name": "Word Formation",
+    "question_text": "Smartphones at school\n\nSome of the schools in my home town are really strict and students are not (1)…………… (ALLOW) to use their smartphones at school. Mine is different – there’s a much more (2)…………… (RELAX) policy. In break times, it’s (3)…………… (ACCEPT) to use our smartphones. But in lessons, it’s the individual teacher’s (4)…………… (DECIDE) whether we can use them or not. For some pieces of work, like a timed writing task, they’re completely (5)…………… (FORBID) . Of course it’s our (6)…………… (RESPONSIBLE) to follow the rules, which we do. In some lessons, the teachers actively encourage us to use our phones when they think it’ll be (7)…………… (BENEFIT) to us. There are lots of really good ways to use smartphones in class, and I’m in favour of these. One example is games, where we choose multiple-choice answers on our phones. I’m really (8)…………… (COMPETE), so love doing those. Although it can be a bit (9)…………… (SOCIAL), when everyone just uses their phone instead of talking.",
+    "options": {},
+    "correct_answer": {
+      "1": "allowed",
+      "2": "relaxed",
+      "3": "acceptable",
+      "4": "decision",
+      "5": "forbidden",
+      "6": "responsibility",
+      "7": "beneficial",
+      "8": "competitive",
+      "9": "anti-social"
+    }
+  }
+]

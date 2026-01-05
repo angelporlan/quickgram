@@ -1,0 +1,12 @@
+[
+  {
+    "title_like": "%Review: A TV Series%",
+    "type": "writing",
+    "subcategory_name": "Review",
+    "question_text": "You have seen this announcement in an entertainment magazine.\n\n**Reviews Wanted: TV Series**\nHave you watched a TV series recently that you really enjoyed (or hated)?\nWrite a review describing the plot and the characters. Tell us why you liked or disliked it and whether you would recommend it to people your age.\n\nWrite your review in **140–190 words**.",
+    "options": {},
+    "correct_answer": {
+      "model_answer": "Stranger Things: A Nostalgic Masterpiece\n\nIf you are looking for a series that combines horror, sci-fi, and 80s nostalgia, then 'Stranger Things' is the show for you. I recently binged the latest season, and I was completely hooked.\n\nThe story is set in a small town where a young boy vanishes mysteriously. His friends set out to find him and discover secret government experiments and supernatural forces. The plot is incredibly gripping, with cliffhangers that force you to watch \"just one more episode\".\n\nThe characters are the best part of the show. You really care about them, especially Eleven, a girl with telekinetic powers. The acting is superb, and the soundtrack is absolutely fantastic.\n\nMy only criticism is that some episodes in the second season felt a bit slow. However, the action-packed finale made up for it.\n\nI would highly recommend this series to anyone who loves mysteries or Stephen King movies. It is definitely a must-watch!"
+    }
+  }
+]

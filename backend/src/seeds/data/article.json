@@ -1,0 +1,12 @@
+[
+  {
+    "title_like": "%Article: The Internet%",
+    "type": "writing",
+    "subcategory_name": "Article",
+    "question_text": "You have seen this announcement on an English-language website.\n\n**ARTICLES WANTED: The Internet**\n\nWhat is the most important thing you use the internet for? Does it do more harm than good?\nWrite an article answering these questions and giving your opinion.\n\nWrite your article in **140–190 words**.",
+    "options": {},
+    "correct_answer": {
+      "model_answer": "The Web of Wonders: Friend or Foe?\n\nCan you imagine a world without Google or Instagram? For my generation, the internet is not just a tool; it is the air we breathe. But is it actually good for us?\n\nPersonally, the most important thing I use the internet for is education. Whether I need to research history for an assignment or learn how to cook pasta, the answer is just a click away. It is like having a library in your pocket 24/7.\n\nHowever, there is a dark side. Social media can make people feel inadequate and lonely. Furthermore, fake news spreads faster than truth, which is dangerous for society. If we are not careful, we might lose the ability to think critically.\n\nIn my view, the internet does more good than harm, but only if we use it wisely. It connects us and educates us, but we must control it, rather than letting it control us.\n\nSo, log on, learn something new, but don't forget to switch off and live in the real world too!"
+    }
+  }
+]

@@ -1,0 +1,27 @@
+[
+  {
+    "title_like": "%Open-air teaching In Germany%",
+    "type": "reading_gapped_text",
+    "subcategory_name": "Gapped Text",
+    "question_text": "You are going to read an article about an unusual school in the Germany, where the pupils have a great deal of freedom. Six sentences have been removed from the article. Choose from the sentences A-G the one which fits each gap (1-6). There is one extra sentence which you do not need to use.\n\nOpen-air teaching In Germany\nA bold experiment in education that aims to help young students become independent thinkers\n\nIn 2013, Wolfgang Schwarz became Assistant Headteacher at a Hamburg school. It was a conventional school: teachers taught lessons that pupils had to attend, and set compulsory homework for pupils. The school taught all the usual subjects from English to maths. The Senior Management team told the teachers what to do, and the teachers told the pupils what to do.\n\nShortly after this, Schwarz read an article about open-air schools, whose aim is to encourage children to be more independent and develop important life skills in a natural setting. (1)………… This is in contrast to more traditional schools like where Schwarz was working, where (according to critics) the focus is too much on the teaching and learning of factual information, and where children aren’t given enough opportunity to learn how to think for themselves. They maintain the physical limitations of the classroom stop students learning naturally. Learning outside, in a forest or on a beach encourages students to think more about the world around them.\n\nHowever, there were only a small number of outdoor schools across Germany. (2)………… In 2014, that is exactly what he did, and the Hamburg Outdoor School was born. With four teachers and 42 children aged between 4 and 18, Schwarz’s school had a small building set in large grounds near a beach and private forest. Now they use the areas outside the school more than the old classrooms. Most lessons take place outside.\n\nWhat actually makes it an ‘outdoor’ school? How does it work in practice? (3)………… There are no tests and no homework you have to do, although some parents have, additionally, set their children academic tasks to complete away from school.\n\nThe curriculum is certainly not conventional. (4)………… Last year, the students sampled more than 80 different subjects, learning some maths, history and physics in the process.\n\nAnd some of the teaching is done by the students themselves, such as a course on geology, taught by 13-year-old Dieter Altmann, which has become one of the most popular at the school. Other subjects range from juggling to fishing techniques.\n\nHowever, student independence isn’t just limited as to how the children actually do their learning. (5)………… At these sessions, anything can be discussed, ranging from discipline issues to deciding who should be allowed to start at the school. Everyone, from the youngest child to the school Headteacher, has an equal vote in all this. All decisions are made democratically, so the teachers can be outvoted by the children theoretically; this is something which does happen from time to time. \n\nThe key question is this: does a school with optional lessons and student-led courses on juggling really provide students with the best start in life? (6)………… Accepting that students in normal schools may become better at certain skills, he maintains that children can learn facts much better in a natural environment through experimentation and observation. ‘If you learn out of the classroom in the natural world, it makes learning more meaningful and memorable’.",
+    "options": {
+      "sentences": {
+        "A": "Schwarz is convinced that it can.",
+        "B": "But Schwarz never saw this as a problem.",
+        "C": "These include critical thinking and the ability to socialise.",
+        "D": "Simple: the children make the rules, choose their classes and where to work.",
+        "E": "They basically run the school too, through their weekly discussion meetings.",
+        "F": "So this got Schwarz thinking: why not open one himself?",
+        "G": "The pupils study rare crafts like soap-making, and Mr Schwarz has even taught classes in cheese-tasting."
+      }
+    },
+    "correct_answer": {
+      "1": "C",
+      "2": "F",
+      "3": "D",
+      "4": "G",
+      "5": "E",
+      "6": "A"
+    }
+  }
+]

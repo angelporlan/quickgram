@@ -1,0 +1,19 @@
+[
+  {
+    "title_like": "%Conditionals first and zero conditional%",
+    "type": "conditionals",
+    "subcategory_name": "Conditionals",
+    "question_text": "Complete the sentences with the correct form of the verbs in brackets to make the zero or first conditional.\n\n1   If you take the earlier bus, you (1)…………… (have) more time.\n2   I usually (2)………………… (take) a book if I go on a long journey.\n3   If we can’t come tomorrow, we (3)………………… (send) you a message.\n4   You might be less bored if you (4)………………… (invite) some friends.\n5   My dad always (5)………………… (get) annoyed if I don’t tidy my room.\n6   When all the exams are over, you (6)………………… (be able to) relax.\n7   If you have a pet, you (7)………………… (need) to spend lots of time with it.\n8   If you ask your friends tomorrow, they (8)………………… (explain) what to do, I’m sure.",
+    "options": {},
+    "correct_answer": {
+      "1": "will have",
+      "2": "take",
+      "3": "’ll send/will send",
+      "4": "invite",
+      "5": "gets",
+      "6": "’ll be able to/will be able to",
+      "7": "need",
+      "8": "’ll explain/will explain"
+    }
+  }
+]

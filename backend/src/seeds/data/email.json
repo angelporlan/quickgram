@@ -1,0 +1,12 @@
+[
+  {
+    "title_like": "%Email: Visiting a friend%",
+    "type": "writing",
+    "subcategory_name": "Email",
+    "question_text": "You have received an email from your English friend, Sam.\n\n*\"I'm so excited that you're coming to visit me in my city next month! I need to know what kind of things you'd like to do while you are here. Also, what kind of food do you like? And do you need me to meet you at the airport?\"*\n\nWrite your email to Sam answering his questions.\nWrite **140–190 words**.",
+    "options": {},
+    "correct_answer": {
+      "model_answer": "Subject: Can't wait to see you!\n\nHi Sam,\n\nThanks for your email! I'm absolutely thrilled about coming to stay with you next month. It feels like ages since we last saw each other!\n\nAs for what I'd like to do, I'm really keen on sightseeing. I've heard your city has a beautiful old castle, so I'd love to visit that if possible. Also, I wouldn't say no to a bit of shopping if we have time! I'm easy-going, though, so I'm happy to do whatever you suggest.\n\nRegarding food, I'm not a fussy eater at all. I love trying new things, especially spicy food. The only thing I can't stand is seafood, so please don't take me to a sushi restaurant!\n\nIt would be wonderful if you could pick me up at the airport. My flight lands at 10:30 am, but I can take a bus if you are working or busy.\n\nI can't wait to see you soon.\n\nBest wishes,\n\n[User Name]"
+    }
+  }
+]

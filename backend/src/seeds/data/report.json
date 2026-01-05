@@ -1,0 +1,12 @@
+[
+  {
+    "title_like": "%Report: School Trip%",
+    "type": "writing",
+    "subcategory_name": "Report",
+    "question_text": "You recently went on a one-day class trip to a local museum. The school principal has asked you to write a report.\n\n**Write a report** covering the following points:\n* What students learned from the trip.\n* Problems you had during the day.\n* Suggestions for future trips.\n\nWrite your report in **140–190 words**.",
+    "options": {},
+    "correct_answer": {
+      "model_answer": "Report on the Class Trip to the Science Museum\n\nIntroduction\nThe aim of this report is to evaluate the recent class visit to the Science Museum and to make recommendations for future school excursions.\n\nEducational Value\nThe vast majority of students found the trip extremely educational. The interactive exhibitions were particularly popular because they allowed students to conduct their own experiments. Consequently, many students commented that they now understand physics concepts much better.\n\nProblems Encountered\nDespite the success of the exhibitions, there were some logistical issues:\n* Transport: The bus arrived 30 minutes late, which reduced our time at the museum.\n* The Canteen: The food was expensive and there were not enough tables for our group.\n\nSuggestions\nBased on the feedback, the following recommendations are made for next year:\n1. Book a private coach company to ensure punctuality.\n2. Advise students to bring their own packed lunches to avoid the queues and high prices in the canteen.\n\nConclusion\nTo sum up, the trip was a success academically, but better planning is needed regarding transport and food."
+    }
+  }
+]

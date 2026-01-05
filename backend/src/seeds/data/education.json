@@ -1,0 +1,28 @@
+[
+  {
+    "title_like": "%Education Vocabulary: Fill in the gaps%",
+    "type": "vocabulary",
+    "subcategory_name": "Education",
+    "question_text": "1   You need to (1)………………… for the exam if you want to pass.\n2   She hopes to (2)………………… from university next year.\n3   He got a (3)………………… to study music because he is so talented.\n4   I have to finish a difficult history (4)………………… by next Friday.\n5   It is important to (5)………………… all your classes so you don't miss information.\n6   Her (6)………………… have improved significantly this term; she got an 'A' in Math.\n7   After three years of hard study, she finally got her (7)………………… .",
+    "options": {
+      "words": [
+        "degree",
+        "revise",
+        "attend",
+        "scholarship",
+        "assignment",
+        "grades",
+        "graduate"
+      ]
+    },
+    "correct_answer": {
+      "1": "revise",
+      "2": "graduate",
+      "3": "scholarship",
+      "4": "assignment",
+      "5": "attend",
+      "6": "grades",
+      "7": "degree"
+    }
+  }
+]
