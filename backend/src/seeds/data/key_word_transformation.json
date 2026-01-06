@@ -1,19 +1,512 @@
 [
   {
-    "title_like": "%Jane dyed her hair orange%",
+    "title_like": "%Many people think Steve stole the money.  %",
     "type": "key_word_transformation",
     "subcategory_name": "Key Word Transformation",
-    "question_text": "Key Word Transformation\nFor each question, complete the second sentence so that it has a similar meaning to the first sentence, using the word given. Do not change the word given. You must use between two and five words, including the word given.\n\n1. Jane dyed her hair orange two months ago and it has been that colour ever since.\n**FOR**\nJane's hair (1)…………… two months.\n\n2. During the film on TV, the phone rang.\n**WAS**\nWhile I (2)…………… on TV, the phone rang.\n\n3. Do you have any plans for next Wednesday evening?\n**DOING**\nWhat (3)…………… next Wednesday evening?\n\n4. Please don't smoke in this room.\n**RATHER**\nI'd (4)…………… in this room.\n\n5. Everyone thinks that someone murdered Harry.\n**WAS**\nIt (5)…………… murdered.\n\n6. I visited Paris with the idea of improving my French.\n**TO**\nI visited Paris (6)…………… .\n\n7. I didn't answer the phone, even though I knew it was my husband calling.\n**DESPITE**\nI didn't answer the phone (7)…………… husband.\n\n8. The weather was beautiful but we never went on the picnic.\n**OF**\nWe never went on the picnic (8)…………… weather.",
+    "question_text": "1. Many people think Steve stole the money.  \n**believed**\n Steve (1)…………… the money.\n\n2. The strong winds blew down the two ancient trees during the storm.  \n**blown**\n The two ancient trees (2)…………… the storm.\n\n3. He doesn't have enough money to buy the computer.  \n**too**\n The computer (3)…………… to buy.\n\n4. \"You should start a new hobby, Mr. Jenkins\", the doctor said.  \n**take**\n The Doctor advised (4)…………… a new hobby.\n\n5. It's 11.30 and we have been waiting here since half past ten.  \n**for**\n It's 11.30 and we have been waiting (5)…………… one hour.\n\n6. The man suddenly realised that the neighbor was watching him.  \n**watched**\n The man suddenly realised that he (6)…………… the neighbor.\n\n7. I could never have passed that exam without your help.  \n**you**\n I could never have passed that exam (7)…………… me.\n\n8. We paid some people to landscape the garden for us last year.  \n**had**\n We (8)…………… last year.",
+    "options": {},
+    "correct_answer": {
+      "1": "is believed to have stolen",
+      "2": "were blown down during",
+      "3": "is too expensive for him",
+      "4": "mr. jenkins to take up",
+      "5": "here for",
+      "6": "was being watched by",
+      "7": "if you hadn't helped / if you had not helped / had you not helped / but for you helping / without you helping",
+      "8": "had the garden landscaped"
+    }
+  },
+  {
+    "title_like": "%How about going to the cinema tonight?%",
+    "type": "key_word_transformation",
+    "subcategory_name": "Key Word Transformation",
+    "question_text": "1. \"How about going to the cinema tonight?\", said Anne  \n**suggested**\n Ann (1)…………… to the cinema.\n\n2. My advice to you is to talk to your parents.  \n**would**\n If (2)…………… talk to my parents.\n\n3. Barry wasn't strong enough to lift the box.  \n**have**\n Barry didn't (3)…………… to lift the box\n\n4. They started the company in 1997.  \n**set**\n The company (4)…………… 1997\n\n5. I think Jean really likes Simon.  \n**keen**\n Jean (5)…………… Simon.\n\n6. I was made responsible for foreign sales.  \n**charge**\n They put (6)…………… foreign sales.\n\n7. The brothers really enjoyed themselves in Spain last summer.  \n**time**\n The brothers really (7)…………… in Spain last summer.\n\n8. The Queen is opening the new school tomorrow afternoon.  \n**opened**\n The new school (8)…………… Queen tomorrow afternoon.",
+    "options": {},
+    "correct_answer": {
+      "1": "suggested going / suggested we go",
+      "2": "i were you, i would",
+      "3": "have enough strength / have the strength",
+      "4": "was set up in",
+      "5": "is really keen on",
+      "6": "me in charge of",
+      "7": "had a good time / had a great time / had a wonderful time",
+      "8": "is being opened by the"
+    }
+  },
+  {
+    "title_like": "%Marcus started learning French two years ago.  %",
+    "type": "key_word_transformation",
+    "subcategory_name": "Key Word Transformation",
+    "question_text": "1. Marcus started learning French two years ago.  \n**learning**\n Marcus has (1)…………… two years.\n\n2. Harry isn't here. He went to lunch twenty minutes ago.  \n**gone**\n Harry isn't here. He (2)…………… lunch.\n\n3. Do you own that phone?  \n**yours**\n Is (3)…………… ?\n\n4. Look at how black the sky is! There is rain arriving.  \n**going**\n Look at how black the sky is! It (4)…………… .\n\n5. What a shame. There is no food left!  \n**wish**\n I (5)…………… left!\n\n6. What a shame. They ate all the food.  \n**wish**\n I (6)…………… all the food.\n\n7. The teenagers were stealing my car when I arrived.  \n**being**\n My car (7)…………… teenagers when I arrived.\n\n8. You use that little hammer to crack the stones.  \n**for**\n This little hammer (8)…………… .",
+    "options": {},
+    "correct_answer": {
+      "1": "been learning french for",
+      "2": "has gone to",
+      "3": "that phone yours",
+      "4": "is going to rain",
+      "5": "wish we had some food / wish there was some food",
+      "6": "wish they hadn't eaten / wish they had not eaten",
+      "7": "was being stolen by the",
+      "8": "is for cracking the stones"
+    }
+  },
+  {
+    "title_like": "%The last time John came to my house was in 2021%",
+    "type": "key_word_transformation",
+    "subcategory_name": "Key Word Transformation",
+    "question_text": "1. The last time John came to my house was in 2021.  \n**since**\n John hasn't (1)…………… 2021.\n\n2. No dinner for me, thanks. I ate half an hour ago.  \n**already**\n Thanks, but I (2)…………… .\n\n3. I haven't been swimming for nearly a year.  \n**last**\n The (3)…………… was nearly a year ago.\n\n4. I regret not speaking to Marge sooner.  \n**had**\n I wish (4)…………… sooner.\n\n5. Yesterday, they cut down two old trees in the local park.  \n**were**\n Yesterday, two (5)…………… in the local park.\n\n6. The army were treating the prisoners well.  \n**were**\n The prisoners (6)…………… the army.\n\n7. I walked quietly because I didn't want to wake the baby.  \n**so**\n I walked quietly (7)…………… wake the baby.\n\n8. I think we will arrive at 7pm if the weather remains good.  \n**should**\n We (8)…………… if the weather remains good.",
+    "options": {},
+    "correct_answer": {
+      "1": "been to my house since / been at my house since / been in my house since",
+      "2": "have already eaten",
+      "3": "last time i went swimming",
+      "4": "i had spoken to marge",
+      "5": "old trees were cut down",
+      "6": "were being treated well by",
+      "7": "so as not to",
+      "8": "should arrive at 7pm / should be arriving at 7pm"
+    }
+  },
+  {
+    "title_like": "%This is the first time I have ever drunk rum.  %",
+    "type": "key_word_transformation",
+    "subcategory_name": "Key Word Transformation",
+    "question_text": "1. This is the first time I have ever drunk rum.  \n**never**\n I (1)…………… rum before.\n\n2. The bank closed before I arrived.  \n**already**\n When I got to the bank, it (2)…………… .\n\n3. You press the green button to start the mixer.  \n**starts**\n If you press the green (3)…………… .\n\n4. Do you know how many letters are delivered by the post office every year?  \n**delivers**\n Do you know how many letters (4)…………… year?\n\n5. Stop interrupting me all the time!  \n**would**\n I wish (5)…………… all the time.\n\n6. We should leave for the disco now.  \n**left**\n It's (6)…………… disco.\n\n7. \"Remember to give Alan the card,\" Beryl shouted at me.  \n**reminded**\n Beryl (7)…………… the card.\n\n8. He locked the door to prevent the prisoner escaping.  \n**so**\n He locked the door (8)…………… escape.",
+    "options": {},
+    "correct_answer": {
+      "1": "have never drunk",
+      "2": "had already closed / was already closed",
+      "3": "button the mixer starts",
+      "4": "the post office delivers every",
+      "5": "you wouldn't interrupt me / you would stop interrupting me",
+      "6": "time we left for the",
+      "7": "reminded me to give alan",
+      "8": "so the prisoner wouldn't / so the prisoner would not"
+    }
+  },
+  {
+    "title_like": "%How long have you had your new car?  %",
+    "type": "key_word_transformation",
+    "subcategory_name": "Key Word Transformation",
+    "question_text": "1. How long have you had your new car?  \n**get**\n When (1)…………… your new car?\n\n2. Is this your first time driving a Volvo?  \n**ever**\n Have (2)…………… before?\n\n3. Leave the shop or I will call the police.  \n**unless**\n I'll call the police (3)…………… .\n\n4. I would like to be able to speak Arabic.  \n**could**\n I wish (4)…………… .\n\n5. The Lord of Brecon built this castle in 1286.  \n**by**\n This castle (5)…………… of Brecon in 1286.\n\n6. Our teachers never let us leave the school.  \n**to**\n We were not (6)…………… by our teachers.\n\n7. I graduated from college a year ago today!  \n**time**\n I graduated from college (7)…………… year!\n\n8. I couldn't reach the shelf. It was too high.  \n**to**\n The shelf (8)…………… .",
+    "options": {},
+    "correct_answer": {
+      "1": "did you get",
+      "2": "you ever driven a volvo",
+      "3": "unless you leave the shop",
+      "4": "i could speak arabic",
+      "5": "was built by the lord",
+      "6": "allowed to leave the school",
+      "7": "this time last",
+      "8": "was too high to reach"
+    }
+  },
+  {
+    "title_like": "%Jane dyed her hair orange two months ago and it%",
+    "type": "key_word_transformation",
+    "subcategory_name": "Key Word Transformation",
+    "question_text": "1. Jane dyed her hair orange two months ago and it has been that colour ever since.  \n**for**\n Jane's hair (1)…………… two months.\n\n2. During the film on TV, the phone rang.  \n**was**\n While I (2)…………… on TV, the phone rang.\n\n3. Do you have any plans for next Wednesday evening?  \n**doing**\n What (3)…………… next Wednesday evening?\n\n4. Please don't smoke in this room.  \n**rather**\n I'd (4)…………… in this room.\n\n5. Everyone thinks that someone murdered Harry.  \n**was**\n It (5)…………… murdered.\n\n6. I visited Paris with the idea of improving my French.  \n**to**\n I visited Paris (6)…………… .\n\n7. I didn't answer the phone, even though I knew it was my husband calling.  \n**despite**\n I didn't answer the phone (7)…………… husband.\n\n8. The weather was beautiful but we never went on the picnic.  \n**of**\n We never went on the picnic (8)…………… weather.",
     "options": {},
     "correct_answer": {
       "1": "has been orange for",
       "2": "was watching the film",
       "3": "are you doing",
-      "4": "rather you didn't smoke/rather you did not smoke",
-      "5": "is thought Harry was/is thought that Harry was",
-      "6": "to improve my French",
+      "4": "rather you didn't smoke / rather you did not smoke",
+      "5": "is thought harry was / is thought that harry was",
+      "6": "to improve my french",
       "7": "despite knowing it was my",
       "8": "in spite of the beautiful"
+    }
+  },
+  {
+    "title_like": "%I am sure it will snow tomorrow.  %",
+    "type": "key_word_transformation",
+    "subcategory_name": "Key Word Transformation",
+    "question_text": "1. I am sure it will snow tomorrow.  \n**bound**\n It (1)…………… tomorrow.\n\n2. My car keys are possibly in the kitchen.  \n**might**\n My car keys (2)…………… the kitchen.\n\n3. Can I come over to your house at about 7pm?  \n**it**\n Is (3)…………… come to your house at about 7pm?\n\n4. Is it a problem if I open the window a little?  \n**mind**\n Do (4)…………… the window a little?\n\n5. This car costs $10,000 and so does that one.  \n**as**\n This car (5)…………… that one.\n\n6. Kate is a teacher  \n**as**\n Kate (6)…………… teacher.\n\n7. I met your sister by chance at the airport last week.  \n**ran**\n I (7)…………… the airport last week.\n\n8. The doctor told me to give up smoking.  \n**stop**\n The doctor told (8)…………… .",
+    "options": {},
+    "correct_answer": {
+      "1": "is bound to snow",
+      "2": "might be in",
+      "3": "it possible to / it possible for me to",
+      "4": "you mind if i open / you mind me opening",
+      "5": "costs as much as / is as expensive as",
+      "6": "works as a",
+      "7": "ran into your sister at",
+      "8": "me to stop smoking"
+    }
+  },
+  {
+    "title_like": "%If I were you, I would go and speak to your bos%",
+    "type": "key_word_transformation",
+    "subcategory_name": "Key Word Transformation",
+    "question_text": "1. If I were you, I would go and speak to your boss.  \n**should**\n You (1)…………… your boss.\n\n2. It wasn't obligatory to go to work today. I thought it was!  \n**need**\n I (2)…………… gone to work today.\n\n3. It was a mistake of you to lose your passport.  \n**lost**\n You (3)…………… your passport.\n\n4. Why don't we leave after breakfast on Saturday?  \n**leaving**\n How (4)…………… on Saturday?\n\n5. This is the most boring film I have ever seen!  \n**more**\n I have (5)…………… film!\n\n6. We will have to leave early tomorrow.  \n**set**\n We will (6)…………… tomorrow.\n\n7. The robbers escaped with a thousand dollars without being caught.  \n**got**\n The robbers (7)…………… dollars.\n\n8. I told them not to cross the park at night.  \n**warned**\n I (8)…………… the park at night.",
+    "options": {},
+    "correct_answer": {
+      "1": "should speak to",
+      "2": "need not have / needn't have",
+      "3": "shouldn't have lost / should not have lost",
+      "4": "about leaving after breakfast",
+      "5": "never seen a more boring",
+      "6": "have to set off early",
+      "7": "got away with a thousand",
+      "8": "warned them about crossing / warned them against crossing"
+    }
+  },
+  {
+    "title_like": "%You should have finished that report, not John!%",
+    "type": "key_word_transformation",
+    "subcategory_name": "Key Word Transformation",
+    "question_text": "1. You should have finished that report, not John!  \n**were**\n You (1)…………… that report, not John!\n\n2. Is this the right bus for San Diego?  \n**tell**\n Could (2)…………… is the right bus for San Diego?\n\n3. \"Sorry I'm late,\" Mark whispered as he took his seat in the cinema.  \n**being**\n Mark apologised (3)…………… to the cinema.\n\n4. This train is late. It was supposed to arrive five minutes ago.  \n**arrived**\n This train (4)…………… five minutes ago.\n\n5. If you continue to drink, you will get drunk.  \n**the**\n (5)…………… , the drunker you will get.\n\n6. Bring me the phone book if you happen to find it.  \n**come**\n If (6)…………… book, bring it to me.\n\n7. I have no memory of my first day at school.  \n**remember**\n I (7)…………… to school on my first day.\n\n8. I didn't forget to buy the bread. Here it is!  \n**remembered**\n I (8)…………… . Here it is!",
+    "options": {},
+    "correct_answer": {
+      "1": "were supposed to finish",
+      "2": "you tell me if this / you tell me whether this",
+      "3": "for being late",
+      "4": "should have arrived / ought to have arrived",
+      "5": "the more you drink",
+      "6": "you come across the telephone",
+      "7": "don't remember going / do not remember going",
+      "8": "remembered to buy the bread"
+    }
+  },
+  {
+    "title_like": "%It was silly of you to speak to your boss like %",
+    "type": "key_word_transformation",
+    "subcategory_name": "Key Word Transformation",
+    "question_text": "1. It was silly of you to speak to your boss like that.  \n**spoken**\n You (1)…………… your boss like that!\n\n2. What do you advise me to do?  \n**I**\n What (2)…………… ?\n\n3. There are always a lot of cars in the downtown area at this time.  \n**traffic**\n There is (3)…………… in the downtown area at this time.\n\n4. Is it possible to smoke in this room?  \n**allowed**\n Is (4)…………… this room?\n\n5. She was taken in an ambulance five minutes ago  \n**hospital**\n They (5)…………… five minutes ago.\n\n6. Chicago is a big city, but Los Angeles is bigger.  \n**not**\n Chicago (6)…………… Los Angeles.\n\n7. That story he told sounded very invented.  \n**made**\n I'm sure that story (7)…………… .\n\n8. Who owns this pen?  \n**belong**\n Who (8)…………… to?",
+    "options": {},
+    "correct_answer": {
+      "1": "shouldn't have spoken to / should not have spoken to",
+      "2": "should i do",
+      "3": "always a lot of traffic",
+      "4": "smoking allowed in",
+      "5": "took her to hospital",
+      "6": "is not as big as",
+      "7": "he told was made up",
+      "8": "does this pen belong"
+    }
+  },
+  {
+    "title_like": "%It is possible that Mike isn't at home now.  %",
+    "type": "key_word_transformation",
+    "subcategory_name": "Key Word Transformation",
+    "question_text": "1. It is possible that Mike isn't at home now.  \n**be**\n Mike (1)…………… home now.\n\n2. Don't put the blame on me. I wasn't even there at the time.  \n**my**\n It was (2)…………… . I wasn't even there at the time.\n\n3. In my opinion, if a dog is small, it is more likely to bark.  \n**the**\n In my opinion, (3)…………… more likely it is to bark.\n\n4. I play tennis every Wednesday.  \n**a**\n I play tennis (4)…………… .\n\n5. He is intelligent and so is she.  \n**both**\n (5)…………… are intelligent.\n\n6. All of the people in the room are French.  \n**is**\n In this room, (6)…………… .\n\n7. Not everyone in this room is stupid.  \n**some**\n (7)…………… this room are intelligent.\n\n8. He already has a conviction for shoplifting.  \n**of**\n He has (8)…………… shoplifting.",
+    "options": {},
+    "correct_answer": {
+      "1": "might not be at / may not be at / mightn't be at",
+      "2": "not my fault",
+      "3": "the smaller the dog the",
+      "4": "once a week",
+      "5": "both of them / both he and she",
+      "6": "everyone is french",
+      "7": "some of the people in",
+      "8": "already been convicted of"
+    }
+  },
+  {
+    "title_like": "%If you believe all the stories about my brother%",
+    "type": "key_word_transformation",
+    "subcategory_name": "Key Word Transformation",
+    "question_text": "1. If you believe all the stories about my brother's former boss, it is clear he wasn't very nice.  \n**been**\n My brother's former boss (1)…………… nice if you believe all the stories about him.\n\n2. How about going to the cinema this evening?  \n**going**\n I (2)…………… the cinema.\n\n3. I wasn't strong enough to push it all the way.  \n**strength**\n I (3)…………… to push it all the way.\n\n4. There isn't any money at all in the bank account.  \n**no**\n There (4)…………… in the bank account.\n\n5. Sharon is not as good at tennis as you.  \n**than**\n You (5)…………… Sharon.\n\n6. How do I complete this form?  \n**fill**\n How (6)…………… form?\n\n7. You should consider the position of sales manager very carefully.  \n**over**\n You should (7)…………… of sales manager very carefully.\n\n8. We managed to free ourselves and escaped.  \n**in**\n We (8)…………… and escaped.",
+    "options": {},
+    "correct_answer": {
+      "1": "can't have been very / cannot have been very / couldn't have been very / could not have been very",
+      "2": "suggest going to / suggest that we go to / suggest we go to",
+      "3": "didn't have the strength / didn't have enough strength / did not have the strength / did not have enough strength",
+      "4": "is no money",
+      "5": "are better at tennis than",
+      "6": "do i fill in this",
+      "7": "think over the position",
+      "8": "succeeded in freeing ourselves"
+    }
+  },
+  {
+    "title_like": "%Sorry that I drew that picture of you%",
+    "type": "key_word_transformation",
+    "subcategory_name": "Key Word Transformation",
+    "question_text": "1. \"Sorry that I drew that picture of you,\" he said to Tim.  \n**apologised**\n He (1)…………… the picture.\n\n2. A nice walk in the park might help us both to relax, don't you think?  \n**suggested**\n Mike (2)…………… walk in the park.\n\n3. I really don't want to go out tonight.  \n**feel**\n I (3)…………… out tonight.\n\n4. Astronomy fascinates Kate and she spends hours reading about it.  \n**is**\n Kate (4)…………… spends hours reading about it.\n\n5. If you stop smoking, you will feel much better for it.  \n**give**\n You'll feel much better if (5)…………… .\n\n6. I told you I would lend you the money and I will.  \n**promised**\n I (6)…………… money and I will.\n\n7. I wish I had rung him earlier.  \n**sorry**\n I (7)…………… ring him earlier.\n\n8. The Wilsons are leaving shortly so go and tell them what we agreed.  \n**about**\n The Wilsons (8)…………… so go and tell them what we agreed.",
+    "options": {},
+    "correct_answer": {
+      "1": "apologised for having drawn / apologised for drawing",
+      "2": "suggested going for a / suggested a",
+      "3": "don't feel like going / do not feel like going",
+      "4": "is fascinated by astronomy and",
+      "5": "you give up smoking",
+      "6": "promised to lend you the",
+      "7": "am sorry i didn't / am sorry i did not",
+      "8": "are about to leave"
+    }
+  },
+  {
+    "title_like": "%Don't tell anyone about my wig, will you?%",
+    "type": "key_word_transformation",
+    "subcategory_name": "Key Word Transformation",
+    "question_text": "1. \"Don't tell anyone about my wig, will you?\"  \n**promise**\n (1)…………… tell anyone about my wig!\n\n2. I won't work late again. That would be the third time this week. I won't do it!  \n**refused**\n Mr. Hamley (2)…………… as he has already done so twice this month.\n\n3. We couldn't afford The Regal Hotel so we stayed somewhere cheaper.  \n**cost**\n The (3)…………… so we stayed somewhere cheaper.\n\n4. \"Do you both work together?\", she asked the twins.  \n**if**\n She (4)…………… together.\n\n5. Is it OK if I open the window a little Miss Jackson?  \n**may**\n Miss Jackson, (5)…………… the window?\n\n6. Despite looking everywhere, he never found his wallet.  \n**although**\n He didn't find (6)…………… everywhere.\n\n7. Imagine your father returning home now! What would he say?  \n**supposing**\n Just (7)…………… home now! What would he say?\n\n8. I imagine you had a great time in Tunisia.  \n**must**\n You (8)…………… had a great time in Tunisia.",
+    "options": {},
+    "correct_answer": {
+      "1": "promise not to",
+      "2": "refused to work late",
+      "3": "regal hotel cost too much",
+      "4": "asked if they worked",
+      "5": "may i open",
+      "6": "his wallet although he looked",
+      "7": "supposing your father returned",
+      "8": "must have"
+    }
+  },
+  {
+    "title_like": "%It would be better to wait a year before going%",
+    "type": "key_word_transformation",
+    "subcategory_name": "Key Word Transformation",
+    "question_text": "1. \"It would be better to wait a year before going to university.\"  \n**advised**\n Peter (1)…………… to university for another year.\n\n2. You will see better results if you study harder Pete.  \n**encouraged**\n Pete's mother (2)…………… saying he would see better results.\n\n3. I really don't like sitting down all day.  \n**stand**\n I (3)…………… chairs all day.\n\n4. Do you like the work you do here, John?  \n**on**\n Are you (4)…………… you do here, John?\n\n5. They had argued but were friends again by the time of the party.  \n**made**\n They (5)…………… and were friends again by the time of the party.\n\n6. Mrs Patterson would sit on that old rocking chair for hours telling us stories from her childhood.  \n**used**\n Mrs Patterson (6)…………… old rocking chair for hours telling us stories from her childhood.\n\n7. I regret not studying more in the final weeks.  \n**only**\n If (7)…………… more in the final weeks.\n\n8. It really annoys me how people use cell phones on the bus.  \n**wish**\n I (8)…………… cell phones on the bus.",
+    "options": {},
+    "correct_answer": {
+      "1": "advised not going / advised me not to go",
+      "2": "encouraged him to study harder",
+      "3": "can't stand sitting on / can't stand sitting in / cannot stand sitting on / cannot stand sitting in",
+      "4": "keen on the work",
+      "5": "had made up",
+      "6": "used to sit on that",
+      "7": "only i had studied / only i'd studied",
+      "8": "wish people wouldn't use / wish people would not use"
+    }
+  },
+  {
+    "title_like": "You'd better not speak to me like that again!%",
+    "type": "key_word_transformation",
+    "subcategory_name": "Key Word Transformation",
+    "question_text": "1. \"You'd better not speak to me like that again!\" he said to me.  \n**warned**\n I (1)…………… to him like that again.\n\n2. Don't ask Hannah here to have lunch on Friday. If you do, I won't stay to meet her.  \n**invite**\n If (2)…………… on Friday, I won't stay to meet her.\n\n3. Do you think it would be a good idea to get my hair cut?  \n**suggest**\n Would (3)…………… hair cut?\n\n4. I told him he should go and speak to his mother.  \n**ought**\n (4)…………… to speak to his mother.\n\n5. If you don't call me, I won't know where you are!  \n**unless**\n I won't know (5)…………… you call me!\n\n6. We should leave now if we don't want to miss the start of the performance.  \n**time**\n It's (6)…………… or we'll miss the start of the performance.\n\n7. Let's go to \"The Blue Whale\" where it's less crowded.  \n**as**\n \"The Blue Whale\" is (7)…………… here, so let's go there.\n\n8. I would prefer to stay at home tonight.  \n**rather**\n I (8)…………… tonight.",
+    "options": {},
+    "correct_answer": {
+      "1": "was warned not to speak",
+      "2": "you invite hannah to lunch",
+      "3": "you suggest getting my / you suggest I got my",
+      "4": "i told him he ought",
+      "5": "where you are unless",
+      "6": "time we left / time for us to leave",
+      "7": "not as crowded as",
+      "8": "would rather stay home / would rather stay at home"
+    }
+  },
+  {
+    "title_like": "%They blamed the theft of the missing computer o%",
+    "type": "key_word_transformation",
+    "subcategory_name": "Key Word Transformation",
+    "question_text": "1. They blamed the theft of the missing computer on Jenkins.  \n**accused**\n Jenkins (1)…………… the missing computer.\n\n2. OK, I can see you tomorrow evening at six.  \n**agreed**\n My boss (2)…………… at six the following evening.\n\n3. Don't say you're ill if you're not!  \n**pretend**\n Don't (3)…………… you're not!\n\n4. I haven't eaten ice cream for six months.  \n**up**\n I (4)…………… six months ago.\n\n5. Are we allowed to drink coffee in this part of the building?  \n**can**\n (5)…………… in this part of the building?\n\n6. Should you be in here Mark?  \n**supposed**\n Are (6)…………… Mark?\n\n7. Why don't you help me more around the house?  \n**wish**\n I (7)…………… more around the house.\n\n8. The hill was slippery because of the rain so we had difficulty climbing.  \n**made**\n The rain (8)…………… so we had difficulty climbing.",
+    "options": {},
+    "correct_answer": {
+      "1": "was accused of stealing",
+      "2": "agreed to see me",
+      "3": "pretend to be ill if",
+      "4": "gave up ice cream / gave up eating ice cream",
+      "5": "can we drink coffee",
+      "6": "you supposed to be here",
+      "7": "wish you would help me",
+      "8": "made the hill slippery"
+    }
+  },
+  {
+    "title_like": "%It wasn't me who took the book. I didn't touch %",
+    "type": "key_word_transformation",
+    "subcategory_name": "Key Word Transformation",
+    "question_text": "1. It wasn't me who took the book. I didn't touch it!  \n**denied**\n I (1)…………… the book.\n\n2. I can take you to the airport if your flight is early.  \n**offered**\n I (2)…………… Jenny to the airport for the following morning.\n\n3. \"Why not try for Harvard University, Karen?\"  \n**encouraged**\n He (3)…………… apply to Harvard University.\n\n4. Could I stay with you in Chicago for a few day, John?  \n**put**\n Could (4)…………… Chicago for a few days?\n\n5. I don't know how you tolerate such a miserable person.  \n**put**\n How do you (5)…………… is so miserable?\n\n6. I would like to be thinner.  \n**wish**\n I (6)…………… fat.\n\n7. \"Well done! You got the job,\" her mother said.  \n**on**\n Her mother (7)…………… job.\n\n8. \"It was Peter who stole the fruit,\" Jenny shouted.  \n**for**\n Jenny (8)…………… stealing the fruit.",
+    "options": {},
+    "correct_answer": {
+      "1": "denied having touched / denied having taken / denied touching / denied taking",
+      "2": "offered to take",
+      "3": "encouraged karen to",
+      "4": "you put me up in",
+      "5": "put up with someone who",
+      "6": "wish i wasn't / wish i wasn't so / wish i were not / wish i were not so",
+      "7": "congratulated her on getting the",
+      "8": "blamed peter for"
+    }
+  },
+  {
+    "title_like": "%Though I haven't seen him for a month, we have %",
+    "type": "key_word_transformation",
+    "subcategory_name": "Key Word Transformation",
+    "question_text": "1. Though I haven't seen him for a month, we have spoken by phone.  \n**admitted**\n Carol (1)…………… on the phone.\n\n2. Visit my doctor, Dr. Hamish, if your arm is still hurting  \n**recommended**\n My brother (2)…………… his doctor if my arm continued hurting.\n\n3. I won't come. I have told you I am busy.  \n**refuse**\n I (3)…………… as I am busy.\n\n4. It isn't possible that Jane was absent from work today.  \n**must**\n Jane (4)…………… work today.\n\n5. I drive both a sports car and an off-road vehicle.  \n**addition**\n In (5)…………… , I also drive an off-road vehicle.\n\n6. Barry continued to smoke even though his doctor told him to quit.  \n**despite**\n (6)…………… not to, Barry continued to smoke.\n\n7. Only a few books were left at the yard sale when we left.  \n**most**\n (7)…………… been sold when we left the yard sale.\n\n8. Was it really necessary to buy such an expensive bottle of wine?  \n**need**\n Was there (8)…………… an expensive bottle of wine?",
+    "options": {},
+    "correct_answer": {
+      "1": "admitted having spoken to him / admitted speaking to him",
+      "2": "recommended visiting / recommended i go and see / recommended i visit / recommended that i visit / recommended i should visit",
+      "3": "refuse to go / refuse to come",
+      "4": "must have been at",
+      "5": "addition to a sports car",
+      "6": "despite being told / despite the doctor telling him",
+      "7": "most of the books had",
+      "8": "any need to buy such"
+    }
+  },
+  {
+    "title_like": "%How much do these leather shoes cost?  %",
+    "type": "key_word_transformation",
+    "subcategory_name": "Key Word Transformation",
+    "question_text": "1. How much do these leather shoes cost?  \n**price**\n What (1)…………… leather shoes?\n\n2. It's not important if you come to work today or not.  \n**matter**\n It (2)…………… you come to work today or not.\n\n3. Parking is prohibited in all areas of the business park.  \n**anywhere**\n You (3)…………… the business park.\n\n4. Mark's biggest problem is that he often ignores what I say in class.  \n**pay**\n His biggest problem is that he (4)…………… to what I say in class.\n\n5. Your sister said she had told you everything.  \n**admitted**\n Your sister (5)…………… everything.\n\n6. If we light the fire, the rescuers will see us.  \n**be**\n We (6)…………… rescuers if we light the fire.\n\n7. For us to win this match now would be impossible.  \n**hope**\n There is (7)…………… this match now.\n\n8. Don't tell anyone this information  \n**keep**\n (8)…………… yourself.",
+    "options": {},
+    "correct_answer": {
+      "1": "is the price of these",
+      "2": "doesn't matter if / does not matter if",
+      "3": "can't park anywhere in / cannot park anywhere in",
+      "4": "doesn't pay any attention / doesn't pay attention / does not pay any attention / does not pay attention",
+      "5": "admitted telling you / admitted having told you",
+      "6": "will be seen by the",
+      "7": "no hope of winning",
+      "8": "keep this information to"
+    }
+  },
+  {
+    "title_like": "%Fred asked the cost of one night in the hotel. %",
+    "type": "key_word_transformation",
+    "subcategory_name": "Key Word Transformation",
+    "question_text": "1. Fred asked the cost of one night in the hotel.  \n**does**\n \"How (1)…………… per night, please?\"\n\n2. The last time I went to the museum was a week ago.  \n**been**\n I (2)…………… museum for a week.\n\n3. It is certainly a good example of Van Gogh's work.  \n**no**\n There's (3)…………… a good example of Van Gogh's work.\n\n4. Pay attention to me!  \n**listen**\n (4)…………… saying!\n\n5. I regret leaving my job now.  \n**wish**\n I (5)…………… my job.\n\n6. \"I went to the cinema before going to the cafe,\" he said.  \n**had**\n He said he (6)…………… before the cafe.\n\n7. I've never seen so many people in this bar before.  \n**first**\n This is (7)…………… ever seen so many people in this bar.\n\n8. You should tell her what you think and let her decide.  \n**better**\n You (8)…………… what you think and let her decide.",
+    "options": {},
+    "correct_answer": {
+      "1": "much does it cost",
+      "2": "haven't been to the",
+      "3": "no doubt it is / no doubt that it is",
+      "4": "listen to what i am",
+      "5": "wish i hadn't left / wish i had not left",
+      "6": "had gone to the cinema / had been to the cinema",
+      "7": "the first time i have",
+      "8": "had better tell her"
+    }
+  },
+  {
+    "title_like": "%Don't continue to speak if I've asked you a que%",
+    "type": "key_word_transformation",
+    "subcategory_name": "Key Word Transformation",
+    "question_text": "1. Don't continue to speak if I've asked you a question.  \n**on**\n Don't (1)…………… have asked you a question.\n\n2. We arrive at the castle one hour after we leave the hotel.  \n**get**\n It (2)…………… to the castle.\n\n3. Can you take care of Mary on Saturday evening for us?  \n**look**\n Can (3)…………… Saturday evening for us?\n\n4. Is that wallet yours, John?  \n**belong**\n Does (4)…………… , John?\n\n5. You have only just started work on this project.  \n**hardly**\n You (5)…………… this project.\n\n6. In this office, I am responsible for the sales department.  \n**charge**\n I am (6)…………… department.\n\n7. When I see Lucy, I always think of my youngest sister.  \n**me**\n Lucy (7)…………… younger sister.\n\n8. This is the cheapest typewriter you can buy.  \n**cheaper**\n There (8)…………… on the market.",
+    "options": {},
+    "correct_answer": {
+      "1": "carry on speaking if i / keep on speaking if i",
+      "2": "takes an hour to get / takes one hour to get",
+      "3": "you look after mary on",
+      "4": "that wallet belong to you",
+      "5": "have hardly started / have hardly done anything on / have done hardly anything on",
+      "6": "in charge of the sales",
+      "7": "always reminds me of my",
+      "8": "isn't a cheaper typewriter / is not a cheaper typewriter"
+    }
+  },
+  {
+    "title_like": "%Heavy rain has caused the cancellation of the o%",
+    "type": "key_word_transformation",
+    "subcategory_name": "Key Word Transformation",
+    "question_text": "1. Heavy rain has caused the cancellation of the outdoor garden party.  \n**due**\n (1)…………… , the garden party has been cancelled.\n\n2. There isn't enough space for me to park my car there.  \n**fit**\n My car (2)…………… in that space.\n\n3. Phone me immediately after you arrive at the conference.  \n**soon**\n (3)…………… at the conference, telephone me.\n\n4. Who does this pen belong to?  \n**whose**\n Do you know (4)…………… ?\n\n5. The amount of money spent on the project makes it very important.  \n**of**\n This project (5)…………… owing to the money spent on it.\n\n6. At first, I couldn't speak Russian. Now I find it easy.  \n**got**\n Eventually, I (6)…………… Russian.\n\n7. Is your house big enough to take us if we come and stay for a few days?  \n**room**\n Is there (7)…………… if we come and stay for a few days?\n\n8. Although it was raining, we had the barbecue.  \n**spite**\n In (8)…………… , we had the barbecue.",
+    "options": {},
+    "correct_answer": {
+      "1": "due to heavy rain",
+      "2": "doesn't fit / won't fit / does not fit / will not fit",
+      "3": "as soon as you arrive",
+      "4": "whose this pen is / whose pen this is",
+      "5": "is of great importance",
+      "6": "got used to speaking",
+      "7": "enough room in your house",
+      "8": "spite of the rain"
+    }
+  },
+  {
+    "title_like": "%Do you regret leaving your job now?  %",
+    "type": "key_word_transformation",
+    "subcategory_name": "Key Word Transformation",
+    "question_text": "1. Do you regret leaving your job now?  \n**you**\n Do you wish (1)…………… job now?\n\n2. Could you try a little harder to listen to what I'm saying?  \n**effort**\n Can you (2)…………… listen to what I'm saying?\n\n3. It doesn't matter which chemical you put into the mixture first. The results will be the same.  \n**difference**\n It (3)…………… you put into the mixture first.\n\n4. My mother said I could go with you only if I return home by 5pm.  \n**long**\n I can go with you (4)…………… home by 5pm.\n\n5. Unfortunately, I couldn't see you because I didn't have time.  \n**able**\n If I had had more time, I (5)…………… see you.\n\n6. These windows need cleaning again.  \n**have**\n These windows will (6)…………… .\n\n7. It wasn't a good idea resigning from your job before you have another one.  \n**better**\n It would (7)…………… hadn't resigned from your job.\n\n8. Hardly any of the cars on special offer were left when we arrived.  \n**nearly**\n By the time we arrived, (8)…………… had been bought.",
+    "options": {},
+    "correct_answer": {
+      "1": "you hadn't left your / you had not left your",
+      "2": "make an effort to",
+      "3": "makes no difference which chemical",
+      "4": "as long as i return / so long as i return",
+      "5": "would have been able to",
+      "6": "have to be cleaned again",
+      "7": "have been better if you",
+      "8": "nearly all of the cars"
+    }
+  },
+  {
+    "title_like": "%The Queen is launching this ship tomorrow morni%",
+    "type": "key_word_transformation",
+    "subcategory_name": "Key Word Transformation",
+    "question_text": "1. The Queen is launching this ship tomorrow morning.  \n**being**\n This (1)…………… the Queen tomorrow morning.\n\n2. Could you try and spend a little less on Christmas presents this year.  \n**rather**\n I (2)…………… money on Christmas presents this year.\n\n3. If you find a dress cheaper in another store, can you tell me?  \n**let**\n (3)…………… if you find the dress cheaper elsewhere.\n\n4. Can you distribute these tests to the other students Kathy?  \n**hand**\n Can you (4)…………… Kathy?\n\n5. The report says a child was operating the machine.  \n**being**\n According to the report, (5)…………… by a child.\n\n6. I didn't see anyone wearing yellow at the dinner.  \n**nobody**\n There (6)…………… at the dinner.\n\n7. I can't wait to see Margaret's face when we arrive.  \n**forward**\n I'm (7)…………… Margaret's face when we arrive.\n\n8. Once you give me a full description of the hotel, I can decide whether or not to go there.  \n**describe**\n I can decide to go to the hotel after (8)…………… .",
+    "options": {},
+    "correct_answer": {
+      "1": "ship is being launched",
+      "2": "would rather you spent less",
+      "3": "let me know",
+      "4": "hand out these tests / hand these tests out",
+      "5": "the machine was being operated",
+      "6": "was nobody wearing yellow",
+      "7": "looking forward to seeing",
+      "8": "you describe it to me / you describe it / you describe it fully"
+    }
+  },
+  {
+    "title_like": "%In my opinion, it was an error to give him so m%",
+    "type": "key_word_transformation",
+    "subcategory_name": "Key Word Transformation",
+    "question_text": "1. In my opinion, it was an error to give him so much money so young.  \n**should**\n He (1)…………… so much money at such a young age.\n\n2. Do you think this antique vase is good value for money?  \n**worth**\n In your opinion, is (2)…………… buying?\n\n3. The lesson was cancelled as only three students came.  \n**turned**\n Only (3)…………… the lesson, so it was cancelled.\n\n4. The picnic was cancelled due to the rain.  \n**because**\n The picnic (4)…………… rain.\n\n5. When you get to the large oak tree, keep going until you get to the lake.  \n**carry**\n After getting to the large oak tree, (5)…………… until you get to the lake.\n\n6. This is the most expensive book we've seen so far in this shop.  \n**more**\n There hasn't (6)…………… than this in the shop so far.\n\n7. Whose is this bicycle?  \n**belong**\n Who (7)…………… to?\n\n8. She doesn't usually eat three meals a day, so she got full pretty quickly.  \n**used**\n She (8)…………… three meals a day, so she got full quickly.",
+    "options": {},
+    "correct_answer": {
+      "1": "should not have been given / should not have had / shouldn't have been given / shouldn't have had",
+      "2": "this antique vase worth",
+      "3": "three students turned up for / three students turned up to",
+      "4": "was cancelled because of the",
+      "5": "carry on / carry on walking / carry on going",
+      "6": "been a more expensive book",
+      "7": "does this bicycle belong",
+      "8": "isn't used to eating / is not used to eating"
+    }
+  },
+  {
+    "title_like": "%That fence is there to prevent you entering the%",
+    "type": "key_word_transformation",
+    "subcategory_name": "Key Word Transformation",
+    "question_text": "1. That fence is there to prevent you entering the grounds of the house.  \n**so/can't**\n They put the fence there (1)…………… enter the grounds of the house.\n\n2. Does your brother have the ability to take so many exams in the same week?  \n**capable**\n Is (2)…………… so many exams in the same week?\n\n3. We were able to cross the river, despite the strong current.  \n**succeeded**\n We (3)…………… despite the strong current.\n\n4. I would prefer you to leave now. Goodbye.  \n**rather**\n I (4)…………… now. Goodbye.\n\n5. I think you should say sorry for your behavior.  \n**apologise**\n I think (5)…………… behaviour.\n\n6. I have a lot to do so I can't come with you to the cinema this afternoon.  \n**too**\n I have (6)…………… to be able to come to the cinema.\n\n7. Entrance into the museum is free today.  \n**costs**\n It (7)…………… the museum today.\n\n8. All the cars have been cleaned except the manager's.  \n**which**\n The manager's is the (8)…………… been cleaned.",
+    "options": {},
+    "correct_answer": {
+      "1": "so you can't / so you cannot / so you won't / so you will not / so you don't / so you do not",
+      "2": "your brother capable of taking",
+      "3": "succeeded in crossing the river",
+      "4": "would rather you left",
+      "5": "you should apologise for your",
+      "6": "too much to do",
+      "7": "costs nothing to go to",
+      "8": "only car which hasn't / only car which has not"
+    }
+  },
+  {
+    "title_like": "%I have never read such a funny book%",
+    "type": "key_word_transformation",
+    "subcategory_name": "Key Word Transformation",
+    "question_text": "1. This is the funniest book I've ever read. \n**such**\n I have never read (1)…………… book.\n\n2. A builder is going to paint our house next week. \n**have**\n We are going to (2)…………… painted next week.\n\n3. You won't pass the exam if you don't study hard. \n**unless**\n You won't pass the exam (3)…………… hard.\n\n4. \"Where are you going?\" asked Tom. \n**wanted**\n Tom (4)…………… I was going.\n\n5. It's been a long time since we met. \n**not**\n We (5)…………… a long time.\n\n6. I'm sure he is at home because the lights are on. \n**must**\n He (6)…………… at home because the lights are on.\n\n7. \"Don't forget to buy milk,\" said my mother. \n**reminded**\n My mother (7)…………… milk.\n\n8. It is very difficult for me to learn Chinese. \n**find**\n I (8)…………… to learn Chinese.",
+    "options": {},
+    "correct_answer": {
+      "1": "such a funny",
+      "2": "have our house",
+      "3": "unless you study",
+      "4": "wanted to know where",
+      "5": "have not met for / haven't met for",
+      "6": "must be",
+      "7": "reminded me to buy",
+      "8": "find it very difficult / find it really difficult"
+    }
+  },
+  {
+    "title_like": "%I prefer playing tennis to playing football%",
+    "type": "key_word_transformation",
+    "subcategory_name": "Key Word Transformation",
+    "question_text": "1. I prefer playing tennis to playing football. \n**rather**\n I (1)…………… tennis than play football.\n\n2. The coffee was too hot to drink. \n**enough**\n The coffee (2)…………… to drink.\n\n3. It's a pity I didn't go to the party. \n**wish**\n I (3)…………… to the party.\n\n4. My car is faster than yours. \n**as**\n Your car (4)…………… mine.\n\n5. There is no point in asking him. \n**worth**\n It (5)…………… him.\n\n6. We will finish the project by Friday. \n**have**\n By Friday, we (6)…………… the project.\n\n7. We have no sugar left. \n**run**\n We (7)…………… sugar.\n\n8. Although it was raining, we went out. \n**spite**\n In (8)…………… rain, we went out.",
+    "options": {},
+    "correct_answer": {
+      "1": "would rather play / 'd rather play",
+      "2": "was not cool enough / wasn't cool enough / was not cold enough",
+      "3": "wish I had gone / wish I'd gone",
+      "4": "is not as fast as / isn't as fast as",
+      "5": "is not worth asking / isn't worth asking",
+      "6": "will have finished",
+      "7": "have run out of / 've run out of",
+      "8": "spite of the"
     }
   }
 ]
