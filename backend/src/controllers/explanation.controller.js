@@ -1,14 +1,24 @@
 import OpenAI from "openai";
+import { Groq } from "groq-sdk";
 import { UserExerciseAttempt } from "../models/UserExerciseAttempt.js";
 import { Exercise } from "../models/Exercise.js";
 import { AttemptExplanation } from "../models/AttemptExplanation.js";
 import { checkAndConsumeAiUsage } from "../services/aiUsage.service.js";
 import { User } from "../models/user.js";
 
-const openai = new OpenAI({
-    apiKey: process.env.OPENROUTER_API_KEY,
-    baseURL: "https://openrouter.ai/api/v1",
-});
+const aiServer = process.env.AI_SERVER || 'OpenRouter';
+
+let aiClient;
+if (aiServer === 'Groq') {
+    aiClient = new Groq({
+        apiKey: process.env.GROQ_API_KEY,
+    });
+} else {
+    aiClient = new OpenAI({
+        apiKey: process.env.OPENROUTER_API_KEY,
+        baseURL: "https://openrouter.ai/api/v1",
+    });
+}
 
 export const explainAttempt = async (req, res) => {
     try {
@@ -142,8 +152,12 @@ Explain clearly why the student answer is wrong and what the correct option is f
 `;
         }
 
-        const completion = await openai.chat.completions.create({
-            model: "tngtech/deepseek-r1t2-chimera:free",
+        const model = aiServer === 'Groq'
+            ? "openai/gpt-oss-120b"
+            : "tngtech/deepseek-r1t2-chimera:free";
+
+        const completion = await aiClient.chat.completions.create({
+            model: model,
             messages: [
                 {
                     role: "user",
@@ -163,7 +177,7 @@ Explain clearly why the student answer is wrong and what the correct option is f
         await AttemptExplanation.create({
             attempt_id: attempt.id,
             explanation: explanationText,
-            model: "tngtech/deepseek-r1t2-chimera:free"
+            model: model
         });
 
         return res.json({
