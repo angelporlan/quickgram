@@ -448,5 +448,23 @@
       "8": "highly",
       "9": "safety"
     }
+  },
+  {
+    "title_like": "%Learning a new language%",
+    "type": "word_formation",
+    "subcategory_name": "Word Formation",
+    "question_text": "Learning a foreign language requires a great deal of (1)…………… (PATIENT). Many students lose their (2)…………… (MOTIVATE) after the first few months because they don't see immediate results. To be (3)…………… (SUCCESS), it is important to practice regularly, not just occasionally. Watching movies in the target language is extremely (4)…………… (USE) for improving listening skills. It is (5)…………… (SURPRISE) how much you can pick up just by listening to the radio or podcasts. However, it is highly (6)…………… (LIKE) that you will become fluent without speaking to real people, so don't be shy. Making (7)…………… (DAY) efforts, even small ones, is the best strategy. Finally, the sense of (8)…………… (ACHIEVE) you feel when you hold your first conversation is wonderful. It also expands your general (9)…………… (KNOW) of the world.",
+    "options": {},
+    "correct_answer": {
+      "1": "patience",
+      "2": "motivation",
+      "3": "successful",
+      "4": "useful",
+      "5": "surprising",
+      "6": "unlikely",
+      "7": "daily",
+      "8": "achievement",
+      "9": "knowledge"
+    }
   }
 ]
