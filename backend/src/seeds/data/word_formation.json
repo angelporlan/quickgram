@@ -3,7 +3,7 @@
     "title_like": "%Smartphones at school%",
     "type": "word_formation",
     "subcategory_name": "Word Formation",
-    "question_text": "Smartphones at school\n\nSome of the schools in my home town are really strict and students are not (1)…………… (ALLOW) to use their smartphones at school. Mine is different – there’s a much more (2)…………… (RELAX) policy. In break times, it’s (3)…………… (ACCEPT) to use our smartphones. But in lessons, it’s the individual teacher’s (4)…………… (DECIDE) whether we can use them or not. For some pieces of work, like a timed writing task, they’re completely (5)…………… (FORBID) . Of course it’s our (6)…………… (RESPONSIBLE) to follow the rules, which we do. In some lessons, the teachers actively encourage us to use our phones when they think it’ll be (7)…………… (BENEFIT) to us. There are lots of really good ways to use smartphones in class, and I’m in favour of these. One example is games, where we choose multiple-choice answers on our phones. I’m really (8)…………… (COMPETE), so love doing those. Although it can be a bit (9)…………… (SOCIAL), when everyone just uses their phone instead of talking.",
+    "question_text": "Some of the schools in my home town are really strict and students are not (1)…………… (ALLOW) to use their smartphones at school. Mine is different – there’s a much more (2)…………… (RELAX) policy. In break times, it’s (3)…………… (ACCEPT) to use our smartphones. But in lessons, it’s the individual teacher’s (4)…………… (DECIDE) whether we can use them or not. For some pieces of work, like a timed writing task, they’re completely (5)…………… (FORBID) . Of course it’s our (6)…………… (RESPONSIBLE) to follow the rules, which we do. In some lessons, the teachers actively encourage us to use our phones when they think it’ll be (7)…………… (BENEFIT) to us. There are lots of really good ways to use smartphones in class, and I’m in favour of these. One example is games, where we choose multiple-choice answers on our phones. I’m really (8)…………… (COMPETE), so love doing those. Although it can be a bit (9)…………… (SOCIAL), when everyone just uses their phone instead of talking.",
     "options": {},
     "correct_answer": {
       "1": "allowed",
@@ -15,6 +15,438 @@
       "7": "beneficial",
       "8": "competitive",
       "9": "anti-social"
+    }
+  },
+  {
+    "title_like": "%Tetris: the most popular video game ever%",
+    "type": "word_formation",
+    "subcategory_name": "Word Formation",
+    "question_text": "There is an almost (1)…………… (LIMITED) number of video games on the market today and you could be forgiven for being under the (2)…………… (IMPRESS) that the best ones are those packed with special effects, requiring great techniques. Nothing could be further from the (3)…………… (TRUE). The favourite game of all time is also one of the oldest and most basic: Tetris. The player has to fit a (4)…………… (VARY) of shapes together on the screen. When a whole row is made without gaps between the blocks, the line vanishes. Should a line remain (5)…………… (COMPLETE), however, new blocks will build up on top of it. Once the screen’s full, the game’s over. Part of the (6)…………… (APPEALING) is that anyone can play Tetris. Scientists also believe that the game’s (7)…………… (POPULAR) is due to the fact that it makes our brains work with greater (8)…………… (EFFICIENT). The more we play, the easier it becomes, so we carry on, (9)…………… (CONTINUE) trying to beat our last high score.",
+    "options": {},
+    "correct_answer": {
+      "1": "unlimited",
+      "2": "impression",
+      "3": "truth",
+      "4": "variety",
+      "5": "incomplete",
+      "6": "appeal",
+      "7": "popularity",
+      "8": "efficiency",
+      "9": "continually"
+    }
+  },
+  {
+    "title_like": "%Peanut butter is good for you!%",
+    "type": "word_formation",
+    "subcategory_name": "Word Formation",
+    "question_text": "With ‘peanuts’ and ‘butter’ in its game, peanut butter doesn’t (1)…………… (EXACT) sound good for us. Common sense tells us that neither food is a particularly healthy (2)…………… (CHOOSE) given their high fat content. The product’s (3)…………… (POPULAR), however, has led to research, and it’s good news to learn that many food science (4)…………… (SPECIAL) say it isn’t as bad for us as we might have thought. Peanut butter is (5)…………… (DOUBT) versatile – it can be eaten with everything from raw vegetable sticks to toast – but the fat it contains is also monounsaturated (the ‘right’ kind of fat), which is believed to be good for the heart. Peanut butter also contains a (6)…………… (SUBSTANCE) amount of protein, which contains important nutrients for growing kids. (7)…………… (ADD), it contains iron, B vitamins and fibre, all of which are necessary for the (8)…………… (MAINTAIN) of a healthy body. So, next time you’re told to put the top back on the jar, you’ll be able to offer an (9)…………… (EXPLAIN) as to why just one more spoonful is good for you!",
+    "options": {},
+    "correct_answer": {
+      "1": "exactly",
+      "2": "choice",
+      "3": "popularity",
+      "4": "specialists",
+      "5": "undoubtedly",
+      "6": "substantial",
+      "7": "Additionally",
+      "8": "maintenance",
+      "9": "explanation"
+    }
+  },
+  {
+    "title_like": "%My 16th birthday%",
+    "type": "word_formation",
+    "subcategory_name": "Word Formation",
+    "question_text": "I turned 16 last week. And I have to say that (1)…………… (INITIAL), I didn’t enjoy my birthday much. I usually get some birthday (2)…………… (GREET) from my friends on social media. But nobody wished me a happy birthday, which was a bit (3)…………… (DEPRESS). After school, I noticed that the friends I usually walk home with had all (4)…………… (APPEAR), so I walked back alone. But then when I got back to my house, there were lots of (5)…………… (DECORATE) and balloons on the outside. ‘OK,’ I thought, ‘this looks more (6)…………… (PROMISE).’ So I went inside, and there, waiting in the sitting room, were all of my school friends! Seeing them there was so (7)…………… (EXPECT)! Together with my parents, they’d arranged this surprise party. And they’d done it all without my (8)…………… (KNOW)! In fact, it was probably the most special and (9)…………… (MEMORY) party ever!",
+    "options": {},
+    "correct_answer": {
+      "1": "initially",
+      "2": "greetings",
+      "3": "depressing",
+      "4": "disappeared",
+      "5": "decorations",
+      "6": "promising",
+      "7": "unexpected",
+      "8": "knowledge",
+      "9": "memorable"
+    }
+  },
+  {
+    "title_like": "%The future of food%",
+    "type": "word_formation",
+    "subcategory_name": "Word Formation",
+    "question_text": "With the world population rising and (1)…………… (AVAILABLE) of food sources decreasing, what will we be eating in the future? Food science (2)…………… (SPECIAL) say that by 2050, we will be consuming less meat and more fish. And with food prices rising, another likely result is that more of us will reach the (3)…………… (CONCLUSION) that becoming vegetarian is a good idea. Then there is the (4)…………… (POSSIBLE) that we will eat more seaweed and insects, and perhaps even ‘superfood’ bars, which would be (5)…………… (SAME) to the kinds of things astronauts eat in space. Today’s technology could (6)…………… (ABLE) manufacturers to produce what may become known as ‘functional’ foods. These are foods that are (7)…………… (INDIVIDUAL) designed for different sectors of (8)…………… (SOCIAL). This means that there will be foods adapted not only for babies, which we already see in supermarkets, but for teens, women, men and elderly people, too. Because the food will be (9)…………… (SCIENCE) engineered, we will also be healthier!",
+    "options": {},
+    "correct_answer": {
+      "1": "availability",
+      "2": "specialists",
+      "3": "conclusion",
+      "4": "possibility",
+      "5": "similar",
+      "6": "enable",
+      "7": "individually",
+      "8": "society",
+      "9": "scientifically"
+    }
+  },
+  {
+    "title_like": "%Hope is a Ballet Show%",
+    "type": "word_formation",
+    "subcategory_name": "Word Formation",
+    "question_text": "Hope in a Ballet Shoe is the (1)…………… (POWER) autobiography of ballet dancer Michaela DePrince. Michaela had a strict (2)…………… (BRING) in Sierra Leone. There are several (3)…………… (DESCRIBE) of her early days there which are particularly well-written. A turning point in her life was her (4)…………… (ADOPT) by an American couple at the age of four, and her move with them to the USA. At first, she found that all the cultural (5)…………… (DIFFERENT) were hard to get used to. But she grew to love her new home, and the book shows how love and (6)…………… (PATIENT) can overcome these difficulties – and help people to achieve their goals. Michaela was absolutely (7)…………… (DETERMINE) to become a ballet dancer and practised for hours on end. Her family were there for her all the time, supporting her and eventually (8)…………… (ABLE) her to succeed. Michaela is now a world-famous ballerina with the Dutch National Ballet. I would certainly recommend Hope in a Ballet Shoe to anyone from the age of eleven upwards. It truly is a (9)…………… (MOVE) story.",
+    "options": {},
+    "correct_answer": {
+      "1": "powerful",
+      "2": "upbringing",
+      "3": "descriptions",
+      "4": "adoption",
+      "5": "differences",
+      "6": "patience",
+      "7": "determined",
+      "8": "enabling",
+      "9": "moving"
+    }
+  },
+  {
+    "title_like": "%The oldest house in Britain%",
+    "type": "word_formation",
+    "subcategory_name": "Word Formation",
+    "question_text": "It was warm, round, had a (1)…………… (FANTASY) view of a lake and appears to have been occupied for several hundred years. Welcome to the oldest house in the UK, which was found with other fascinating relics (2)…………… (NEAR) at a site in North Yorkshire. These remains are transforming our (3)…………… (KNOW) of how Britain’s earliest inhabitants lived. The structure was 3.5 metres in (4)…………… (WIDE) and was supported by a circle of wooden posts. Dark, decayed matter at the centre of the ruin suggests the possibility of a roof entirely made of grasses. (5)…………… (INVESTIGATE) of the remains by scientists revealed that the building stood in 8,500 BC. It was (6)…………… (ORIGIN) thought that people living in Britain at this time were nomadic with no fixed homes. But the (7)…………… (DISCOVER) of the oldest known house provides clear (8)…………… (EVIDENT) that some of these people built large permanent structures. Researchers of the site, however, are (9)…………… (SURE) about how long the house will remain the ‘oldest’ in the UK, because new finds are being made all the time.",
+    "options": {},
+    "correct_answer": {
+      "1": "fantastic",
+      "2": "nearby",
+      "3": "knowledge",
+      "4": "width",
+      "5": "Investigations",
+      "6": "originally",
+      "7": "discovery",
+      "8": "evidence",
+      "9": "unsure"
+    }
+  },
+  {
+    "title_like": "%A man happy in his work%",
+    "type": "word_formation",
+    "subcategory_name": "Word Formation",
+    "question_text": "Flying has always had a (1)…………… (FASCINATE) for me. During my childhood I was often taken to air shows, where I could see planes close up and even go inside them. However, it was not until I was twenty that I made the (2)…………… (DECIDE) to apply for an eighteen-month training course to become a pilot. There was no funding available for students on this course so (3)…………… (FORTUNATE) I had to wait six months for a suitable job (4)…………… (VACANT), but then the (5)…………… (COMMIT) I had shown was rewarded when I got a job with a large airline. I’ve been a pilot for three years now, and I remain just as (6)…………… (ENTHUSIASM) about ﬂying. I love the modern jet aircraft with all their sophisticated equipment as well as the (7)…………… (VARY) of challenges that occur on a (8)…………… (DAY) basis. And, of course, it’s wonderful to visit places all over the world, not to mention the (9)…………… (SPECTACLE) views I get when I’m ﬂying.",
+    "options": {},
+    "correct_answer": {
+      "1": "fascination",
+      "2": "decision",
+      "3": "unfortunately",
+      "4": "vacancy",
+      "5": "commitment",
+      "6": "enthusiastic",
+      "7": "variety",
+      "8": "daily",
+      "9": "spectacular"
+    }
+  },
+  {
+    "title_like": "%The price of meals%",
+    "type": "word_formation",
+    "subcategory_name": "Word Formation",
+    "question_text": "When a meal is (1)…………… (EXPENSE), do people say they enjoy it simply because it costs a lot of money? There is some (2)…………… (EVIDENT) from an experiment in a New York restaurant which suggests that this might be so. The restaurant served diners a meal but charged some (3)…………… (TWO) as much as others, even though the meals were identical and taken in the same (4)…………… (SURROUND) with the same level of service. After the meal everyone was asked what they thought of the meal. One might think that the people who had paid least would be the most impressed with the meal. (5)…………… (SURPRISE) though, it was those who had paid most who gave it the highest (6)…………… (RATE). According to a well-known (7)…………… (PSYCHOLOGY) the reason for this finding is that a high price for a meal is very (8)…………… (SIGNIFY) in convincing people that a meal is good. One wonders if this might (9)…………… (COURAGE) restaurant owners to keep their prices high.",
+    "options": {},
+    "correct_answer": {
+      "1": "expensive",
+      "2": "evidence",
+      "3": "twice",
+      "4": "surroundings",
+      "5": "Surprisingly",
+      "6": "ratings",
+      "7": "psychologist",
+      "8": "significant",
+      "9": "encourage"
+    }
+  },
+  {
+    "title_like": "%Enjoying travel%",
+    "type": "word_formation",
+    "subcategory_name": "Word Formation",
+    "question_text": "I always enjoy travelling, (1)…………… (PARTICULAR) when it means visiting other countries. One of the clearest memories from my childhood is of going to Disneyworld. Some people disapprove of the place but I loved it as a child and found it just as (2)…………… (ENJOY) when I returned years later as an adult. I am (3)…………… (FORTUNE) that my work involves a lot of travel. The two places I visit most often are Barcelona and New York. I like both, but there is a tremendous (4)…………… (DIFFERENT) between them. Barcelona is relaxed and overﬂowing with culture. New York, though, is bustling and full of (5)…………… (EXCITE). When I’m there I’m constantly looking upwards, overwhelmed by the (6)…………… (HIGH) of the buildings. It is quite (7)…………… (LIKE) anywhere else I’ve ever been. I went to Tokyo last year and found it absolutely fascinating. However, my top (8)…………… (CHOOSE) for a city break has to be Toronto; it is visually (9)…………… (SPECTACLE) and I’ve had some of the best meals I’ve ever eaten there.",
+    "options": {},
+    "correct_answer": {
+      "1": "particularly",
+      "2": "enjoyable",
+      "3": "fortunate",
+      "4": "difference",
+      "5": "excitement",
+      "6": "height",
+      "7": "unlike",
+      "8": "choice",
+      "9": "spectacular"
+    }
+  },
+  {
+    "title_like": "%Don’t catch cold%",
+    "type": "word_formation",
+    "subcategory_name": "Word Formation",
+    "question_text": "According to recent (1)…………… (SEARCH), at least some of the advice about health that was passed down to our grandparents by previous generations may actually contain some (2)…………… (TRUE). A good example is the (3)…………… (RELATION) between feeling cold and catching a cold. My grandmother was convinced that being outside when the temperature is low, or simply dressing in (4)…………… (SUIT) clothes for the cold weather, was a sure way of catching a cold. Now, as we know, colds are caused by viruses. Therefore, in the (5)…………… (ABSENT) of a virus, you cannot catch a cold – no matter how low the temperature or how (6)…………… (APPROPRIATE) your clothing. But (7)…………… (SCIENCE) now think that we may have viruses in our bodies already, which are just waiting for the chance to turn into a cold. In cold weather, for example, blood vessels in the nose get smaller to stop heat escaping. (8)…………… (FORTUNATE), this also allows the cold virus to attack the nose or throat more (9)…………… (EASY). So, perhaps Granny was right!",
+    "options": {},
+    "correct_answer": {
+      "1": "research",
+      "2": "truth",
+      "3": "relationship",
+      "4": "unsuitable",
+      "5": "absence",
+      "6": "inappropriate",
+      "7": "scientists",
+      "8": "unfortunately",
+      "9": "easily"
+    }
+  },
+  {
+    "title_like": "%Travel posters%",
+    "type": "word_formation",
+    "subcategory_name": "Word Formation",
+    "question_text": "Travel posters were an important form of advertising in the first part of the (1)…………… (TWENTY) century. The classic travel poster was designed to make people believe that they could (2)…………… (JOY) a more luxurious lifestyle. They aimed to tempt people away from their ordinary working lives by presenting them with images of (3)…………… (RELAX) and glamour. As travel became less (4)…………… (SPEND), posters were produced to advertise railways, cruise liners, motoring and airlines, as well as individual tourist destinations. The golden age of posters, however, was the period from 1910-1950, before television made other ways of advertising more (5)…………… (EFFECT). The value of a poster is often linked to the (6)…………… (ART) who created the original. Some of the leading poster designers, influenced by (7)…………… (MOVE) such as cubism and surrealism, created their own style and use of colours, which is (8)…………… (INSTANT) recognisable. Posters designed by these people are often the most striking and can command (9)…………… (SURPRISE) high prices.",
+    "options": {},
+    "correct_answer": {
+      "1": "twentieth",
+      "2": "enjoy",
+      "3": "relaxation",
+      "4": "expensive",
+      "5": "effective",
+      "6": "artist",
+      "7": "movements",
+      "8": "instantly",
+      "9": "surprisingly"
+    }
+  },
+  {
+    "title_like": "%Rafting on the Zambezi river%",
+    "type": "word_formation",
+    "subcategory_name": "Word Formation",
+    "question_text": "Victoria Falls on the Zambezi river in Africa is one of the most (1)…………… (SPECTACLE) sights in the world. It is also an (2)…………… (CREDIBLE) place for water sports. The translation of the local Zambian name for the falls is ‘the smoke that thunders’ and it’s a pretty good (3)…………… (DESCRIBE). On arrival, it’s the noise that makes the greatest (4)…………… (IMPRESS) on you as the water drops 108 metres in a waterfall that is nearly two kilometres wide. The (5)…………… (SURROUND) landscape is also awesome, and well worth a visit. You can’t go white-water rafting over the falls themselves, but the rapids (6)…………… (FAR) down the Zambezi river provide a very exciting location. Although the rapids are given grades five and six on the sports (7)…………… (DIFFICULT) scale, there are places where relative (8)…………… (BEGIN) can have a go, as long as they are accompanied by experienced operators. These people guide you through the rapids and ensure that you don’t stray into the more (9)…………… (DANGER) sections by mistake.",
+    "options": {},
+    "correct_answer": {
+      "1": "spectacular",
+      "2": "incredible",
+      "3": "description",
+      "4": "impression",
+      "5": "surrounding",
+      "6": "further",
+      "7": "difficulty",
+      "8": "beginners",
+      "9": "dangerous"
+    }
+  },
+  {
+    "title_like": "%Review of The Porsche Book%",
+    "type": "word_formation",
+    "subcategory_name": "Word Formation",
+    "question_text": "Many of the world’s biggest brand names had very humble (1)…………… (BEGIN). The car manufacturer Porsche is no (2)…………… (EXCEPTION). Whether you are a fan of fast sports cars or not, reading about the (3)…………… (GROW) of a small business into a large internationally renowned company makes for interesting reading. This is the story of the company’s rise to fame and covers eight decades and the book includes a wonderful (4)…………… (COLLECT) of two hundred glossy photographs, including what is (5)…………… (SURE) one of the most famous cars ever: the shiny Porsche 718 that will be forever associated with the (6)…………… (LEGEND) actor James Dean, who famously crashed one in 1955. This is a very classy coffee table book that is both (7)…………… (ENJOY) and informative. It isn’t cheap at £85, but if you are a fan of (8)…………… (GLAMOUR) sports cars, you may well find it (9)…………… (POSSIBLE) to resist.",
+    "options": {},
+    "correct_answer": {
+      "1": "beginnings",
+      "2": "exception",
+      "3": "growth",
+      "4": "collection",
+      "5": "surely",
+      "6": "legendary",
+      "7": "enjoyable",
+      "8": "glamorous",
+      "9": "impossible"
+    }
+  },
+  {
+    "title_like": "%Understanding time%",
+    "type": "word_formation",
+    "subcategory_name": "Word Formation",
+    "question_text": "Since the earliest times, civilisations have understood the (1)…………… (IMPORTANT) of time. If you want to plan your future, or simply know how long things take to do, then the precise (2)…………… (MEASURE) of time is a necessity. That’s why ancient cultures put such a lot of effort into the development of (3)…………… (RELY) calendars and clocks. At first, people used the (4)…………… (OBSERVE) of movements in the night sky as a way of predicting annual events. The Ancient Egyptians realised that it would be (5)…………… (USE) to divide days up into smaller units of time. They were responsible for the (6)…………… (INVENT) of the system of twenty-four hours in a day that we still use today. The first clocks were sundials using the (7)…………… (LONG) of the Sun’s shadow to mark the passing of the day. This worked well in sunny countries but was (8)…………… (APPROPRIATE) for places where the sky was often cloudy. People living there had to wait for the development of the mechanical clock before they could tell the time with any degree of (9)…………… (ACCURATE).",
+    "options": {},
+    "correct_answer": {
+      "1": "importance",
+      "2": "measurement",
+      "3": "reliable",
+      "4": "observation",
+      "5": "useful",
+      "6": "invention",
+      "7": "length",
+      "8": "inappropriate",
+      "9": "accuracy"
+    }
+  },
+  {
+    "title_like": "%Games in space%",
+    "type": "word_formation",
+    "subcategory_name": "Word Formation",
+    "question_text": "For astronauts on long missions into space, (1)…………… (BORE) can be a real problem. In order to help the astronauts, (2)…………… (SCIENCE) and doctors need to find out what this feels like. As part of the (3)…………… (SEARCH) programme, six volunteers will be locked away for 520 days to see what effect this has on their mind and body. During their time in (4)…………… (ISOLATE), the volunteers will be able to communicate with their controllers, but only in a way that replicates the astronauts’ experience. For example, the further away from ‘Earth’ they get, the longer the delay in the signal, so they will be (5)…………… (ABLE) to have a conversation in real time. As part of the experiment, the volunteers will be allowed to play computer games. There will be a (6)…………… (MIX) of solo games and competitive games available. Afterwards, they will be asked to give (7)…………… (FEED) on how hard they found the games to play and what their (8)…………… (EMOTION) state was at the time. As a result of the (9)…………… (INFORM) gathered, it may be possible to create special software for crews on future missions.",
+    "options": {},
+    "correct_answer": {
+      "1": "boredom",
+      "2": "scientists",
+      "3": "research",
+      "4": "isolation",
+      "5": "unable",
+      "6": "mixture",
+      "7": "feedback",
+      "8": "emotional",
+      "9": "information"
+    }
+  },
+  {
+    "title_like": "%Brain games%",
+    "type": "word_formation",
+    "subcategory_name": "Word Formation",
+    "question_text": "According to experts, doing puzzles keeps our brains fit and (1)…………… (HEALTH). As well as gaining (2)…………… (SATISFY) from finding the correct answer to a difficult problem, we give our brains a good workout in the process. To help us do this, all sorts of handheld ‘brain games’ are now available in the shops, and the most (3)…………… (SUCCESS) games have sold in their millions. What’s more, people (4)…………… (COVER) that the more they play the games, the easier it is to find a (5)…………… (SOLVE) to the problems posed. They see this as proof that there has been an (6)…………… (IMPROVE) in the power of their brains. Unfortunately, however, this may be a false impression. Some (7)…………… (SCIENCE) argue that the brain gets better at any task the more often it is repeated. In other words, the improvement in the (8)…………… (PERFORM) of the brain is something that happens naturally. So although these brain games are obviously fun to play, it remains (9)…………… (CERTAIN) whether they are actually helping to boost brainpower or not.",
+    "options": {},
+    "correct_answer": {
+      "1": "healthy",
+      "2": "satisfaction",
+      "3": "successful",
+      "4": "discover",
+      "5": "solution",
+      "6": "improvement",
+      "7": "scientists",
+      "8": "performance",
+      "9": "uncertain"
+    }
+  },
+  {
+    "title_like": "%In praise of plastic%",
+    "type": "word_formation",
+    "subcategory_name": "Word Formation",
+    "question_text": "Whenever you are, you’re likely to be surrounded by objects made of some kind of plastic material. There are many types of plastic, each one (1)…………… (SUIT) for a particular use. Thin, flexible plastic is good for making objects such as bags, whereas thick, hard plastic is a (2)…………… (USE) material for making functional objects, and has been used to make very (3)…………… (ATTRACT) pieces of furniture. Although plastic has a (4)…………… (REPUTE) for being cheap and disposable, in the hands of a good (5)…………… (DESIGN), it can be used to make objects of great beauty. As well as offering (6)…………… (EXTREME) high quality at a low price, plastic can take almost any shape, colour or consistency. Plastic can also be seen as an environmentally friendly (7)…………… (CHOOSE) of material. It can be used in place of wood and other materials that are in short supply in their (8)…………… (NATURE) state, and it is also very hard-wearing. A good plastic chair, for example, could last you a lifetime and when you no longer wanted it, then it would probably be possible to (9)…………… (CYCLE) the material.",
+    "options": {},
+    "correct_answer": {
+      "1": "suitable",
+      "2": "useful",
+      "3": "attractive",
+      "4": "reputation",
+      "5": "designer",
+      "6": "extremely",
+      "7": "choice",
+      "8": "natural",
+      "9": "recycle"
+    }
+  },
+  {
+    "title_like": "%Remembering people’s names%",
+    "type": "word_formation",
+    "subcategory_name": "Word Formation",
+    "question_text": "Most of us have suffered the (1)…………… (EMBARRASS) of forgetting someone’s name. Often we fail to pay attention when (2)…………… (INTRODUCE) are made, but later on in the conversation we don’t want to appear (3)…………… (POLITE) by asking them what they’re called. Fortunately, there are some simple ways you can (4)…………… (COME) this problem. One is to improve your powers of (5)…………… (OBSERVE). Practise studying faces in public places, making a mental note of physical (6)…………… (CHARACTER) such as high foreheads or narrow eyebrows. You’ll be surprised what a wide (7)…………… (VARY) of shapes and sizes people’s features have. Then, when you first meet someone, remember them as ‘Laura with the small nose’, for example. With surnames, make (8)…………… (VISION) associations. For instance, imagine people called Cook, Ford or King making a meal, driving a car or wearing a crown, respectively. Finally, ending with the person’s name, as in ‘See you later, Max.’ is a good way of (9)…………… (SURE) that you don’t forget it.",
+    "options": {},
+    "correct_answer": {
+      "1": "embarrassment",
+      "2": "introductions",
+      "3": "impolite",
+      "4": "overcome",
+      "5": "observation",
+      "6": "characteristics",
+      "7": "variety",
+      "8": "visual",
+      "9": "ensuring"
+    }
+  },
+  {
+    "title_like": "%Too many emails%",
+    "type": "word_formation",
+    "subcategory_name": "Word Formation",
+    "question_text": "Some years ago, there were (1)…………… (PREDICT) that email would soon be replaced as the most common means of online communication by social (2)…………… (WORK) sites. Since then, however, the number of emails sent has increased (3)…………… (STEADY), to the point that the volume received on a daily basis has become (4)…………… (STRESS) for many people. For some users, the situation has become so (5)…………… (BEAR) that they regularly delete all the emails they receive without even bothering to read them, which is rather (6)…………… (RISK), to say the least. A less extreme measure is to install software that sorts incoming mail into different categories. By doing this, promotions from (7)…………… (COMMERCE) organisations, for instance, go into a separate folder from messages arriving from friends or employers, (8)…………… (ABLE) us to see which emails are more important than others. Not all of us, though, may be so keen to let software make such (9)…………… (DECIDE) for us.",
+    "options": {},
+    "correct_answer": {
+      "1": "predictions",
+      "2": "networking",
+      "3": "steadily",
+      "4": "stressful",
+      "5": "unbearable",
+      "6": "risky",
+      "7": "commercial",
+      "8": "enabling",
+      "9": "decisions"
+    }
+  },
+  {
+    "title_like": "%Preparing for an interview%",
+    "type": "word_formation",
+    "subcategory_name": "Word Formation",
+    "question_text": "Before you go to an interview, think about your (1)…………… (APPEAR). When you make your (2)…………… (CHOOSE) of clothes, avoid anything too casual but don’t go to the other extreme of wearing items that are so formal you feel (3)…………… (COMFORT) in them. Make sure you know the exact (4)…………… (LOCATE) of the building where the interview will take place. There’s nothing worse than (5)…………… (DESPAIR) trying to find the right place as the time for it to begin rapidly approaches. Once you reach the f rm’s offices, remember that the interview starts there. You never know who you might meet in lifts, corridors or waiting rooms, so try to make a good (6)…………… (IMPRESS) on everyone. When you go into the interview room, show you have (7)…………… (CONFIDENT) in yourself, and strike an appropriate balance between formality and (8)…………… (FRIEND). Bear in mind that people tend to make a (9)…………… (JUDGE) about someone they have met within a few minutes.",
+    "options": {},
+    "correct_answer": {
+      "1": "appearance",
+      "2": "choice",
+      "3": "uncomfortable",
+      "4": "location",
+      "5": "desperately",
+      "6": "impression",
+      "7": "confidence",
+      "8": "friendliness",
+      "9": "judgement"
+    }
+  },
+  {
+    "title_like": "%Letting the sea in%",
+    "type": "word_formation",
+    "subcategory_name": "Word Formation",
+    "question_text": "The small (1)…………… (COAST) town of Medmerry has found an unusual way to reduce the risk of ﬂooding: let the sea in. The scheme involved the (2)…………… (DESTROY) of part of the existing sea wall and the building of seven kilometres of new, higher (3)…………… (DEFEND) further inland, closer to local communities. This has led to the (4)…………… (CREATE) of a large area of wetland, capable of absorbing the energy of the waves and therefore bringing about a (5)…………… (SUBSTANCE) reduction in ﬂooding at times of storm and high tides. According to environmental scientists, this (6)…………… (AMBITION) project will also turn the whole area into a (7)…………… (MASS) nature reserve. It is already attracting large numbers of birds and other wildlife and eventually it should provide a safe home for some of the country’s most (8)…………… (DANGER) species. This is bound to attract more visitors to the area, although it remains (9)…………… (CLEAR) whether numbers will have to be limited in order to protect the reserve.",
+    "options": {},
+    "correct_answer": {
+      "1": "coastal",
+      "2": "destruction",
+      "3": "defences",
+      "4": "creation",
+      "5": "substantial",
+      "6": "ambitious",
+      "7": "massive",
+      "8": "endangered",
+      "9": "unclear"
+    }
+  },
+  {
+    "title_like": "%Jobs in the future%",
+    "type": "word_formation",
+    "subcategory_name": "Word Formation",
+    "question_text": "In twenty years’ time, which jobs will people still be doing, and which is it (1)…………… (REASON) to assume will have gone forever? Today’s young people should give that question careful (2)…………… (CONSIDER) before choosing a career. Clearly there will continue to be a need for staff in (3)…………… (EXIST) professions such as medicine that involve caring for others, and also for people able to persuade, like (4)…………… (POLITICS) and lawyers. There will of course be no (5)…………… (SHORT) of jobs in science and technology, particularly for individuals able to (6)…………… (SPECIAL) in newer fields such as biotechnology and microbiology. On the other hand, the already rapid (7)…………… (LOSE) of jobs to robots will speed up even further, as they replace workers not only in manufacturing but also in the (8)…………… (CONSTRUCT) industry. And as robots learn how to stack shelves, take over at check-outs or send us our online shopping, it won’t be long before most supermarket jobs have (9)…………… (APPEAR), too.",
+    "options": {},
+    "correct_answer": {
+      "1": "reasonable",
+      "2": "consideration",
+      "3": "existing",
+      "4": "politicians",
+      "5": "shortage",
+      "6": "specialise",
+      "7": "loss",
+      "8": "construction",
+      "9": "disappeared"
+    }
+  },
+  {
+    "title_like": "%Advertising in schools%",
+    "type": "word_formation",
+    "subcategory_name": "Word Formation",
+    "question_text": "In certain countries, there has been rapid (1)…………… (GROW) in the spending power of teenagers. Realising this, firms are aiming even more of their (2)…………… (PRODUCE) at young people, and (3)…………… (INCREASE) they are doing this by advertising directly in schools. These companies see children as the (4)…………… (CONSUME) of the future, and hope that when they become adults they will maintain their (5)…………… (LOYAL) to brands they first started buying in their youth. As a result, many (6)…………… (MANUFACTURE) are keen to supply equipment to schools, sponsor sports activities or provide students with kit that carries their logo. Other firms install machines selling snacks and drinks, and these are often highly (7)…………… (PROFIT) for both the companies and the schools. There is, however, considerable (8)…………… (AGREE) about whether this is a good idea. Some claim these firms provide a useful service, but others argue that these machines encourage (9)…………… (HEALTH) eating habits at a time when many doctors are concerned about the diet of the young.",
+    "options": {},
+    "correct_answer": {
+      "1": "growth",
+      "2": "products",
+      "3": "increasingly",
+      "4": "consumers",
+      "5": "loyalty",
+      "6": "manufacturers",
+      "7": "profitable",
+      "8": "disagreement",
+      "9": "unhealthy"
+    }
+  },
+  {
+    "title_like": "%The rise of online shopping%",
+    "type": "word_formation",
+    "subcategory_name": "Word Formation",
+    "question_text": "Over the last decade, there has been a significant (1)…………… (GROW) in the number of people buying goods online. It offers customers the (2)…………… (CONVENIENT) of shopping from the comfort of their own homes. You can easily make a (3)…………… (COMPARE) of prices between different websites to find the best deal. However, there are some (4)…………… (ADVANTAGE) too. For example, you can't touch or try on the product, and sometimes the photos can be (5)…………… (LEAD). Also, waiting for the (6)…………… (DELIVER) can be frustrating if it is delayed. Despite these minor issues, the (7)…………… (POPULAR) of e-commerce continues to rise globally. It is (8)…………… (HIGH) likely that this trend will continue in the future. Consequently, retailers must ensure the (9)…………… (SAFE) of online payments to maintain customer trust.",
+    "options": {},
+    "correct_answer": {
+      "1": "growth",
+      "2": "convenience",
+      "3": "comparison",
+      "4": "disadvantages",
+      "5": "misleading",
+      "6": "delivery",
+      "7": "popularity",
+      "8": "highly",
+      "9": "safety"
     }
   }
 ]

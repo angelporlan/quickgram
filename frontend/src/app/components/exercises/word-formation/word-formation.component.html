@@ -25,6 +25,7 @@
 
             <div class="split-view">
                 <div class="text-area card">
+                    <h3 class="exercise-title">{{ exercise.title }}</h3>
                     <div class="text-content">
                         <ng-container *ngFor="let part of textParts">
                             <span *ngIf="part.type === 'text'" [innerHTML]="part.content"></span>
