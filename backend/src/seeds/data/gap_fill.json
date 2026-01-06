@@ -3,7 +3,7 @@
     "title_like": "%Join the Young Green Group!%",
     "type": "gap_fill",
     "subcategory_name": "Gap Fill",
-    "question_text": "Join the Young Green Group!\n\nIf you take an interest in the environment and (1)…………… keen to learn more about how you can (2)…………… a real difference, the Young Green Group is for you. We are a club (3)…………… meets in towns and cities around the country and is open to anyone (4)…………… the ages of 11 and 16, who wants to (5)…………… involved in raising awareness of ‘green’ issues.\n\nWe know you’ve heard it all before: turn taps off (6)…………… you’re cleaning your teeth; take the bus instead of asking for a lift; recycle, recycle, recycle! That is why this group offers (7)…………… a little different at our weekly meetings. You’ll learn about the direct impact our lifestyles have (8)…………… our wildlife and environment through a series of fun yet challenging activities. We’ll also put you in touch with other young people around the globe (9)…………… that you can find out what’s happening where they live. You may even be able to visit them!",
+    "question_text": "If you take an interest in the environment and (1)…………… keen to learn more about how you can (2)…………… a real difference, the Young Green Group is for you. We are a club (3)…………… meets in towns and cities around the country and is open to anyone (4)…………… the ages of 11 and 16, who wants to (5)…………… involved in raising awareness of ‘green’ issues.\n\nWe know you’ve heard it all before: turn taps off (6)…………… you’re cleaning your teeth; take the bus instead of asking for a lift; recycle, recycle, recycle! That is why this group offers (7)…………… a little different at our weekly meetings. You’ll learn about the direct impact our lifestyles have (8)…………… our wildlife and environment through a series of fun yet challenging activities. We’ll also put you in touch with other young people around the globe (9)…………… that you can find out what’s happening where they live. You may even be able to visit them!",
     "options": {},
     "correct_answer": {
       "1": "are",
@@ -15,6 +15,438 @@
       "7": "something",
       "8": "on/upon",
       "9": "so"
+    }
+  },
+  {
+    "title_like": "%The world’s smallest frogs%",
+    "type": "gap_fill",
+    "subcategory_name": "Gap Fill",
+    "question_text": "Indian scientists have discovered seven new species of the tiny creatures known (1)…………… night frogs. Some of these are (2)…………… small that they can easily fit onto a coin or fingernail. Indeed, the smallest of the new species is just 12 millimetres long, only a little bigger than the world’s smallest identified frog (3)…………… measures an incredibly tiny 7.7 millimetres. Many of the previously-identified 28 species of night frog have only been discovered in the last few years because locating them (4)…………… be very difficult. (5)…………… is not only because of their size, (6)…………… because they hide away under leaves and other vegetation. They also make calls which sound (7)…………… insects’ calls and when scientists draw near, they stop calling altogether. At the moment, the frogs are fairly widespread in certain regions of India, but they will soon need protecting due (8)…………… an increased human presence near their habitats. Whole populations of the frogs could quickly become extinct (9)…………… these habitats were to suddenly change.",
+    "options": {},
+    "correct_answer": {
+      "1": "as",
+      "2": "so",
+      "3": "which",
+      "4": "can",
+      "5": "This/That",
+      "6": "but",
+      "7": "like",
+      "8": "to",
+      "9": "if"
+    }
+  },
+  {
+    "title_like": "%What is futsal?%",
+    "type": "gap_fill",
+    "subcategory_name": "Gap Fill",
+    "question_text": "(1)…………… you’re into football, there’s no doubt you’ll like futsal, too. You may already have heard of this exciting, fast-paced sport, (2)…………… how is it played? Recognised around the world (3)…………… official football associations, futsal is similar to football, though it is different in significant ways. (4)…………… than being played on a large outdoor pitch, futsal is usually played on hard indoor courts, (5)…………… much smaller goals than football and never more than five players. The ball is smaller and less bouncy than an ordinary football. Games last just 40 minutes. There is a half-time break and (6)…………… side can take one ‘time-out’ per half. This is (7)…………… the clock is stopped for one minute, similar to (8)…………… happens in a basketball match. The game is particularly good for young people, (9)…………… it encourages them to be creative and develop technique in a small space, all of which is helpful in eleven-a-side football, which many futsal players go on to play.",
+    "options": {},
+    "correct_answer": {
+      "1": "If",
+      "2": "but",
+      "3": "by",
+      "4": "Rather",
+      "5": "with",
+      "6": "each",
+      "7": "when/where",
+      "8": "what",
+      "9": "as/because/since"
+    }
+  },
+  {
+    "title_like": "%My uncle the skateboarder%",
+    "type": "gap_fill",
+    "subcategory_name": "Gap Fill",
+    "question_text": "I’m 14 now, and like my mates, I really love skateboarding. I’ve been into it (1)…………… I was 11. So my family have got (2)…………… to me talking about it all the time! I knew that my dad and his brother also spent a lot of (3)…………… teenage years riding around on skateboards, so I guess it’s a family thing. My dad had to give it up when he injured his back in a fall. But (4)…………… surprised me was finding out recently that my uncle still does it. We met at our annual family reunion and I couldn’t believe what he was saying, especially as he’s no less (5)…………… 52 years old. He says his skateboard is his favourite (6)…………… of getting to his office every day. He uses it in (7)…………… to save time, which makes sense, as walking takes much longer. Plus it must be easily the (8)…………… enjoyable form of transport. I hope I’m still doing it (9)…………… I’m 52!",
+    "options": {},
+    "correct_answer": {
+      "1": "since",
+      "2": "used/accustomed",
+      "3": "their",
+      "4": "what",
+      "5": "than",
+      "6": "way",
+      "7": "order",
+      "8": "most",
+      "9": "when"
+    }
+  },
+  {
+    "title_like": "%A possible solution to a major health problem%",
+    "type": "gap_fill",
+    "subcategory_name": "Gap Fill",
+    "question_text": "New research shows that an unhealthy diet can actually have a damaging effect (1)……………  the brains and the behaviour of secondary school pupils. Some teenagers virtually live on junk food, (2)…………… instance burgers and chocolate. These are often widely available, and can (3)…………… bought on the way to or from school. For some teenagers, junk food makes up as (4)…………… as 30 percent of their diet. ‘What’s more, fewer than one in ten teenagers eats the recommended five daily portions (5)…………… fruit and vegetables. Experts are warning of a nutrition crisis in (6)…………… teenagers are deprived of essential dairy products and proteins. But (7)…………… to new research by Oxford University, giving teenagers a health supplement pill can really help. The vast majority of teenagers in the UK eat absolutely (8)…………… fish at all, and the pill contains fish oil that is essential for the teenage brain. Researchers found that this led to a reduction (9)…………… poor concentration and improved academic performance.",
+    "options": {},
+    "correct_answer": {
+      "1": "on",
+      "2": "for",
+      "3": "be",
+      "4": "much",
+      "5": "of",
+      "6": "which",
+      "7": "according",
+      "8": "no",
+      "9": "in"
+    }
+  },
+  {
+    "title_like": "%Manatees%",
+    "type": "gap_fill",
+    "subcategory_name": "Gap Fill",
+    "question_text": "I have to admit that until I went to Florida in the USA, I don’t think I (1)…………… ever heard of manatees. They are large mammals which live in sea water and are also known (2)…………… ‘sea cows’. This is partly due (3)…………… their cow-like appearance, and also because of their diet. They are vegetarians who live (4)…………… weeds and grass that they find under water. In fact, they can eat as (5)…………… as 50 kg of this is a day. The adult manatees weigh up to 590 kg. Manatee populations have been suffering recently; in fact conservationists were (6)…………… concerned that they have declared the manatee an endangered species. When I went to see these animals in the wild, (7)…………… amazed me was their appearance. Their lips have left and right sides, which can move independently of (8)…………… another. Manatees are slow and graceful in the water, which, (9)…………… me, was an incredible sight to see.",
+    "options": {},
+    "correct_answer": {
+      "1": "had",
+      "2": "as",
+      "3": "to",
+      "4": "on",
+      "5": "much",
+      "6": "so",
+      "7": "what",
+      "8": "one",
+      "9": "for"
+    }
+  },
+  {
+    "title_like": "%Tree-climbing%",
+    "type": "gap_fill",
+    "subcategory_name": "Gap Fill",
+    "question_text": "Many people will look back on tree-climbing (1)…………… as a simple childhood pleasure and a natural test of human strength, stamina and agility. But these days, it has turned (2)…………… a more serious activity and is (3)…………… of the fastest-growing adventure sports in the country. (4)…………… the invention of expensive gyms with indoor climbing walls, tree-climbing was a cheap and simple way to get a similar type of exercise. These days, if you want to (5)…………… part in an organised tree-climbing activity, you (6)…………… to wear a helmet and attach yourself to ropes in (7)…………… you should lose your footing. But otherwise, tree-climbing is a very eco-friendly sport, involving minimum damage to trees or the environment. Getting off the ground is perhaps the most challenging part of a climb. (8)…………… that, it’s about using your legs, (9)…………… are much stronger than your arms, to drive yourself up the tree. Reaching the top and then abseiling down again is a source of great satisfaction.",
+    "options": {},
+    "correct_answer": {
+      "1": "as",
+      "2": "into",
+      "3": "one",
+      "4": "Before",
+      "5": "take",
+      "6": "have/need",
+      "7": "case",
+      "8": "After",
+      "9": "which"
+    }
+  },
+  {
+    "title_like": "%The Recyclists%",
+    "type": "gap_fill",
+    "subcategory_name": "Gap Fill",
+    "question_text": "What do you do to help fight climate change? Two teenage boys from Scotland have just won an award for their efforts. Niall Watson and Roarke Hughes call (1)…………… the Recyclists. They pedal (2)…………… their neighbourhood on their bikes collecting rubbish to be recycled. In the area (3)…………… the boys live, the local council only collects a few types of refuse to be recycled, so the boys help their community to recycle more, in (4)…………… for a small fee. Their business venture started three years (5)…………… as a way of making some extra pocket money. Now Niall and Roarke have expanded their business. They have invested (6)…………… some chickens and now also sell their own organic eggs (7)…………… the cycle round the town. The judges of the ‘Ethical Kids Award’, (8)…………… the boys won, were very impressed by them, saying: ‘The Recyclists captured our imaginations straightaway. Their idea was innovative and green at the (9)…………… time.’",
+    "options": {},
+    "correct_answer": {
+      "1": "themselves",
+      "2": "around",
+      "3": "where",
+      "4": "return/exchange",
+      "5": "ago",
+      "6": "in",
+      "7": "when/as",
+      "8": "which",
+      "9": "same"
+    }
+  },
+  {
+    "title_like": "%Spot the gorilla%",
+    "type": "gap_fill",
+    "subcategory_name": "Gap Fill",
+    "question_text": "The gorilla experiment is famous in modern psychology. Participants are asked to watch a video of friends playing an informal game of ball and count the (1)…………… of times the ball is passed from one player to (2)…………… . The entire game and all the players are visible on screen throughout the experiment, and only one camera was used to film it. Halfway through the game, someone wearing a gorilla costume walks into the shot and begins to (3)…………… part in the game. The figure remains on screen for around nine seconds. The strange thing is that the viewers are (4)…………… busy counting the number of passes that around half of (5)…………… regularly fail to notice the gorilla (6)…………… all. (7)…………… these people are told about the gorilla, they are amazed to think they could (8)…………… missed it. The experiment works every time, but why some people see the gorilla and others don’t remain a mystery. Indeed, researchers have never been able to predict which participants (9)…………… see the gorilla.",
+    "options": {},
+    "correct_answer": {
+      "1": "number",
+      "2": "another",
+      "3": "take",
+      "4": "so",
+      "5": "them",
+      "6": "at",
+      "7": "When",
+      "8": "have",
+      "9": "will"
+    }
+  },
+  {
+    "title_like": "%Choosing the best shades%",
+    "type": "gap_fill",
+    "subcategory_name": "Gap Fill",
+    "question_text": "Most of us buy a new pair (1)…………… fashionable sunglasses each year. To be honest, we probably (2)…………… more thought into looking cool than we do into ensuring that the glasses match our needs. It seems an obvious thing to say, (3)…………… the main role of sunglasses isn’t actually to enhance your image. It is rather to protect your eyes from the potentially harmful rays of the sun. What’s (4)……………, price isn’t necessarily the best guide (5)…………… the effectiveness of sunglasses. Indeed, expensive designer glasses may not provide the best defence against sun damage. (6)…………… you may still want to choose a pair of sunglasses that look good on you, it’s also crucial to check out just how effective they will be in protecting your eyes. There are three types of light (7)…………… can harm the human eye. They are known (8)…………… ultra-violet light, visible light and infra-red light. If you (9)…………… the choice of sunglasses seriously, then you will want to protect yourself against all three.",
+    "options": {},
+    "correct_answer": {
+      "1": "of",
+      "2": "put",
+      "3": "but",
+      "4": "more",
+      "5": "to",
+      "6": "Although/Though/While/Whilst",
+      "7": "which",
+      "8": "as",
+      "9": "take"
+    }
+  },
+  {
+    "title_like": "%Blanca Huertas: butterfly expert%",
+    "type": "gap_fill",
+    "subcategory_name": "Gap Fill",
+    "question_text": "As a little girl growing (1)…………… in Colombia, Blanca Huertas was fascinated by wildlife, and especially by butterflies. In those days you couldn’t buy butterfly nets locally, so her father made (2)…………… for her, using the end of a broom. He also bought her some books and took her to different places at the weekends so (3)…………… she could see different species and learn about different types of habitat. It was at this time that she started her butterfly collection. (4)…………… she was sixteen, Blanca went to university to study biology. Her professor convinced her that the study of butterflies (5)…………… become a career, not just a hobby. What’s more, he encouraged Blanca to apply (6)…………… a place on a field trip to the Cauca region of the Amazon, (7)…………… was being organised by students from Oxford and Cambridge. The two-month trip was an incredible experience. Blanca rediscovered a butterfly that hadn’t (8)…………… seen for thirty years and collected information about new species. (9)…………… a result of the trip, the region was turned into a national park.",
+    "options": {},
+    "correct_answer": {
+      "1": "up",
+      "2": "one",
+      "3": "that",
+      "4": "When",
+      "5": "could",
+      "6": "for",
+      "7": "which",
+      "8": "been",
+      "9": "As"
+    }
+  },
+  {
+    "title_like": "%Snow-holing%",
+    "type": "gap_fill",
+    "subcategory_name": "Gap Fill",
+    "question_text": "The winter sport of snow-holing developed out (1)…………… a survival technique. If you get lost and have to spend the night outside in a frozen landscape, then digging a snow hole to provide (2)…………… with warmth and shelter is a good idea. The snow-hole works on the same principle (3)…………… the igloos built by Inuit people out of ice. Snow-holing has now developed (4)…………… an adventure sport. Before you try it, however, you need to do a basic snow-skills course, where you also learn how to use an ice-axe and other necessary equipment. But experience of winter hillwalking is also essential in (5)…………… to be accepted onto a course. You also work in a team, and (6)…………… it in turns to dig out the hole. It is (7)…………… something you can do alone. (8)…………… to people who have tried it, a snow-hole is surprisingly comfortable. Having constructed your hole, you settle (9)…………… for the night and wake up to absolute silence and the incredible light of the dawn sun on the ice.",
+    "options": {},
+    "correct_answer": {
+      "1": "of",
+      "2": "yourself",
+      "3": "as",
+      "4": "into",
+      "5": "order",
+      "6": "take",
+      "7": "not/hardly",
+      "8": "According",
+      "9": "down/in"
+    }
+  },
+  {
+    "title_like": "%Swimming with seals%",
+    "type": "gap_fill",
+    "subcategory_name": "Gap Fill",
+    "question_text": "The UK is home to half the world’s population of grey seals and there (1)…………… many local boat trips offering sightseeing tours out to the islands and sandbanks (2)…………… the animals are most regularly found. But if you really want to get close (3)…………… the seals and understand something about their way of life, then you need to go on an underwater seal-watching trip. On these trips, you have the chance to go over the side of the boat and, equipped (4)…………… a wetsuit, mask and snorkel, spend time in the water alongside the animals. Seals are extremely inquisitive creatures and, once you’re in the water, they will swim past you trying to work (5)…………… who you are and (6)…………… you’re doing there. (7)…………… they can appear shy at first, seals soon (8)…………… used to you being in the water, and will come and play around you. Young pups especially like to (9)…………… contact with divers, and often use their teeth, gently biting masks, fins and cameras out of curiosity. It can be a thrilling experience.",
+    "options": {},
+    "correct_answer": {
+      "1": "are",
+      "2": "where",
+      "3": "to",
+      "4": "with",
+      "5": "out",
+      "6": "what",
+      "7": "Although/Though/While/Whilst",
+      "8": "get",
+      "9": "make/have"
+    }
+  },
+  {
+    "title_like": "%The Mini-Monet%",
+    "type": "gap_fill",
+    "subcategory_name": "Gap Fill",
+    "question_text": "Kieron Williamson is a very successful landscape painter. His paintings, (1)……………  mostly depict the peaceful countryside around his home village in eastern England, sell very well. Perhaps this shouldn’t (2)…………… as that much of a surprise. It’s a beautiful part of the world, and landscape paintings are always popular. The strange thing about Kieron, however, (3)…………… that he is only seven years old. At a recent exhibition of his work, all the paintings were sold in half an hour, some for £100,000 each. Kieron now has fans all over the world, and has gained the nickname the ‘Mini-Monet’. What’s even (4)…………… surprising is that Kieron doesn’t come from an artistic family, and only started painting two years (5)…………… . He first got inspiration (6)…………… some boats he saw on holiday at the seaside. Kieron asked his parents if they (7)…………… buy him a sketch pad and pencils (8)…………… that he could draw them. Only when they saw (9)…………… well he drew did they realise that he was talented.",
+    "options": {},
+    "correct_answer": {
+      "1": "which",
+      "2": "come",
+      "3": "is",
+      "4": "more",
+      "5": "ago",
+      "6": "from",
+      "7": "would/could",
+      "8": "so",
+      "9": "how"
+    }
+  },
+  {
+    "title_like": "%Marathon in the mountains%",
+    "type": "gap_fill",
+    "subcategory_name": "Gap Fill",
+    "question_text": "The Ultra-Trail of Mont Blanc is an extreme marathon held annually (1)…………… 2003 in the mountains of France, Italy and Switzerland. Widely regarded (2)…………… one of the toughest races in the world, the Ultra-Trail takes place in August, (3)…………… temperatures frequently range from over 30ºC at the lowest points of the course, to well (4)…………… freezing at the highest. An Olympic marathon is 42.5 kilometres long, but (5)…………… one is over 160 kilometres in length and includes nine mountain peaks. That involves climbing a total of approximately 9,500 metres, (6)…………… is considerably higher than Everest. In (7)…………… of, or perhaps because of this, the annual event has become increasingly popular with runners, to (8)…………… an extent that the numbers have had to be limited to 2300. Only about half of these, (9)…………… average, are likely to finish the course, in times that typically vary from 20 hours to over 45.",
+    "options": {},
+    "correct_answer": {
+      "1": "since",
+      "2": "as",
+      "3": "when",
+      "4": "below/under",
+      "5": "this",
+      "6": "which",
+      "7": "spite",
+      "8": "such",
+      "9": "on"
+    }
+  },
+  {
+    "title_like": "%Eating at university%",
+    "type": "gap_fill",
+    "subcategory_name": "Gap Fill",
+    "question_text": "According (1)…………… a recent study, 59 per cent of university students miss lunch each week, and 65 per cent can’t (2)…………… bothered having breakfast. Eating regular meals, it seems, is very (3)…………… one of the average student’s top priorities, yet the same study shows that well (4)…………… half of those questioned wish they’d learnt how to cook at school. Having a good diet can make settling into life at university much easier. That’s (5)…………… it makes such good sense to learn how to prepare a few meals, even (6)…………… they are only basic things like soup or egg on toast. If there’s a shared kitchen, it’s a good idea to take turns cooking for everyone, (7)…………… than making meals one after the other, (8)…………… can lead to tensions when people are feeling hungry. Sharing the cooking means there’s a variety of meals, nobody has to cook every day, and (9)…………… is more, it saves money.",
+    "options": {},
+    "correct_answer": {
+      "1": "to",
+      "2": "be",
+      "3": "rarely/seldom",
+      "4": "over",
+      "5": "why",
+      "6": "if",
+      "7": "rather",
+      "8": "which",
+      "9": "what"
+    }
+  },
+  {
+    "title_like": "%The Australian city of Perth%",
+    "type": "gap_fill",
+    "subcategory_name": "Gap Fill",
+    "question_text": "Perth, (1)…………… capital of the state of Western Australia, has been described as one of the most remote cities (2)…………… Earth. Founded in 1829 and named after Perth in Scotland, it grew rapidly in the late nineteenth century (3)…………… a result of the discovery of gold in the state. Nowadays it has a population of around two million people, and many of (4)…………… were born outside Australia. This has led (5)…………… Perth becoming a culturally diverse city, in (6)…………… of the fact that the nearest large town is over 2,000 kilometres away, with well-established communities from southern Europe and South-East Asia (7)…………… particular. The city’s five universities have also attracted students from (8)…………… over the world. Young people find much to enjoy in and around Perth on (9)…………… of its outdoor lifestyle, which offers a wide range of activities including swimming at its many beaches, cycling both in town and countryside, and visiting nearby nature reserves.",
+    "options": {},
+    "correct_answer": {
+      "1": "the",
+      "2": "on",
+      "3": "as",
+      "4": "them/these/those",
+      "5": "to",
+      "6": "spite",
+      "7": "in",
+      "8": "all",
+      "9": "account"
+    }
+  },
+  {
+    "title_like": "%Cycling makes financial sense%",
+    "type": "gap_fill",
+    "subcategory_name": "Gap Fill",
+    "question_text": "These days, most people are aware (1)…………… the environmental impact of motor vehicles, and they realise that cars are responsible (2)…………… many of the problems facing their cities. Not (3)…………… people, however, ever stop (4)…………… think about how much money they would save by switching from driving to cycling. Cars cost a lot to buy, and (5)…………… other major investments such as houses, they quickly lose their value. On (6)…………… of that, there are running costs such as repair bills, tax and insurance, all of (7)…………… seem to go up every year. Bicycles, by contrast, are far (8)…………… expensive to purchase and maintain, do not require petrol and are easy to park. And if a lot more people took up cycling, the government could spend less of the nation’s resources on roads, which at present their taxes help pay for (9)…………… they drive on them or not.",
+    "options": {},
+    "correct_answer": {
+      "1": "of",
+      "2": "for",
+      "3": "many",
+      "4": "to/and",
+      "5": "unlike",
+      "6": "top",
+      "7": "which",
+      "8": "less",
+      "9": "whether"
+    }
+  },
+  {
+    "title_like": "%Chewing gum%",
+    "type": "gap_fill",
+    "subcategory_name": "Gap Fill",
+    "question_text": "We still tend (1)…………… think chewing gum is a fairly recent invention, even (2)…………… there is evidence it was used 5,000 years ago in Finland. The Ancient Greeks also chewed gum, as (3)…………… the Aztecs in Mexico during the sixteenth century. As far as we know, however, it wasn’t (4)…………… 1869 that chewing gum became popular in its present form, (5)…………… a New York inventor called Thomas Adams first had the idea of adding ﬂavour to it. Nowadays, of course, it is chewed around the world, (6)…………… the fact that it continues to be regarded by some (7)…………… an unpleasant habit. Unfortunately, far too many people drop used gum onto the pavement, (8)…………… it remains for some time because it is extremely diff cult to remove once it has stuck to the surface. On the other hand, those (9)…………… favour of chewing gum claim it helps them relax, improves their concentration, and helps keep their teeth clean.",
+    "options": {},
+    "correct_answer": {
+      "1": "to",
+      "2": "though/when",
+      "3": "did",
+      "4": "until/till",
+      "5": "when",
+      "6": "despite",
+      "7": "as",
+      "8": "where",
+      "9": "in"
+    }
+  },
+  {
+    "title_like": "%Music really can reduce that pain%",
+    "type": "gap_fill",
+    "subcategory_name": "Gap Fill",
+    "question_text": "A survey has recently been carried (1)…………… into the way music affects people in pain, and (2)…………… it seems to show is that certain songs can actually reduce the sensation of physical pain. About 40% of people suffering (3)…………… continuous pain said that music helped them feel better, with an even higher figure (4)…………… young people: a remarkable two-thirds of those taking part (5)…………… reported to have said it had had a positive effect (6)…………… their symptoms. The type of music played appears to make less difference than might (7)…………… imagined. Pop music, as (8)…………… as it is fairly gentle and not too loud, is slightly ahead of classical as the favourite for dealing with pain. Researchers believe that listening to your favourite music, (9)…………… may directly affect both your emotions and your thoughts, can have the very welcome effect of distracting you from what is hurting.",
+    "options": {},
+    "correct_answer": {
+      "1": "out",
+      "2": "what/something",
+      "3": "from",
+      "4": "among/amongst/for",
+      "5": "are",
+      "6": "on",
+      "7": "be",
+      "8": "long",
+      "9": "which"
+    }
+  },
+  {
+    "title_like": "%The importance of laughter%",
+    "type": "gap_fill",
+    "subcategory_name": "Gap Fill",
+    "question_text": "Psychologists tell us that humour and laughter (1)…………… good for our social relationships. Having a good sense of humour is often regarded (2)…………… being one of the most important characteristics that people look (3)…………… in a friend. In classrooms, a humorous teacher can make learning far (4)…………… enjoyable and improve a student’s motivation. In one study, students on a psychology course (5)…………… split into two different groups: one group was taught with a certain amount of humour, and the other with (6)…………… humour at all. Later, when researchers tested the students to see how much they had retained of (7)…………… they had heard in the lectures, they found that those (8)…………… had attended lectures containing humour scored significantly higher than the other students. Humour and laughter make us feel happy, and our laughter makes others laugh as (9)……………, so if we laugh a lot we may be helping to make other people feel happy.",
+    "options": {},
+    "correct_answer": {
+      "1": "are",
+      "2": "as",
+      "3": "for",
+      "4": "more",
+      "5": "were",
+      "6": "no",
+      "7": "what",
+      "8": "who/that",
+      "9": "well"
+    }
+  },
+  {
+    "title_like": "%The importance of reading%",
+    "type": "gap_fill",
+    "subcategory_name": "Gap Fill",
+    "question_text": "Reading is good (1)…………… us. In fact, there is plenty of evidence that reading for pleasure is more than just another leisure pursuit – it actually improves our mental and physical health. Reading extended texts (2)…………… as novels or biographies, (3)…………… requires intense concentration for a considerable period of time, helps to lengthen attention spans in children and improves their ability to think clearly. However, experts say (4)…………… is essential to acquire the habit of reading extensively (5)…………… a small child, while the brain is still developing. Reading can undoubtedly (6)…………… beneficial to our mental well-being. Reading not (7)…………… helps combat feelings of loneliness, it also allows people to relax and forget their problems for (8)…………… while. The concentration required during the act of reading seems to ease muscle tension and slow the heart rate. Researchers have found that just six minutes of reading can reduce stress levels by as (9)…………… as two-thirds.",
+    "options": {},
+    "correct_answer": {
+      "1": "for",
+      "2": "such",
+      "3": "which",
+      "4": "it",
+      "5": "as",
+      "6": "be",
+      "7": "only",
+      "8": "a",
+      "9": "much"
+    }
+  },
+  {
+    "title_like": "%The homing instinct%",
+    "type": "gap_fill",
+    "subcategory_name": "Gap Fill",
+    "question_text": "The homing instinct is what makes certain animals, birds and fish return (1)…………… the place they consider home. Cats often have this instinct. It was particularly strong in an American cat called Ninja, which disappeared shortly (2)…………… its owners had taken it to their new home; a year later the cat turned up at its old home even (3)…………… this was 1,360 kilometres away from (4)…………… its owners were now living. Other cats may not travel so far but many (5)…………… on going back to their old home. Pilsbury, an English cat, made a 13-kilometre journey back to its former home 40 times in spite of having to cross several busy roads to (6)…………… so. Pigeons also have the homing instinct and, ever (7)…………… ancient times, human beings have used them to carry messages back home. However, cat owners, (8)…………… have to keep returning to their old address in (9)…………… to bring their cat home, tend to find the homing instinct simply irritating rather than useful or interesting!",
+    "options": {},
+    "correct_answer": {
+      "1": "to",
+      "2": "after",
+      "3": "though",
+      "4": "where",
+      "5": "carry/keep",
+      "6": "do",
+      "7": "since",
+      "8": "who",
+      "9": "order"
+    }
+  },
+  {
+    "title_like": "%Food preservation%",
+    "type": "gap_fill",
+    "subcategory_name": "Gap Fill",
+    "question_text": "Keeping food for long periods (1)…………… time was historically a huge problem. This proved especially crucial (2)…………… times when agricultural production (3)…………… severely limited by weather or crop failure. People commonly used ice to keep food fresh but, of (4)……………, ice itself melts relatively quickly. In 1859 an American, John Mason, invented a glass jar with a metal screw-on lid, creating a perfect seal and making (5)…………… possible to preserve food that would previously not have remained edible. Mason’s jar is still (6)…………… use throughout the world. An even (7)…………… successful method for keeping food by canning it in metal containers was perfected between 1870 (8)…………… 1920 by Englishman Bryan Donkin. This preserved food beautifully, though the early iron cans were expensive, heavy and difficult to open. A breakthrough came in the 1880s with the development of lighter materials (9)…………… also enabled mass production of cans.",
+    "options": {},
+    "correct_answer": {
+      "1": "of",
+      "2": "at/during/in",
+      "3": "was/became",
+      "4": "course",
+      "5": "it",
+      "6": "in",
+      "7": "more",
+      "8": "and",
+      "9": "which/that"
+    }
+  },
+  {
+    "title_like": "%The benefits of walking%",
+    "type": "gap_fill",
+    "subcategory_name": "Gap Fill",
+    "question_text": "Walking is often described (1)…………… the nearest thing to the perfect exercise. It costs nothing, requires no special equipment other (2)…………… a comfortable pair of shoes, and can be done (3)…………… anywhere. (4)…………… research suggests that walking briskly for just 30 minutes a day can reduce the risk of heart disease and stroke. It is also a great way to clear your head (5)…………… you are feeling stressed. Many people find that their best ideas come to them (6)…………… walking. To make it more enjoyable, why (7)…………… go with a friend? (8)…………… only does this make the time pass quickly, but it also helps you stick to the routine. So, make (9)…………… you find the time to go for a stroll today!",
+    "options": {},
+    "correct_answer": {
+      "1": "as",
+      "2": "than",
+      "3": "almost/just/virtually",
+      "4": "Recent/New/Some",
+      "5": "if/when/whenever",
+      "6": "while/whilst/when",
+      "7": "not",
+      "8": "Not",
+      "9": "sure/certain"
     }
   }
 ]

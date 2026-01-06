@@ -26,6 +26,7 @@
             <div class="split-view">
                 <div class="text-area card">
                     <div class="text-content">
+                        <h3 class="exercise-title">{{ exercise.title }}</h3>
                         <ng-container *ngFor="let part of textParts">
                             <span *ngIf="part.type === 'text'" [innerHTML]="part.content"></span>
                             <span *ngIf="part.type === 'gap'" class="gap-marker"
