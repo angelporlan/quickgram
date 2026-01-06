@@ -1,19 +1,282 @@
 [
   {
-    "title_like": "%Conditionals first and zero conditional%",
+    "title_like": "%General Review Part 2%",
     "type": "conditionals",
     "subcategory_name": "Conditionals",
-    "question_text": "Complete the sentences with the correct form of the verbs in brackets to make the zero or first conditional.\n\n1   If you take the earlier bus, you (1)…………… (have) more time.\n2   I usually (2)………………… (take) a book if I go on a long journey.\n3   If we can’t come tomorrow, we (3)………………… (send) you a message.\n4   You might be less bored if you (4)………………… (invite) some friends.\n5   My dad always (5)………………… (get) annoyed if I don’t tidy my room.\n6   When all the exams are over, you (6)………………… (be able to) relax.\n7   If you have a pet, you (7)………………… (need) to spend lots of time with it.\n8   If you ask your friends tomorrow, they (8)………………… (explain) what to do, I’m sure.",
+    "question_text": "Complete the sentences with the correct form of the verb.\n\n1. Unless he (1)…………… (apologise), I won't speak to him.\n2. Had I known you were waiting, I (2)…………… (hurry).\n3. If I had gone to bed earlier, I (3)…………… (not/be) tired now.\n4. Provided that you (4)…………… (promise) to be careful, you can borrow my car.\n5. If I were you, I (5)…………… (take) a coat.",
     "options": {},
     "correct_answer": {
-      "1": "will have",
-      "2": "take",
-      "3": "’ll send/will send",
-      "4": "invite",
-      "5": "gets",
-      "6": "’ll be able to/will be able to",
-      "7": "need",
-      "8": "’ll explain/will explain"
+      "1": "apologises",
+      "2": "would have hurried / 'd have hurried",
+      "3": "wouldn't be / would not be",
+      "4": "promise",
+      "5": "would take / 'd take"
+    }
+  },
+  {
+    "title_like": "%General Review Part 1%",
+    "type": "conditionals",
+    "subcategory_name": "Conditionals",
+    "question_text": "Complete the sentences with the correct form of the verb.\n\n1. If water freezes, it (1)…………… (expand).\n2. I (2)…………… (buy) a new phone if I have enough money next month.\n3. If I (3)…………… (be) a bird, I would fly to Africa.\n4. If you had told me, I (4)…………… (help) you yesterday.\n5. If I didn't have to work, I (5)…………… (go) to the party right now.",
+    "options": {},
+    "correct_answer": {
+      "1": "expands",
+      "2": "will buy / 'll buy",
+      "3": "were / was",
+      "4": "would have helped / 'd have helped",
+      "5": "would go / 'd go"
+    }
+  },
+  {
+    "title_like": "%Inverted Conditionals (Type 3)%",
+    "type": "conditionals",
+    "subcategory_name": "Conditionals",
+    "question_text": "Rewrite the sentences using inversion (omitting 'if' with 'Had').\n\n1. If I had known, I would have come. -> (1)…………… known, I would have come.\n2. If they had arrived earlier, they would have met him. -> (2)…………… arrived earlier, they would have met him.\n3. If it hadn't rained, we would have played. -> (3)…………… rained, we would have played.\n4. If I had seen the sign, I would have stopped. -> (4)…………… the sign, I would have stopped.\n5. If you hadn't helped me, I would have failed. -> (5)…………… helped me, I would have failed.",
+    "options": {},
+    "correct_answer": {
+      "1": "Had I",
+      "2": "Had they",
+      "3": "Had it not",
+      "4": "Had I seen",
+      "5": "Had you not"
+    }
+  },
+  {
+    "title_like": "%Inverted Conditionals (Type 2)%",
+    "type": "conditionals",
+    "subcategory_name": "Conditionals",
+    "question_text": "Rewrite the sentences using inversion (omitting 'if' with 'Were').\n\n1. If I were rich, I would buy a yacht. -> (1)…………… rich, I would buy a yacht.\n2. If he were here, he would know what to do. -> (2)…………… here, he would know what to do.\n3. If they were to ask me, I would accept. -> (3)…………… to ask me, I would accept.\n4. If it weren't for your help, I would fail. -> (4)…………… for your help, I would fail.\n5. If I were you, I would leave. -> (5)…………… you, I would leave.",
+    "options": {},
+    "correct_answer": {
+      "1": "Were I",
+      "2": "Were he",
+      "3": "Were they",
+      "4": "Were it not",
+      "5": "Were I"
+    }
+  },
+  {
+    "title_like": "%Inverted Conditionals (Type 1)%",
+    "type": "conditionals",
+    "subcategory_name": "Conditionals",
+    "question_text": "Rewrite the sentences using inversion (omitting 'if').\n\n1. If you should see him, give him my regards. -> (1)…………… see him, give him my regards.\n2. If you need any help, please call me. -> (2)…………… you need any help, please call me.\n3. If it should rain, the event will be indoors. -> (3)…………… rain, the event will be indoors.\n4. If the alarm should ring, leave the building. -> (4)…………… the alarm ring, leave the building.\n5. If you change your mind, let me know. -> (5)…………… you change your mind, let me know.",
+    "options": {},
+    "correct_answer": {
+      "1": "Should you",
+      "2": "Should",
+      "3": "Should it",
+      "4": "Should",
+      "5": "Should"
+    }
+  },
+  {
+    "title_like": "%Alternatives to 'If'%",
+    "type": "conditionals",
+    "subcategory_name": "Conditionals",
+    "question_text": "Complete the sentences using alternative conditional conjunctions.\n\n1. You can go to the party (1)…………… (provided) you come back before midnight.\n2. (2)…………… (Suppose) you lost your job, what would you do?\n3. I will cook dinner (3)…………… (as long as) you wash the dishes.\n4. You won't pass (4)…………… (unless) you start studying.\n5. I'll take an umbrella (5)…………… (in case) it rains.",
+    "options": {},
+    "correct_answer": {
+      "1": "provided / provided that",
+      "2": "Suppose / Supposing",
+      "3": "as long as / so long as",
+      "4": "unless",
+      "5": "in case"
+    }
+  },
+  {
+    "title_like": "%Conditionals with 'Wish' and 'If only'%",
+    "type": "conditionals",
+    "subcategory_name": "Conditionals",
+    "question_text": "Complete the sentences expressing wishes.\n\n1. I wish I (1)…………… (have) a bigger car. (Present desire)\n2. If only I (2)…………… (not/say) that to him yesterday. (Past regret)\n3. I wish it (3)…………… (stop) raining. (Complaint about present/future)\n4. If only we (4)…………… (know) the truth back then.\n5. I wish I (5)…………… (can) fly.",
+    "options": {},
+    "correct_answer": {
+      "1": "had",
+      "2": "hadn't said / had not said",
+      "3": "would stop",
+      "4": "had known",
+      "5": "could"
+    }
+  },
+  {
+    "title_like": "%Mixed Conditionals: General Practice%",
+    "type": "conditionals",
+    "subcategory_name": "Conditionals",
+    "question_text": "Identify the correct mixed forms.\n\n1. If you (1)…………… (book) the tickets earlier, we would be sitting in better seats now.\n2. If I were you, I (2)…………… (apologise) yesterday.\n3. If they (3)…………… (not/eat) that seafood last night, they wouldn't feel sick today.\n4. She would be the manager now if she (4)…………… (accept) the promotion.\n5. If I didn't love you, I (5)…………… (not/marry) you all those years ago.",
+    "options": {},
+    "correct_answer": {
+      "1": "had booked",
+      "2": "would have apologised / 'd have apologised",
+      "3": "hadn't eaten / had not eaten",
+      "4": "had accepted",
+      "5": "wouldn't have married / would not have married"
+    }
+  },
+  {
+    "title_like": "%Mixed Conditionals: Present State, Past Result%",
+    "type": "conditionals",
+    "subcategory_name": "Conditionals",
+    "question_text": "Complete the mixed conditionals (Type 2 in 'if' clause, Type 3 in main clause).\n\n1. If I spoke French (I don't), I (1)…………… (apply) for that job in Paris last month.\n2. If he wasn't afraid of flying, he (2)…………… (travel) with us last week.\n3. I (3)…………… (finish) the marathon yesterday if I were fitter.\n4. If she (4)…………… (be) taller, she would have joined the basketball team last year.\n5. If I knew how to cook, I (5)…………… (prepare) dinner for you last night.",
+    "options": {},
+    "correct_answer": {
+      "1": "would have applied / 'd have applied",
+      "2": "would have traveled / 'd have traveled",
+      "3": "would have finished / 'd have finished",
+      "4": "were / was",
+      "5": "would have prepared / 'd have prepared"
+    }
+  },
+  {
+    "title_like": "%Mixed Conditionals: Past Cause, Present Result%",
+    "type": "conditionals",
+    "subcategory_name": "Conditionals",
+    "question_text": "Complete the mixed conditionals (Type 3 in 'if' clause, Type 2 in main clause).\n\n1. If I had studied harder at school, I (1)…………… (have) a better job now.\n2. If you hadn't spent all your money, you (2)…………… (not/be) broke today.\n3. We (3)…………… (be) on the beach now if we hadn't missed the plane.\n4. If he had taken his medicine, he (4)…………… (feel) better now.\n5. I (5)…………… (know) what to do if you had explained it to me yesterday.",
+    "options": {},
+    "correct_answer": {
+      "1": "would have / 'd have",
+      "2": "wouldn't be / would not be",
+      "3": "would be / 'd be",
+      "4": "would feel / 'd feel",
+      "5": "would know / 'd know"
+    }
+  },
+  {
+    "title_like": "%Second vs Third Conditional%",
+    "type": "conditionals",
+    "subcategory_name": "Conditionals",
+    "question_text": "Distinguish between present hypothetical (2nd) and past hypothetical (3rd).\n\n1. If I had a car now, I (1)…………… (drive) to work.\n2. If I had had a car then, I (2)…………… (drive) to work yesterday.\n3. She would call him if she (3)…………… (know) his number (she doesn't know it).\n4. She would have called him if she (4)…………… (know) his number (she didn't know it).\n5. I would help you if I (5)…………… (can).",
+    "options": {},
+    "correct_answer": {
+      "1": "would drive / 'd drive",
+      "2": "would have driven / 'd have driven",
+      "3": "knew",
+      "4": "had known",
+      "5": "could"
+    }
+  },
+  {
+    "title_like": "%Third Conditional: Regrets%",
+    "type": "conditionals",
+    "subcategory_name": "Conditionals",
+    "question_text": "Complete the sentences about past regrets.\n\n1. I wouldn't have felt sick if I (1)…………… (not/eat) so much cake.\n2. If you (2)…………… (listen) to me, you wouldn't have made that mistake.\n3. He (3)…………… (see) the doctor sooner if he had realized how serious it was.\n4. If I had saved money, I (4)…………… (buy) that car last year.\n5. We (5)…………… (not/get) lost if we had brought a map.",
+    "options": {},
+    "correct_answer": {
+      "1": "hadn't eaten / had not eaten",
+      "2": "had listened",
+      "3": "would have seen / 'd have seen",
+      "4": "would have bought / 'd have bought",
+      "5": "wouldn't have got / wouldn't have gotten"
+    }
+  },
+  {
+    "title_like": "%Third Conditional: Hypothetical Past%",
+    "type": "conditionals",
+    "subcategory_name": "Conditionals",
+    "question_text": "Complete the sentences using the Third Conditional.\n\n1. If I (1)…………… (know) about the meeting, I would have attended.\n2. She (2)…………… (pass) the exam if she had studied harder.\n3. If we hadn't missed the bus, we (3)…………… (not/be) late.\n4. They would have won the match if they (4)…………… (play) better.\n5. If it (5)…………… (not/rain), we would have gone to the beach.",
+    "options": {},
+    "correct_answer": {
+      "1": "had known",
+      "2": "would have passed / 'd have passed",
+      "3": "wouldn't have been / would not have been",
+      "4": "had played",
+      "5": "hadn't rained / had not rained"
+    }
+  },
+  {
+    "title_like": "%First vs Second Conditional%",
+    "type": "conditionals",
+    "subcategory_name": "Conditionals",
+    "question_text": "Choose the correct form based on whether the situation is real (1st) or hypothetical (2nd).\n\n1. If I win the lottery (unlikely), I (1)…………… (buy) a castle.\n2. If I find your keys (possible), I (2)…………… (let) you know.\n3. If animals could talk (impossible), they (3)…………… (tell) us interesting stories.\n4. If we leave now (plan), we (4)…………… (catch) the train.\n5. She would travel to Mars if it (5)…………… (be) possible.",
+    "options": {},
+    "correct_answer": {
+      "1": "would buy / 'd buy",
+      "2": "will let / 'll let",
+      "3": "would tell / 'd tell",
+      "4": "will catch / 'll catch",
+      "5": "were / was"
+    }
+  },
+  {
+    "title_like": "%Second Conditional: Advice%",
+    "type": "conditionals",
+    "subcategory_name": "Conditionals",
+    "question_text": "Use 'If I were you' structures to complete the advice.\n\n1. If I were you, I (1)…………… (accept) that offer.\n2. I (2)…………… (not/go) there alone if I were you.\n3. If I were in your position, I (3)…………… (call) the police.\n4. (4)…………… (you/buy) this coat if you were me?\n5. If I were you, I (5)…………… (study) more for the test.",
+    "options": {},
+    "correct_answer": {
+      "1": "would accept / 'd accept",
+      "2": "would not go / wouldn't go",
+      "3": "would call / 'd call",
+      "4": "Would you buy",
+      "5": "would study / 'd study"
+    }
+  },
+  {
+    "title_like": "%Second Conditional: Hypothetical Present%",
+    "type": "conditionals",
+    "subcategory_name": "Conditionals",
+    "question_text": "Complete the sentences using the Second Conditional.\n\n1. If I (1)…………… (have) more money, I would travel around the world.\n2. She (2)…………… (be) happier if she had a better job.\n3. If I (3)…………… (know) the answer, I would tell you.\n4. We would buy that house if it (4)…………… (not/be) so expensive.\n5. If he (5)…………… (live) closer, we would see him more often.",
+    "options": {},
+    "correct_answer": {
+      "1": "had",
+      "2": "would be / 'd be",
+      "3": "knew",
+      "4": "wasn't / weren't / was not / were not",
+      "5": "lived"
+    }
+  },
+  {
+    "title_like": "%First Conditional with 'Unless'%",
+    "type": "conditionals",
+    "subcategory_name": "Conditionals",
+    "question_text": "Rewrite the sentences or fill in the gaps using 'unless'.\n\n1. You won't succeed (1)…………… (if/not) you try harder.\n2. I won't go to the party (2)…………… (if/not) he invites me.\n3. We will be late unless we (3)…………… (leave) immediately.\n4. Unless you (4)…………… (stop) eating junk food, you won't lose weight.\n5. The bank won't lend you money (5)…………… (if/not) you have a job.",
+    "options": {},
+    "correct_answer": {
+      "1": "unless",
+      "2": "unless",
+      "3": "leave",
+      "4": "stop",
+      "5": "unless"
+    }
+  },
+  {
+    "title_like": "%Zero vs First Conditional%",
+    "type": "conditionals",
+    "subcategory_name": "Conditionals",
+    "question_text": "Choose the correct form (Zero or First Conditional) depending on the context.\n\n1. If you (1)…………… (drop) an apple, it falls. (General truth)\n2. If you drop that vase, it (2)…………… (break). (Specific future prediction)\n3. I usually (3)…………… (walk) to work if the weather is nice.\n4. If the weather is nice tomorrow, I (4)…………… (walk) to work.\n5. If you (5)…………… (touch) a fire, you get burned.",
+    "options": {},
+    "correct_answer": {
+      "1": "drop",
+      "2": "will break / 'll break",
+      "3": "walk",
+      "4": "will walk / 'll walk",
+      "5": "touch"
+    }
+  },
+  {
+    "title_like": "%First Conditional: Future Possibilities%",
+    "type": "conditionals",
+    "subcategory_name": "Conditionals",
+    "question_text": "Complete the sentences using the First Conditional.\n\n1. If it rains tomorrow, we (1)…………… (cancel) the picnic.\n2. She will be late if she (2)…………… (not/leave) now.\n3. If I (3)…………… (see) him, I will tell him the news.\n4. You (4)…………… (miss) the bus if you don't hurry.\n5. If they (5)…………… (study) hard, they will pass the exam.",
+    "options": {},
+    "correct_answer": {
+      "1": "will cancel / 'll cancel",
+      "2": "doesn't leave / does not leave",
+      "3": "see",
+      "4": "will miss / 'll miss",
+      "5": "study"
+    }
+  },
+  {
+    "title_like": "%Zero Conditional: General Truths%",
+    "type": "conditionals",
+    "subcategory_name": "Conditionals",
+    "question_text": "Complete the sentences using the Zero Conditional. Use the verbs in brackets.\n\n1. If you freeze water, it (1)…………… (turn) into ice.\n2. If I (2)…………… (drink) too much coffee, I can't sleep at night.\n3. The engine (3)…………… (start) if you turn this key.\n4. If plants (4)…………… (not/get) enough water, they die.\n5. If you mix red and blue, you (5)…………… (get) purple.",
+    "options": {},
+    "correct_answer": {
+      "1": "turns",
+      "2": "drink",
+      "3": "starts",
+      "4": "don't get / do not get",
+      "5": "get"
     }
   }
 ]
