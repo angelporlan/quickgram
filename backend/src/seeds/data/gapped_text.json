@@ -3,7 +3,7 @@
     "title_like": "%Open-air teaching In Germany%",
     "type": "reading_gapped_text",
     "subcategory_name": "Gapped Text",
-    "question_text": "You are going to read an article about an unusual school in the Germany, where the pupils have a great deal of freedom. Six sentences have been removed from the article. Choose from the sentences A-G the one which fits each gap (1-6). There is one extra sentence which you do not need to use.\n\nOpen-air teaching In Germany\nA bold experiment in education that aims to help young students become independent thinkers\n\nIn 2013, Wolfgang Schwarz became Assistant Headteacher at a Hamburg school. It was a conventional school: teachers taught lessons that pupils had to attend, and set compulsory homework for pupils. The school taught all the usual subjects from English to maths. The Senior Management team told the teachers what to do, and the teachers told the pupils what to do.\n\nShortly after this, Schwarz read an article about open-air schools, whose aim is to encourage children to be more independent and develop important life skills in a natural setting. (1)………… This is in contrast to more traditional schools like where Schwarz was working, where (according to critics) the focus is too much on the teaching and learning of factual information, and where children aren’t given enough opportunity to learn how to think for themselves. They maintain the physical limitations of the classroom stop students learning naturally. Learning outside, in a forest or on a beach encourages students to think more about the world around them.\n\nHowever, there were only a small number of outdoor schools across Germany. (2)………… In 2014, that is exactly what he did, and the Hamburg Outdoor School was born. With four teachers and 42 children aged between 4 and 18, Schwarz’s school had a small building set in large grounds near a beach and private forest. Now they use the areas outside the school more than the old classrooms. Most lessons take place outside.\n\nWhat actually makes it an ‘outdoor’ school? How does it work in practice? (3)………… There are no tests and no homework you have to do, although some parents have, additionally, set their children academic tasks to complete away from school.\n\nThe curriculum is certainly not conventional. (4)………… Last year, the students sampled more than 80 different subjects, learning some maths, history and physics in the process.\n\nAnd some of the teaching is done by the students themselves, such as a course on geology, taught by 13-year-old Dieter Altmann, which has become one of the most popular at the school. Other subjects range from juggling to fishing techniques.\n\nHowever, student independence isn’t just limited as to how the children actually do their learning. (5)………… At these sessions, anything can be discussed, ranging from discipline issues to deciding who should be allowed to start at the school. Everyone, from the youngest child to the school Headteacher, has an equal vote in all this. All decisions are made democratically, so the teachers can be outvoted by the children theoretically; this is something which does happen from time to time. \n\nThe key question is this: does a school with optional lessons and student-led courses on juggling really provide students with the best start in life? (6)………… Accepting that students in normal schools may become better at certain skills, he maintains that children can learn facts much better in a natural environment through experimentation and observation. ‘If you learn out of the classroom in the natural world, it makes learning more meaningful and memorable’.",
+    "question_text": "You are going to read an article about an unusual school in the Germany, where the pupils have a great deal of freedom. Six sentences have been removed from the article. Choose from the sentences A-G the one which fits each gap (1-6). There is one extra sentence which you do not need to use.\n\nA bold experiment in education that aims to help young students become independent thinkers\n\nIn 2013, Wolfgang Schwarz became Assistant Headteacher at a Hamburg school. It was a conventional school: teachers taught lessons that pupils had to attend, and set compulsory homework for pupils. The school taught all the usual subjects from English to maths. The Senior Management team told the teachers what to do, and the teachers told the pupils what to do.\n\nShortly after this, Schwarz read an article about open-air schools, whose aim is to encourage children to be more independent and develop important life skills in a natural setting. (1)………… This is in contrast to more traditional schools like where Schwarz was working, where (according to critics) the focus is too much on the teaching and learning of factual information, and where children aren’t given enough opportunity to learn how to think for themselves. They maintain the physical limitations of the classroom stop students learning naturally. Learning outside, in a forest or on a beach encourages students to think more about the world around them.\n\nHowever, there were only a small number of outdoor schools across Germany. (2)………… In 2014, that is exactly what he did, and the Hamburg Outdoor School was born. With four teachers and 42 children aged between 4 and 18, Schwarz’s school had a small building set in large grounds near a beach and private forest. Now they use the areas outside the school more than the old classrooms. Most lessons take place outside.\n\nWhat actually makes it an ‘outdoor’ school? How does it work in practice? (3)………… There are no tests and no homework you have to do, although some parents have, additionally, set their children academic tasks to complete away from school.\n\nThe curriculum is certainly not conventional. (4)………… Last year, the students sampled more than 80 different subjects, learning some maths, history and physics in the process.\n\nAnd some of the teaching is done by the students themselves, such as a course on geology, taught by 13-year-old Dieter Altmann, which has become one of the most popular at the school. Other subjects range from juggling to fishing techniques.\n\nHowever, student independence isn’t just limited as to how the children actually do their learning. (5)………… At these sessions, anything can be discussed, ranging from discipline issues to deciding who should be allowed to start at the school. Everyone, from the youngest child to the school Headteacher, has an equal vote in all this. All decisions are made democratically, so the teachers can be outvoted by the children theoretically; this is something which does happen from time to time. \n\nThe key question is this: does a school with optional lessons and student-led courses on juggling really provide students with the best start in life? (6)………… Accepting that students in normal schools may become better at certain skills, he maintains that children can learn facts much better in a natural environment through experimentation and observation. ‘If you learn out of the classroom in the natural world, it makes learning more meaningful and memorable’.",
     "options": {
       "sentences": {
         "A": "Schwarz is convinced that it can.",
@@ -22,6 +22,606 @@
       "4": "G",
       "5": "E",
       "6": "A"
+    }
+  },
+  {
+    "title_like": "%Sneakers%",
+    "type": "reading_gapped_text",
+    "subcategory_name": "Gapped Text",
+    "question_text": "You are going to read an article about sports shoes. Six sentences have been removed from the article. Choose from the sentences A-G the one which fits each gap (1-6). There is one extra sentence which you do not need to use.\n\nSneakers\nSneakers, or shoes designed mainly for sports and other outdoor activities, are worn in almost every country in the world. Arguably they have become a symbol of globalisation itself.\nYet there are some variations, not least in what they are called. In the US, they have always been ‘sneakers’, at least ever since the Boston Journal explained it to its readers as being ‘the name boys give to tennis shoes’ back in 1887. (1)………… However, in Britain, the word ‘trainers’ is much more common. Other names include ‘daps’ and ‘plimsolls’, which itself dates back to the 1870s. They are also known as ‘rubber shoes’ in the Philippines, ‘tennis’ in South Africa, ‘running shoes’ in Australia and ‘canvas shoes’ in Nigeria.\nDuring the late 19th century, sneakers were worn by holidaymakers, as well as by sports players on the tennis court. The main advantage of wearing these shoes was that they enabled the wearer to move around quickly. (2)………… Later designs for sports players made this even more effective by also adding metal spikes which would dig into the ground.\nBritish company JW Foster and Sons produced the first shoes made specifically for running in 1895, and the spikes allowed for greater acceleration and speed. (3)………… There, runners Harold Abrahams and Eric Liddell won their 100 metre and 400 metre running races while wearing these shoes. Doubtless Forster and Sons were delighted. The fortunes of Abrahams and Liddell were memorably portrayed in the Oscar-winning 1981 film Chariots of Fire.\nDuring the 1920s and 1930s, sports became associated with building moral character and raising national pride. Demand for sneakers rose as a result, so manufacturers could afford to make the designs more varied. (4)………… All around the world, different shoes were also being produced for different sports. In France, a brand called Spring Court marketed the first canvas tennis shoe, complete with eight little holes for ventilation on the side of their rubber soles.\nDuring the 1950s, people in America and Europe began to have more free time, more leisure opportunities, and often more money to spend. There were great changes in the attitudes and habits of the new generation. (5)………… Previously, they had simply worn the same things as adults, but in smaller sizes. Dress codes relaxed, and fashion items from sneakers to jeans became more and more popular.\nMany were interested in what people such as US pop singer Elvis Presley and sporting heroes were wearing, and then wanted the same for themselves. Now it is common for sports stars to endorse (be seen to recommend) and advertise a particular brand of sneaker: recent examples include tennis ace Roger Federer and basketball star Lebron James. But did you know that this is a long-standing tradition, and that perhaps the bestselling sports shoe ever, the Converse All-Star was endorsed by basketball player Chuck Taylor as long ago as 1923?\nSneakers continued to become more and more popular. (6)………… This made sneakers the cheaper option, which in turn made young people even more likely to buy them instead of an alternative which seemed old-fashioned and was more expensive.",
+    "options": {
+      "sentences": {
+        "A": "This was one of the main problems with wearing sneakers.",
+        "B": "This was achieved by the use of an engraved piece of rubber on the underside of the shoe, which improved grip.",
+        "C": "For example, men’s sneakers now became distinct from women’s.",
+        "D": "In fact, sales grew so much that they negatively affected sales of traditional leather footwear.",
+        "E": "For perhaps the first time, children and teenagers everywhere were choosing for themselves what to wear.",
+        "F": "They became very popular with athletes, including at the 1924 Olympics.",
+        "G": "The term is also the standard name in Canada."
+      }
+    },
+    "correct_answer": {
+      "1": "G",
+      "2": "B",
+      "3": "F",
+      "4": "C",
+      "5": "E",
+      "6": "D"
+    }
+  },
+  {
+    "title_like": "%Giving advice%",
+    "type": "reading_gapped_text",
+    "subcategory_name": "Gapped Text",
+    "question_text": "You are going to read a magazine article about giving advice. Six sentences have been removed from the article. Choose from the sentences A-G the one which fits each gap (1-6). There is one extra sentence which you do not need to use.\n\nGiving advice\nJournalist Nicola Hargreaves discusses whether it’s worth giving advice, and if so, how?\n‘What do you think I should do?’ asks your friend, as she sits down on your bed, eagerly awaiting your advice. This is no easy situation. Say something your friend disagrees with and you might feel you’ve disappointed her. Tell her what to do and your risk your friend feeling let down if things don’t turn out as you hoped.\nIt’s human nature to want to offer solutions when someone comes to you with a problem. It’s also easy to fall into the trap of giving advice which you wouldn’t take yourself, or simply reassure your friend that ‘everything will be OK.’ This is not particularly useful for your friend, and may leave you feeling a bit helpless, too. (1)………… This is because we’re pleased that our friend has come to us for help, even if we don’t really think we’re qualified to give it. So, is it a good idea to try to give advice at all? The answer is yes … if it’s done in the right way.\nIn fact, friends often really only want someone to listen to them. It’s important, therefore, to try to work out whether they’re actually seeking advice, or simply wanting to talk over whatever it is that’s going round and round in their head. Doing this can, in fact, make people feel better all by themselves. There’s no harm in asking whether they’d like you to suggest a solution or two, even so. (2)…………\nIt’s also important to be honest. (3)………… Your friend won’t be offended, and you can still listen carefully and try to put yourself in their shoes. Then you can go away and think about things. What might you do if you were to experience the same thing? You can go back to your friend later with a few suggestions if you think of something that might be helpful.\n(4)………… There’s nothing worse than hearing ‘What / would have said is …’ or ‘What you should have tried to do is …’ What’s done is done and the only thing to do now is look ahead. Judging never helps anyone! If your friend keeps saying ‘If only I’d …’, bring them back to the present and encourage them to think about what they can do to sort things out.\nSometimes a problem doesn’t go away overnight. (5)………… They will definitely appreciate it if you just allow them to ‘talk it out’, though. Maybe they’re building up courage to take action, and need to convince themselves they’re doing the right thing. Just being there for them whenever they need you may be all you have to do to make things better.\nRemember that you don’t have to have all the answers, and your friend probably doesn’t expect you to. If you’re stuck, try reminding your friend of all the great things that are happening in their lives. (6)………… We often resolve problems when we’re engaged in other activities and not directly thinking about them at all!",
+    "options": {
+      "sentences": {
+        "A": "If you’re unable to think of a way to resolve the situation your friend finds themselves in, just say so.",
+        "B": "Why not plan some fun things to do together to help them forget what’s going on for a while?",
+        "C": "Often we say this kind of thing because we believe we ought to say something.",
+        "D": "This is the first thing many of us do when we have a problem ourselves.",
+        "E": "Then it’s up to them to say that they want to hear your ideas (or not, as the case may be).",
+        "F": "Can you remember a time when you weren’t sure what to do, or thought you’d acted in the wrong way?",
+        "G": "It can be hard to listen to your friend going over and over the same thing without being able to help them."
+      }
+    },
+    "correct_answer": {
+      "1": "C",
+      "2": "E",
+      "3": "A",
+      "4": "F",
+      "5": "G",
+      "6": "B"
+    }
+  },
+  {
+    "title_like": "%How to write a good blog%",
+    "type": "reading_gapped_text",
+    "subcategory_name": "Gapped Text",
+    "question_text": "You are going to read a newspaper article about a teenage boy who writes a blog about films. Six sentences have been removed from the article. Choose from the sentences A-G the one which fits each gap (1-6). There is one extra sentence which you do not need to use.\n\nHow to write a good blog\nJoey Benson started writing a blog at the age of thirteen. Here, he tells us about his own experiences of blog writing and offers tips for other young bloggers starting out.\n‘I never expected to get many followers when I started writing my blog,’ says Joey Benson, now 15. ‘I just wrote down my thought about films I’d seen at the cinema. I didn’t think anyone would take my opinions seriously or even be particularly interested in them.’\nSince he started blogging two years ago, however, Joey’s attracted tens of thousands of readers, some of them professional film critics, who are interested in his fresh approach to reviewing films. (1)………… This attention has led to him tripling the number of hits his blog receives, and he now gets sent free tickets for screenings of new films for his age group.\nJoey’s style is informal and chatty, and he presents an interesting angle on the films he sees. Instead of simply commenting on how amazing the special effects are, or how effective the sound track is, Joey delves into psychological subject matter like what it was that made the bad guy turn bad or weather the heroes of the story have hidden motives. (2)………… Why did they choose that camera angle to shoot that scene from? Why was that particular animation process selected?\nJoey has certainly made an impact on the teenage and film critic blogging scenes. His ideas are far from predictable, and he never fails to surprise readers with a new take on old themes. (3)………… It’s definitely something he manages, though.\nWith so many talented bloggers out there, how does Joey stand out from the crowd? He says it’s crucial to either find something no one’s written about before or a new way of approaching a subject, like he does. You don’t have to present a balanced opinion of an issue. (4)………… They probably won’t come back again, either.\nIf you’re hoping to reach a wide range of readers with your blog, following advice from experienced bloggers like Joey is a wise move. You may be truly passionate about a subject close to your heart, and may even consider yourself a bit of an expert on it. This makes it tempting to use jargon and technical words that people familiar with the field will know. (5)………… This means you automatically limit the number of hits you receive on your blog.\n‘Remember the expression “first impressions count”?’ asks Joey. ‘Well, that doesn’t just stand for meeting people but when aiming to make an impact with your blog-writing too. (6)………… Then keep their interest by addressing them personally, asking questions and making them think.’\nOne last word from Joey: ‘Don’t try too hard to use big fancy words or get too hung up on things like grammar. It’s important to check your work afterwards for things like spelling errors, though, and make sure it flows well and is relevant to your target readers. Oh, and make sure you check your facts! You don’t want to get into trouble about what you’ve written. Good luck!’",
+    "options": {
+      "sentences": {
+        "A": "Draw the reader in by writing a funny or surprising title.",
+        "B": "He makes it seem easy, but not all young, or indeed older, bloggers hit the right tone.",
+        "C": "A national newspaper recently picked up on his unique style and he’s since appeared in an article about teenage bloggers.",
+        "D": "Age doesn’t matter when you’re writing about something you feel strongly about.",
+        "E": "He isn’t only interested in considering this kind of thing, but in the technicalities of film-making, too.",
+        "F": "However, simply repeating the same thing over again without backing up your ideas with actual examples is unlikely to make readers stick around for long.",
+        "G": "Be aware, though, that a general audience may not, and you may put them off by doing so."
+      }
+    },
+    "correct_answer": {
+      "1": "C",
+      "2": "E",
+      "3": "B",
+      "4": "F",
+      "5": "G",
+      "6": "A"
+    }
+  },
+  {
+    "title_like": "%Making mountaineering history%",
+    "type": "reading_gapped_text",
+    "subcategory_name": "Gapped Text",
+    "question_text": "You are going to read an article about a young mountaineer called George Atkinson. Six sentences have been removed from the article. Choose from the sentences A-G the one which fits each gap (1-6). There is one extra sentence which you do not need to use.\n\nMaking mountaineering history\nAt the beginning of April, just a few weeks before his 17th birthday, George Atkinson arrived in Kathmandu in Nepal. The schoolboy from London was about to begin the final stage of his quest to become the youngest person to climb the highest peak on each of the world’s seven continents. (1)………… It was just Mount Everest to go – the mightiest of the lot.\nAs an 11-year-old, George had been with his father on an organised trip up Mount Kilimanjaro, Africa’s highest mountain. But George’s dad got a stomach bug before the final ascent to the peak. ‘I felt very weak and dehydrated’, he said, and had to go back down. (2)………… And as George continued to the top with the rest of the group, his father endured an anxious wait. ‘Seeing him coming back down again was indescribable.’\nThe next few years saw George build up his mountaineering skills and his fitness to prepare for his epic challenge. He spent his weekends carrying a heavily laden 80-litre backpack and walking from the family home to Richmond Park in London, which he’d then complete two full circuits of, making a round trip of 30 kilometres.\nAt 29,029 feet, Everest is over 6,500 feet higher than any of the other mountains on George’s list. He knew it would be a challenge and was aware of the risks that being at such high altitudes carries, but he wanted to stand on top of the world. On checking in to the Hotel Everest View, at 12,729 feet, he got a glimpse of Mount Everest, and imagined looking back down to the hotel from the peak. He phoned his mother, Penny, and spoke to her. (3)………… And she knew just how much this climb meant to him.\nBut as they got closer to the summit, the weather turned bad. There were nervous moments for George and his group as they waited to see if the weather would improve and the wind would drop to a safer speed of below 30 miles an hour. George didn’t know how long he might have to wait for another opportunity. (4)………… An American climber, Jordan Romero, who was two months younger than George, only needed to scale Vinson Massif in Antarctica to complete his set of seven.\nBut eventually they made it, and George achieved his dream. But there was hardly time to celebrate on the peak. (5)………… By the time they got back down to the bottom, George and the rest of his group were all exhausted.\nGeorge intends to keep climbing and carry on with his studies. He says he is looking forward to life getting back to normal. And he’s planning another mountaineering trip with his dad, this time up Mont Blanc in France. But the question is, will the elder Atkinson make it all the way up to the top this time? (6)…………",
+    "options": {
+      "sentences": {
+        "A": "‘I’ve seen it,’ he said, ‘and it’s huge.’",
+        "B": "He had already conquered all but one.",
+        "C": "But he knew he still needed more practice.",
+        "D": "‘I hope so,’ he says, ‘George is going to carry my stuff.’",
+        "E": "But George knew what he wanted: he was going to carry on.",
+        "F": "And by then, someone else might have snatched the record.",
+        "G": "Almost immediately, they had to begin an exhausting, non-stop 20-hour descent."
+      }
+    },
+    "correct_answer": {
+      "1": "B",
+      "2": "E",
+      "3": "A",
+      "4": "F",
+      "5": "G",
+      "6": "D"
+    }
+  },
+  {
+    "title_like": "%Taking part in the Young Businessperson scheme%",
+    "type": "reading_gapped_text",
+    "subcategory_name": "Gapped Text",
+    "question_text": "You are going to read a newspaper article about a girl called Carly, who has taken part in a scheme called the Young Businessperson at school. Six sentences have been removed from the article. Choose from the sentences A-G the one which fits each gap (1-6). There is one extra sentence which you do not need to use.\n\nTaking part in the Young Businessperson scheme\n14-year-old Carly Smithson reports on taking part in the Young Businessperson scheme at school\nThe aim of the Young Businessperson scheme was to give young people like my classmates and I a taste of what it’s like running a business, providing an insight into the world of work, and raising awareness of the skills needed in the real world that can’t be learnt in academic lessons, such as handling money and keeping records.\nWe were going to work in teams to set up and run small, and hopefully profitable, businesses from school. The first thing we did was attend a workshop with the scheme’s leader, Matt. He encouraged us to think about businesses we might be able to create and manage with limited resources. (1)………… Take shoelaces. They stop your shoes slipping off, but also allow people to fasten their shoes comfortably, regardless of how big their feet are. It’s a simple idea, but imagine how many pairs of laces there are, and how much money must be made from sales!\nWe spent the first half of the workshop coming up with problems we encounter in our daily lives. I find it annoying when food packets tear in the wrong place when you open them, so the food inside spills out or goes off more quickly than if it would if the packet could be re-sealed. (2)………… Matt then split us into smaller groups to choose one of the problems and consider a possible solution for it. My group worked on what I’d mentioned, and our suggestion was to create snack packets which could be re-fastened.\n(3)………… ‘But think about how much more expensive it would be than producing current kinds of packet,’ he said. ‘More resources would be needed so manufacturing costs would be higher. They’d take longer to make, too. Then there are existing products on the market, such as boxes with lids, which people can use and re-use for this purpose.’ He wasn’t being unkind, I realised, but pointing out considerations businesses have to make in order to make a profit.\nIt was a useful exercise aimed at developing our ‘business heads’. Plus, we could never have made the packets at school without specialist machinery and equipment. (4)………… In the end, our group came up with a glove for washing dishes which would not only protect hands from hot water, but prevent the inconvenience of having to search around in the water to find a dropped cloth. Matt approved it, and our group was given a small amount of money with which to buy essential materials.\nIn addition to making the gloves, each person was assigned a specific role. (5)………… This would be used for promotional purposes, and to make sure every member of the group could explain things consistently to customers. We had a few minor disagreements along the way, but even those were no bad thing as we learnt to compromise and resolve conflict.\nIt was when we came to selling our products that we came up against our first real problem: not many of our classmates wanted a washing-up glove! We sold more to teachers than other students. (6)………… Matt was positive about that, though. He said we’d learnt a good lesson: we hadn’t thought about the needs of our target market. He praised us on our teamwork, though, and said he’d recommend any of us for jobs in the future!’",
+    "options": {
+      "sentences": {
+        "A": "He was pleased we’d tried to be more ambitious than other groups.",
+        "B": "We should have chosen something more straightforward, and that’s what we decided to do next.",
+        "C": "Although we covered our costs, we made very little profit, which was disappointing.",
+        "D": "Successful organisations often offer a solution to a problem, we learnt.",
+        "E": "When we fed back our ideas, Matt wasn’t as enthusiastic as we’d hoped.",
+        "F": "Other students shared their experiences and mentioned other minor but frustrating issues.",
+        "G": "I was responsible for creating an accurate description of our product."
+      }
+    },
+    "correct_answer": {
+      "1": "D",
+      "2": "F",
+      "3": "E",
+      "4": "B",
+      "5": "G",
+      "6": "C"
+    }
+  },
+  {
+    "title_like": "%In defence of women’s boxing%",
+    "type": "reading_gapped_text",
+    "subcategory_name": "Gapped Text",
+    "question_text": "You are going to read an article about a boxer. Six sentences have been removed from the article. Choose from the sentences A-G the one which fits each gap (1-6). There is one extra sentence which you do not need to use.\n\nIn defence of women’s boxing\nLucy O’Connor thinks that women’s boxing is widely misunderstood\nWomen’s boxing is a new addition to the list of sports included at the Olympic Games. But according to Lucy O’Connor, winner of various international competitions, it’s still widely misunderstood – a situation that Lucy’s hoping to change. After graduating, Lucy took up boxing on the advice of a sports coach, who thought it would improve her general fitness. But Lucy soon set her sights on competitions and it wasn’t long before she was boxing at the National Championships, which she eventually went on to win.\nAs a result of her success, Lucy was accepted on to what the navy calls its ‘elite sportsman’s programme’. (1)………… . Every day now starts with a run at 7 a.m., followed by a skill and technique session or a strength and conditioning circuit. Come the afternoon, there are more aerobic workouts, before Lucy gets into the ring and practices with other elite boxers.\nAs with all competitors, diet is a huge part of Lucy’s life. Since she first started boxing, she’s had to shed twenty-eight kilos. Losing the last six, which took her into the flyweight category, required great determination. (2)………… As she explains: ‘I don’t go out to party anymore. Thankfully, I’m married to my boxing coach, so at least I’ve got some sort of social life!’ Lucy’s husband boxed as a heavyweight himself and he’s in her corner for all her domestic competitions.\nLucy’s mum works as a buyer at a big department store, and Lucy has been testing out products for the store’s sports division. Whilst preparing for a recent international championship, Lucy wore a new titanium-based sports clothing range designed to improve circulation and aid recovery. (3)………… But how does her family react to her taking part in competitions? ‘Mum tends to admire me boxing from afar, but Dad just loves it!’\nLucy has clearly answered questions about safety concerns before and cities all the protective gear boxers strap on before a fight such as hand bandages, head guards, gum shields and much more, ‘Amateur boxing is not dangerous,’ she says definitively. ‘It’s so safety-orientated and the rules are so stringent it’s actually difficult to get hurt. We approach it more as a skill and point-scoring exercise, rather than as a fight. (4)…………’ Boxers win points by landing the white knuckle part of their gloves on the opponent’s scoring area – essentially the upper body and head – cleanly and with sufficient force. In five years of competitive boxing, Lucy’s suffered only a few bruises and a broken thumb.\nAnd in response to those who think it’s ‘inappropriate’ to see women boxing at the Olympics, Lucy is quick to point out that women have been competing in martial arts such as taekwondo and judo for years. (5)…………\nHer biggest concern is that people confuse amateur boxing competitions with professional fights, where the focus is more on aggression and hurting your opponents. ‘Female amateur boxing is about showing skill, speed and stamina,’ she says. (6)………… ‘I find it so satisfying to be changing people’s opinion.’",
+    "options": {
+      "sentences": {
+        "A": "All that hard work certainly paid off and the competition itself brought out the best in Lucy.",
+        "B": "That’s because in order to reach that target, she had to totally rethink her lifestyle.",
+        "C": "Having access to this space-age training kit was certainly an advantage.",
+        "D": "If the sport was more in the public eye, then fewer people would make that mistake.",
+        "E": "Nobody complained about women taking part in those events when it was introduced.",
+        "F": "That’s why I’ve always regarded it as a thinking girl’s sport really.",
+        "G": "What this meant, in effect, was that she was able to train full-time."
+      }
+    },
+    "correct_answer": {
+      "1": "G",
+      "2": "B",
+      "3": "C",
+      "4": "F",
+      "5": "E",
+      "6": "D"
+    }
+  },
+  {
+    "title_like": "%Go skating in Sweden this winter%",
+    "type": "reading_gapped_text",
+    "subcategory_name": "Gapped Text",
+    "question_text": "You are going to read a magazine article about outdoor ice skating. Six sentences have been removed from the article. Choose from the sentences A-G the one which fits each gap (1-6). There is one extra sentence which you do not need to use.\n\nGo skating in Sweden this winter\nForget crowded indoor ice rinks. Once you’ve skated on natural ice, there’s no going back.\nIt was the question on all of our minds, but I asked it: ‘How do you know when the ice isn’t safe to skate on?’ Niklas, our calm Swedish guide, rubbed his chin, thought for a moment, then offered up the wisdom of a lifetime spent playing around on frozen water. ‘When it breaks,’ he said with a broad smile.\nThe comment wasn’t exactly reassuring, but his easy confidence was. As long as it was just jokes being cracked, maybe we’d be all right after all. Niklas, a maths teacher when having breaks from pursuing his favourite hobby, was not entirely joking about his attitude to ice. (1)………… The fact that strong ice makes a deeper sound under one’s feet than thin ice does is a useful clue.\nOur group of beginners was feeling rather nervous as we stood at the edge of a vast frozen bay that first day. Niklas tried his best to persuade us to move forward but, like hesitating penguins on an iceberg, no-one wanted to take the first step. (2)………… ‘Look at your faces,’ shouted Niklas to the happily smiling group, racing along behind him.\nOur expressions had been far less joyful the previous evening on being told that a five-hour drive would follow our ﬂights into Sweden’s Arlanda airport. That hadn’t been the plan; but then, in the world of natural ice skating, no-one expects very much from plans. With its 100,000 lakes and continuous sub-zero winter temperatures, Sweden has no shortage of ice. (3)………… For instance, too much overlying snow and you get a bumpy, uncomfortable ride; a sudden thaw and vast areas become unusable.\nPerfect conditions must be sought out, and don’t last. (4)………… Niklas had received a message via social media about Stigfjorden, a shallow, island-studded bay around 50 kilometres north of Gothenburg on the west coast.\nThere we quickly discovered skating in the open air is a wonderfully leisurely activity. Push off with one skate and you can go 10 metres with ease. Two or three quick kicks at the surface and you accelerate like a top-class sprinter. (5)………… We weren’t yet ready to skate that kind of distance, but we certainly had a wonderful sense of freedom.\nOur best day was at Vattern, one of Europe’s biggest lakes and also one of its clearest. In ideal conditions, this clarity creates a phenomenon known as ‘glass ice’. The rocky lake bottom stretched beneath us, three metres below a surface so perfect it was unseen. My tentative first steps left scratches; it felt like vandalising a classical sculpture. As my confidence grew, so did my speed. The sensation as I raced across the invisible ice was astonishing, somewhere between ﬂoating, falling and ﬂying. Then there was a sharp noise from all around us. (6)………… No one had to say it. We were skating on very thin ice.",
+    "options": {
+      "sentences": {
+        "A": "That was the reason for our unscheduled journey from one side of the country to the other.",
+        "B": "Ten minutes later we laughed at our earlier caution as we slid across the smooth surface, our joy as limitless as our surroundings.",
+        "C": "The skates consisted of removable blades that fastened to the toes of our specialist boots like cross-country skis.",
+        "D": "At first I ignored it, but when thin cracks began to appear I thought it wise to return to solid ground.",
+        "E": "After our first session on the ice had ended, we were not surprised to be told that covering 250 kilometres in a single day is quite possible.",
+        "F": "The Swedes adopt a common-sense approach: they are cautious, they test as they go, and they use ears – as well as eyes – to check it.",
+        "G": "This is not always suited to skating, however."
+      }
+    },
+    "correct_answer": {
+      "1": "F",
+      "2": "B",
+      "3": "G",
+      "4": "A",
+      "5": "E",
+      "6": "D"
+    }
+  },
+  {
+    "title_like": "%Going up in a glider%",
+    "type": "reading_gapped_text",
+    "subcategory_name": "Gapped Text",
+    "question_text": "You are going to read an article about gliding. Six sentences have been removed from the article. Choose from the sentences A-G the one which fits each gap (1-6). There is one extra sentence which you do not need to use.\n\nGoing up in a glider\nGliders are planes without engines. We sent our reporter to find out what it’s like to fly in one.\nWhen I arrive at the London Gliding School, Adrian, a volunteer instructor who has been gliding for ten years, warmly greets me. He immediately takes me off to what’s clearly the centre of all operations – the cafeteria. After a quick chat, we drive to the launch base where Dan, my instructor for the day, begins to prepare me on all I need to know. Dan, who is twenty, did his first solo flight at eighteen after joining the club’s cadet scheme.\nGoing through all the theory of how everything works and what to do once airborne seems pretty simple. I’m not so keen, though, on the instructions about what to do in an emergency. (1)………… At least I’m wearing a parachute!\nThe glider is connected by rope to a light aircraft as we’re pulled up into the air. A bumpy start along the field and we’re off and up. ‘I like it when people scream’ were Dan’s words on the ground. (2)………… But I am fiercely gripping my parachute straps and lots of noises are coming from my stomach, which is doing somersaults. Once we’re up to around 1,500 feet, the rope is detached with a clunk from the underside of the glider and we’re free.\nIt’s a strange feeling – there’s a sense of safety when the rope is attached to the aeroplane. (3)………… ‘I am in control,’ Dan tells me. He’s not attempting to be heroic; this is glider talk. ‘You are in control,’ I respond. Thankfully I’m not or I doubt we’d be swooping through the peaceful skies so smoothly and effortlessly. Something you notice straightaway is the lack of an engine, which results in an eerie silence.\nThe weather conditions aren’t ideal, as it’s an all-too-familiar grey English day. (4)………… But I’m told that, with perfect weather conditions of a clear windy day and lots of cumulus cloud, we’d be able to catch the thermals and rise, staying up in the air for longer. It’s possible to glide as far as Scotland and back again with the right conditions!\nIn a glider both pilot and passenger have a set of controls, so either person can take control. The passenger can also ‘follow through’ with the controls, basically lightly touching all their own controls and feeling what the pilot is doing. (5)………… So when Dan tells me ‘You are in control’ and I repeat ‘I am in control,’ I’m glad he can’t see the terror in my face. After some jumpy manoeuvres to keep the glider at ‘normal gliding attitude,’ where the horizon remains at a constant level, I’m just getting into the swing of it when Dan regains control to bring us in for landing.\nLanding a glider is much calmer than other types of aircraft. (6)………… You descend and approach the landing area, deploying the spoilers (flaps on the wings) to weaken the air flow, and ease the glider lower until the wheels make contact and you’re gently bumping along the field. I absolutely loved it and can’t wait to get back up in the air.",
+    "options": {
+      "sentences": {
+        "A": "This doesn’t make a jot of difference to the experience for me.",
+        "B": "Release the safety belts and jump out seems to be the only response possible.",
+        "C": "This has been the limit of my involvement so far.",
+        "D": "Once it goes, I feel I want to hold onto something in case we start falling to the ground.",
+        "E": "He tells me that it’s too cloudy for those acrobatics, however, and relief washes over me.",
+        "F": "I manage not to do this, however.",
+        "G": "It’s much less sudden and you notice the absence of engine roar."
+      }
+    },
+    "correct_answer": {
+      "1": "B",
+      "2": "F",
+      "3": "D",
+      "4": "A",
+      "5": "C",
+      "6": "G"
+    }
+  },
+  {
+    "title_like": "%I run up mountains%",
+    "type": "reading_gapped_text",
+    "subcategory_name": "Gapped Text",
+    "question_text": "You are going to read an article about a mountain climber. Six sentences have been removed from the article. Choose from the sentences A-G the one which fits each gap (1-6). There is one extra sentence which you do not need to use.\n\nI run up mountains\nMountain climbing hasn’t developed much in the past fifty years or so, but I want to introduce a new style. I call it ‘skyrunning’. It means climbing high mountains as fast as possible and using as little equipment as possible. Skyrunning is the most honest kind of mountaineering.\nSome years ago, I decided to climb Mount Aconcagua, in the Andes, which usually takes three days. I didn’t have that sort of time – so I thought about how it could be done more quickly. In the end, I managed it in four hours and twenty-five minutes. Since then I’ve climbed several mountains this way, including the ‘seven summits’, the highest mountains on each continent. (1)………… When I climbed Mount Everest, the only nutrition I took with me was carbohydrate gels, salted crackers and about three litres of rosehip tea. It took me sixteen hours and forty-two minutes to go up – a new speed record on the northern route.\nI have also set speed records on Antarctica’s Mount Vinson, the Carstensz Pyramid in New Guinea and other summits. Attempts such as these need months of training and preparation, as with any serious sports. To build up strength, I sometimes haul an enormous tractor tyre behind me while running uphill. (2)………… I call it ‘the beast’ because of the aggressive energy I build up during these training sessions.\nThe psychological side of training is as important as the physical. I use foreign languages to affect my mental state and enhance my performance. I shout things out in these, even though I know there’s nobody to hear me. I’m Austrian and speak only a few words of the Russian language. (3)………… I couldn’t tell you why that should be the case.\nWhereas Russian is full of energy and strength, English is a language that calms me and helps me to focus. Two years ago, I was climbing in Nepal and knew that I was in danger from avalanches. I noticed that I kept saying to myself: ‘Hey man, take care!’ (4)………… It was as if one part of me had stepped outside myself to make sure I made the right decisions, and that phrase helped.\nFor other people, this might sound ridiculous, but I don’t care. In high altitudes, any mistake can be lethal, and I know how it feels to face death. Seventeen years ago, when I was twenty-four, I was climbing with a friend in the Karakoram mountains in Pakistan at about 18,000 feet. (5)………… It was the sound of an avalanche, which hit us and broke my right thighbone.\nMy friend pulled me out of the snow, but although we had survived, we realised he wouldn’t be able to drag me back to the base camp. I said: ‘Go, just leave me here.’ And he left me behind. I lay alone in the mountains for days. Sometimes I hallucinated, other times I shouted. (6)………… Finally, my friend came back with other climbers and saved me. I thought extreme mountaineering was too risky at first, but slowly my perspective changed.\nThere are so many mountains to climb, but I know my records won’t last forever. In ten or twenty years, skyrunning will be established as a sport. I see myself as a pioneer.",
+    "options": {
+      "sentences": {
+        "A": "All kinds of songs I’d never thought twice about ran through my mind.",
+        "B": "I can drag this for four hours at a time.",
+        "C": "I couldn’t stop repeating that.",
+        "D": "I managed to get up all of those without any oxygen or tents.",
+        "E": "It’s the one I use when I need to push forward through heavy snow, however.",
+        "F": "Suddenly, there was an incredible rumble up above us.",
+        "G": "These clearly came as quite a shock."
+      }
+    },
+    "correct_answer": {
+      "1": "D",
+      "2": "B",
+      "3": "E",
+      "4": "C",
+      "5": "F",
+      "6": "A"
+    }
+  },
+  {
+    "title_like": "%The airport photographer%",
+    "type": "reading_gapped_text",
+    "subcategory_name": "Gapped Text",
+    "question_text": "You are going to read an article about a man who takes photos of celebrities. Six sentences have been removed from the article. Choose from the sentences A-G the one which fits each gap (1-6). There is one extra sentence which you do not need to use.\n\nThe airport photographer\nI’m a photographer based at Heathrow Airport in London. Airlines often commission me to take photos of aircraft or their staff. But mostly I concentrate on getting shots of celebrities as they come through the arrivals hall. I sell some photos direct to the daily newspapers and celebrity magazines, and the rest go to a picture agency.\nOn a typical day I look out for the flights arriving from Los Angeles on the major airlines. (1)………… Most of them fly either with British Airways because it’s such an established company, or with Virgin Atlantic because the owner, Richard Branson, moves in those celebrity circles.\nYou’ve got to cover all the incoming flights though – Victoria Beckham took to flying with Air New Zealand at one time. I know the ground and security staff here very well. (2)………… That can really make all the difference to being in the right place at the right time.\nI’ve been working here for many years now, so I’ve seen thousands of celebrities throughout the decades. In my experience, the old stars are the best. Joan Collins is my favourite – she sends me a Christmas card every year. Mick Jagger also knows me and always says hello. People like Paul McCartney and Rod Stewart are lots of fun, too. (3)………… I guess that’s because they can see the value of it.\nToday’s big stars are generally okay and give you a polite smile. I won’t mention names, but there are some who wave me away rudely, whilst others even have their managers popping up from nowhere, saying: ‘no pictures’ to the waiting photographers. (4)………… You’ve probably seen photographers leaping around in this manner on TV footage of celebrities arriving at airports and wondered why they do it – well often that’s why.\n(5)………… One time, Naomi Campbell refused to come out from behind a pillar. She called up for a buggy and hopped on the back, so there I was chasing it, trying to get a shot of her. But the next time I saw her she’d just got engaged and came up to me to show me the ring.\nBut if today’s stars don’t make my job as easy as it was, today’s technology more than makes up for it. When I started out it was much less sophisticated. I remember when the British queen’s granddaughters, Princesses Beatrice and Eugenie, were just babies. I heard that their mother, the Duchess of York, was coming through Heathrow with them. She was carrying both babies in her arms. (6)………… I realised I had a good chance of getting one of them onto the front page of the newspaper, which is always the photographer’s aim.\nSo I called my editor to warn him, took the shots, then rolled up the film, labelled it, put it in an envelope and organised for a motorbike dispatch rider to pick it up, take it back to the newspaper offices and have it developed. It had taken three hours. Today, using digital cameras and a laptop, the office gets images in three minutes.",
+    "options": {
+      "sentences": {
+        "A": "You get the impression that they enjoy the attention.",
+        "B": "I was lucky enough to get some lovely shots of them.",
+        "C": "Often it’s one of them who tips me off that a big star has just come through passport control.",
+        "D": "That’s where you generally find the celebrities.",
+        "E": "The could be appearing in the arrivals hall at any time, night or day, of course.",
+        "F": "When that happens, they have to do what we call ‘duck and dive’ to get a shot.",
+        "G": "With some stars, however, you’re never quite sure what you’re going to get."
+      }
+    },
+    "correct_answer": {
+      "1": "D",
+      "2": "C",
+      "3": "A",
+      "4": "F",
+      "5": "G",
+      "6": "B"
+    }
+  },
+  {
+    "title_like": "%Would you turn off your engine, please?%",
+    "type": "reading_gapped_text",
+    "subcategory_name": "Gapped Text",
+    "question_text": "You are going to read an article about an environmental campaigner. Six sentences have been removed from the article. Choose from the sentences A-G the one which fits each gap (1-6). There is one extra sentence which you do not need to use.\n\nWould you turn off your engine, please?\nI was walking around my neighbourhood in New York one spring evening two years ago when I came across a stretch limousine parked outside a restaurant. The driver’s clients were inside having dinner, and he had his engine running while he waited. It really bothered me. He was polluting the air we breathe as well as wasting huge amounts of fuel, so I knocked on the driver’s window.\nI explained to him that he didn’t need to waste his boss’s money or pollute our air. I addressed the issues politely and, after a ten-minute chat, he agreed to shut off the engine. I felt empowered – I could make a difference to our environment. (1)………… So whenever I see a driver sitting with the car engine running, I go over and talk to him or her.\nSix months later, I talked to a guy who turned out to be an undercover police officer. He told me he wouldn’t turn off his engine because he was on a job, but asked me if I knew there was actually a law against engine idling, as it’s called. (2)………… Sure enough, under New York City’s traffic laws, you could be fined up to $2,000 for engine idling for more than three minutes.\nI had small business cards printed up that referred to the relevant law on one side and the penalties on the other, and started to hand them out to idlers. (3)………… It’s surprising how many people are unaware that they could get a fine. That’s why I start my encounters the same way every time.\nI say: ‘Excuse me for bothering you, but are you aware that it is against the law in New York City to idle your car for more than three minutes?’ (4)………… They want to know who I am, am I a cop? I tell them that I’m just a concerned citizen and want to make sure we improve our environment and address our oil addiction.\nWe usually have a discussion and I always try to conclude the encounter on a positive and polite note, saying how great it would be if they shut off their engine so we can all have a better environment. (5)………… Most are convinced by these arguments. Indeed, I’m successful seventy-eight percent of the time. Although, of course, there are people who are aggressive or who won’t do it. My success rate with cops is only five percent.\nI keep an Excel spreadsheet so that I have a precise record of each of my encounters. If I get an aggressive reaction, I list their comments and highlight them in red. (6)………… I don’t give up, however, and try to approach them professionally. But my feelings do get hurt on occasion. Then I remind myself that because I make the first approach, I’m actually the aggressor in this situation. My victims are just sitting there thinking: ‘Who is this guy?’\nTo date, I have had 2,500 encounters and, overall, I have made a difference. I’m in touch with the Department of Energy in Washington and my work is endorsed by the American Lung Association. And recently a New York traffic cop wrote the city’s very first ticket for idling.",
+    "options": {
+      "sentences": {
+        "A": "I also tell them that it saves money and avoids breaking the law.",
+        "B": "I decided to have these conversations on a regular basis after that.",
+        "C": "I find this fact always takes my victims by surprise.",
+        "D": "I went home and checked this out.",
+        "E": "It’s not the sort of mistake that you make twice.",
+        "F": "I try not to get affected emotionally if drivers respond in this way.",
+        "G": "I’ve been distributing them in this way ever since."
+      }
+    },
+    "correct_answer": {
+      "1": "B",
+      "2": "D",
+      "3": "G",
+      "4": "C",
+      "5": "A",
+      "6": "F"
+    }
+  },
+  {
+    "title_like": "%Paddle power%",
+    "type": "reading_gapped_text",
+    "subcategory_name": "Gapped Text",
+    "question_text": "You are going to read an article about white-water kayaking. Six sentences have been removed from the article. Choose from the sentences A-G the one which fits each gap (1-6). There is one extra sentence which you do not need to use.\n\nPaddle power\nBefore tackling white-water rapids in a kayak, you need to get your basic skills sorted\n‘I guarantee you’ll be getting wet today,’ says my kayaking coach, Sarah Lind. I’ve come to the Bala Watersports Centre in North Wales for a crash course in white-water kayaking. If anyone knows what they’re talking about, it’s thirty-five-year-old Sarah. Having started her kayaking career at the age of eleven, she went on to win a gold medal for Great Britain. For years I’ve dreamed of paddling white water and this is my big opportunity.\nThe sleepy Welsh town of Bala is the white-water capital of Britain. Local residents include Matt Cook, who once came fourth in the freestyle world championships, and former European freestyle champion Lynsey Evans. (1)………… These create a natural playground for paddlers. One of the toughest sections of white water lies on the Tryweryn river, which cuts straight through Bala. Graded four out of six (six being impassable), it is a swirling mass of furious white water, interspersed by slippery rocks. Used for the world championships, it’s where the world’s best paddlers pit their wits and strength against nature. And later on today, it will be the venue for my first white-water voyage.\nBefore allowing us near any white water, Sarah insists that we head out onto the calm waters of Bala Lake to learn a few basic skills. (2)………… As I paddle my first few strokes, it causes my boat to bob about alarmingly. I’m having trouble simply going in a straight line.\nThe most important thing you need to master before going out into white water is the ‘low brace turn’, which breaks down into three main elements. The first is the ‘sweep stroke’. (3)………… While doing this you need to ‘edge’ – or cause the kayak to tip slightly towards the side that you wish to turn. This is achieved by straightening the leg that corresponds to the direction in which you wish to turn, while bending your other leg and bracing it against the top of the boat.\nFinally, you need to put your paddle into the ‘brace’ position: bar held against your stomach, arms parallel with your shoulders. The idea is that if at this point you find yourself tipping over too far, you can use your paddle to prevent the kayak turning over. (4)………… I flounder around in the freezing cold lake like an ant stuck in a puddle, and my breath is snatched away.\nAfter we eventually master the basics, it’s time to tackle some world championship level white water, on the Tryweryn. (5)………… I can hardly hear myself think. The first section of the course involves crossing a segment of high-speed water punctuated by slippery stone slabs. This is where the ‘edging’ technique I learned earlier comes into play.\nThe next section involves traversing an even angrier patch of white water. All I remember is paddling frantically through a narrow corridor of rocks, as the water splashes up in my face and my boat bounces its way through the swirling torrent. (6)………… Eventually, things slow down slightly and I’m able to take stock. This is it. I’m off and running: racing down the river at ridiculous speed. Awesome!",
+    "options": {
+      "sentences": {
+        "A": "A stiff breeze is blowing across this massive open space.",
+        "B": "Basically, you use the paddle to turn the boat sharply in the opposite direction.",
+        "C": "Despite my understandable trepidation, Sarah is confident that she can get me to complete it in one piece.",
+        "D": "Despite my best efforts, however, I end up in the water almost immediately.",
+        "E": "Only a shout of ‘Right paddle!’ from Sarah saves me from going over again.",
+        "F": "Standing on the bank, psyching myself up, the sound of the raging water crashing over rocks is deafening.",
+        "G": "They’re attracted here by the huge number of rivers that cascade down from the surrounding mountains."
+      }
+    },
+    "correct_answer": {
+      "1": "G",
+      "2": "A",
+      "3": "B",
+      "4": "D",
+      "5": "F",
+      "6": "E"
+    }
+  },
+  {
+    "title_like": "%I’m the last speaker of my language%",
+    "type": "reading_gapped_text",
+    "subcategory_name": "Gapped Text",
+    "question_text": "You are going to read an article about a language. Six sentences have been removed from the article. Choose from the sentences A-G the one which fits each gap (1-6). There is one extra sentence which you do not need to use.\n\nI’m the last speaker of my language\nI come from Chile and I’ve always been interested in my country’s history and culture. It all started when I was about eight and I started to learn about the country’s indigenous inhabitants. When I first found out about the native people of Patagonia, in the far south, I had no idea that my mother’s family was from there and that her grandfather had been a Selk’nam. The last speaker of Selk’nam died in 1974. I really wanted to learn Selk’nam, so relatives on my father’s side who live in Punta Arenas, the southernmost town in mainland Chile, sent me dictionaries. (1)………… But I had no idea what these sounded like.\nThen, when I was about eleven, I saw a television programme about the Yagán people who lived on the island of Tierra del Fuego, the southernmost tip of South America. The programme interviewed two sisters, Cristina and Ursula Calderón, and said they were the only two speakers of their language left. (2)………… Only later did I discover that the two languages are quite different; that the two peoples couldn’t communicate with each other.\nOne day, my mother told me that although she was born in the capital, Santiago, her grandfather was a Selk’nam from the north of Tierra del Fuego. Nobody had ever told me anything about this before. When I asked why, she said that when she was young she had been teased for looking different, and so she had just kept quiet about it.\nWhen I was thirteen, I went to the south for the first time on my own to meet Cristina Calderón. (3)………… I discovered that there used to be four thousand Selk’nam in Tierra del Fuego. They were hunters of wild cats and foxes. The Yagán lived further south and travelled by canoe all the way down to Cape Horn, but the Selk’nam moved on foot.\nSettlers from the north arrived in the nineteenth century and introduced diseases like measles and typhoid, which affected the local people very badly. Now, there’s no way back. I got hold of some recordings of a Selk’nam shaman from the 1960s and started to study them. (4)………… Gradually, however, I began to understand how the words sounded and began to reproduce them.\nThe Selk’nam express themselves using lots of prefixes and suffixes, and the sounds are guttural, nasal and tonal. (5)………… For example, it has lots of different words for the weather. The hardest thing in Selk’nam, however, is the verbs – they all sound a bit the same. There are some English loanwords, such as ‘bread’ and ‘money’. Others are descriptive: ‘read’ translates as ‘playing with words’ and ‘drum’ as ‘vibrating leather’. Then there are words for modern things – for ‘telephone’, you have to say ‘speak from afar’, and ‘car’ is ‘go on four wheels’. I speak the language well now. Cristina’s husband spoke Selk’nam and apparently I sound just like him.\nBecause music is something that reaches lots of people, I started composing traditional songs in Selk’nam and formed a band with two friends. This meant that they had to learn some words, too. (6)………… I need to teach my language to more people because if something happened to me, it would die out all over again.",
+    "options": {
+      "sentences": {
+        "A": "I felt a sudden desire to learn that one too.",
+        "B": "It was slow because I had no one to talk to.",
+        "C": "Yagán is quite different, however, because it has more vocabulary.",
+        "D": "This meant that I was able to start learning words, verbs and expressions.",
+        "E": "This was good because I didn’t want to be the only one.",
+        "F": "These turned out to be rather hard for me to pronounce, however.",
+        "G": "The trip seemed the best way to find out about my roots."
+      }
+    },
+    "correct_answer": {
+      "1": "D",
+      "2": "A",
+      "3": "G",
+      "4": "B",
+      "5": "C",
+      "6": "E"
+    }
+  },
+  {
+    "title_like": "%College students need their sleep!%",
+    "type": "reading_gapped_text",
+    "subcategory_name": "Gapped Text",
+    "question_text": "You are going to read an article about sleep and learning. Six sentences have been removed from the article. Choose from the sentences A-G the one which fits each gap (1-6). There is one extra sentence which you do not need to use.\n\nCollege students need their sleep!\nResearch into the connection between sleep and learning suggests that sleep is even more important than previously thought.\nOnly a month and a half into her first semester at college, Liz, a student at Harvard University, already wishes she had more time for sleep. Several mornings each week, Liz rises before six to join her teammates for rowing practice. On days like these she seldom sleeps more than seven hours per night, but it’s not as if she doesn’t try. (1)………… She often misses opportunities to socialize in order to get her coursework done and still get to bed at a reasonable time. Even without knowing just how important sleep is to learning, she tries to make time for it.\nThis is not always easy, however. The many demands on her time include her chosen sport, as well as activities like studying optional extra subjects. (2)………… She and other students who think the same way as her sacrifice sleep to fit everything in. It isn’t surprising to learn, therefore, that students represent one of the most sleep-deprived segments of the population. Coursework, sports and new-found independence all contribute to the problem.\nStudies have found that only eleven percent of college students sleep well consistently, while seventy-three percent experience at least occasional sleep issues, as Liz does. Forty percent of students felt well-rested no more than two days per week. Poor sleep is no longer considered a harmless aspect of college. (3)………… The results of this show that it has significant impact on memory and learning.\nInadequate sleep negatively affects our learning processes. It is simply more difficult to concentrate when we are sleep deprived; this affects our ability to focus on and gather information presented to us, and our ability to remember even those things we know we have learned in the past. (4)………… That is, the effect that many sleep researchers think it has on memory consolidation, the process by which connections in the brain strengthen and form into something more permanent.\nA number of studies have shown that poor quality sleep can negatively impact on a person’s ability to turn factual information or processes they’ve just learned into long-term memories. (5)………… And if this opportunity is missed – such as when a student stays awake all night – it generally can’t be made up. Even if sleep is ‘recovered’ on subsequent nights, the brain will be less able to retain and make use of information gathered on the day before. These findings shed new light on the importance of making time for sleep, not only for college students like Liz, but for anyone who wants to continue to learn.\nEarly in her first semester at Harvard, Liz feels like she is maintaining a healthy balance, but only just. Trying hard to get the most out of her time in college, she admits it’s sometimes hard to see sleep as an important part of her athletic and scholastic objectives. (6)………… Rather than thinking of sleep as wasted time or even time off, we should, they say, instead view it as the time when our brain is doing some of its most important work.",
+    "options": {
+      "sentences": {
+        "A": "Although it may seem unnecessary to do these, Liz views them as essential.",
+        "B": "It also has a less obvious but possibly even more profound impact.",
+        "C": "Liz knows that she must nevertheless do her best to avoid it.",
+        "D": "Research suggests that the most critical period of sleep for this to happen in is the one on the same day.",
+        "E": "In fact, Liz’s behaviour is not at all like that of other college students her age.",
+        "F": "But that’s exactly what many researchers say it is.",
+        "G": "Quite the opposite, actually, as research into its effects progresses."
+      }
+    },
+    "correct_answer": {
+      "1": "E",
+      "2": "A",
+      "3": "G",
+      "4": "B",
+      "5": "D",
+      "6": "F"
+    }
+  },
+  {
+    "title_like": "%Just because I’ve been on holiday doesn’t mean I have to be happy%",
+    "type": "reading_gapped_text",
+    "subcategory_name": "Gapped Text",
+    "question_text": "You are going to read an article about returning to work after being away on holiday. Six sentences have been removed from the article. Choose from the sentences A-G the one which fits each gap (1-6). There is one extra sentence which you do not need to use.\n\nJust because I’ve been on holiday doesn’t mean I have to be happy\n‘Holiday hangover’, ‘back-to-work blues’, ‘post-travel depression’ – it’s a well-known condition, and I’m suffering from it.\nMy cat. My tortoise. My friends. My bed. The list reads the same every time, but I still write it. I write it on the last day of every holiday, to convince myself that going home isn’t so bad. Then I feel utterly miserable. There are plenty of things I’m not great at – driving, maths, returning library books on time – but the thing I’m worst at is coming back to work after a holiday.\nIt’s an extreme case of being selfishly miserable. To have had a lovely sunshine break and then return to the office, where everyone has been working hard without restaurant lunches or morning swims, with a face like thunder is terribly bad manners. (1)………… Given the number of names for it – ‘holiday hangover’, ‘back-to-work blues’, ‘post-travel depression’ – it’s a well-known condition.\nIn a recent survey conducted by a travel website, 82 per cent of the 1,254 people asked experienced post-holiday misery. (2)………… Probably just before they logged on to a job vacancy website or started fantasising about retraining for work in the countryside.\nEven if you manage to avoid end-of-holiday panic, and you feel refreshed, relaxed and ready to face the world of work, you’re guaranteed to walk into stress, conﬂict and injustice. (3)………… Or the surprise departmental reorganisation that took place while you were away.\nStill, it could be worse. Over three-quarters of people questioned said that their holiday depression lasted for a month. (4)………… Perhaps they should have saved their cash and not bothered going.\nAfter years of practice, I’ve come up with a few things that help. A bit. The first is the list mentioned above. (5)………… Unlike some people I know, I can’t just roll off an intercontinental ﬂight and roll in to the office. The third is concentrating on getting through the first day back at work without running away, making a grand plan for a new life or spending (too much) time on my own tearfully looking at my holiday photos saying to myself: ‘I can’t believe this is my life.’\nI feel sorry for my poor colleagues having to look at my long face today, but at least by having my break now I’m getting my bad mood in early. (6)………… Then I can support them in their hour (month?) of need. I might even lend them one of my pets.",
+    "options": {
+      "sentences": {
+        "A": "By September, on the other hand, when the schools go back and the main summer-holiday season is over, I’ll be back to normal.",
+        "B": "The most content, with both their home and working life, appear to be those who stay at home all summer.",
+        "C": "For instance, that highly important task you left with a colleague that’s been ignored and later caused your email inbox to turn toxic.",
+        "D": "At least, though, I’m not the only fed-up wage slave to feel like this.",
+        "E": "The next one is making sure I have a day off everything between getting home and going to work.",
+        "F": "Also, over two-thirds of them answered the next question, ‘Are you usually glad to be home after a holiday abroad?’ with a – presumably unhappy sounding – ‘No’.",
+        "G": "Longer by at least a fortnight, I’d guess, than the holiday they’d taken."
+      }
+    },
+    "correct_answer": {
+      "1": "D",
+      "2": "F",
+      "3": "C",
+      "4": "G",
+      "5": "E",
+      "6": "A"
+    }
+  },
+  {
+    "title_like": "%Puffins in peril%",
+    "type": "reading_gapped_text",
+    "subcategory_name": "Gapped Text",
+    "question_text": "You are going to read an article about a type of seabird, called a puffin. Six sentences have been removed from the article. Choose from the sentences A-G the one which fits each gap (1-6). There is one extra sentence which you do not need to use.\n\nPuffins in peril\nScientist Mike Harris explains that the puffin seems about to join the list of seabirds whose numbers are declining.\nIt’s a grey day in early April on the Isle of May off the east coast of Scotland. Far out to sea a small dot appears on the horizon. It rapidly increases in size, suddenly turning into a puffin that lands with a splash on the water. This bird probably hasn’t seen land for five months, but now it’s returning to its colony for the breeding season.\nThe first puffin is soon joined by others and together they bob on the sea. Newly returned birds are nervous but, as the days pass, they gain confidence and begin reclaiming the underground nesting burrows they made the previous year by tunnelling into the soft earth on the top of the cliffs. (1)………… They have to hurry because it takes three months to rear a chick and all the birds must leave by early August to spend time feeding intensively before the winter.\nI visit the island every April, eager to see how many of the adult puffins we have caught and attached identification rings to have returned. (2)………… With a team of helpers I counted every occupied burrow on the island – something we undertake every five years.\nThe island’s puffin population had been increasing every year for the previous 40 years, and so we anticipated at least 100,000 pairs. To our dismay we found just 42,000. (3)………… Experts from other research programmes have concluded it must be connected to where puffins spend the winter months.\nLast spring we also caught and weighed some returning adults and found they were significantly lighter than the birds we caught 10 years ago. (4)………… Puffins are long-lived and can cope with a few poor productive seasons, but not with such a large loss of adults.\nIn early August, the puffin colonies empty rather abruptly. Virtually all puffins leave within a week, though a few adults remain to feed a late chick. (5)………… I have always believed, though, that few of them venture far from the North Sea. Now, however, the development of instruments known as geolocators, small enough to be fitted around a puffin’s leg, is enabling us to test this idea.\nWe fitted these units to some puffins two years ago and caught the birds again last year to download the data. Some did remain within the North Sea, but others went much further. For someone who has spent years watching puffins for only part of their lives, this new technology is providing some fascinating information. (6)………… This would still leave us with the question of what they eat in winter and whether there are sufficient quantities of prey available.\nThe good news is that we now have an idea of the areas our puffins go to in winter, and we can check whether conditions there might have altered due to climate change or overfishing. Maybe we can then take some steps to help them. Hopefully it is just a local problem, because there are in fact still plenty of puffins to see around the Scottish coast.",
+    "options": {
+      "sentences": {
+        "A": "We weren’t the only ones to wonder why this might be happening.",
+        "B": "From this moment on, we know remarkably little about where these birds end up and what could possibly be affecting them there.",
+        "C": "But we should also take into account that if a young puffin survives the winter, it will come back the following July.",
+        "D": "Other devices will also hopefully tell us how much time puffins spend diving for food.",
+        "E": "This was further evidence that something unusual is happening at sea before they return to the colony.",
+        "F": "Puffins are always among the earliest seabirds to lay eggs.",
+        "G": "Last year there was an additional task."
+      }
+    },
+    "correct_answer": {
+      "1": "F",
+      "2": "G",
+      "3": "A",
+      "4": "E",
+      "5": "B",
+      "6": "D"
+    }
+  },
+  {
+    "title_like": "%Inline Skating%",
+    "type": "reading_gapped_text",
+    "subcategory_name": "Gapped Text",
+    "question_text": "You are going to read an article about the sport of inline skating. Six sentences have been removed from the article. Choose from the sentences A-G the one which fits each gap (1-6). There is one extra sentence which you do not need to use.\n\nInline Skating\nThe popularity of inline skating is growing all the time.\nNo doubt about it, inline skating is one of the world’s most popular street sports. Different people call it different things. Rollerblade was the original American skate manufacturer and that’s why many call it rollerblading. Others shorten this to blading, while still others prefer inline skating (because the wheels on each skate are in line).\n(1)………… Inline skating has taken the concept of self-propelled wheels into a new dimension which allows skaters of the most basic ability to move with grace, speed and style, and feel good about doing it. A huge attraction is that you can do it anywhere where there is a smooth, hard surface and if you’re really keen, you can even do it off-road too.\nBut the very popularity of the sport everywhere has created something of a problem. The ‘Ban all Skaters’ group, made up of opponents of the sport, has never been far behind. (2)………… No matter– people will keep on skating wherever they can.\nSo the difficulty lies in changing the attitude of established local authorities, which are so often dominated by older people who have no concept of the joy of inline skating, don’t want anything to do with it, and simply dismiss the sport as a branch of the current youth culture they can do without.\nWe know they are wrong. (3)………… It is a sport which offers everyone a brilliant way to get up off the couch, whizz around outside, have fun, get fit, get involved, develop skills and learn team-work.\nIn time, all skaters will be allowed to go about their business and co-exist in harmony with other users of tarmac. (4)………… So skaters should take care not to adopt a selfish attitude to others, because annoying other people might eventually lead to a situation where the skaters’ own enjoyment or freedom of movement is curtailed.\nKids as young as five or six can learn to skate well. (5)………… And in between those two extremesskating is no less important as a way for those intheir teen years to avoid the trap of urban boredom,which can create problems in contemporary society.\nTo qualify as an inline skater, you just have to get through the basics of pushing off, turning and stopping – all easy techniques which most people can learn to handle in half a dozen sessions. (6)………… Next you can learn to skate faster, turn tighter, stop faster, skate through slalom cones (just use tin cans) forwards and maybe backwards. Then you can learn how to go up and down hills and perhaps some clever tricks as well.",
+    "options": {
+      "sentences": {
+        "A": "Inline skating is not just about kids whose wishes can be ignored.",
+        "B": "Once up and running, it’s all about consolidating what’s been learned, enjoying the feel of your wheels and getting better.",
+        "C": "They all add up to the great new world of inlining.",
+        "D": "What’s more, with all the right padding and protection, adults can start to skate safely at an age when they are collecting their pensions.",
+        "E": "In some areas it has been successful in implementing notorious and strict skating prohibitions, such as the closure of most of London’s parks to skaters.",
+        "F": "The name doesn’t really matter; it’s the impact it has had that is important.",
+        "G": "Indeed, it’s all about the right to enjoy life’s little – and not so little – pleasures."
+      }
+    },
+    "correct_answer": {
+      "1": "F",
+      "2": "E",
+      "3": "A",
+      "4": "G",
+      "5": "D",
+      "6": "B"
+    }
+  },
+  {
+    "title_like": "%Has one of the mysteries of the ancient pyramids been solved?%",
+    "type": "reading_gapped_text",
+    "subcategory_name": "Gapped Text",
+    "question_text": "You are going to read an article about how the Egyptian pyramids were built. Six sentences have been removed from the article. Choose from the sentences A-G the one which fits each gap (1-6). There is one extra sentence which you do not need to use.\n\nHas one of the mysteries of the ancient pyramids been solved?\nA painting in a 3000-year-old tomb suggests how the Ancient Egyptians may have transported the heavy stones used to build the pyramids.\nEver since the discovery of the first pyramid, scientists have wondered how ancient Egyptians built these monumental structures that are visible even from space.\nThere are a number of theories about the construction techniques they used. (1)………… Egyptologists had always wondered how workers were able to move the giant limestone blocks. These weigh as much as 2.5 tons each, and the stone quarries from which they were cut were often located hundreds of kilometres away from the pyramid sites.\nDragging them on basic wooden sledges, similar to those people use to slide down snow-covered slopes in winter, was the obvious answer. (2)………… It now turns out that the workers probably did have some assistance – from ordinary water! What is even more amazing is that the answer to the Egyptologists’ puzzle has been staring them in the face for many years, in a wall painting in the tomb of an ancient Egyptian king, or pharaoh.\nThe artwork, which depicts a pharaoh being pulled along by a large team of workers, has one significant detail that had so far been misinterpreted – a man pouring water in front of the sledge the pharaoh is being dragged upon. Egyptologists had always thought that the man was performing some kind of religious ritual. However, some scientists now believe that the water was being poured for a totally different reason. (3)…………\nThis revelation was made by researchers from the University of Amsterdam and the Foundation for Fundamental Research on Matter. The scientists arrived at this conclusion after conducting extensive testing in their laboratory, by sliding a weighted tray across both dry sand and sand that had been mixed with varying amounts of water. In dry sand, heaps formed in front of the tray as it was dragged along. (4)…………\nHowever, as the researchers added water, the sand hardened, which helped reduce both the force needed to pull the tray and the friction against it. That’s because the water helps form tiny water bridges, known as capillary bridges, between the sand particles, causing them to stick together. (5)………… The force required to pull the sledge would have been reduced by as much as 50% as the sand became stiffer, which meant that half as many workers were needed to move the heavy stones.\nThere was a tipping point, though. After the moisture exceeded a certain amount, the stiffness started to decrease and the capillary bridges melted away, causing the sand to clump up around the tray once again. According to the researchers, the perfect balance appears to be when the volume of the water is between 2 – 5% of the volume of sand. (6)………… And so another step has been taken towards understanding the incredible feat achieved by these ancient engineers. Now if we could only find a painting that would tell us how the workers erected these impressive structures without access to modern mechanics, that would be amazing!",
+    "options": {
+      "sentences": {
+        "A": "However, to do so would have required superhuman strength against the friction of the desert sand.",
+        "B": "This allowed them to work out exactly how much of it had been used every time.",
+        "C": "This slowed it down dramatically.",
+        "D": "One question, however, had been left unanswered.",
+        "E": "The pyramid builders seem to have realised that this was the correct proportion.",
+        "F": "The effect of this turns out to be significant.",
+        "G": "It was to help the sledge move more easily across the sand."
+      }
+    },
+    "correct_answer": {
+      "1": "D",
+      "2": "A",
+      "3": "G",
+      "4": "C",
+      "5": "F",
+      "6": "E"
+    }
+  },
+  {
+    "title_like": "%Working as a TV news producer%",
+    "type": "reading_gapped_text",
+    "subcategory_name": "Gapped Text",
+    "question_text": "You are going to read an article in which a television news producer talks about his work. Six sentences have been removed from the article. Choose from the sentences A-G the one which fits each gap (1-6). There is one extra sentence which you do not need to use.\n\nWorking as a TV news producer\nRob Cole has produced TV news for decades now, working on anything from international celebrities to global conﬂicts. He shares the benefit of his considerable experience in the industry\nRob’s time behind the cameras has coincided with huge changes in the way news is reported – from a time when everyone bought local newspapers, through the birth of 24-hour rolling news, and now the Internet. But what is the work like on a day-to-day basis?\nRob’s always worked in foreign news, so his focus is obviously on news from around the world. As you can imagine, there’s a lot of that. Rob comes in early, having checked his phone, social media, and listened to as many news programmes as he could. (1)………… Running the foreign section is like a never-ending contest – constantly trying to get his journalists’ news presented ahead of the TV station’s other sections.\nOnce you have a story it’s then a matter of making sure that wherever the journalist is, the report comes into the building – through satellite, Internet or other routes – and it is ready to run on air on time. (2)………… There’s nothing like getting a note from the producer at another network congratulating on a job well done. The low points, on the other hand, are much less pleasant: ‘I’ve had colleagues badly injured.’\nSo how can you become a news producer? Says Rob: ‘We get loads of applications. (3)………… Don’t be put off; people in this business admire people who don’t give up easily, for obvious reasons.’\nYou need to be keen to learn and, of course, take a real interest in current affairs. ‘You have to be obsessed with news, constantly following it. Even if you’re a creative producer, doing graphics, you still have to care about what’s going on in the world. Also, some people think about going into the media just because it sounds exciting. That would be a mistake; you have to really want to do the job. Luck’s involved too, of course. (4)…………’.\nIn some ways, Rob’s job should remain fairly constant for the next few years. ‘They will always need someone to make decisions and take responsibility for newsgathering. However, what will change is the way in which news is delivered. When I started in TV, the crew used to consist of a reporter, producer, a camera operator, a sound person, and sometimes even a separate lighting person. (5)………… Now there’s just the reporter and a multitasking camera operator who also edits and supplies the written material – if you’re lucky!’\n‘Before long there will be a crew of just one, shooting all their own material on a smartphone, then editing and voicing that material, before sending it to head office, where it ends up going straight on air. (6)………… Actually, this has already started to happen. The technology will just get quicker and quicker and smaller and smaller.’",
+    "options": {
+      "sentences": {
+        "A": "You might write to just the right person at the right time.",
+        "B": "Turning the device around and pressing the live app button also enables live broadcasting into the same programme.",
+        "C": "They would be loaded down with equipment and some of them would be linked by cable.",
+        "D": "With this information, before any stories actually come in, he then decides on the news priorities of the day.",
+        "E": "In those days it was possible to start a career in news without even going to university: you went straight into training on a local paper.",
+        "F": "Making sure it does so matters, especially given the friendly competition with other TV networks: ‘beating the other networks’ is a real highlight.",
+        "G": "I always endeavour to reply, but from my own experience too many people don’t get back to you, so it’s best to keep trying."
+      }
+    },
+    "correct_answer": {
+      "1": "D",
+      "2": "F",
+      "3": "G",
+      "4": "A",
+      "5": "C",
+      "6": "B"
+    }
+  },
+  {
+    "title_like": "%The ultimate green home: the WWF’s new headquarters%",
+    "type": "reading_gapped_text",
+    "subcategory_name": "Gapped Text",
+    "question_text": "You are going to read an article about the new headquarters of the World Wide Fund for Nature (WWF). Six sentences have been removed from the article. Choose from the sentences A-G the one which fits each gap (1-6). There is one extra sentence which you do not need to use.\n\nThe ultimate green home: the WWF’s new headquarters.\nSandwiched between an incredibly ugly shopping centre and a busy main road, the environmentalist Sir David Attenborough, no less, is planting a tree and declaring: ‘Today is a historic day.’ He really means it.\nMaybe our children’s future will be an overheated, desert-like world, but if it’s not, it will probably look a lot like this. The new, highly environmentally friendly home of the World Wide Fund for Nature, a hemispherical glass tube standing above a council car park, was officially opened today, watched by a small but enthusiastic crowd. (1)…………\nKnown as the ‘Living Planet Centre’, it has jumping panda animations that greet visitors to its WWF Experience, where schoolchildren can interact with Ocean, River, Forest and Wildlife Zones. Since the mid-20th century, many of the ideas behind humanity’s attempts to protect animals and the natural world have been started by the WWF. (2)…………\n‘The World Wide Fund for Nature is one of the great hopes for the world,’ Sir David Attenborough said. ‘This building enshrines that, and advertises it to the world.’ The concrete is all recycled, as is the carpet and even most of the computer equipment, and there are many solar energy panels. (3)………… In addition, new habitats and plant species have been installed around the gardens, while indoors a home has been found for three tall trees.\nThe sense of total calm inside, from the high curved ceilings to the plants and trees, is all the more remarkable for the building’s urban location. It has been built between a canal and a small area of woods listed as a Site of Special Scientific Interest. (4)………… The contrast gives us an idea of what might just be possible in the future.\nThe WWF was set up in 1961. The organisation originally fought to protect individual species, such as the Arabian oryx, from extinction. Eventually, the focus moved from individual species to ecosystems: all the living things in one area and the way they affect each other. Sir David, who is an ambassador for the WWF, said: ‘Now, it’s not just individual ecosystems. Now the change is to a global approach. (5)………… That is because the planet is one vast ecosystem. The WWF has been the leader in changing everyone’s attitudes towards nature.’\nSir David is clear about the task ahead, and more importantly, unlike many environmentalists, he believes it is not too late to make a difference. ‘You can’t turn the clock back, of course. (6)………… But we can slow down the rate at which the numbers are increasing, we can cut down the carbon we put in the atmosphere,’ he said. ‘It’s never happened before that the whole world has come together and made a decision. To go as far as we have done to reduce carbon is an impressive achievement. But you cannot have unlimited growth in a limited situation. You can’t expand infinitely in a finite planet.",
+    "options": {
+      "sentences": {
+        "A": "Even so, it remains in an ugly corner of a fairly unattractive town centre.",
+        "B": "So even if you aren’t particularly concerned about the environment, as energy costs rise you’ll want to save money on fuel bills.",
+        "C": "Other such features include extensive glass to increase natural light, natural ventilation, rainwater in the toilets, and heat pumps that bring warm air up from 200 metres below.",
+        "D": "It is hoped their new home will be a living example of that.",
+        "E": "That means you can’t put back forests that are gone, not for a century, and the population size is not going to shrink.",
+        "F": "If you want to do something, you have to persuade people of the world not to pollute.",
+        "G": "If humanity is to survive, they must have been thinking, it will do so living in buildings of this kind."
+      }
+    },
+    "correct_answer": {
+      "1": "G",
+      "2": "D",
+      "3": "C",
+      "4": "A",
+      "5": "F",
+      "6": "E"
+    }
+  },
+  {
+    "title_like": "%Can we control our dreams?%",
+    "type": "reading_gapped_text",
+    "subcategory_name": "Gapped Text",
+    "question_text": "You are going to read an article about dreaming. Six sentences have been removed from the article. Choose from the sentences A-G the one which fits each gap (1-6). There is one extra sentence which you do not need to use.\n\nCan we control our dreams?\nStrange as it seems, the answer is yes – and it could help us solve our problems.\nDo we have any influence over the often strange, wandering, night-time journeys in our mind? Could we learn to dream differently, getting rid of repeated nightmares or finding answers to the problems that we cannot solve in daylight hours? Strange though it may seem, the answer is yes. Research suggests that, using practical and psychological techniques, we can influence our dreams and use them to draw on the vast, largely unused resource of our unconscious mind.\nDeirdre Barrett, an assistant clinical professor of psychology at Harvard Medical School, is convinced we all have the power to manage our dreams. ‘If you want to dream about a particular subject,’ she says, ‘focus on it once you are in bed. (1)………… You can also place an object or photo that represents the desired dream on your bedside table,’ Barrett says.\nAnother key factor in using one’s dreams creatively is to avoid jumping out of bed the moment you wake up. (2)………… ‘If you don’t recall a dream immediately, lie still and see if a thought or image comes to mind,’ Barrett says. ‘Sometimes a whole dream will come flooding back.’\nThe point of this second strategy is to make use of the information presented by our unconscious as we sleep. It’s hard to put an exact figure on the ratio of our unconscious to conscious mind, but psychologists estimate it to be nine to one. We may believe that thinking is our best problem-solving strategy, but the power of our conscious mind is relatively tiny. (3)………… So letting the unconscious mind work on it may be healthier and more productive.\nBarrett put this to the test in a week-long study with college students; she asked them to use dreaming as a way of finding ways of dealing with a particular problem. (4)………… ‘If we’re stuck on a problem, it’s our waking, logical way of thinking that’s stuck,’ Barrett says. ‘The dream’s power lies in the fact that it’s a different manner of thought – it adds to and develops what we’ve already done while awake.’\nMost of us enjoy the rich, pleasantly strange experience of dreaming (and we all dream – some people just don’t remember it). But no one enjoys nightmares that keep coming back, or the kind of unpleasant dreams from which you wake sweating. (5)………… ‘It’s very common for them to have nightmares about being chased by a monster,’ says Delphi Ellis, a counsellor and dream expert. ‘This often happens as they get older and become aware of their place in the huge world.’\n‘As an adult, troubling or frightening dreams are often an indication of diff cult issues from the past,’ Ellis says. (6)………… They and all other kinds of dream are an incredibly valuable resource, which most of us simply ignore. So learn to listen to them, even the horrible ones – they’re always trying to tell you something.’",
+    "options": {
+      "sentences": {
+        "A": "It’s one in which you know you’re dreaming as the dream is occurring – the kind of ‘dream within a dream’ that film characters sometimes have.",
+        "B": "Even more anxiety-causing, if you’re a parent, are the scary ones that have such an effect on your kids.",
+        "C": "Doing so means you’ll lose half of what your dream contained as the day’s distractions take over your thoughts.",
+        "D": "About half of them dreamt about it and one-quarter of them solved it.",
+        "E": "Since dreaming is so visual, form a picture in your mind of something related to that topic as you fall asleep.",
+        "F": "The more you ignore dreams like those, the more your unconscious turns up the volume – so a nightmare is that message on full volume.",
+        "G": "Also, when this consists of going over and over negative or worrying issues in our minds, it is strongly linked with stress, depression and anxiety."
+      }
+    },
+    "correct_answer": {
+      "1": "E",
+      "2": "C",
+      "3": "G",
+      "4": "D",
+      "5": "B",
+      "6": "F"
+    }
+  },
+  {
+    "title_like": "%Have we lost the ability to focus on a single task?%",
+    "type": "reading_gapped_text",
+    "subcategory_name": "Gapped Text",
+    "question_text": "You are going to read an article about the effects of electronic devices on human interaction. Six sentences have been removed from the article. Choose from the sentences A-G the one which fits each gap (1-6). There is one extra sentence which you do not need to use.\n\nHave we lost the ability to focus on a single task?\nDaniel Goleman thinks so. Here, the bestselling science writer argues that we have become a species distracted by modern technology.\nThe little girl’s head only came up to her mother’s waist as she hugged her mum, and held on fiercely as they rode a ferry to a holiday island. The mother, though, didn’t respond to her, or even seem to notice: she was absorbed in her tablet computer all the while.\nSomething similar happened a few minutes later, as I was getting into a shared taxi van with nine students who that night were journeying to a weekend getaway. Within a minute of taking their seats in the dark van, dim lights came on as every one of them checked a phone or tablet. (1)………… But mostly there was silence.\nThe indifference of that mother, and the silence among the students, are symptoms of how technology captures our attention and disrupts our connections. Teenagers, the future of humanity, are at the centre. In the early years of this decade their text message monthly count rose to 3,417, double the number just a few years earlier. (2)………… The average American teen now gets and sends more than a hundred texts a day, about 10 every waking hour. I’ve seen a kid texting while he rode his bike.\nDigital interaction comes at a cost in face time with real people, through which we learn to understand non-verbal communication such as body language. The new generation of natives in this digital world may be skilful on the keyboard, but they can be hopeless when it comes to reading behaviour face-to-face, in real time. (3)………… Today’s children are growing up in a new reality, one where they are connecting more with machines and less with people than has ever been true in human history.\nThen there are the costs of attention decline among adults. In Mexico, an advertising representative for a large radio network complains, ‘A few years ago you could make a five-minute video for your presentation at an advertising agency. Today you have to keep it to a minute and a half. (4)………… ’ Faced with problems like this, some workplaces have banned laptops, mobile phones, and other digital tools during meetings.\nA college professor who teaches film tells me he’s reading a biography of one of his heroes, the legendary French director François Truffaut. But, he finds, ‘I can’t read more than two pages at a time. (5)………… I think I’m losing my ability to maintain concentration on anything serious.’\nAfter not checking her mobile for a while, a publishing executive confesses she gets ‘a nervous feeling. You miss that moment of excitement you get when there’s a text. You know it’s not right to check your phone when you’re with someone, but it’s an addiction.’ So she and her husband have an agreement: ‘When we get home from work we put our phones in a drawer. (6)………… But now we try to get closer to each other instead. We talk.’",
+    "options": {
+      "sentences": {
+        "A": "This is why they are unaware they upset others by stopping to read a text in the middle of a conversation.",
+        "B": "If you don’t, everyone starts checking for messages.",
+        "C": "After that the temptation to go online and see if I have any new email becomes impossible to resist.",
+        "D": "A few words were occasionally muttered while they texted or looked through social media pages.",
+        "E": "If it’s in front of me I get anxious; I’ve just got to check it.",
+        "F": "In extreme cases, some sleep all day and play these games all night, rarely stopping even to eat.",
+        "G": "Meanwhile, studies show, the average time they spent talking on the phone dropped significantly."
+      }
+    },
+    "correct_answer": {
+      "1": "D",
+      "2": "G",
+      "3": "A",
+      "4": "B",
+      "5": "C",
+      "6": "E"
+    }
+  },
+  {
+    "title_like": "%The Psychology of Minimalism%",
+    "type": "reading_gapped_text",
+    "subcategory_name": "Gapped Text",
+    "question_text": "You are going to read an article about the lifestyle trend known as minimalism. Six sentences have been removed from the article. Choose from the sentences A-G the one which fits each gap (1-6). There is one extra sentence which you do not need to use.\n\nThe Psychology of Minimalism\nWhy owning less can lead to finding more meaning in life.\n\nIn a world of fast fashion, constant technological upgrades, and endless advertising, the movement known as minimalism has gained significant traction. At its core, minimalism is the intentional promotion of the things we most value and the removal of everything that distracts us from them. It is not necessarily about living in an empty white room with one chair, but rather about making room for what truly matters.\n\nMany people turn to minimalism because they feel overwhelmed by the sheer volume of possessions they have accumulated. (1)………… Psychologists suggest that a chaotic environment can lead to increased cortisol levels, the hormone associated with stress. By clearing physical space, individuals often report feeling a sense of mental clarity and calm that they hadn't experienced in years.\n\nHowever, the process of becoming a minimalist is rarely easy. It requires making hundreds of small decisions about what to keep and what to discard. (2)………… You might pick up an old ticket stub or a gift from a distant relative and feel a pang of guilt about throwing it away. Experts advise starting small, perhaps with a single drawer, rather than attempting to declutter an entire house in one weekend.\n\nBeyond the psychological benefits, there are practical advantages to this lifestyle. One of the most immediate effects is on personal finances. (3)………… When you stop buying things you don't need to impress people you don't like, your bank balance begins to look much healthier. This financial freedom can then open doors to experiences, travel, or working fewer hours.\n\nCritics of the movement sometimes argue that minimalism is a privilege reserved for the wealthy, who can afford to replace items if they regret throwing them away. (4)………… They argue that minimalism is actually most beneficial for those on a tight budget, as it encourages mindful consumption and resourcefulness rather than wasteful spending.\n\nRecently, the concept has expanded beyond physical possessions to include 'digital minimalism'. (5)………… Just as a cluttered home can cause anxiety, a cluttered digital life—constant notifications, overflowing inboxes, and endless social media feeds—can fragment our attention. Reclaiming this digital space allows for deeper focus and more meaningful connection with the real world.\n\nUltimately, minimalism is a personal journey. There is no rule book that says you must own less than 100 items. (6)………… Whether it is time, energy, or money, clearing away the excess allows us to invest our resources into the things that actually bring us joy and purpose.",
+    "options": {
+      "sentences": {
+        "A": "This physical clutter often leads to mental clutter, making it difficult to focus or relax.",
+        "B": "In reality, proponents insist that anyone can adopt the principles regardless of their income.",
+        "C": "Instead, it is about conscious decision-making regarding how we spend our limited resources.",
+        "D": "However, the emotional attachment we have to inanimate objects can be surprisingly strong.",
+        "E": "Furthermore, by buying less, people often find themselves out of debt for the first time.",
+        "F": "This involves deleting unnecessary apps, turning off notifications, and limiting screen time.",
+        "G": "Interior designers often use minimalist principles to create the illusion of more space."
+      }
+    },
+    "correct_answer": {
+      "1": "A",
+      "2": "D",
+      "3": "E",
+      "4": "B",
+      "5": "F",
+      "6": "C"
+    }
+  },
+  {
+    "title_like": "%The Return of Vinyl Records%",
+    "type": "reading_gapped_text",
+    "subcategory_name": "Gapped Text",
+    "question_text": "You are going to read an article about the resurgence of vinyl records. Six sentences have been removed from the article. Choose from the sentences A-G the one which fits each gap (1-6). There is one extra sentence which you do not need to use.\n\nThe Return of Vinyl Records\nIn an age where millions of songs are available instantly on our smartphones, a surprisingly old format is making a massive comeback.\n\nTwenty years ago, it seemed certain that the vinyl record was dead. CDs had taken over the market, offering better durability and the ability to skip tracks instantly, and digital downloads were just around the corner. (1)………… Yet, against all odds, sales of vinyl records have been climbing steadily for over a decade, with pressing plants struggling to keep up with the demand.\n\nSo, why are people returning to this bulky, fragile, and expensive format? For many, the answer lies in the physical experience. In a digital world where music is intangible code, a record is something you can hold. (2)………… The artwork on the sleeve is large enough to be appreciated as a piece of art in its own right, often containing lyrics and photos that add to the storytelling of the album.\n\nThen there is the ritual of listening. Streaming music is often a passive experience; we put on a playlist and let it run in the background while we do other things. (3)………… You have to remove the record from the sleeve, check it for dust, place it on the turntable, and carefully lower the needle. You have to commit to listening to at least one side, about 20 minutes, before you can change the music. This demands active listening and attention.\n\nAudiophiles also argue that the sound quality is superior. They describe the sound of vinyl as 'warm' and 'rich', claiming that it captures the full range of the original recording in a way that compressed digital files cannot. (4)………… While scientists debate the technical accuracy of this claim, the subjective experience of the listener is undeniable.\n\nInterestingly, this trend is not driven solely by nostalgic older generations wanting to relive their youth. (5)………… They are discovering the joy of building a collection and the sense of identity that comes with owning physical media. Bands are responding to this by releasing special editions and coloured vinyl to attract these new collectors.\n\nRecord stores, which were rapidly disappearing from our high streets, are now reopening and thriving. (6)………… They have become cultural hubs where fans can meet, discuss music, and discover new artists through recommendations rather than algorithms. It seems that in our rush to digitise everything, we realised we had left something important behind.",
+    "options": {
+      "sentences": {
+        "A": "Conversely, digital music can sometimes sound cold or clinically perfect.",
+        "B": "For a long time, it looked like the format was destined for the history books.",
+        "C": "These independent shops offer something that online streaming services cannot.",
+        "D": "Unlike clicking a mouse, playing a record requires active participation.",
+        "E": "A significant portion of vinyl buyers are teenagers and young adults.",
+        "F": "Furthermore, cassette tapes are also seeing a minor resurgence among collectors.",
+        "G": "There is a tactile satisfaction in sliding a disc out of its cover."
+      }
+    },
+    "correct_answer": {
+      "1": "B",
+      "2": "G",
+      "3": "D",
+      "4": "A",
+      "5": "E",
+      "6": "C"
     }
   }
 ]

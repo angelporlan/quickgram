@@ -29,6 +29,7 @@
                 <h2 class="section-title">Text</h2>
                 <div class="reading-text">
                     <div class="text-with-gaps">
+                        <h3 class="exercise-title">{{ exercise.title }}</h3>
                         <ng-container *ngFor="let part of getTextWithGaps()">
                             <span *ngIf="!part.startsWith('GAP_')" class="text-part">{{ part }}</span>
                             <span *ngIf="part.startsWith('GAP_')" class="gap-placeholder">
