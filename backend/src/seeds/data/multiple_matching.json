@@ -24,5 +24,634 @@
       "9": "C",
       "10": "C"
     }
+  },
+  {
+    "title_like": "%Lessons for life%",
+    "type": "reading_multiple_matching",
+    "subcategory_name": "Multiple Matching",
+    "question_text": "You are going to read an article about four teenagers who have learnt a useful life lesson. For questions 1-10, choose from the teenagers (A-D). The teenagers may be chosen more than once.\n\n1 explains how admiring another person led to him accepting his own personality? (1)……………\n2 mentions how acquiring a new skill has made him approach other things in a similar way? (2)……………\n3 shared their hopes with someone else? (3)……………\n4 has had a positive impact on other people’s lives? (4)……………\n5 admits to still having the same wishes for the future? (5)……………\n6 felt frustrated that he hadn’t done something he felt he should have done? (6)……………\n7 made efforts to fit in with his classmates? (7)……………\n8 took note of someone else’s experiences of life? (8)……………\n9 admits to struggling with something that is expected of him? (9)……………\n10 acted on some advice he was given? (10)……………\n\n***\n\n**A   Ben**\nMaking mistakes is something I’ve always tried to avoid. I used to feel pretty terrible if I thought I’d offended someone by saying the wrong thing, or if I messed up some schoolwork because I’d rushed it. If you do something wrong, you know you’re meant to acknowledge it, and I do, even though I find that tough! Anyway, last month I started going to a Chinese class in the village where I live. I don’t find Chinese easy to learn quickly; for a start, there’s a whole new writing system to memorise, as well as unfamiliar pronunciation and grammar. If I’d sat in the classes and not said anything because I was afraid to make mistakes, I wouldn’t have learnt anything. I’ve also realised I can apply that to other parts of my life, too, and I do.\n\n**B   Ali**\nI’ve always been ambitious – I want to be top of every class, captain of the football team, get a great job and earn loads of money when I finish school. I told my grandma about my plans one day and she said, ‘What if that doesn’t happen? Does that mean you’ll never be happy?’ That made me think. My grandparents don’t like in a big house and they don’t have a car. They don’t have a ton of money either. Yet, they love life. I asked Grandma her secret. ‘Well, I’m not interested in material things,’ she said. ‘Look around you. Smell those beautiful flowers, feel that sunshine on your back, laugh at Grandad’s silly jokes. Don’t let go of your dreams,’ she advised me, ‘but don’t be disappointed if things don’t quite work out the way you want them to.’ I’m still just as ambitious and tough on myself. My character hasn’t changed, but now I appreciate the smaller things in life too.\n\n**C   Nathan**\nBeing shy, like I was as a little kid, isn’t great. You see the confident kids at school happy to speak up in class, taking all the best roles in school plays and just generally not being too worried by what other people think of them. I used to think being shy meant I was boring, or didn’t have anything very interesting to say. I wished I could be different and tried so hard to be more outgoing or think of stuff to talk about, that I’d come home from school feeling exhausted every day. Then a new boy joined our class. He was quiet and didn’t contribute much to conversations, but when he did speak, he was full of amazing ideas and didn’t seem bothered by anyone disagreeing with him. That was great. He wasn’t in the least concerned about whether people liked him or not either, and I learnt an important life lesson from him: just be yourself.\n\n**D   Jan**\nThe greatest lesson I’ve learnt is not to be afraid to ask for help. If you’re struggling with something at school and everyone else seems to get it, it can be hard to ask the teacher to explain it again. I used to worry everyone would tease me about it. Then I got a bad mark for a project I did and I knew that if I’d just asked for clarification on what we were supposed to do, I could’ve done well. Next time there was something I didn’t understand, I waited till the end of the class and asked the teacher about it. He said he wished I’d ask in class and then he could explain things better if necessary. He said maybe other students got confused too. So, next time, I spoke up. No one laughed and afterwards one or two people even thanked me – they’d been worried about asking too.",
+    "options": {
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ]
+    },
+    "correct_answer": {
+      "1": "C",
+      "2": "A",
+      "3": "B",
+      "4": "D",
+      "5": "B",
+      "6": "D",
+      "7": "C",
+      "8": "B",
+      "9": "A",
+      "10": "B"
+    }
+  },
+  {
+    "title_like": "%Reviews of famous autobiographers who wrote about being teenagers%",
+    "type": "reading_multiple_matching",
+    "subcategory_name": "Multiple Matching",
+    "question_text": "You are going to read four reviews of autobiographies in which the writers described their lives as teenagers. For questions 1-10, choose from the writers (A-D). The writers may be chosen more than once.\n\n1 knew at an early age what career he would choose? (1)……………\n2 did not enjoy his education? (2)……………\n3 was not brought up by his parents? (3)……………\n4 was very critical of one person? (4)……………\n5 invented some details in his book? (5)……………\n6 worked on the book with another author? (6)……………\n7 described other people very well? (7)……………\n8 told of the good and bad times of his early career? (8)……………\n9 was confused about what he had to learn? (9)……………\n10 described how the place where he lived changed over time? (10)……………\n\n***\n\n**A   Winston Churchill – politician**\nChurchill wrote the first volume of his autobiography in 1930, nine years before becoming Prime Minister of the UK. Called My Early Life, it covered the time from his birth in 1870, when he grew up in a very grand house as the neglected son of a wealthy aristocratic who were too busy to spend much time with him. Instead, he spent his days – and developed his strongest bond – with the nanny who looked after him. Although he went on to become an excellent writer and perhaps the outstanding European politician of his day, the boy Churchill detested being made to study, and wrote entertainingly about his schoolmaster’s attempts to teach him Latin. When instructed that ‘mensa’ meant ‘oh, table’ and informed that this was what you would say if you were talking to a table, young Churchill did not see why he needed to know this, and replied that he couldn’t see the point. ‘But I never do,’ he said. His teacher didn’t see the funny side, which, fortunately for us, makes the book all the more entertaining.\n\n**B   Laurie Lee – poet**\nLaurie Lee’s classic memoir Cider With Rosie tells of his childhood in a remote valley in England’s Cotswold Hills in the early years of the twentieth century. At the start of the book, the valley seemed to have developed little in hundreds of years; by the end, a bus service and electricity have arrived; Lee’s village was no longer so remote, but was now fully connected to the modern world. Much of the book shows what a remarkable woman Laurie’s mother was, raising him and his brothers and sisters with little help from anyone else. As he grows older, he senses a feeling that he was born to be a poet. He was right of course, and besides his poetry, Lee also produced plays, short stories and travel books, as well as this autobiographical masterpiece, which is as alive now as the day it was written.\n\n**C   Robbie Williams – singer**\nThe former singer of the British boy band Take That released his autobiography You Know Me after two decades being one of the most famous musicians on the planet. Starting with his childhood in Stoke-on-Trent, it tells of the successes and hard times Robbie experienced after becoming a superstar. You Know Me was clearly aimed at his fans, many of whom would probably already have bought Feel, the 2004 biography of Williams written by journalist Chris Heath, who also collaborated on this publication. So how is You Know Me different? Well, there are plenty of anecdotes, gathered from informal interviews Heath conducted with Williams, which provide insight not just into the man himself, but into the music industry as a whole.\n\n**D   Gerald Durrell – wildlife writer**\nBritish naturalist Gerald Durrell wrote this account of the years he spent aged 10 to 15 living on the island of Corfu. His eccentric family and the inhabitants of Corfu are portrayed brilliantly. Gerald’s brother Lawrence in particular emerges as a bad-tempered, mean and unreasonable young man. It’s tempting to think that Lawrence (who also became a writer) must have been outraged by the book’s publication. But apparently he both liked it, and praised its accuracy. Although it is an autobiography, not all the ‘facts’ in the book are actually correct: for example, some of the family actually lived in a different part of the island, rather than all in the same home as the book claimed.",
+    "options": {
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ]
+    },
+    "correct_answer": {
+      "1": "B",
+      "2": "A",
+      "3": "A",
+      "4": "D",
+      "5": "D",
+      "6": "C",
+      "7": "D",
+      "8": "C",
+      "9": "A",
+      "10": "B"
+    }
+  },
+  {
+    "title_like": "%Dream jobs%",
+    "type": "reading_multiple_matching",
+    "subcategory_name": "Multiple Matching",
+    "question_text": "You are going to read an article where four students talk about their dream jobs. For questions 1-10, choose from the people (A-D). The people may be chosen more than once.\n\n1 has done a lot of research into something closely connected to a job? (1)……………\n2 wants to do the same thing that someone she is close to does? (2)……………\n3 does not know how to get into her chosen profession? (3)……………\n4 understands that she is unlikely to be widely recognised for work she might do? (4)……………\n5 likes expressing her feelings through what she does? (5)……………\n6 enjoys researching details related to the job? (6)……………\n7 hopes to encourage others to take an interest in her subject? (7)……………\n8 became interested in a subject when she was taught about it? (8)……………\n9 enjoys sharing her knowledge of a subject with other people? (9)……………\n10 says the reason she would like to do a job is not what people might expect? (10)……………\n\n***\n\n**A   Ava**\n‘A pilot. That would be my absolute dream job. It isn’t because I want to see the world, which everyone immediately thinks when I say what I want to do, though it would be a bonus if I got to spend time on the ground somewhere exotic. I don’t think that happens much in reality, though. I don’t even like flying that much when I’m stuck in a passenger seat staring out of a tiny window at the clouds. I’d rather be up front taking charge! One of my hobbies is making model aeroplanes with my dad. I know they can’t fly, and I know they’re nothing like the real thing, but every time we bring a new one home to build, I go online and took up everything I can about it. I’ve not only built hundreds of models but I’ve built up my knowledge about planes, too. I’m also really into physics at school and I just think flying is really interesting.’\n\n**B   Emily**\n‘I’ve had hearing difficulties since I was really young, and I often just zone out and stop trying to keep up with things when there’s a lot of background noise – it can be tricky trying to keep up with my friends’ conversations. My parents are both deaf, so I’ve been able to use sign language for as long as I can remember. I’m teaching my friends now, so we can communicate more easily if we’re somewhere noisy. They love it and I’ve discovered how much I love teaching them. We have a laugh when one of them gets it wrong and signs something funny by mistake. So my aim is to be a sign language teacher. I’m unsure about how to go about it yet and it’s still a pretty new idea but I’m determined to find out what I can about it and make sure I get the right qualifications.’\n\n**C   Sophia**\n‘I want to be a poet. I’ve been writing my own poems for a couple of years. The kind of stuff I do is called ‘slam’ poetry. It’s where you reflect on life experiences. It’s emotional and passionate and comes straight from the heart. I got interested in it when a poet came to school and gave us a workshop on it. He taught us about how to make the words flow and how to say it aloud. Slam poetry’s performed in competitions and I’ve won two now. I was so nervous the first time I stood up but then I focussed on the message I wanted to get across to the audience and then it just seemed easy. I’d love to get my poems published and carry on giving performances. People overlook poetry a bit but this is the kind of style that gets noticed!’\n\n**D   Mia**\n‘My mum’s a research scientist and I hope to follow in her footsteps. I’m pretty good at science at school and I love biology. I think I’d like to work on developing medicines. That’s something that can really change the world, make a big difference to people’s lives. I’m fairly realistic about it, though. I know I’ll have to do years of study and groundwork before I get to any of the really exciting stuff. Even then, I’m probably not going to be a world-famous scientist, like Einstein. I know I’ll just be a tiny part of the whole process but I still think it would be amazing to work on the next big discovery, the next big cure. Imagine that! I also want to get more girls into science. A lot of the girls in my class want to be actors or singers but that’s not very practical, is it?’",
+    "options": {
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ]
+    },
+    "correct_answer": {
+      "1": "A",
+      "2": "D",
+      "3": "B",
+      "4": "D",
+      "5": "C",
+      "6": "A",
+      "7": "D",
+      "8": "C",
+      "9": "B",
+      "10": "A"
+    }
+  },
+  {
+    "title_like": "%TV documentaries%",
+    "type": "reading_multiple_matching",
+    "subcategory_name": "Multiple Matching",
+    "question_text": "You are going to read four reviews by teenagers of documentaries they have watched. For questions 1-10, choose from the reviewers (A-D). The reviewers may be chosen more than once.\n\n1 managed to gain some of the knowledge they had hoped/expected to? (1)……………\n2 was pleased with the outcome of someone’s efforts shown in the programme? (2)……………\n3 says they were inspired to take action after watching the programme? (3)……………\n4 believes that certain facts about a subject will never be revealed? (4)……………\n5 realised something they had been doing wrong before seeing the programme? (5)……………\n6 says they admired the way a programme presented its special effects? (6)……………\n7 was initially unwilling to watch the programme? (7)……………\n8 was disappointed with one aspect of the programme they saw? (8)……………\n9 corrects something they have said earlier in their review? (9)……………\n10 says they regret not having taken more notice of a subject when they had the chance? (10)……………\n\n***\n\n**A   Dan Parker reviews Polar bear**\nI saw Polar bear with my whole family and I was impressed by how it managed to get across some quite complicated information in a way that even my sister, who’s a few years younger than me, could understand. I didn’t feel talked down to, either, like I sometimes do: some documentaries provide only the most basic facts about an issue and you’re often left with lots of unanswered questions. Polar bear approached the subject of global warming in a fascinating way. A polar bear was tracked for a year and we saw its habitat through its own eyes, observing how it tried to adapt to new challenges and seeing first-hand the impact on its life that melting ice is having. I felt more determined than ever to get involved in raising awareness about these issues, and I signed up to a local environmental group for young people straightaway.\n\n**B   Nelly Jones reviews Practice makes perfect**\nI love playing basketball but I never seem to get any better, no matter how hard I’m working. Maybe that should be no matter how hard I think I’m working. That was the point of Practice makes perfect. It documented a percussionist called Rob, who wanted to get a place in an orchestra but just wasn’t making it, even though he’d been to a ton of auditions and was an amazing player. An expert observed him practising one day and noticed that Rob was playing rhythms he was so familiar with that he wasn’t really thinking about them. He was advised to do something called ‘purposeful practice’ – concentrating on what he was doing and trying to do it better. It was a real eye-opener for me and I understood why I hadn’t improved my game for ages. Oh, and after spending time with the expert, Rob got his dream job! That was the coolest bit.\n\n**C   Lucas Martin reviews Dinosaurs**\nI’ve never really been into dinosaurs and I wasn’t in the least interested in watching another documentary about them. My family wanted to see it so I just thought, ‘Well, I’ve got nothing to lose’. I was instantly hooked! The special effects were incredible as they often are in those kinds of programme, but I started thinking about how much the film-markers actually knew, and how much was simply guesswork on their part. How did they know what colour dinosaurs were? Is that really how the creatures moved? These are all things that to my knowledge are too late to discover. I thought I’d learnt everything there was to know about the different kinds of dinosaur but when the presenter mentioned that there’d been hundreds of kinds I was pretty shocked. How come I hadn’t known that? Perhaps I hadn’t paid enough attention at school. I definitely should have.\n\n**D   Hayley Vickers reviews Making changes**\nThe minute I saw this programme advertised, I knew I had to watch it. I’m really into making films about issues which affect young people, and I’m always looking for ways to improve my skills or present stuff in an attention-grabbing kind of way. The subject matter of Making changes was already appealing (it was about the power of advertising and how it can be used for the greater good), but it also focused on new media and I thought I could pick up a few tips about getting messages across so that young people like me can get their ideas heard in an adult world. The programme was interesting, but although I did learn one or two things about improving my filming, I felt the content was a bit repetitive. It was still worth watching, though.",
+    "options": {
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ]
+    },
+    "correct_answer": {
+      "1": "D",
+      "2": "B",
+      "3": "A",
+      "4": "C",
+      "5": "B",
+      "6": "A",
+      "7": "C",
+      "8": "D",
+      "9": "B",
+      "10": "C"
+    }
+  },
+  {
+    "title_like": "%Teenage success stories%",
+    "type": "reading_multiple_matching",
+    "subcategory_name": "Multiple Matching",
+    "question_text": "You are going to read an article about four people who achieved great things when they were teenagers. For questions 1-10, choose from the people (A-D). The people may be chosen more than once.\n\n1 wrote a book? (1)……………\n2 found a way to enable people to do something more quickly? (2)……………\n3 looked older than he was? (3)……………\n4 now visits other countries? (4)……………\n5 chose an unexpected career? (5)……………\n6 broke a record for raising money? (6)……………\n7 was surprised by his own popularity? (7)……………\n8 inspired other teenagers to succeed? (8)……………\n9 was looked after by a well-known person? (9)……………\n10 used feedback to improve an idea? (10)……………\n\n***\n\n**A   Balamurali Ambati, doctor**\nBalamurali Ambati was clearly very talented as a boy, studied hard at school and did well. Along with his older brother, he co-authored a medical manual aged just 11 aimed at would-be doctors. It was already obvious what he wanted to become – a doctor, and so he worked hard to achieve his dream. He graduated from New York University when he was 13, began medical school when he was 14, attending the Mount Sinai School of Medicine, also in New York. Being very tall (over 1 metre 80 centimetres), he didn’t stand out as being different, and so people assumed he was the same age as the other students on his course. He graduated aged just 17, becoming the world’s youngest doctor, a record which he still holds. These days, Ambati is now Professor of Neurobiology at the University of Utah, and works as a volunteer with the ORBIS Flying Eye Hospital, practising and teaching in developing nations across the globe.\n\n**B   Nick D’Aloisio, computer programmer**\nAged just 15, Nick D’Aloisio made headlines with the app he created, Trimit, which reduced news content into short summaries that could be processed in much less time than would be needed to process the original text. When his app received funds from Hong Kong, Nick became the youngest person ever to have received investment of this kind. This helped Nick used to identify criticisms of Trimit’s using user comments, and then to redesign the app as Sumly, which was released to much praise in December 2011. Since then, he has published academic articles, studied for an Oxford University degree, and continues to develop his business.\n\n**C   Luka Sabbat, model**\nWhen you look at the Instagram feed of model, influencer and internet sensation Luka Sabbat, it’s easy to see why he’s been called ‘the internet’s coolest teenager’. When he started using social media, his name spread very quickly. ‘For some reason, people were really into me. I don’t know why’ he says modestly. Even as a toddler, Luka was well connected – his babysitter was high-profile model Lara Stone. For Luka and his career, it seems that the only way is up. He models for top brands and it’s not unusual for a picture of him just sitting on a chair to get over 30,000 likes in a matter of minutes. When Luka has something to say, the online world sits up and takes notice.\n\n**D   Boris Becker, tennis player**\nThe German tennis player came to world attention as an unknown 17-year-old when he became Wimbledon champion in London in 1985. His powerful serve, strength and speed on the court enabled him to beat the South African Kevin Curren, then ranked the world’s fifth best men’s player. The tennis world had never experienced such an extraordinary result. When Becker was a young teenager, becoming a sporting superstar wasn’t really on the cards. ‘The plan from my parents for me was to finish school, go to university, get a proper degree and learn something respectable. The last thing on everyone’s mind was me becoming a tennis professional.’ But he turned professional at the age of 16, and the rest is history. Becker’s success prompted adolescents all over the world to take up the game, hit the ball hard and try to do their very best. Becker now lives in Switzerland.",
+    "options": {
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ]
+    },
+    "correct_answer": {
+      "1": "A",
+      "2": "B",
+      "3": "A",
+      "4": "A",
+      "5": "D",
+      "6": "B",
+      "7": "C",
+      "8": "D",
+      "9": "C",
+      "10": "B"
+    }
+  },
+  {
+    "title_like": "%Advertising in public places%",
+    "type": "reading_multiple_matching",
+    "subcategory_name": "Multiple Matching",
+    "question_text": "You are going to read an article about advertising in public places. For questions 1-10, choose from the people (A-E). The people may be chosen more than once.\n\n1 can be uninteresting if there’s a lack of variety? (1)……………\n2 has a mostly negative impact on the urban landscape? (2)……………\n3 can damage the appearance of the countryside? (3)……………\n4 may be a waste of energy resources? (4)……………\n5 can lead to a break of concentration in a job? (5)……………\n6 should not be allowed in certain public places? (6)……………\n7 can be a source of potential danger? (7)……………\n8 can sometimes make you feel better? (8)……………\n9 is good if it makes you think about something? (9)……………\n10 is useful in providing work for talented and creative people? (10)……………\n\n***\n\n**A   Rob Stevenson, lorry driver**\nThe main problem is that the location of posters can be a safety hazard if they block your view of junctions or road signs. I’m not distracted from driving by the content so much, just by the fact that a poster is there. I’ve no time to read them or study them, though the names of products must stick in your memory. Posters in fields get a lot of attention because you certainly notice them as you drive down the motorway. They must be a bonus for the farmer who gets an income from them, but I suppose they do make a bit of a mess of the rural environment. On the whole, there aren’t too many posters on the roads – not compared with some countries I’ve driven through.\n\n**B   Josie Pelham, cabin crew**\nWalking through airports in uniform, I tend not to look around too much. That’s because I run the risk of being asked questions by confused passengers who mistake me for ground crew, but helping them is not my job. But adverts in airports have a captive audience because people end up hanging around waiting for delayed flights in lounges or at boarding gates, so in those places they must work well for the advertisers. When travelling, an amusing advert can brighten up my day, but I do tend to see endless dull adverts for banks round the airport and they don’t fit into that category! Planes are even being painted externally to carry advertising. I saw one decorated to advertise house music in Ibiza. How cool is that?\n\n**C   Damian Stenton, lawyer**\nTo be honest, I can take or leave street advertising – I don’t pay it much attention and posters aren’t that obtrusive. I don’t even mind posters in the countryside, though I know that’s an issue for some groups in society. Some of the paper posters are being replaced by TV screens. I guess that enables the company to make more money, as they can switch adverts easily – and it also saves paper. But it’s rather environmentally unfriendly as each advertising screen obviously has to be powered by electricity. At a time when we’re all being urged to cut down on consumption of precious resources, putting up TV screens everywhere seems rather counterproductive.\n\n**D   Danni Rochas, interior designer**\nI often feel surrounded by posters and advertising, it seems to be taking over our city. I am reminded of an episode of The Simpsons where the town’s outdoor advertising comes to life and hunts down the residents. I’m resigned to the fact that posters are ‘necessary’ commercialisation, but I find them less annoying when they ‘give’ something positive in exchange for being such an intrusive presence on the urban landscape. Occasionally, though, advertisers find a new angle on an issue that’s really thought-provoking and that must be positive. So maybe I’d prefer it to exist rather than not.\n\n**E   Naomi Hesketh, student**\nI try to walk straight past most posters as if they weren’t there, but some do manage to grab your attention nonetheless. I really like those that are colourful or imaginative. I think advertising allows lots of clever people to reach a wide public with their ideas, and we all benefit from that. Why would you even look at a boring poster? I think production values are important, too, in making you trust the advertiser. I agree with banning posters from parks and on historic buildings, but there’s nothing wrong with them in shopping streets and main roads. They make the environment brighter.",
+    "options": {
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ]
+    },
+    "correct_answer": {
+      "1": "B",
+      "2": "D",
+      "3": "A",
+      "4": "C",
+      "5": "A",
+      "6": "E",
+      "7": "A",
+      "8": "A",
+      "9": "D",
+      "10": "E"
+    }
+  },
+  {
+    "title_like": "%A good walk%",
+    "type": "reading_multiple_matching",
+    "subcategory_name": "Multiple Matching",
+    "question_text": "You are going to read an article about country walking. For questions 1-10, choose from the sections (A-D). The sections may be chosen more than once.\n\n1 a reason for the writer not going on a country walk (1)……………\n2 the need to achieve something on one particular walk (2)……………\n3 one reason why walkers spend a lot of time looking at paths (3)……………\n4 not enjoying a meal whilst out on a walk (4)……………\n5 walking routes that become hard to follow in places (5)……………\n6 how interesting it might be getting to know strangers on a walk (6)……………\n7 the fact that group walking activities are growing in popularity (7)……………\n8 the amount of work needed to maintain paths for walkers (8)……………\n9 walkers feeling a need to compete with each other (9)……………\n10 paths maybe having been originally made by animals (10)……………\n\n***\n\n**A good walk**\nWhen songwriter and singer Roddy Woomble isn’t playing with his band, he loves nothing more than going on long country walks. He tells us about his hobby.\n\n**A**\nI’m sure I’m not the only one who occasionally stops to think about the footpaths that carry us over the hills. Who made them? Who was the first to walk that way – the sheep or the shepherd? The dictionary definition of a path is ‘a track laid down for walking or made by continual treading’ and also ‘the direction in which a person or thing moves’. Somewhere in between I think you’ll find the mountain path. I am particularly fond of watercolours or photos with paths in them. I also like it when old paths suddenly vanish only to reappear a bit further on, to the frustration of many other walkers. I appreciate also all the effort that has gone into the upkeep of mountain paths, so that they are still available for recreational use.\n\n**B**\nWalking in upland areas, you get to know the paths pretty well since a good proportion of your time is likely to be spent head down, gazing at them as you walk. This is never truer than when you’re walking into wind and driving rain. That’s when your boots have to pick your way over the slippery rocks and muddy puddles that constitute many mountain paths and trails in the winter. But I’m no great fan of walking on my own. Occasionally I’ll do it – I’ll read a few lines of Rousseau’s Reveries of a Solitary Walker to get myself mentally prepared, then head out for a day of solitude. The problem is, halfway through I usually get the urge to share my thoughts about things I’ve noticed along the way. Even if you do bump into other walkers, this is not always something you want to do with strangers. Time on your own is worthwhile, of course, but I think it’s better to mix it up with some company.\n\n**C**\nOn previous solitary rambles I’ve often reached the summit only to enviously watch a group having a mid-walk picnic, happily chattering away, snapping pictures of the view, while I sat, just out of sight, alone, brooding over a sandwich. I’ve forgone many days out on the hills in order to avoid this feeling. Sometimes I wonder what it’s like to join a group and take to the hills with people you’ve only just met. It’s fascinating to imagine the group dynamics on such initial outings. For example, would there be long awkward pauses in the conversation? Would you feel the need to keep a conversation going from leaving the car to returning to it, or would it become an ego thing about how many hills you’ve each climbed and how steep the path was?\n\n**D**\nOn the other hand, is an established walking group a collective of like-minded, interesting, articulate individuals, all enthusiastic for the outdoors? A place where conversation is free-flowing, with long gaps left for each other’s thoughts, followed by a shared meal afterwards? I’m assuming it’s both since walking clubs seem to be attracting more members than ever. I must think about joining one. Another ambition of mine is to climb the hill in front of me as I write this. I’m sitting at a picnic table outside the club where my band is giving a concert later and, as I eat my lunch, I have an uninterrupted view of the highest mountain in the British Isles, Ben Nevis in Scotland. As I say, I’ve never been up it, but I have a brilliant photo which a friend took from the summit. It’s said to be a vantage point like no other. There may be technically harder mountains in the country, but there are none higher; which means lots of people feel an urge to go to the top of it.",
+    "options": {
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ]
+    },
+    "correct_answer": {
+      "1": "C",
+      "2": "D",
+      "3": "B",
+      "4": "C",
+      "5": "A",
+      "6": "C",
+      "7": "D",
+      "8": "A",
+      "9": "C",
+      "10": "A"
+    }
+  },
+  {
+    "title_like": "%Starting your own business%",
+    "type": "reading_multiple_matching",
+    "subcategory_name": "Multiple Matching",
+    "question_text": "You are going to read an article about people who gave up their jobs to start their own business. For questions 1-10, choose from the people (A-D). The people may be chosen more than once.\n\n1 mentions how good it is being able to make your own decisions? (1)……………\n2 enjoys seeing employees make a success of things? (2)……………\n3 had to solve a technical problem before launching the business? (3)……………\n4 is surprised to have attracted such a wide variety of clients? (4)……………\n5 is happy to have received positive feedback from clients? (5)……………\n6 sometimes feels anxious about financial aspects of the business? (6)……………\n7 took time to decide what type of business to start? (7)……………\n8 was able to draw on experience gained in a similar working situation? (8)……………\n9 was keen to make use of a wide range of existing skills? (9)……………\n10 was keen to work on a more personal level with clients? (10)……………\n\n***\n\n**A   Beautician**\nI had to rethink my future when the multi-national company I worked for as a marketing executive decided to move my job to the USA. My life back then, wearing designer clothes and taking regular long-haul flights, couldn’t be more different from today. Well, I wanted a job where I’d have the chance to interact with people more, and saw a gap in the market for a beauty salon locally. Working for yourself is great as you can make your own mind up about things and you aren’t driven by someone else about when and how you do that. But the flipside is that there’s nobody to share the burden with when you wake up in the middle of the night worrying about how you’re going to pay the rent. But I have no regrets.\n\n**B   Gym owner**\nAfter seventeen years working in banking, I wanted to try something totally different. A business that used a combination of my financial, sporting and parenting experience, but which didn’t involve such long exhausting hours at the office appealed to me a great deal. I came across the concept behind The Little Gym by accident when I was surfing the Internet. It’s a novel concept that had gone down really well in the USA. It caters for children from four months to twelve years, giving them good-quality physical instruction and a cerebral work-out at the same time. Having control of my own life is a definite high, as is seeing my staff doing a good job. Every day is different, so it’s never boring.\n\n**C   Caterer**\nI worked for a big international company, but was no longer finding it rewarding. I’d completed twenty years’ service, so I had some money saved up, but not enough to retire on. But I took six months off and we went to stay with my wife’s family in Spain. It was a good opportunity to ponder the question: ‘What next?’ That’s when we got the idea for Tapas in a Box. We were in a bar eating the local Spanish food called ‘tapas’ and I thought: ‘This would be perfect for people back home who want to have a great, relaxed time with friends, without spending ages cooking.’ The challenge was then to work out how to deliver the mix of foods all at once, because tapas includes things like raw almonds and chilled cheeses as well as the hot things that need heating in an oven. Once we’d cracked that, we were up and running. I can’t stress too much the thrill you feel when a customer tells you they’ve had a great time. The sense of having gone from a new idea to actually delivering something good is very motivating.\n\n**D   Virtual PA**\nI’d been a secretary and personal assistant (PA) for twenty years and had begun to dread the thought that I’d be at the same desk until I retired. When the company announced that its European office was to close, I could’ve taken a drop in salary and found another job locally, but decided to set up my own business instead. I got my idea because, in effect, I’d been a virtual PA all along. My boss was usually only in the office a couple of days a month, so we’d always worked remotely by email and phone calls. I thought I could offer a similar service to other busy people. Now I’ve got all sorts of regular clients, including surveyors, solicitors, an advertising agency and even an author. I never expected such a mix. I can’t wait to see what challenges lie in store for me.",
+    "options": {
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ]
+    },
+    "correct_answer": {
+      "1": "A",
+      "2": "B",
+      "3": "C",
+      "4": "D",
+      "5": "C",
+      "6": "A",
+      "7": "C",
+      "8": "D",
+      "9": "B",
+      "10": "A"
+    }
+  },
+  {
+    "title_like": "%What’s the best advice your father ever gave you?%",
+    "type": "reading_multiple_matching",
+    "subcategory_name": "Multiple Matching",
+    "question_text": "You are going to read an article about fathers and sons. For questions 1-10, choose from the fathers (A-D). The fathers may be chosen more than once.\n\n1 always had faith in his son’s abilities? (1)……………\n2 encouraged his son not to give up in the face of disappointment? (2)……………\n3 gave his son advice in a light-hearted way? (3)……………\n4 made his son realise the need to try harder? (4)……………\n5 may not have succeeded in passing on certain ideas to his son? (5)……………\n6 never blamed his son for mistakes that he made? (6)……………\n7 put no pressure on his son to follow in his footsteps? (7)……………\n8 reassured his son when equipment let him down? (8)……………\n9 showed his son how to perform practical tasks? (9)……………\n10 was willing to listen to his son’s suggestions? (10)……………\n\n***\n\n**A   Tony: Racing driver**\n‘Drive it like you stole it and keep it on the black stuff!’ I was quite nervous when I first started racing, but those were my dad’s jokey words of wisdom and they made me feel better at the time. In the beginning, I had quite a few spins on the circuits – the very first one was particularly scary because the car left the track, but he never said it was my fault. I used to drive a Porsche 924 and pretty much every single race something would break, but Dad would just say: ‘Don’t worry about the car, we can always fix it.’ I didn’t like people behind me when I went round corners, but Dad was always telling me not to take any notice, to focus on what I was doing. I’ve got a long way to go, but Dad’s really good – he’s hardly the most polite person to have around if things don’t go well, but he’s my role model.\n\n**B   David: Record producer**\nBecause Dad and I have always been close, there was no one moment when he imparted some big philosophical piece of advice. I think his greatest gift has been his general unwavering belief in me. Since I was about fourteen, he’s given me the opportunity to input ideas and have my say about the bands we work with or the equipment we use, which is amazing. When you’re part of a family business, it can sometimes feel as if you have to be there, but my brother and I have done other things, and we’re back with Dad again because we want to be. He left the decision to us. Dad’s also been good at giving career advice because he’s done it and he’s got the experience. He’s given me that drive and ambition to succeed.\n\n**C   Andy: Buyer for a department store**\nI was probably Dad’s most unruly son. He tried to teach me a lot of things – how much I’ve taken on board is another matter. But I don’t think I’m such a disappointment to him! He’s a very cool dad, but he’s quite traditional in some ways. He’s always said that if you want to succeed, then get on with it. If you’re going to do something, do it right away or at least write it down so you don’t forget! I’m proud of my dad and how hard he worked for us to have a lovely childhood and good lifestyle. Dad also taught me valuable skills like how to change the oil in my car, how to play tennis and ski – although the last time he saw me doing that he said he feared for his life!\n\n**D   Simon: Rugby player**\nHe had this catchphrase: ‘Under-prepare, and you prepare to fail.’ I heard it time and again. A typical teenager when things went wrong, I was always trying to blame everything and everyone but myself. He used his catchphrase and explained that if you don’t put sufficient effort in, you’ll never get anything out of whatever it is you’re doing. That’s stayed with me ever since, even now when I’m playing professionally. He’s always given a fair amount of advice. He made me realise that if you just stick at something, no matter how hard things get, then your time will come. It’s the hardest thing to hear when things aren’t going well. At the beginning of the season, I wasn’t getting picked for many matches. Then when the chance came to play, I really took it.",
+    "options": {
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ]
+    },
+    "correct_answer": {
+      "1": "B",
+      "2": "D",
+      "3": "A",
+      "4": "D",
+      "5": "C",
+      "6": "A",
+      "7": "B",
+      "8": "A",
+      "9": "C",
+      "10": "B"
+    }
+  },
+  {
+    "title_like": "%I love my bike%",
+    "type": "reading_multiple_matching",
+    "subcategory_name": "Multiple Matching",
+    "question_text": "You are going to read an article about cycling. For questions 1-10, choose from the cyclists (A-D). The cyclists may be chosen more than once.\n\n1 accepts the need to wear uncomfortable safety equipment? (1)……………\n2 advises people to make sure a new bike is comfortable to ride? (2)……………\n3 believes that false information was given by the seller? (3)……………\n4 disagrees with other people’s opinion of one of the bike’s features? (4)……………\n5 hopes not to get caught in bad weather on the bike? (5)……………\n6 feels that cycling is less frustrating than driving? (6)……………\n7 finds some cycle journeys easier than others? (7)……………\n8 feels that the bike matches the owner’s character? (8)……………\n9 was once the victim of bike crime? (9)……………\n10 was a professional cyclist for a short time? (10)……………\n\n***\n\n**A   Erin**\nThis old second-hand bike gets me from A to B all right because you don’t need flashy sets of gears or anything like that in a city this size and it makes it less of a target for thieves. But having said that, mine’s a very bright colour – it cheers me up, especially when I have to cycle home in the pouring rain. I’ve always thought that the bike was a good reflection of the real me actually, and I usually wear jeans when I’m cycling. I might need to rethink that though because I’ve just started my own company, and my outlook on life has changed a little. There may be times when I need to turn up looking a bit more elegant! I’d say to anyone thinking of getting a bike, make sure the saddle’s right before you part with your money. If you’re going to use it a lot, you don’t want to get sore.\n\n**B   Luke**\nI bought my bike from an Internet auction site and had to have it shipped from Germany in pieces. I then paid to have it assembled here in Dublin – but it was worth it. I use it every day and tend to wear everyday clothes and try and dodge the showers. I cycle all over the city because it’s much quicker than walking and you don’t get snarled up in the traffic, which can be a pain in a motor vehicle. At least on a bike you can keep moving. The only tip I’d give to novice cyclists round here is keep a lookout for drivers turning left, it’s easy for them to miss you because you can see what they’re doing but they can’t necessarily see you. I worked briefly as a cycle courier – delivering letters and stuff. It was fun, but I wouldn’t recommend making a career out of it!\n\n**C   Claire**\nMy parents picked this bike up for me in New York. It’s a red and black cruiser with a burger-shaped bell – some of my friends think that’s a bit uncool, but I don’t really go along with that idea. I’ve got two helmets, a summer and a winter version – but I still get too hot on really sunny days. Still, you can’t really do without one, can you? I cycle down to college in no time at all, but the uphill trek home takes me around thirty-five minutes. I only take the bus if it’s wet. It’s quicker, but on the bike I can make my own mind up about when I travel. I cycle in high heels, which you might think would be tricky, but is actually easier than walking any distance in them. But I wouldn’t really recommend them to other cyclists.\n\n**D   Kieran**\nMy bike’s an early 1980s racer and I bought it off an old man who sells junk out of his garage. He reckoned it had once belonged to a professional cycling champion, but I think he was making it up. I was looking for old cameras, but when I saw it I couldn’t resist it. It did get stolen on one occasion, but then later that week I saw someone riding it up my street. I grabbed him and gave him his taxi fare home so that I could take it back. My advice to cyclists would be to wear fluorescent armbands, especially at night or in poor weather conditions. They’re less uncomfortable than the waistcoats or jackets in the same material. I’ve just invested in special raingear actually, but I don’t find it very comfortable, to be honest, because as soon as the sun comes out, you feel overdressed.",
+    "options": {
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ]
+    },
+    "correct_answer": {
+      "1": "C",
+      "2": "A",
+      "3": "D",
+      "4": "C",
+      "5": "B",
+      "6": "B",
+      "7": "C",
+      "8": "A",
+      "9": "D",
+      "10": "B"
+    }
+  },
+  {
+    "title_like": "%Future-Friendly Awards%",
+    "type": "reading_multiple_matching",
+    "subcategory_name": "Multiple Matching",
+    "question_text": "You are going to read an article about groups run by volunteers in their local community. For questions 1-10, choose from the groups (A-D). The groups may be chosen more than once.\n\n1 has a name that might give people a wrong idea of its activities? (1)……………\n2 wants to respond to feedback from users of a service it provides? (2)……………\n3 has put the results of its work on show to the public? (3)……………\n4 has found it hard to finance its activities? (4)……………\n5 offers advice to beginners in an activity? (5)……………\n6 provides a pick-up service for its users? (6)……………\n7 plans to start selling things to make money? (7)……………\n8 would use the prize money to publicise its activities? (8)……………\n9 noticed that something that was still useful was going to waste? (9)……………\n10 provides a service for people all over the country? (10)……………\n\n***\n\n**A   CycleStreets**\nYou’re keen to get on your bike, but you’re not so keen on bumping over poor roads, sweating up hills or riding between all the large trucks on the main roads. Where can you go? The answer is to ask www.cyclestreets.net, a journey-planning website for cyclists. ‘We aim to give newcomers the confidence to start cycling – with all its environmental and health benefits – and to improve routes for those who already cycle,’ says spokesperson Martin Lucas-Smith. The not-for-profit group is based in Cambridge, but routes are available in all regions nationwide. Cyclists can get involved, too, by contributing photographs and reporting obstructions or other issues. ‘We’ve done years of unpaid work and winning this award would help us make some major improvements, which the cyclists who contact us have been asking for,’ says Martin.\n\n**B   Sefton Green Gym**\nIf you visit Sefton Green Gym in Liverpool, don’t go expecting to see weights or rowing machines – this ‘gym’ just has rows of lovingly tended organic fruit and vegetables. The gym was set up to help local people improve their skills, make new friends and enjoy the health benefits of gardening. Members range from young people with learning difficulties to elderly people with health problems. ‘My dad went along after a serious illness to get fit and make new friends,’ says Joanne Woods. ‘He’s worked hard to raise funds but with limited success, and the gym faces closure if we don’t get any more.’ The award would help the gym to expand by installing eco-friendly solar heating, as well as advertising for new members and extending its links with the community.\n\n**C   The Project Group**\nThe Project Group, from the small town of Oswestry, helps people with health problems and learning disabilities to build their self-esteem through creativity. This year, the group has focused on using recycled materials, including making vases from waste paper and pictures from recycled glass. Last year, it helped stage an exhibition of sculptures entirely created from rubbish such as crisp packets, plastic bags and odd shoes. It has also created posters for the local Wildlife Trust, and helped other community groups. ‘The whole organisation is user-led, and our artwork can now be admired in many public buildings and spaces in our region,’ says spokeswoman Jo Davis. ‘We also hope to use the award to develop a retail range of recycled products to help fund our activities.’\n\n**D   Cleanstream Carpets**\nEvery year, an astonishing three-and-a-half million carpet tiles are thrown away in South Wales and south-west England. Recognising that many tiles could be reused, a group of volunteers formed Cleanstream Carpets to collect and supply them at affordable prices to local organisations and community groups. Volunteers collect and grade tiles before selling them from Cleanstream’s premises near Rhondda. Satisfied customers range from local schools to a community furniture bank in Bedfordshire, and the tiles have even been used to build refuges for endangered animals such as great crested newts. ‘Our unique selling point is the guarantee that the product is diverted from landfill,’ says one volunteer. ‘Winning the award would give us encouragement to explore other ways of using other recycled material.’",
+    "options": {
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ]
+    },
+    "correct_answer": {
+      "1": "B",
+      "2": "A",
+      "3": "C",
+      "4": "B",
+      "5": "A",
+      "6": "D",
+      "7": "C",
+      "8": "B",
+      "9": "D",
+      "10": "A"
+    }
+  },
+  {
+    "title_like": "%Solo travel in Australia%",
+    "type": "reading_multiple_matching",
+    "subcategory_name": "Multiple Matching",
+    "question_text": "You are going to read a magazine article about students who travelled around Australia alone during their long summer vacation. For questions 1-10, choose from the students (A-D). The students may be chosen more than once.\n\n1 a daily activity that was not enjoyable alone? (1)……………\n2 a good way of keeping travel plans flexible? (2)……………\n3 appreciating not having to waste time organising practical details? (3)……………\n4 becoming more tolerant of other people? (4)……………\n5 feeling better after keeping in touch with others? (5)……………\n6 having doubts at the beginning of a trip? (6)……………\n7 liking not having to agree an itinerary with others? (7)……………\n8 meeting people with a similar outlook on life? (8)……………\n9 missing having someone to help with decision-making? (9)……………\n10 the advisability of going for the best accommodation you can afford? (10)……………\n\n***\n\n**A   Phil Morston**\nI remember sitting in the plane thinking to myself: ‘What have I let myself in for?’ The first few days were scary: I was all on my own on the other side of the world with nothing planned. But I soon met up with people to travel with. Of course, some you get on with, others you don’t. Some, for example, had every day planned out day in minute detail, when in practice things can change and it’s great to have the freedom to go with the flow. And that’s easy enough to do. You can take the Oz Experience bus down the west coast, jumping off whenever you want, then catching the next bus when you’re ready to move on again. Being away for a year, you do occasionally get lonely. To cheer myself up, I’d sit down and write a fortnightly email home about everything I’d been up to.\n\n**B   Leila Stuart**\nWithout doubt, you meet all sorts of people when travelling alone. I even made a friend on the plane out there. Some people are keener to make friends than others, of course, but if someone’s chosen to do the same type of trip as you, you’ve probably got lots of ideas in common. The advantages of a pre-planned tour are that you can get an agency to take care of all the arrangements, which can be time-consuming to do yourself – but it does mean that you’re tied to a predetermined itinerary, which wouldn’t suit everyone. There’s also the safety aspect in terms of the places you visit often being very remote. If you go off trekking in the wilds of a foreign country alone, it could be difficult to get help if things went wrong.\n\n**C   Danny Holt**\nTravelling solo creates opportunities to meet people. There’s no substitute for sharing the experiences of the day with a companion, and being alone forces you to seek someone out. I’d never have met so many people if I’d been travelling with friends. There’s also the wonderful freedom to do what you like, when you like, without having to convince anybody that it’s a good idea. However, there are downsides; meal times are something I’ve never really got to grips with in all the years I’ve travelled alone. But my advice would be to give solo travel a go – it can be very liberating. Maybe try a short trip to begin with, just in case it’s not for you. Another thing is stay in the nicest places your budget permits. Miserable hostels can really spoil a trip. And if you really are happy being anti-social, a pair of headphones can ensure the person in the next seat doesn’t bore you to death on the plane!\n\n**D   Kerry Winterton**\nFun as it is, travelling solo also has its low points, including occasional loneliness and the pressure that you’re under to make your own mind up about everything. I chose to travel alone because I wanted to do something different, but I did miss people from home, and sometimes fell out with other travellers I’d teamed up with along the way.  But I learnt to accept that some people have different attitudes to mine; that you have to put up with irritating people in hostels and accept not having as much privacy as you’re used to at home. The best thing for me about travelling alone was that it was a brilliant experience that enhanced my independence and helped me feel more self-assured. I knew I was on my own, which made me make more effort to speak to people and by doing so I made lots of great friends.",
+    "options": {
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ]
+    },
+    "correct_answer": {
+      "1": "C",
+      "2": "A",
+      "3": "B",
+      "4": "D",
+      "5": "A",
+      "6": "A",
+      "7": "C",
+      "8": "B",
+      "9": "D",
+      "10": "C"
+    }
+  },
+  {
+    "title_like": "%For the record%",
+    "type": "reading_multiple_matching",
+    "subcategory_name": "Multiple Matching",
+    "question_text": "You are going to read an article about a man who holds a number of world records. For questions 1-10, choose from the sections (A-D). The sections may be chosen more than once.\n\n1 activities that help Ian prepare for a trip? (1)……………\n2 Ian having problems finding his way on a trip? (2)……………\n3 the achievement that gives Ian the most satisfaction? (3)……………\n4 Ian need to stay awake because of an unexpected danger? (4)……………\n5 Ian’s desire to do something that few other people had managed before? (5)……………\n6 Ian feeling that a lot must be achieved in a lifetime? (6)……………\n7 an example of Ian not being successful at the first attempt? (7)……………\n8 a specific activity designed for people less experienced than Ian? (8)……………\n9 Ian seeing something that inspired him to go on further trips? (9)……………\n10 a delay that didn’t prevent Ian achieving something? (10)……………\n\n***\n\n**A**\nIan Couch and his travelling companion Ben had prepared themselves thoroughly for the physical and mental demands of the 600 kilometre crossing of the Greenland ice-cap. But two days into the trek, snow was blowing so forcefully there was no distinguishing sky from ground and the temperature had hit -40°C. All they could do was blindly follow their compass and hope they were heading in the right direction. Fortunately, conditions did improve but improved visibility only revealed another potential danger: two male polar bears were following their party. After more than fourteen hours of exhausting skiing and running, they had to set up camp. Despite being exhausted, they decided to take it in turns to sit on guard for hourly watches. The next day local hunters were sent to chase off the bears and, although Ian and Ben had lost vital hours, they still completed the journey in fifteen days – the fastest-ever British crossing. It’s just one of eight records that Ian holds.\n\n**B**\nIan became hooked on endurance events after a record-breaking row across the Atlantic Ocean, and he’s drawn to tackling super-human challenges. ‘Partly it’s about finding out what I’m capable of,’ says the forty-year-old, who was also part of the first crew to row the entire Indian. Ocean unassisted, ‘and partly it’s knowing we have a limited amount of time to see so many things.’ Two years ago, Ian set up Adventure Hub, an activity company that offers support and advice to people who wish to test themselves with ocean rowing, polar exploration, trekking or mountaineering. Ian has been doing his sort of thing since childhood. While still at Atlantic in 2007. The appeal, he says, was because there weren’t many challenges that either hadn’t been done before or were still unusual.\n\n**C**\nThe crew rowed 2,600 miles and set a world record for the fastest thousand-mile row by boat, despite battling incredible storms and close encounters with sharks and whales. He recalls: ‘One morning, I came out of the cabin to take the dawn shift and a pod of forty dolphins was swimming around the boat. At that moment, I decided I wanted to do it again.’ The following year, Ian started training for the Greenland ice-cap expedition with friend Ben. Hours spent on a cross-country skiing machine and dragging tractor tyres on a harness around his home village to improve his fitness counted for little when Ben suffered severe frostbite on his thumbs two days into the attempt and they had to be evacuated by helicopter so that he could receive medical attention. Although hugely disappointed at the time, the pair returned this April and claimed the British record.\n\n**D**\nNot one to rest for long though, six months later he was signed up to lead a crew of twelve people on another trans-Atlantic rowing trip, for which he was awarded his proudest world record to date: the fastest triple ocean crossing. While the four-hour sleep rotas were a luxury for the father of two young children, Ian admits he missed his family greatly. At Adventure Hub, plans are underway for another Atlantic row, for which the boxer Jackson Williams has signed up. Nearer home, he’s recently organised a sixty-mile ultra run that takes in forest, cliff-top and stony beach. ‘It’s a flat route, but a good way for non-adventurers to push themselves out of their comfort zone.’ There’s also an unsupported South Pole trip planned which, for the very first time, will be tackled not use kites or dogs. It’s therefore just too tempting for this record-breaking adventurer to resist.",
+    "options": {
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ]
+    },
+    "correct_answer": {
+      "1": "C",
+      "2": "A",
+      "3": "D",
+      "4": "A",
+      "5": "B",
+      "6": "B",
+      "7": "C",
+      "8": "D",
+      "9": "C",
+      "10": "A"
+    }
+  },
+  {
+    "title_like": "%Adventure guides%",
+    "type": "reading_multiple_matching",
+    "subcategory_name": "Multiple Matching",
+    "question_text": "You are going to read an article in which four tourist guides talk about their work. For questions 1-10, choose from the people (A-D). The people may be chosen more than once.\n\n1 says that a guide must be able to react to unexpected events? (1)……………\n2 takes clients to a location which is starting to disappear? (2)……………\n3 had a sudden realisation that he wanted to be a guide? (3)……………\n4 says he can look back on his experiences with pleasure? (4)……………\n5 fulfilled a long-held ambition? (5)……………\n6 admits to taking tourists on the wrong trip? (6)……………\n7 lived close to where history was made? (7)……………\n8 enjoys seeing his clients’ sense of achievement? (8)……………\n9 criticises some of the people he guides? (9)……………\n10 mentions that his work changed someone’s life for the better? (10)……………\n\n***\n\n**A   Torfi from Iceland**\nThe worst thing about being a guide in Iceland is when people haven’t bothered to bring the right clothes for the weather. We like to say that there is no such thing as bad weather, only bad equipment. I haven’t had any disasters but funny moments and blunders are endless: locking myself out of the car in a mind-numbing blizzard, taking folks hiking over a mountain when the schedule clearly said we should have been going rafting, being stranded on a glacier in a blizzard with a broken-down car for 16 hours. This is a job that provides a stream of good memories and friendship. The river Hvitá is my favourite place for white-water rafting. I’d also recommend a visit to the glacier to hike across the ice – you won’t be able to do that for much longer as the ice is melting at an alarming rate.\n\n**B   Tulga from Mongolia**\nWhen I became a guide I had virtually no training at all, just a two-hour lecture about what not to do. I had to learn from my mistakes. There were four Swiss people on my first trip. When I met them, I said: ‘Hi guys.’ They gave me a strange look. I asked if there was anything wrong but they said: ‘No, no problem.’ After two days, one of them explained, ‘Guys means “goats” in our language.’ I felt terrible. On a later trip, clients were upset because they were meant to see an ice gorge in the Gobi desert but our vehicle broke down and we didn’t get there so they demanded half their money back. On a happier note, I once guided a family whose son had behavioural problems, and the child improved so much during the trip that a documentary was made about him called The Horse Boy.\n\n**C   Ngima from Nepal**\nI used to watch the trekkers going through my village to the mountain peak situated just above it and that made me want to become a guide. The house where I grew up was on the old trekking path to Everest base camp. This is the route Sir Edmund Hillary and Sherpa Tenzing Norgay took to become the first people to climb Everest. We saw an inspiring video about them at school. On my first job as a lead guide, as we crossed the difficult Tashi Lapsa pass we had very heavy snowfall and one of our porters had to be rescued by helicopter because he got frostbite and snow-blindness. We have many beautiful places in Nepal but my favourite trek is up Mera Peak – from the summit you can see five mountains above 8,000m, including Everest.\n\n**D   José from Peru**\nI was working in a factory when a school friend who was a river guide took me on an expedition. The moment our boat set off down the river I knew I had found the job for me. After two months of training, I guided my first group. Ten years later, one of my hands was badly damaged in an accident so it was impossible for me to continue. My boss suggested I use my legs rather than my arms, and this was the start of my life as a trek leader. You have to deal with lots of situations you hadn’t anticipated would occur. There was the time when it snowed on the Inca Trail and the combination of snow and sun made for blinding conditions. So we had to improvise sunglasses out of the silver lining of our drinks boxes! I still love watching people’s reactions on arriving at the summit of a high pass – it’s so much better to get there after a few hours’ walk than after a comfortable car journey.",
+    "options": {
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ]
+    },
+    "correct_answer": {
+      "1": "D",
+      "2": "A",
+      "3": "D",
+      "4": "A",
+      "5": "C",
+      "6": "A",
+      "7": "C",
+      "8": "D",
+      "9": "A",
+      "10": "B"
+    }
+  },
+  {
+    "title_like": "%Four books about sleep%",
+    "type": "reading_multiple_matching",
+    "subcategory_name": "Multiple Matching",
+    "question_text": "You are going to read four reviews of books about sleep and dreams. For questions 1-10, choose from the reviews (A-D). The reviews may be chosen more than once.\n\n1 emphasises how enjoyable sleep is? (1)……………\n2 says certain aspects of our lives are becoming less distinct from one another? (2)……………\n3 points out that many people share a mistaken belief? (3)……………\n4 describes the structure of the book? (4)……………\n5 explains why we have certain experiences? (5)……………\n6 mentions a practical problem faced by scientists? (6)……………\n7 says the book shows that major developments have occurred in a field? (7)……………\n8 says the writer deals with issues that cause debate? (8)……………\n9 comments that our lack of knowledge regarding sleep is surprising? (9)……………\n10 says the reader learns how a technological advance caused problems? (10)……………\n\n***\n\n**A   Sleepfaring**\nWhy do we sleep? Are we sleeping enough? How can we tackle sleep problems? Jim Horne finds answers to these questions and many more in Sleepfaring, a journey through the science and the secrets of sleep. He reveals what goes on in our brains during sleep, and also gives some hints from the latest sleep research that may just help you get a better night’s rest. In recent years, understanding sleep has become increasingly important, as people work longer hours, styles of working have altered, and the separation between workplace and home is being reduced by cell phones and the internet. Horne draws on the latest research to reveal what science has discovered about sleep. Nor does Horne avoid controversial topics; challenging, for example, the conventional wisdom on the amount of sleep we actually need. For anyone wishing to know more about the many mysterious processes that begin when we close our eyes each night, Sleepfaring offers a wealth of insight and information.\n\n**B   Dreaming**\nWhat is dreaming? Why are dreams so strange and why are they so hard to remember? In this fascinating book, Harvard researcher Allan Hobson offers an intriguing look at our nightly journey through the world of dreams. He describes how the theory of dreaming has advanced dramatically. We have learned that, in dreaming, some areas of the brain are very active – the visual and auditory centres, for instance – while others are completely shut down, including the centres for self-awareness, logic, and memory. Thus we can have visually vivid dreams, but be utterly unaware that the sequence of events or localities may be bizarre and, quite often, impossible. And because the memory centre is inactive, we don’t remember the dream at all, unless we wake up while it is in progress. With special boxed features that highlight intriguing questions – Do we dream in colour? (yes), Do animals dream? (probably) – Dreaming offers a cutting-edge account of the most mysterious area of our mental life.\n\n**C   Counting Sheep**\nEven though we will devote a third of our lives to sleep, we still know remarkably little about its origins and purpose. Does getting up early really benefit us? Can some people really exist on just a few hours’ sleep a night? Does everybody dream? Do fish dream? How did people cope before alarm clocks and caffeine? And is anybody getting enough sleep? Paul Martin’s Counting Sheep answers these questions and more in this illuminating work of popular science. Even the wonders of yawning are explained in full. To sleep, to dream: Counting Sheep reﬂects the centrality of these activities to our lives and can help readers respect, understand, and appreciate that delicious time when they’re lost to the world.\n\n**D   Dreamland**\nReporter Randall provides a brisk tour of sleep research and what it means for individuals hoping to feel well rested. The author engaged with sleep research in part because of his sleepwalking. Researching the world of sleep is obviously difficult because sleeping subjects selected for studies rarely remember anything specific. Nonetheless, Randall interviewed sleep researchers and read academic papers to learn what he could from those who devote their careers to the science of sleep. The book is not a continuous narrative but rather a loose progression of chapters about different sleep-related issues. For example, Randall explains how the invention of electricity led to countless cases of sleep deprivation; the lack of utter darkness after sunset is often the enemy of sound sleep. He also emphasises the too-often neglected common-sense realisation that sleep is no void; rather, it is perhaps one third of the puzzle of living well.",
+    "options": {
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ]
+    },
+    "correct_answer": {
+      "1": "C",
+      "2": "A",
+      "3": "D",
+      "4": "D",
+      "5": "B",
+      "6": "D",
+      "7": "B",
+      "8": "A",
+      "9": "C",
+      "10": "D"
+    }
+  },
+  {
+    "title_like": "%The Marshmallow Test%",
+    "type": "reading_multiple_matching",
+    "subcategory_name": "Multiple Matching",
+    "question_text": "You are going to read an article about a psychology test carried out on very young children. For questions 1-10, choose from the sections (A-D). The sections may be chosen more than once.\n\n1 how a child’s background can affect behaviour? (1)……………\n2 that the results of Mischel’s long-term research were surprising? (2)……………\n3 reasons for questioning the results of the original experiment? (3)……………\n4 claims that training young children to resist temptation will have long-term benefits? (4)……………\n5 the proportion of very young children who were able to resist temptation? (5)……………\n6 an everyday example of the need for self-control? (6)……………\n7 that Mischel may have oversimplified the route to success in life? (7)……………\n8 that Mischel’s own life experience has inﬂuenced his work? (8)……………\n9 strategies employed by participants during the test procedure? (9)……………\n10 two major factors which affect everyone’s ability to resist temptation? (10)……………\n\n***\n\n**A**\nIn 1968, Walter Mischel set a challenge for a group of children aged three to five at the nursery school his daughters attended in California. A researcher offered each of them a marshmallow and then left them alone in the room. If they could resist eating the colourful sweet until the researcher returned up to 15 minutes later, they would be given a second sweet. Some children ate the marshmallow straight away, but most would engage in unintentionally comic attempts to resist temptation. They looked all around the room to avoid seeing the sweet, covered their eyes, wiggled around in their seats or sang to themselves. They pulled funny faces, played with their hair, picked up the marshmallow and just pretended to take a bite. They sniffed it, pushed it away from them or covered it up. If two children were doing the experiment together, they engaged in a conversation about how they could work together to reach the goal of doubling their pleasure. About a third of the children, the researchers reported, managed to wait long enough to get the second treat.\n\n**B**\nWhat Mischel, a clinical psychologist, wanted was to understand how children learned to deal with temptation. Over the following years, the group of children remained friends. When Mischel chatted to his daughters about their former classmates, he began to notice an interesting pattern: the children who had exhibited the most restraint in the ‘marshmallow test’ were doing better in life than their peers. He decided to investigate further. For more than 40 years, Mischel followed the lives of the nursery students. His findings were extraordinary. It turns out that being able to resist a treat at the age of five is a strong predictor of success in life: you are more likely to perform well at school and develop self-confidence and less likely to become obese, develop addictions or get divorced.\n\n**C**\nMischel still teaches psychology at Columbia University and has just written The Marshmallow Test, a book summing up half a century of research. When Mischel was young, his family was forced to move from a comfortable life in Austria to the US. They settled in Brooklyn, where they opened a bargain shopping store. Business was never good and Mischel believes that moving from ‘upper middle class to extreme poverty’ shaped his outlook. He is concerned with trying to reduce the impact of deprivation on an individual’s life chances. The conclusion he draws from his marshmallow research is positive: some people may be naturally disciplined but the ability to resist temptation is a skill that can also be taught. Teach children self-control early and you can improve their prospects.\n\n**D**\nHowever, no single characteristic – such as self-control – can explain success or failure. Some critics have pointed out that Mischel’s original subjects were themselves children of university professors and graduate students – not exactly a representative sample. Other scientists noted that variations in home environment could account for differences: stable homes and one-child families encourage self-control, whereas in less stable homes and those with many children, if you don’t grab a marshmallow now there won’t be any left in 15 minutes. Mischel answers these critics by noting that studies in a wide variety of schools found similar results. He acknowledges that the environment shapes our ability to resist temptation and observes that genetics plays a role too. But he still believes that the ability to resist temptation can be learnt and encouraged. I asked Mischel whether self-control comes easily to him. ‘Not at all,’ he said. ‘I have great difficulties in waiting. It’s still difficult for me to wait in a queue in the bank.’",
+    "options": {
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ]
+    },
+    "correct_answer": {
+      "1": "D",
+      "2": "B",
+      "3": "D",
+      "4": "C",
+      "5": "A",
+      "6": "D",
+      "7": "D",
+      "8": "C",
+      "9": "A",
+      "10": "D"
+    }
+  },
+  {
+    "title_like": "%Friends again%",
+    "type": "reading_multiple_matching",
+    "subcategory_name": "Multiple Matching",
+    "question_text": "You are going to read a magazine article about adults who have met an old school friend again through social media. For questions 1-10, choose from the people (A-E). The people may be chosen more than once.\n\n1 is surprised at the job her friend now has? (1)……………\n2 is sure that this time their friendship will last? (2)……………\n3 thinks her life may have changed as a result of meeting her friend again? (3)……………\n4 feels that in one way she and her friend have similar personalities? (4)……………\n5 believes that even without the Internet they would have met again? (5)……………\n6 regrets losing contact with her friend years ago? (6)……………\n7 was initially unsure whether she wanted to talk to her friend again? (7)……………\n8 told her friend she was sad to hear what had happened to her? (8)……………\n9 was surprised at how little her friend’s appearance had changed? (9)……………\n10 admits she wrongly predicted her friend would never have a successful career? (10)……………\n\n***\n\n**A   Nadia Hassan**\nAlthough we’ve been living in different countries for a long time, I know I should have made more of an effort to stay in touch with Amina because we always got on well together, even though we’re quite different people. For instance, I’m much more ambitious than her and have no plans to start a family, whereas she already has two children. It’s quite a contrast in lifestyle, and although it’s great that we’re both content with our own lives – and we’ve enjoyed catching up with each other’s news – I don’t really know whether in the future we’ll have enough in common to keep the relationship going.\n\n**B   Julia Nowak**\nThe first thing that struck me was that Natalia still looked much the same as she had ten years earlier, unlike some other people in their late twenties – especially those who have had serious personal issues to deal with during that time. She’s also still very keen on sports, which I’m not, but she remains as sociable as she ever was and I suppose we’re quite alike in that respect. In fact, she was one of the first people I thought of when the idea of contacting my old classmates occurred to me, and it’s great you can do that online so easily. Otherwise you could lose touch with them forever.\n\n**C   Olivia Morgan**\nBack in our school days I always liked Megan, but she was never keen on studying so I sort of took it for granted that she would end up doing a job that didn’t require qualifications. Now it turns out she went on to do really well academically and for two years was a Philosophy lecturer at a top university. The other mistake I made was being rather cautious about responding when she first got in touch with me online last autumn, when in fact as soon as we saw each other on the screen we started chatting again as if that ten year gap had never existed. I think we both quickly realised that we wouldn’t ever let anything like that happen again.\n\n**D   Maite Silva**\nI was delighted when Carla told me she has such a good job. Somehow I always knew she’d do well, though I must confess that back then she was the last person I would have imagined becoming an economist because she was pretty hopeless at maths. But when she appeared on my laptop screen after all those years I was impressed by how mature she sounded and looked, and in fact she might be having an inﬂuence on me. Ever since we met up again, I’ve found myself taking a more serious attitude to my career, with promotion now a real possibility.\n\n**E   Yan Lin**\nWhen I realised my old classmate Ming was trying to contact me I didn’t hesitate for a second in replying. Somehow I’d always known that one way or another we were bound to run into each other at some point, because when we left school we’d both gone off to do the same subject at different universities. What I hadn’t been prepared for, though, was the news that she’d had to interrupt her studies owing to personal problems. I expressed my sympathy, but she assured me she’d recovered and eventually graduated, and that since then she’s been working in advertising. Which of course is exactly what I do, too.",
+    "options": {
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ]
+    },
+    "correct_answer": {
+      "1": "D",
+      "2": "C",
+      "3": "D",
+      "4": "B",
+      "5": "E",
+      "6": "A",
+      "7": "C",
+      "8": "E",
+      "9": "B",
+      "10": "C"
+    }
+  },
+  {
+    "title_like": "%Living with tourism%",
+    "type": "reading_multiple_matching",
+    "subcategory_name": "Multiple Matching",
+    "question_text": "You are going to read an article about the effects of tourism on local people. For questions 1-10, choose from the people (A-E). The people may be chosen more than once.\n\n1 misses a place they used to go to as a child? (1)……………\n2 states that tourism provides a considerable number of jobs for local people? (2)……………\n3 wishes local people had opposed the construction of certain holiday homes? (3)……………\n4 claims that tourism has destroyed a traditional industry? (4)……………\n5 blames the tourist industry for spoiling the local countryside? (5)……………\n6 feels that the presence of people from other cultures benefits the local community? (6)……………\n7 criticises the behaviour of tourists in their town? (7)……………\n8 says the town is wealthier than it was before it became a tourist resort? (8)……………\n9 believes that most of the profits from the local tourist industry go abroad? (9)……………\n10 is not convinced that so-called green tourism actually benefits the environment? (10)……………\n\n***\n\n**A   Leonor Sousa**\nIt can’t be denied that tourism has attracted investment, which has certainly raised living standards here, but the cost in other respects has been extremely high. Take the effect on the environment, for instance. When my parents were young this used to be an area of fields and woods, but now everything is covered in concrete. The tourists themselves aren’t responsible for this; it’s the construction companies, property developers and estate agents who are to blame because they’re the ones making all the money. They’re all based in the big cities and bring in their own people, so they hardly create any employment at all for local residents.\n\n**B   Yusuf Demir**\nWhen I was growing up in my home town there was a path I used to walk along to go to school, and last summer I went to see if it was still there. It was, but the view from it had changed completely. Now there is a vast shopping mall, with a cinema and cafés alongside. I don’t actually mind that, because it means there are lots more things to do, and I also like the fact that it has a really international atmosphere. It’s good for local people to meet visitors from other parts of the world, try new kinds of food and hear about different ways of living.\n\n**C   Matt Walker**\nTourism has changed this town so much, even in the years since I was at junior school. In those days there was a football pitch near the harbour where we would kick a ball around, but it’s gone now, which is a pity. In the harbour itself luxury yachts owned by people from richer parts of the country have replaced the fishing boats, to the extent that there is now no sign of what used to be the main source of income and employment locally. In the evenings the town is certainly a lot livelier, but sometimes people start doing things they would never think of doing back in their own home towns, and then the police have to be called.\n\n**D   Trisha Chandra**\nI was just a child when tourism first took off here and those incredibly ugly houses were built for summer visitors. The residents really should have protested about that. It was all the fault of the town council, who only ever thought in the short term and seemed to give planning permission to anyone who applied to build anything. Nowadays there’s talk of ecological tourism, but that’s just a way of making people feel less guilty about the harm they are doing by making a few insignificant changes, such as re-using towels in their hotel rooms.\n\n**E   Daniela Navarro**\nI know some of the new hotels and holiday apartment blocks are unattractive, and that the bars, restaurants and nightclubs that cater for tourists have changed the nature of the town, but without them unemployment – particularly among the young – would be far worse than it currently is. That, though, is as far as the economic benefits to the town go, as the only ones making any real money out of all this are the big tour operators and the owners of hotel chains, none of whom are actually based in this country. Also, very few tourists learn our language. I know it must be difficult for them because most of them are quite old, but it means there’s little communication between us and them.",
+    "options": {
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ]
+    },
+    "correct_answer": {
+      "1": "C",
+      "2": "E",
+      "3": "D",
+      "4": "C",
+      "5": "A",
+      "6": "B",
+      "7": "C",
+      "8": "A",
+      "9": "E",
+      "10": "D"
+    }
+  },
+  {
+    "title_like": "%My new bicycle%",
+    "type": "reading_multiple_matching",
+    "subcategory_name": "Multiple Matching",
+    "question_text": "You are going to read a magazine article about bicycles. For questions 1-10, choose from the people (A-D). The people may be chosen more than once.\n\n1 bought a second-hand bike? (1)……………\n2 says their new bike is good value for money? (2)……………\n3 found it difficult to slow down at one point? (3)……………\n4 had to take their bike in for repair? (4)……………\n5 needed to put the bike together before they could ride it? (5)……………\n6 bought a new bicycle to replace one that had been stolen? (6)……………\n7 says that riding their bike up hills is tiring? (7)……………\n8 says they wish they had checked the size of the bike sooner? (8)……………\n9 had to get off their bike when they were riding to fix it? (9)……………\n10 compares cycling with another way of keeping fit? (10)……………\n\n***\n\n**A   Jonas Hagen**\nI bought my new mountain bike online and as soon as it was delivered to my home in kit form I set to work. Once it actually looked like a bike and I’d checked that everything seemed to be working properly, I set off down the road. All went well at first, but later on I had a brief moment of panic when the brakes suddenly failed and I narrowly avoided crashing into a hedge. I adjusted them when I got home, and since then they’ve been fine. The only other adjustment I’ve had to make is to raise the seat to the maximum because it turns out this bike is for riders whose inside leg measures considerably less than mine. I should really have noticed that before I bought it.\n\n**B   Lili Huang**\nI originally bought my bike just for occasional use, but now I go everywhere on it. It’s great exercise, every bit as good as going to the gym. It feels just the right size for me and somehow I always feel full of energy when I’m on it, even when my friends and I ride into the mountains at weekends. I’ve only ever had one breakdown, which was when the chain broke. Fortunately there was a garage nearby, where a very kind car mechanic quickly got me back on the road. I don’t know what I’d do without my bike, which is slightly worrying because a lot of people round here have had their bikes stolen. That’s why I keep it in the hall downstairs, rather than in the street.\n\n**C   James Thompson**\nThis is only the second bicycle I’ve ever bought. It was on offer at the local cycle shop and I think I got something of a bargain because on the whole I’ve been pleased with it. At first I had some difficulties with the gears, but I managed to sort those out while I was riding. It’s a very solid bike, though that does mean it’s rather heavy and I wouldn’t want to have to push it far if I had a breakdown. It also makes pedalling up steep slopes hard work, although fortunately most of the routes round here are reasonably ﬂat. I don’t think it’s the kind of bike anyone would want to steal, but I always secure it with a good strong lock just in case. Recently I’ve also fitted more powerful front and rear lights so that drivers can see me better after dark.\n\n**D   Mia Doherty**\nI actually chose this bike in something of a hurry. I’d left my old one outside the sports centre and when I came back it had just disappeared. I reported it, of course, but that was the last I ever saw of it, and I needed a new one to get to work every day. I probably paid more than I should have done for it, though I know the previous owner had looked after it well and I haven’t had any trouble with it. Apart, that is, from a ﬂat tyre which meant I had to stop and mend it on the way home in the pouring rain. Riding it certainly helps keep me ft, and even in weather like that I wouldn’t change it for a car. The only incident I’ve had was when a dog ran out into the road in front of me, but the brakes did their job superbly.",
+    "options": {
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ]
+    },
+    "correct_answer": {
+      "1": "D",
+      "2": "C",
+      "3": "A",
+      "4": "B",
+      "5": "A",
+      "6": "D",
+      "7": "C",
+      "8": "A",
+      "9": "D",
+      "10": "B"
+    }
+  },
+  {
+    "title_like": "%My university%",
+    "type": "reading_multiple_matching",
+    "subcategory_name": "Multiple Matching",
+    "question_text": "You are going to read an article in which six students talk about their university. For questions 1-10, choose from the students (A-F). The students may be chosen more than once.\n\n1 is studying at a university that was not their first choice? (1)……………\n2 has found it easier to make friends at university than they had expected? (2)……………\n3 wishes they had more time to take part in social activities? (3)……………\n4 chose their university partly because a relative had recommended it? (4)……………\n5 complains about the travelling time from their accommodation to the city centre? (5)……………\n6 wants to continue studying at the same university after they graduate? (6)……………\n7 praises the approach to teaching at their present university? (7)……………\n8 decided to study at the university because of its location? (8)……………\n9 sought the opinions of current students before choosing a university? (9)……………\n10 is finding student life less expensive than they had expected? (10)……………\n\n***\n\n**A   Zehra Erdogan**\nThere’s a club here for just about every sport or social activity you can think of, and they’re a great way to get to know other students. I’d wondered whether I might feel lonely here with my family so far away, but I needn’t have worried. There’s a group of us who get on really well, and two are already talking about doing research here once they’ve finished their first degrees. That’s my aim too.\n\n**B   Ben Robertson**\nI had to take out a loan to cover my costs as a student here, but I quickly found there were all kinds of expenses I hadn’t thought of, such as the cost of getting into town and back from the student village, where I live. The buses aren’t cheap and it takes ages to get there, too, but I didn’t check that when I chose this university. That’s something I could have done quite easily online, but unfortunately I didn’t. Actually, the main reason I came here was to be with my friends, who applied at the same time as I did.\n\n**C   Anika Mishra**\nI found it relatively easy to settle in here, just as I thought I would, really. I’d done some research on the various places offering the course I wanted to do, and what I found particularly helpful were the online comments by people actually studying in each one. Actually, this one had always appealed to me as my aunt did a research degree here and said it was a good place to live and study, though unlike her I think I’ll move onto another university once I’ve graduated.\n\n**D   Lotte Peeters**\nBefore I came here, people had been telling me I’d find it hard to live on my government grant, but that hasn’t really been the case because during my free time I’m nearly always in the halls of residence with the other students. There’s so much to do there that it doesn’t matter that they’re quite a long way from the university, which is right in the centre of town. In fact, I can’t do half the things I’d like to do because I’m a medical student and I’m just too busy studying to join any more societies or clubs.\n\n**E   Pablo Flores**\nUniversities in different parts of the world tend to be quite similar in some ways, such as the international mix of students, the atmosphere and even the buildings, but something I like about studying here is that you spend a lot of your time in seminars with a tutor. So, nearly a year on, I’m actually quite relieved I had my application rejected by the top university on my list: if I’d gone there I would have spent all day taking notes in lectures. The only downside is that the cost of living is quite a bit higher in this country.\n\n**F   Maxim Kuznetsov**\nAs I have family and friends living in several nearby countries, I needed to be somewhere close to an airport offering budget ﬂights. So studying here looked ideal, and though I’ve noticed prices are quite high in the city, there’s plenty to do on campus and I rarely need to go there. Actually, the only time I do that is when some of my old friends come to visit me, and on those occasions we take the train. There’s a good service into town, and I can get a discount by using my student card.",
+    "options": {
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ]
+    },
+    "correct_answer": {
+      "1": "E",
+      "2": "A",
+      "3": "D",
+      "4": "C",
+      "5": "B",
+      "6": "A",
+      "7": "E",
+      "8": "F",
+      "9": "C",
+      "10": "D"
+    }
+  },
+  {
+    "title_like": "%Four of the world’s best beaches%",
+    "type": "reading_multiple_matching",
+    "subcategory_name": "Multiple Matching",
+    "question_text": "You are going to read an article from a travel magazine. For questions 1-10, choose from the sections (A-D). The sections may be chosen more than once.\n\n1 recommends paying the entrance fee? (1)……………\n2 states that the beach has featured in advertisements? (2)……………\n3 says visitors may be surprised by the water temperature? (3)……………\n4 points out that the water is quite shallow? (4)……………\n5 suggests visitors should take photos of the beach? (5)……………\n6 says visitors can walk on the beach in their bare feet? (6)……………\n7 mentions a pleasant smell from the trees? (7)……………\n8 advises visitors to get to the beach early in the day? (8)……………\n9 states that it is not always possible to visit the beach? (9)……………\n10 warns visitors to the beach to protect their skin? (10)……………\n\n***\n\n**A   Rodas Beach, the Cies Islands, Spain**\nSome of Spain’s most spectacular beaches lie in Galicia on the Atlantic coast, and perhaps the most stunning of these are on the Cies Islands. These unspoilt and uninhabited islands are a national park, with public access limited to the summer months, and contain the perfectly-shaped Rodas Beach with its pure white sand and clear blue sea. At first sight it almost seems tropical, until dipping your toe in the water encourages you to spend a lazy day on the beach rather than dive in for a swim. There you can enjoy the quiet, the warmth of the sun and the scent of pine from the nearby woods, and later on have an excellent meal in the reasonably-priced fish restaurant close to the beach.\n\n**B   Whitehaven Beach, Whitsunday Islands, Australia**\nAustralia is famous for wonderful beaches, and Whitehaven must surely be one of its very best. Set against a background of amazingly-green tropical forest, and with views across the clear blue ocean to distant small islands, the sandy white beach is like something from a picture postcard or a TV commercial. As you would expect in such a sunny climate, the water is pleasantly warm, ideal for swimming on or below the surface. The sand, in contrast, always remains cool as it is of a type that reflects the sunlight, so you won’t need sandals. As the island has no permanent inhabitants, and most day trippers leave by boat quite early, in the late afternoon and evening you can have the place almost to yourself.\n\n**C   Matira Beach, Bora Bora, Tahiti**\nMatira Beach on the Pacific island of Bora Bora has incredibly white sand, beautiful fish swimming in clear blue-green water, and stunning sunsets. The air temperature hardly varies around the year, and neither does that of the ocean – which is only waist high even hundreds of metres from the shore. And unlike windier beaches nearby, Matira is quite well sheltered. There isn’t, however, much shade, so it is advisable to use plenty of sun cream, and the sand can feel uncomfortably hot unless you wear beach shoes or something similar. There is no charge to visit the beach, yet it rarely becomes crowded at any time of day. Everyone should go there at least once in life, and when you do, make sure you have your photo taken as the sun goes down.\n\n**D   Anse Source d’Argent Beach, Seychelles**\nThis must be one of the most photographed beaches in the world, so don’t forget to get some shots of your own, especially of the sea and the sand framed by the background of enormous pink rocks, with tall palm trees right behind them. It’s easy to see why commercials have been made there. The patches of brilliantly white sand between those beautiful rocks make it the perfect place to spend a relaxing day, and it is well worth the small amount it costs for access. The best spots – those with both sunshine and shade – quickly get taken, so make sure you arrive well before the sun starts to beat down and the sand heats up.",
+    "options": {
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ]
+    },
+    "correct_answer": {
+      "1": "D",
+      "2": "D",
+      "3": "A",
+      "4": "C",
+      "5": "D",
+      "6": "B",
+      "7": "A",
+      "8": "D",
+      "9": "A",
+      "10": "C"
+    }
+  },
+  {
+    "title_like": "%Jessica Ennis: heptathlon Olympic champion%",
+    "type": "reading_multiple_matching",
+    "subcategory_name": "Multiple Matching",
+    "question_text": "You are going to read a newspaper article about an Olympic athlete. For questions 1-10, choose from the paragraphs (A-D). The paragraphs may be chosen more than once.\n\n1 gives an example of Jessica having good luck? (1)……………\n2 refers to the role of Jessica’s family in helping her achieve success? (2)……………\n3 suggests it is surprising that Jessica does not understand herself better? (3)……………\n4 mentions a previous sporting disappointment that Jessica had? (4)……………\n5 explains why Jessica is so popular with the local public? (5)……………\n6 explains why another athlete was surprised at Jessica’s performance? (6)……………\n7 mentions a painful childhood memory? (7)……………\n8 suggests that Jessica’s appearance can give a misleading impression? (8)……………\n9 says that Jessica’s relationship with someone can sometimes be difficult? (9)……………\n10 contrasts Jessica’s personality on and off the track? (10)……………\n\n***\n\n**A**\nThere have been many great Olympic athletes in recent years, but few have been taken to their country’s heart quite as warmly as gold medal winner Jessica Ennis. Her quiet determination to succeed, her good humour when faced by setbacks and the absolute joy she showed when finally becoming Olympic champion have all contributed to this, as has the difficulty of the sport she has chosen to compete in: the heptathlon. This involves turning in world-class performances in seven track and field events over two days. At first sight, Jessica – at just 1.65 metres and 57 kilos – may seem an unlikely winner of such a physically demanding sport, but once the action begins it soon becomes clear she has the speed, strength and endurance to beat anyone.\n\n**B**\nJessica recognises that her normally easygoing nature is transformed into something much fiercer when she has to compete. She knows that success only comes from being highly motivated and totally focused on each event. In her autobiography Unbelievable, she talks of the way she was picked on at school by bigger girls because of her background and lack of size, and how that has made her determined to succeed, particularly against taller and stronger athletes. She also points out that she is not from a particularly sporting family and that her sister ‘absolutely hates sport’, but says she was introduced to athletics by her parents, who have continued to give her encouragement and support throughout her career as an athlete. Her mother was born in the UK and her father in Jamaica.\n\n**C**\nShe gets on well with her family, as she does with her husband Andy, saying she dislikes conﬂict and wherever possible avoids arguments with people. The only exception is her trainer Chell, with whom she has a row ‘every day’. And although Jessica is a psychology graduate, she is unable to explain how she acquired the tremendous self-discipline that has enabled her to keep training to Olympic gold medal standard while so many others have given up along the way. Of course, at that level nothing can be taken for granted, as she discovered when a sudden injury put her out of the Beijing Games. She describes that as the lowest point in her career. Typically, though, Jessica bounced back, and once ft again began training just as hard as ever.\n\n**D**\nBy the time of the London Games in 2012 she was in the best shape of her life, and on this occasion she was fortunate enough to remain free of injury. Some of the times she recorded in the heptathlon were so fast that she would have achieved good positions in the finals of track events such as the 200 metres. That brought to mind a race won two years earlier against the world champion, who couldn’t believe she had lost to someone who trained for seven different events. Since the London Olympics, Jessica has continued to take part in competitions, receiving numerous awards including World Sportswoman of the Year. She has also featured on a special postage stamp and has had a post box in her home city of Sheffield painted gold in her honour.",
+    "options": {
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ]
+    },
+    "correct_answer": {
+      "1": "D",
+      "2": "B",
+      "3": "C",
+      "4": "C",
+      "5": "A",
+      "6": "D",
+      "7": "B",
+      "8": "A",
+      "9": "C",
+      "10": "B"
+    }
+  },
+  {
+    "title_like": "%Young Inventors%",
+    "type": "reading_multiple_matching",
+    "subcategory_name": "Multiple Matching",
+    "question_text": "You are going to read an article about four young inventors who have created innovative solutions to problems. For questions 1-10, choose from the inventors (A-D). The inventors may be chosen more than once.\n\n1 Which inventor was motivated by a family member's health issue? (1)……………\n2 Which inventor faced initial skepticism from experts in the field? (2)……………\n3 Which inventor had to learn a completely new technical skill for their project? (3)……………\n4 Which inventor intends for their invention to be used in developing countries? (4)……………\n5 Which inventor was inspired by observing a problem while on holiday? (5)……………\n6 Which inventor combined a personal hobby with their invention? (6)……………\n7 Which inventor emphasizes that their solution is cheap to produce? (7)……………\n8 Which inventor believes their youth allowed them to think differently? (8)……………\n9 Which inventor was surprised by how quickly their idea became popular? (9)……………\n10 Which inventor hopes to reduce a specific type of environmental waste? (10)……………\n\n***\n\n**A   Boyan Slat – Ocean Cleanup**\nWhile diving in Greece at the age of 16, Boyan Slat was shocked to see more plastic bags than fish. This depressing sight sparked an idea for a passive ocean cleanup system, using ocean currents to concentrate plastic, which could then be easily collected. When he presented his idea for a school science project, and later at a conference, many marine experts declared it impossible, arguing that a static system would never withstand the ocean's power. Undeterred, Boyan founded The Ocean Cleanup. He believes that being young and inexperienced was actually an asset, as he didn't know enough to say 'this can't be done', allowing him to approach the problem from a fresh angle that seasoned engineers had dismissed.\n\n**B   Suman Mulumudi – Steth IO**\nSuman Mulumudi was just a high school student when he invented Steth IO, a smartphone attachment that turns the device into a sophisticated stethoscope. The inspiration came from watching his father, a cardiologist, constantly juggling his stethoscope and his smartphone to record patient data. Suman realized he could combine the two. He spent weeks studying 3D printing and audio engineering to build a prototype. The resulting device not only listens to heartbeats but creates a visual graph of the sound waves, aiding in more accurate diagnoses. He aims to distribute the device to rural clinics in developing nations where expensive medical equipment is scarce, providing a low-cost, high-tech solution.\n\n**C   Ann Makosinski – Hollow Flashlight**\nAnn was 15 when she learned that a friend in the Philippines was failing school because she had no electricity to study at night. Ann wanted to help. She knew that the human body radiates heat, and she wondered if she could harvest that energy. The result was the 'Hollow Flashlight', a torch powered solely by the heat of the user's hand. It requires no batteries and no moving parts. Creating it wasn't easy; she had to teach herself about Peltier tiles and energy conversion from physics textbooks and online forums. She admits she didn't expect much attention, but after winning the Google Science Fair, she was inundated with media requests and offers to manufacture the product.\n\n**D   Laurence Rook – Smart Doorbell**\nLaurence, aged 13, was frustrated by missing deliveries of packages because he was out playing or at school. He figured there had to be a way to answer the door remotely. He combined his interest in electronics with basic coding to create a doorbell that connects to a mobile phone. When a visitor presses the button, it calls the owner's phone, allowing them to speak to the visitor. It acts as a security device and a convenience tool. Laurence managed to secure a deal with a major telecoms company almost immediately. He says the hardest part was balancing the business negotiations with his homework, but he is thrilled that his simple idea has turned into a commercial success.",
+    "options": {
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ]
+    },
+    "correct_answer": {
+      "1": "B",
+      "2": "A",
+      "3": "C",
+      "4": "B",
+      "5": "A",
+      "6": "D",
+      "7": "B",
+      "8": "A",
+      "9": "C",
+      "10": "A"
+    }
+  },
+  {
+    "title_like": "%A Change of Direction%",
+    "type": "reading_multiple_matching",
+    "subcategory_name": "Multiple Matching",
+    "question_text": "You are going to read an article about four people who changed their careers drastically. For questions 1-10, choose from the people (A-D). The people may be chosen more than once.\n\n1 Which person accepts that they earn less money than in their previous career? (1)……………\n2 Which person realized they needed to change jobs after a specific moment of clarity? (2)……………\n3 Which person feels physically healthier as a result of the change? (3)……………\n4 Which person uses organizational skills from their old job in their new one? (4)……………\n5 Which person faced concern from their relatives about their decision? (5)……………\n6 Which person enjoys seeing the tangible results of their work? (6)……………\n7 Which person found the retraining period particularly challenging? (7)……………\n8 Which person works longer hours now but feels more satisfied? (8)……………\n9 Which person turned a long-term pastime into a profession? (9)……………\n10 Which person wanted a job that involved more social interaction? (10)……………\n\n***\n\n**A   Elena – From Lawyer to Baker**\nFor ten years, Elena worked in corporate law. The salary was fantastic, but the stress was unbearable. She spent her weekends baking bread and cakes for friends as a way to unwind. \"One Monday morning, staring at a contract, I just hit a wall,\" she says. \"I realized I couldn't do it for one more day.\" She quit and used her savings to open a small bakery. The early mornings – rising at 3 am – were a shock to the system, and her income has dropped significantly. However, she says the satisfaction of handing a warm loaf of bread to a customer is worth far more than her old paycheck. \"It’s hard physical work, but I’ve never been happier,\" she admits.\n\n**B   Mark – From IT Consultant to Landscape Gardener**\nMark spent fifteen years sitting in front of a screen. He suffered from back pain and felt constantly lethargic. He had always loved the outdoors, so when he was made redundant, he saw it as a sign. He retrained as a landscape gardener. \"My family thought I was mad,\" he recalls. \"They worried about the financial instability and the physical toll.\" The first year was exhausting, and his body ached every day, but soon he felt fitter than he had in his twenties. He loves the creativity of designing gardens and the feeling of the sun on his back. He says he sleeps better now than he ever did when he was in IT.\n\n**C   Sarah – From Accountant to Primary Teacher**\nSarah was a successful accountant, but she felt her work lacked meaning. She wanted to do something that contributed to society. Switching to teaching was harder than she expected. \"The training year was incredibly demanding,\" she says. \"I was used to quiet offices, not a classroom of thirty energetic six-year-olds.\" However, she found that her background in planning and organization was a huge asset in managing lessons and paperwork. She misses the quiet coffees of her old life, and the workload is heavy, often spilling into evenings, but when a child finally understands a concept they were struggling with, she knows she made the right choice.\n\n**D   David – From Marketing Executive to Furniture Maker**\nDavid worked in a high-pressure marketing agency, creating campaigns for products he didn't care about. He felt a disconnect between his effort and the end result. He wanted to make something real. He had done some woodworking with his grandfather as a child and decided to take a course in furniture making. Now he runs his own workshop. \"In marketing, success is abstract numbers on a spreadsheet. Here, at the end of the day, I can point to a table and say, 'I made that'.\" He admits that finding clients is stressful and requires him to use his old marketing skills, but the peace he finds in the workshop is irreplaceable.",
+    "options": {
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ]
+    },
+    "correct_answer": {
+      "1": "A",
+      "2": "A",
+      "3": "B",
+      "4": "C",
+      "5": "B",
+      "6": "D",
+      "7": "C",
+      "8": "C",
+      "9": "A",
+      "10": "C"
+    }
   }
 ]
