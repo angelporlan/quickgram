@@ -6,7 +6,7 @@ import { Observable, tap } from 'rxjs';
     providedIn: 'root'
 })
 export class AuthService {
-    private apiUrl = 'http://localhost:4000/api';
+    private apiUrl = 'https://quickgram.onrender.com/api';
     private tokenKey = 'quickgram_token';
 
     constructor(private http: HttpClient) { }

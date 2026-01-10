@@ -8,7 +8,7 @@ import { AuthService } from './auth.service';
     providedIn: 'root'
 })
 export class UserService {
-    private apiUrl = 'http://localhost:4000/api';
+    private apiUrl = 'https://quickgram.onrender.com/api';
 
     private aiUsageCache: any = null;
     private userInfoCache: any = null;

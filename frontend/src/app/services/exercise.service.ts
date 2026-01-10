@@ -9,7 +9,7 @@ import { UserService } from './user.service';
     providedIn: 'root'
 })
 export class ExerciseService {
-    private apiUrl = 'http://localhost:4000/api';
+    private apiUrl = 'https://quickgram.onrender.com/api';
     private cache = new Map<string, any[]>();
     private cacheCategories = new Map<string, any[]>();
 
