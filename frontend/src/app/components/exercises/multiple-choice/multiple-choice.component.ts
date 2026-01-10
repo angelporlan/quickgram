@@ -1,4 +1,5 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { safeParseJSON } from '../../../utils/json.utils';
 import { ExerciseService } from '../../../services/exercise.service';
 import { CommonModule } from '@angular/common';
 
@@ -34,10 +35,11 @@ export class MultipleChoiceComponent implements OnInit {
         }
     }
 
+
     initializeExercise() {
         try {
-            this.parsedOptions = JSON.parse(this.exercise.options);
-            this.parsedAnswers = JSON.parse(this.exercise.correct_answer);
+            this.parsedOptions = safeParseJSON(this.exercise.options);
+            this.parsedAnswers = safeParseJSON(this.exercise.correct_answer);
 
             this.processText(this.exercise.question_text);
 
