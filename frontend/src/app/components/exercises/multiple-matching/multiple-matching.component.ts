@@ -1,4 +1,5 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { safeParseJSON } from '../../../utils/json.utils';
 import { ExerciseService } from '../../../services/exercise.service';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
@@ -30,9 +31,7 @@ export class MultipleMatchingComponent implements OnInit {
   }
 
   parseExercise() {
-    const parsedOptions = typeof this.exercise.options === 'string'
-      ? JSON.parse(this.exercise.options)
-      : this.exercise.options;
+    const parsedOptions = safeParseJSON(this.exercise.options);
 
     this.availableOptions = parsedOptions.options || [];
 
@@ -97,9 +96,7 @@ export class MultipleMatchingComponent implements OnInit {
   submit() {
     if (!this.allQuestionsAnswered) return;
 
-    const parsedCorrectAnswers = typeof this.exercise.correct_answer === 'string'
-      ? JSON.parse(this.exercise.correct_answer)
-      : this.exercise.correct_answer;
+    const parsedCorrectAnswers = safeParseJSON(this.exercise.correct_answer);
 
     let correctCount = 0;
     Object.keys(this.userAnswers).forEach(questionId => {
