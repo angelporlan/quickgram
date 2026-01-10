@@ -1,4 +1,5 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { safeParseJSON } from '../../../utils/json.utils';
 import { ExerciseService } from '../../../services/exercise.service';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
@@ -37,8 +38,8 @@ export class VocabularyComponent implements OnInit {
 
     initializeExercise() {
         try {
-            this.parsedAnswers = JSON.parse(this.exercise.correct_answer);
-            this.parsedOptions = JSON.parse(this.exercise.options);
+            this.parsedAnswers = safeParseJSON(this.exercise.correct_answer);
+            this.parsedOptions = safeParseJSON(this.exercise.options);
             this.availableWords = this.parsedOptions?.words || [];
             this.processText(this.exercise.question_text);
 
