@@ -1,4 +1,5 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { safeParseJSON } from '../../../utils/json.utils';
 import { ExerciseService } from '../../../services/exercise.service';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
@@ -35,7 +36,7 @@ export class ConditionalsComponent implements OnInit {
 
     initializeExercise() {
         try {
-            this.parsedAnswers = JSON.parse(this.exercise.correct_answer);
+            this.parsedAnswers = safeParseJSON(this.exercise.correct_answer);
             this.processText(this.exercise.question_text);
 
             if (this.totalGaps > 0) {
